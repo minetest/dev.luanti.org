@@ -20,7 +20,7 @@ Setting `mg_flags`, `dungeons` flag (enabled by default)
 
 * Dungeons are hollow underground structures. Many pathways and stairs connect a complex system of rooms.
 * The nodes used by dungeons are defined in biome definitions.
-* Screenshot of a cobblestone dungeon in Minetest Game:  
+* *Cobblestone dungeon, as of Minetest Game 0.4.7*  
   ![](/images/mapgen/1200px-Dungeon_0.4.7.jpg)
 
 ### Decorations
@@ -37,11 +37,11 @@ Setting `mg_flags`, `caves` flag (enabled by default)
 
 * Caves are air pockets found underground at any height. Caves can be very small hollow places or can be very complex interconnected tunnel systems. Cave entrances can commonly found on the surface. The cave style greatly varies between the different map generators.
 * There is a "cave liquids" system that results in some caves being flooded. Biome definitions can specify the liquid nodes to be used.
-* Screenshot of a cave in Minetest Game:  
+* *Cave in Minetest Game 5.0.0*  
   ![](/images/mapgen/Minetest_Game_underground.jpg)
-* Screenshot of a cave flooded with water in Minetest Game:  
+* *A water lake in v7, as of Minetest Game 0.4.15*  
   ![](/images/mapgen/Underground_water_lake.jpg)
-* Screenshot of a cave flooded with lava in Minetest Game:  
+* *A lava lake in v6, as of Minetest Game 0.4.7*  
   ![](/images/mapgen/1200px-Lava_lake_0.4.7.jpg)
 
 ## Features shared between fewer mapgens
@@ -69,7 +69,7 @@ Setting `mgv7_spflags`, `mountains` flag (enabled by default)
 Setting `mgv7_spflags`, `ridges` flag (enabled by default)
 
 * Enables rivers at sea level. They aggressively cut through the terrain and sometimes create canyon-like structures. Since these rivers can make the terrain quite difficult to navigate, it can be useful to disable them.
-* Screenshot of a river in Minetest Game:  
+* *Typical ridge in v7, Minetest Game*  
   ![](/images/mapgen/Mapgen_v7_ridge.jpg)
 
 ### Floatlands (experimental)
@@ -78,7 +78,7 @@ Setting `mgv7_spflags`, `floatlands` flag (disabled by default)
 
 * Floatlands are large chunks of land generated in the sky, by default from Y=1024 to Y=4096. They are experimental and subject to change.
 * For more information, see the ["Warning: Rewrite of Mapgen V7 floatlands"](https://forum.luanti.org/viewtopic.php?f=18&t=23764) forum thread by paramat.
-* Screenshot of floatlands in Minetest Game:  
+* *Minetest Game floatlands in 5.0.0*  
   ![](/images/mapgen/Minetest_Game_floatland_coniferous_forest.jpg)
 
 
@@ -89,7 +89,7 @@ Setting `mgv7_spflags`, `floatlands` flag (disabled by default)
 Setting `mgv6_spflags`, `trees` flag (enabled by default)
 
 * Enables v6's hardcoded decorations: regular trees, apple trees, jungle trees and jungle grass in jungles and pine trees in taiga biomes (see [Mapgen v6](/mapgen/#v6)). 
-* Screenshot of v6 trees in Minetest Game:  
+* *A forest of regular trees in Minetest Game 0.4.9*  
   ![](/images/mapgen/Mapgen_v6_0_4_9.jpg)
 
 ### Snow biomes
@@ -97,7 +97,7 @@ Setting `mgv6_spflags`, `trees` flag (enabled by default)
 Setting `mgv6_spflags`, `snowbiomes` flag (enabled by default)
 
 * Enables the Tundra and Taiga biomes. This also automatically enables the jungles setting.
-* Screenshot of v6 snow biome in Minetest Game:  
+* *Pine trees in a snowy region, as of Minetest Game 0.4.13*  
   ![](/images/mapgen/1200px-Snow_pines.jpg)
 
 ### Jungle biomes
@@ -105,7 +105,7 @@ Setting `mgv6_spflags`, `snowbiomes` flag (enabled by default)
 Setting `mgv6_spflags`, `jungles` flag (enabled by default)
 
 * Enables the Jungle biome which includes jungle trees and jungle grass.
-* Screenshot of v6 jungle biome in Minetest Game:  
+* *Jungle biome as of Minetest Game 0.4.7*  
   ![](/images/mapgen/1200px-Jungle_0.4.7.jpg)
 
 ### Biome blending
@@ -113,7 +113,7 @@ Setting `mgv6_spflags`, `jungles` flag (enabled by default)
 Setting `mgv6_spflags`, `biomeblend` flag (enabled by default)
 
 * Enables a smooth transition between biomes.
-* Screenshot of a v6 biome transition in Minetest Game:  
+* *Biome blending in action between plains and a desert in Minetest Game*  
   ![](/images/mapgen/Mapgen_v6_biomeblend.jpg)
 
 ### Mud flow
@@ -134,7 +134,7 @@ Setting `mgv6_spflags`, `temples` flag (enabled by default)
 
 * Enables generation of larger dungeons called desert temples in v6 desert biomes.
 * If disabled, normal dungeons are generated instead.
-* Screenshot of a desert temple in Minetest Game:  
+* *Desert stone dungeon, as of Minetest Game 0.4.13*  
   ![](/images/mapgen/1200px-Desert_dungeon_desert_stone.jpg)
 
 ## Mapgen `flat` features
@@ -146,7 +146,7 @@ This mapgen has support for lakes and hills which are disabled by default.
 Setting `mgflat_spflags`, `hills` flag (disabled by default)
 
 * Increases the terrain height at some points to form hills. These hills become quite big sometimes.
-* Screenshot of a hill in Minetest Game:  
+* *Hill in the flat mapgen in Minetest Game*  
   ![](/images/mapgen/Mapgen_flat_hills.jpg)
 
 ### Lakes
@@ -154,5 +154,5 @@ Setting `mgflat_spflags`, `hills` flag (disabled by default)
 Setting `mgflat_spflags`, `lakes` flag (disabled by default)
 
 * Lowers the terrain at some points to form lakes. These lakes can become quite large sometimes.
-* Screenshot of a lake in Minetest Game:  
+* *Small lake in the flat mapgen in Minetest Game*  
   ![image](/images/mapgen/Mapgen_flat_lakes.jpg)
