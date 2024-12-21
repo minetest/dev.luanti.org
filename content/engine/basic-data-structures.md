@@ -98,4 +98,4 @@ The VoxelManipulator is an object that stores arbitrary areas from the Map, for 
 See also
 --------
 
-[Terminology](https://wiki.minetest.net/Terminology)
+- [Terminology](/terminology)

@@ -36,4 +36,4 @@ Contribute to Luanti!
 Content Index
 -------------
 
-Before you start, you should look at the [terminology](https://wiki.minetest.net/Terminology).
+Before you start, you should look at the [terminology](/terminology).
