@@ -12,7 +12,8 @@ This page contains a hopefully complete list of terminology related to Luanti.
 
 -   **Luanti**: The game engine whose wiki you are on right now, generally refers to the engine.
 -   **Minetest**: The former name of Luanti
--   [**IrrlichtMt** / **Irrlicht**](https://github.com/minetest/irrlicht)[^1]: The name of Luanti's 3D rendering library. It was forked by the Luanti developers from the original [Irrlicht](https://irrlicht.sourceforge.io/), which is ancient and poorly maintained nowadays.
+-   **IrrlichtMt** / **Irrlicht**[^1]: The name of Luanti's 3D rendering library. It was forked by the Luanti developers from the original [Irrlicht](https://irrlicht.sourceforge.io/), which is ancient and poorly maintained nowadays.
+    -   IrrlichtMt has been merged into the Luanti repository as the [`irr/`](https://github.com/minetest/minetest/tree/master/irr) directory.
 -   [**Game**](https://wiki.luanti.org/Games): A collection of mods and some additional metadata, which can be selected from the main menu. Not to be confused with Modpack which is a pack of mods selectable like regular mods.
     -   Previously were referred to as **Subgames**, but this term is outdated. Please update any references to it as such.
 -   [**Minetest Game**](http://wiki.minetest.net/Games/Minetest%20Game) (abbreviated MTG): The name of the game that used to be shipped with Luanti by default.
@@ -27,7 +28,7 @@ This page contains a hopefully complete list of terminology related to Luanti.
 -   **Server**: The program that manages and distributes mod, texture and sound data to the players. It also does all of the mod initiation.
 -   **Client**: The program that the player uses to connect to singleplayer or multiplayer games. Handles the rendering of the world.
     -   In singleplayer, the client will start a server in the background restricted to the *singleplayer* user which will then join it, acting both as a client and a server in that case.
--   **[minetest.conf](https://wiki.luanti.org/Minetest.conf)**: A file in the root directory of Luanti's user directory which contains configuration settings for Luanti. A list of the settings can be found in the main menu's "All settings" menu or in [**minetest.conf.example**](https://raw.githubusercontent.com/minetest/minetest/master/minetest.conf.example).
+-   **[minetest.conf](https://wiki.luanti.org/Minetest.conf)**: A file in the root directory of Luanti's user directory which contains configuration settings for Luanti. A list of the settings can be found in the main menu's "All settings" menu or in [**minetest.conf.example**](https://github.com/minetest/minetest/blob/master/minetest.conf.example).
 
 ## In-game Content
 
@@ -57,7 +58,7 @@ This page contains a hopefully complete list of terminology related to Luanti.
 
 -   **Lua**: A simple, minimal and fast programming language which is used for Luanti's API.
 -   **Modding API**/**Lua API**/**Luanti API**: a selection of functions and values, used by mod files to modify, extend or add features and blocks. API stands for **A**pplication **P**rogramming **I**nterface.
--   **lua_api.txt**: A file in the doc/ directory and contains a full reference for the Lua API. The same content is also available in [HTML format](https://minetest.gitlab.io/minetest/).
+-   [**lua_api.md**](https://github.com/minetest/minetest/blob/master/doc/lua_api.md): A file in the `doc/` directory that contains the full reference of the Lua API. The same content is also available in [HTML format](https://api.luanti.org/).
 
 ## Notes
 
