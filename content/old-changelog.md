@@ -147,7 +147,7 @@ Backported release containing only bug fixes and small features. 0.4.17 was rele
 * Implement delayed shutdown for server owners: /shutdown 60 => shutdowns in 1 min /shutdown -1 cancels it _(nerzhul)_
 * Add support for requesting a reconnect and changing the shutdown message to /shutdown _(red-001)_
 * Add a mapblock cache in MeshUpdateQueue to improve client rendering performance _(celeron55)_
-* Player data can now be into database. This is an important change, players to files are always supported for this release but deprecated. Files backend for players will be removed in a future release. See [http://wiki.minetest.net/Database\_backends](http://wiki.minetest.net/Database_backends) for compat matrix and migration steps. _(nerzhul)_
+* Player data can now be into database. This is an important change, players to files are always supported for this release but deprecated. Files backend for players will be removed in a future release. See [Database backends](/database-backends) for compat matrix and migration steps. _(nerzhul)_
 * Sounds: add fading sounds _(Bremaweb, krock)_
 * Save automatically window size when modified. This behaviour can be disabled in client settings _(nerzhul)_
 * Add cancel button to password change formspec _(red-001)_

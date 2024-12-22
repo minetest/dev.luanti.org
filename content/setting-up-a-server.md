@@ -218,7 +218,7 @@ For more mods useful to server administration, see the [Server Moderation and To
 ### Server Configuration
 For a detailed explanation of the server configuration file, see [minetest.conf](https://github.com/minetest/minetest/blob/master/minetest.conf.example).
 
-You may also want to consider to use a different [database backend](https://wiki.luanti.org/Database_backends) for your world.
+You may also want to consider to use a different [database backend](/database-backends) for your world.
 
 ### Server Commands
 Running /help in-game will show you a list of the built-in engine commands as well as any server commands installed by mods.

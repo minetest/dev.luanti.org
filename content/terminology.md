@@ -33,7 +33,7 @@ This page contains a hopefully complete list of terminology related to Luanti.
 ## In-game Content
 
 -   **World**: A saved game in Luanti, which contains:
-    -   **Map**: a [database](https://wiki.luanti.org/Database_backends) of the map's content, everything from blocks to chest contents.
+    -   **Map**: a [database](/database-backends) of the map's content, everything from blocks to chest contents.
     -   Player passwords, their health, and their inventory.
     -   Other needed files, such as ban lists, seed numbers and protected areas.
 -   **Nodes**: 1×1×1 meter individual cubes in the game, and are grouped and loaded by their mapblocks. Informally referred to as blocks by regular players.
