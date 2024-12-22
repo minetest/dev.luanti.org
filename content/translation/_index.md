@@ -1,6 +1,7 @@
 ---
 title: Translation
 aliases:
+- /Translating
 - /Translation
 bookCollapseSection: true
 ---
@@ -16,12 +17,6 @@ Translations of the Luanti engine are [automated using Weblate](https://hosted.w
 The developers usually will update the translation templates shortly before a new release. If you translate a long time before a release, your translation updates will still be included, but your translation will likely be incomplete because almost every new version comes with new things to translate. Check out the [News forum](https://forum.luanti.org/viewforum.php?f=18) to see if a new release is imminent.
 
 In case you wish to translate a new language, send a message in #minetest-dev and a coredev can add it.
-
-### Language-specific notes
-
-Here is a list of wiki pages for translating specific languages:
-
-* [German](/Translating/de "Translating/de")
 
 ### Special strings
 
@@ -49,7 +44,7 @@ Luanti detects the current language by inspecting the `LANG` environment variabl
 
 The available translations are found in source form in the `po/` directory. The `cmake` detects them, and they are built as part of the build process.
 
-The main translation file must be updated now and then using the [this script](https://github.com/minetest/minetest/blob/master/builtin/mainmenu/dlg_settings_advanced.lua) (configuration, bottom of the file) and [this one](https://github.com/minetest/minetest/blob/master/util/updatepo.sh) (C++ and Lua translations). Submit a PR after running the generator or poke a core dev to update the translations when it's needed. Note that builtin translations are handled separately, see the maintenance notes below.
+The main translation file must be updated now and then using the [this script](https://github.com/minetest/minetest/blob/master/builtin/mainmenu/settings/generate_from_settingtypes.lua) (configuration) and [this one](https://github.com/minetest/minetest/blob/master/util/updatepo.sh) (C++ and Lua translations). Submit a PR after running the generator or poke a core dev to update the translations when it's needed. Note that builtin translations are handled separately, see the maintenance notes below.
 
 Maintaining engine translations
 -------------------------------
@@ -104,7 +99,7 @@ To start a new translation, copy `template.txt` to create `__builtin.<LANGUAGE_C
 Translating mods and games
 --------------------------
 
-To learn how Luanti mods and games are translated, go to [Translation/Mods and Games](/Translation/Mods_and_Games "Translation/Mods and Games").
+To learn how Luanti mods and games are translated, go to [Translating Mods and Games](/translation/mods-and-games).
 
 Untranslatable texts
 --------------------
