@@ -43,4 +43,4 @@ Available solutions:
 
 - Add a submit button next to the text field
 
-  This also works, but is worse than `field_enter_after_edit[]` as the user needs to do two taps instead of one. It may also still be confusing for the user ("I already pressed `Enter`, why didn't anything happen?")
+  This also works, but is worse than `field_enter_after_edit[]` as the user needs to do two taps instead of one. It may also still be confusing for the user ("I already pressed `Enter`, why didn't anything happen?"). Ideally, you would add both `field_enter_after_edit[]` and a submit button.
