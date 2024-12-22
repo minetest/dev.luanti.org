@@ -2,6 +2,7 @@
 title: Accessing Android Data Directory
 aliases:
 - /Accessing_Android_Data_Directory
+- /accessing-android-data-directory
 ---
 
 # Accessing Android Data Directory

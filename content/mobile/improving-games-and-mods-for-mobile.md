@@ -4,7 +4,7 @@ title: Improving games and mods for mobile
 
 # Improving games and mods for mobile
 
-The mobile platform is different from the desktop platform. You can't just develop a Luanti game for desktop and expect it to work on mobile without any adjustments. While Luanti continues to improve support for mobile by adding mobile-specific features to the Lua API, that's not enough for mobile players to have a good experience. In the end, it will always be up to games and mods to use these APIs.
+The mobile platform is different from the desktop platform. You can't develop a Luanti game for desktop and expect it to work on mobile without any adjustments. While Luanti needs to improve support for mobile by adding more mobile-specific features to the Lua API, that's not enough for mobile players to have a good experience. In the end, it will always be up to games and mods to use these APIs.
 
 All games and mods uploaded to ContentDB are available on Android and all servers can be joined on Android, so you will have some mobile players either way.
 
@@ -16,7 +16,7 @@ In the touch controls, a long tap corresponds to pressing and holding the dig bu
 
 This works well when only digging and placing nodes, but not in other scenarios. Some actions require the player to hold the place button, for example shooting with a bow or eating food in Minecraft-like games. Some actions require the player to be able to press the dig button very quickly, for example throwing grenades in [Capture the Flag](https://content.luanti.org/packages/rubenwardy/capturetheflag/).
 
-Luckily, it's possible to customize the meaning of long and short taps using the `touch_interaction` field in item definitions. As a solution for the cases described above, you can add the following line to your item defintion:
+Luckily, it's possible to customize the meaning of long and short taps using the `touch_interaction` field in item definitions. As a solution for the cases described above, you can add the following line to your item definition:
 
 ```lua
 touch_interaction = "short_dig_long_place",
