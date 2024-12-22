@@ -10,7 +10,7 @@ aliases:
 
 All the engaged people from the community and the developer team can be found there, and most prolific modders will also be available there.
 
-Some of the IRC channels are also bridged and accessible from the [Minetest Discord server](https://discord.gg/minetest), with message history kept. For IRC users who do not have a bouncer, most IRC channels have logs which are made available on [irc.minetest.net](https://irc.minetest.net/).
+Some of the IRC channels are also bridged and accessible from the [Luanti Discord server](https://discord.gg/minetest), with message history kept. For IRC users who do not have a bouncer, most IRC channels have logs which are made available on [irc.minetest.net](https://irc.minetest.net/).
 
 ## Channels
 
