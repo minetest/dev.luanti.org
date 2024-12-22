@@ -18,6 +18,12 @@ The developers usually will update the translation templates shortly before a ne
 
 In case you wish to translate a new language, send a message in #minetest-dev and a coredev can add it.
 
+### Language-specific notes
+
+Here is a list of wiki pages for translating specific languages:
+
+* [German](/translation/de)
+
 ### Special strings
 
 In the translations you will find one string with a special meaning. It must **not** be translated literally. They are used internally by Luanti to trigger certain settings. You must enter a special value into the translation field.
