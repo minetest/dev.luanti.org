@@ -99,7 +99,7 @@ Now `mod_exists` will be true if the mod exists and false otherwise.
 
 This works because `minetest.get_modpath` returns nil if the mod is not loaded.
 
-### Ensuring mod interopability
+### Ensuring mod interoperability
 
 A good mod is one that still works when a lot of other mods are used. Read [Mod\_interoperability](/Mod_interoperability "Mod interoperability") for a lot of useful hints.
 
@@ -112,91 +112,91 @@ Note: Some of these can be checked quickly with [QA-Block](https://forum.luanti.
 
 ### Preventing crashes, exploits and bugs
 
-* In `minetest.after`, do you consider that any external variable or object might become nil or disappear in the meantime?[\[1\]](#cite_note-1)
+* In `minetest.after`, do you consider that any external variable or object might become nil or disappear in the meantime?[^1]
 * In formspecs, did you check for all [Time Of Check is not Time Of Use vulnerabilities](https://forum.luanti.org/viewtopic.php?f=47&t=19129)?
 * In formspecs, do you [Never Trust User-Provided Data](https://forum.luanti.org/viewtopic.php?f=47&t=19129)?
-* In formspecs, do you enclose all variable, unpredictable text in `minetest.formspec_escape`? [\[2\]](#cite_note-2)
-* Does the game behave properly when restarted?[\[3\]](#cite_note-3)
+* In formspecs, do you enclose all variable, unpredictable text in `minetest.formspec_escape`? [^2]
+* Does the game behave properly when restarted?[^3]
 * Did you check if implementing [mod security](https://forum.luanti.org/viewtopic.php?f=18&t=12471) is necessary? If yes, did you implement it?
-* For singleplayer games: Do you error out if someone tries to run your game in multiplayer?[\[4\]](#cite_note-4)
-* Do you restrict detached inventories to players, where necessary?[\[5\]](#cite_note-5)
+* For singleplayer games: Do you error out if someone tries to run your game in multiplayer?[^4]
+* Do you restrict detached inventories to players, where necessary?[^5]
 
 ### General code quality
 
-* Does the game/mod avoid polluting the global namespace with tons of identifiers?[\[6\]](#cite_note-6)
-* All deprecated code removed/replaced?[\[7\]](#cite_note-7)
+* Does the game/mod avoid polluting the global namespace with tons of identifiers?[^6]
+* All deprecated code removed/replaced?[^7]
 * Are all APIs (that are intended for external use) documented?
 
 ### Performance
 
-* Do you use the “buffer” argument in the LuaVoxelManip and Perlin noise functions (like `get_data` or `get_2d_map_flat`)?[\[8\]](#cite_note-8)
-* Do you avoid re-creating the same Perlin noise over and over again?[\[9\]](#cite_note-9)
+* Do you use the “buffer” argument in the LuaVoxelManip and Perlin noise functions (like `get_data` or `get_2d_map_flat`)?[^8]
+* Do you avoid re-creating the same Perlin noise over and over again?[^9]
 
 ### Entities/players
 
-* Do all entities still behave properly when they unload, and then load again?[\[10\]](#cite_note-10)
-* If you change player physics (`set_physics_override`) anywhere, will it still work when another mod changes it?[\[11\]](#cite_note-11)
+* Do all entities still behave properly when they unload, and then load again?[^10]
+* If you change player physics (`set_physics_override`) anywhere, will it still work when another mod changes it?[^11]
 
 ### Items and nodes
 
-* Is `is_ground_content` set to false for all nodes that the cavegen should not destroy?[\[12\]](#cite_note-12)
-* Do all nodes have appropriate sounds?[\[13\]](#cite_note-13)
-* Do all nodes have appropriate selection boxes?[\[14\]](#cite_note-14)
+* Is `is_ground_content` set to false for all nodes that the cavegen should not destroy?[^12]
+* Do all nodes have appropriate sounds?[^13]
+* Do all nodes have appropriate selection boxes?[^14]
 * Do all items intented for use only in Creative Inventory have set the `not_in_creative_inventory=1` group?
-* Do all crafts work?[\[15\]](#cite_note-15)
+* Do all crafts work?[^15]
 
 ### Game/mod metadata
 
 * For games: Are all unsupported mapgens disabled in game.conf?
 * Does your game/mod have a name?
 * Is the name of the game/mod used consistently everywhere?
-* For games: Name, icon, header present?[\[16\]](#cite_note-16)
+* For games: Name, icon, header present?[^16]
 
 ### Graphics, audio, text
 
-* Are all positional sounds mono?[\[17\]](#cite_note-17)
+* Are all positional sounds mono?[^17]
 * Does the UI still work in higher scaling/DPI?
 * Are all required textures included?
-* Do your leaves still look okay when simple leaves are used (`leaves_style = simple`)[\[18\]](#cite_note-18)
+* Do your leaves still look okay when simple leaves are used (`leaves_style = simple`)[^18]
 * Do all items that the player can legitimately get have `description` set?
 * Do all chat commands have `description` and parameter list set?
 * In the parameter list of chat commands, does it follow the format defined in `lua_api.md`?
 * Do all items have unique descriptions (=no confusing duplicates, unless intentional for some reason)
 * Is the writing style consistent across the entire game?
 * No typos/grammar fails?
-* Do you use `blank.png` instead of a custom transparent image?[\[19\]](#cite_note-19)
-* Do all items have an appropriate item image that helps in keeping items apart?[\[20\]](#cite_note-20)
+* Do you use `blank.png` instead of a custom transparent image?[^19]
+* Do all items have an appropriate item image that helps in keeping items apart?[^20]
 
 ### Translations
 
 * Does the UI provide reasonably enough space for translations?
 * Was at least one translation playtested?
-* Do you avoid using string concatenation to include variable text?[\[21\]](#cite_note-21)
+* Do you avoid using string concatenation to include variable text?[^21]
 * Can all user-facing texts be translated?
-* Have all in-game images with baked-in, untranslatable texts, been replaced with text?[\[22\]](#cite_note-22)
+* Have all in-game images with baked-in, untranslatable texts, been replaced with text?[^22]
 
 Footnotes
 ---------
 
-1.  [↑](#cite_ref-1) For example, if minetest.after does anything on a player object that you got 5 seconds ago, it's possible the player has left in that time. If you do anything (besides checking for existence) on the player object, you trigger a crash
-2.  [↑](#cite_ref-2) Variable text, especially translations or user input, can potentially contain the magic characters that formspecs use, so if unescaped, they will break the formspec.
-3.  [↑](#cite_ref-3) Some game data might be accidentally reset or just not be persisted across restarts. For example, rainy weather might be reset to clear because it was not saved.
-4.  [↑](#cite_ref-4) Use `minetest.is_singleplayer` to check. Use Lua's `error` function to error out, or just kick all players.
-5.  [↑](#cite_ref-5) Detached inventories are sent to everyone unless you specify a name in the registration. So other players using a modified/hacked client could theoretically alter any detached inventory without an attached name.
-6.  [↑](#cite_ref-6) The keyword “`local`” should be your new friend. Everything that does not need to be visible outside should be made local. This will avoid a lot of weird bugs caused by mods overwriting their global variables each other. As a rule of thumb, your mod should only have up to 1 global variable which is also the same name as the mod. Make this a table in which you include all global stuff. You can use [QA-Block](https://forum.luanti.org/viewtopic.php?t=15759) to find suspicious global variables.
-7.  [↑](#cite_ref-7) See also: [MT-replace-deprecated.sh](/MT-replace-deprecated.sh "MT-replace-deprecated.sh")
-8.  [↑](#cite_ref-8) See also [Mapgen\_memory\_optimisations](/Mapgen_memory_optimisations "Mapgen memory optimisations")
-9.  [↑](#cite_ref-9) See also [Mapgen\_memory\_optimisations](/Mapgen_memory_optimisations "Mapgen memory optimisations")
-10.  [↑](#cite_ref-10) Entities will forget most variables when they unload, which is easy to overlook for beginners. Make sure to make use of staticdata.
-11.  [↑](#cite_ref-11) If you don't apply any checks when overwriting player physics, this will very likely lead to very hilarious bugs if 2 mods want to change player physics directly, as they will constantly compete for “their” physics. This will likely screw up the player physics badly. To solve this, you should generally avoid setting player physics directly, unless you want to implement a physics interface yourselves. But for normal use, we highly recommend to use an [Mod\_interoperability#Player\_physics API](/Mod_interoperability#Player_physics_API "Mod interoperability").
-12.  [↑](#cite_ref-12) Note this value is true by default, and can be forgotten easily.
-13.  [↑](#cite_ref-13) Of course, silence is also “appropriate” if that's what you intented.
-14.  [↑](#cite_ref-14) As a rule of thumb, try to match the graphics pixel-perfectly, if it makes sense. Selection boxes that are completely misplaced or just tiny are generally perceived as highly annoying by players.
-15.  [↑](#cite_ref-15) Use a craft guide to check
-16.  [↑](#cite_ref-16) The images just to help identifying the game in the game icon list in the main menu. Without an icon, your game is harder to find. At least draw a dummy image if you're in a hurry.
-17.  [↑](#cite_ref-17) See troubleshooting above.
-18.  [↑](#cite_ref-18) Luanti will use the color of the transparent pixels of the PNG file; check out your manual of your graphics program to learn how to set the color of transparent pixels
-19.  [↑](#cite_ref-19) blank.png is a fully transparent texture that is available by default. No need to create your own transparent texture.
-20.  [↑](#cite_ref-20) It's annoying if 2 very different items share the same icon
-21.  [↑](#cite_ref-21) If you don't understand this, review lua\_api.md
-22.  [↑](#cite_ref-22) There might be possible exceptions, such as names and logos. But generally, all baked-in text should be avoided where possible.
+[^1]: For example, if minetest.after does anything on a player object that you got 5 seconds ago, it's possible the player has left in that time. If you do anything (besides checking for existence) on the player object, you trigger a crash
+[^2]: Variable text, especially translations or user input, can potentially contain the magic characters that formspecs use, so if unescaped, they will break the formspec.
+[^3]: Some game data might be accidentally reset or just not be persisted across restarts. For example, rainy weather might be reset to clear because it was not saved.
+[^4]: Use `minetest.is_singleplayer` to check. Use Lua's `error` function to error out, or just kick all players.
+[^5]: Detached inventories are sent to everyone unless you specify a name in the registration. So other players using a modified/hacked client could theoretically alter any detached inventory without an attached name.
+[^6]: The keyword “`local`” should be your new friend. Everything that does not need to be visible outside should be made local. This will avoid a lot of weird bugs caused by mods overwriting their global variables each other. As a rule of thumb, your mod should only have up to 1 global variable which is also the same name as the mod. Make this a table in which you include all global stuff. You can use [QA-Block](https://forum.luanti.org/viewtopic.php?t=15759) to find suspicious global variables.
+[^7]: See also: [MT-replace-deprecated.sh](/MT-replace-deprecated.sh "MT-replace-deprecated.sh")
+[^8]: See also [Mapgen\_memory\_optimisations](/Mapgen_memory_optimisations "Mapgen memory optimisations")
+[^9]: See also [Mapgen\_memory\_optimisations](/Mapgen_memory_optimisations "Mapgen memory optimisations")
+[^10]: Entities will forget most variables when they unload, which is easy to overlook for beginners. Make sure to make use of staticdata.
+[^11]: If you don't apply any checks when overwriting player physics, this will very likely lead to very hilarious bugs if 2 mods want to change player physics directly, as they will constantly compete for “their” physics. This will likely screw up the player physics badly. To solve this, you should generally avoid setting player physics directly, unless you want to implement a physics interface yourselves. But for normal use, we highly recommend to use an [Mod\_interoperability#Player\_physics API](/Mod_interoperability#Player_physics_API "Mod interoperability").
+[^12]: Note this value is true by default, and can be forgotten easily.
+[^13]: Of course, silence is also “appropriate” if that's what you intented.
+[^14]: As a rule of thumb, try to match the graphics pixel-perfectly, if it makes sense. Selection boxes that are completely misplaced or just tiny are generally perceived as highly annoying by players.
+[^15]: Use a craft guide to check
+[^16]: The images just to help identifying the game in the game icon list in the main menu. Without an icon, your game is harder to find. At least draw a dummy image if you're in a hurry.
+[^17]: See troubleshooting above.
+[^18]: Luanti will use the color of the transparent pixels of the PNG file; check out your manual of your graphics program to learn how to set the color of transparent pixels
+[^19]: blank.png is a fully transparent texture that is available by default. No need to create your own transparent texture.
+[^20]: It's annoying if 2 very different items share the same icon
+[^21]: If you don't understand this, review lua\_api.md
+[^22]: There might be possible exceptions, such as names and logos. But generally, all baked-in text should be avoided where possible.
