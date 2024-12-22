@@ -8,8 +8,6 @@ aliases:
 # Git Guidelines
 This page is mostly directed to core team members with commit or triage access to upstream repositories.
 
-For instructions on basic usage, see [Git](/Git "Git").
-
 For determining who is allowed to do what, see [Organisation](/Organisation "Organisation").
 
 For guidelines about overall pull request quality, see [Merging core pull requests to upstream](/Merging_core_pull_requests_to_upstream "Merging core pull requests to upstream").
