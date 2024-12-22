@@ -25,19 +25,19 @@ If using a client build, server instructions can be given using `minetest --serv
 
 ## Player backend
 
-The database backend is set using the `player_backend` setting in *world.mt*. If it doesn\'t exist, the default is *files*.
+The database backend is set using the `player_backend` setting in *world.mt*. If it doesn't exist, the default is *files*.
 
 If you want to migrate players to a new backend, use `minetestserver --migrate-players <name of new backend> --world <path to your world directory>`. It will automatically update world.mt to reflect the new backend.
 
 ## Authentication backend
 
-The database backend is set using the `auth_backend` setting in *world.mt*. If it doesn\'t exist, the default is *files*.
+The database backend is set using the `auth_backend` setting in *world.mt*. If it doesn't exist, the default is *files*.
 
 If you want to migrate the authentication data to a new backend, use `minetestserver --migrate-auth <name of new backend> --world <path to your world directory>`. It will automatically update world.mt to reflect the new backend.
 
 ## Mod Storage backend
 
-The database backend is set using the `mod_storage_backend` setting in *world.mt*. If it doesn\'t exist, the default is *files*.
+The database backend is set using the `mod_storage_backend` setting in *world.mt*. If it doesn't exist, the default is *files*.
 
 If you want to migrate mod storage to a new backend, use `minetestserver --migrate-mod-storage <name of new backend> --world <path to your world directory>`. It will automatically update world.mt to reflect the new backend.
 
@@ -78,19 +78,19 @@ Information about setting up a Redis server can be found here: <https://redis.io
 
 -   `redis_address`: The IP or hostname of the redis server.
 -   `redis_port`: The port of the redis server. *Optional, default: 6379*
--   `redis_hash`: Hash where the MapBlocks are stored in, if you want multiple worlds in one redis instance this needs to be different for each world. If you don\'t need that you can use e.g. `IGNORED`.
+-   `redis_hash`: Hash where the MapBlocks are stored in, if you want multiple worlds in one redis instance this needs to be different for each world. If you don't need that you can use e.g. `IGNORED`.
 
 ### PostgreSQL
 
-PostgreSQL support was added to Luanti in May 2016, it\'s mainly useful for servers as it allows multiple worlds in a single instance, in multiple databases.
+PostgreSQL support was added to Luanti in May 2016, it's mainly useful for servers as it allows multiple worlds in a single instance, in multiple databases.
 
-PostgreSQL is an excellent alternative to Redis. It doesn\'t store all data in memory, only recent and frequent data is loaded into memory. All data is on disk storage and data storage is very robust. You can also easily interface a website in front of your database to offer a frontend to your users.
+PostgreSQL is an excellent alternative to Redis. It doesn't store all data in memory, only recent and frequent data is loaded into memory. All data is on disk storage and data storage is very robust. You can also easily interface a website in front of your database to offer a frontend to your users.
 
 While we support older versions, it is recommended to use PostgreSQL 9.5 at least for UPSERT functionality.
 
-To improve PostgreSQL\'s performance with Luanti servers, please configure `postgresql.conf` with a minimum `shared_buffer` of 512MB, with a maximum of 50% of your server\'s available RAM.
+To improve PostgreSQL's performance with Luanti servers, please configure `postgresql.conf` with a minimum `shared_buffer` of 512MB, with a maximum of 50% of your server's available RAM.
 
-#### world.mt for PostgreSQL {#world.mt_for_postgresql}
+#### world.mt for PostgreSQL
 
 -   `pgsql_connection`: PostgreSQL connection string for world map \| `host=<db_host> user=<db_user> password=<db_password> dbname=<db_name>`
 -   `pgsql_player_connection`: PostgreSQL connection string for players \| `host=<db_host> user=<db_user> password=<db_password> dbname=<db_name>`
@@ -107,11 +107,11 @@ To use the MariaDB database backend, the MariaDB C++ connector is required which
 
 A dummy database backend, which stores all MapBlocks in RAM without saving them. This means, as soon the server shuts down or you leave in singleplayer, all changes made to the world are lost. When you re-join, the world will be re-generated from scratch.
 
-This backend is used by servers which don\'t need a persistent map, such as Capture the Flag. It can also be useful for development when testing map generation capabilities.
+This backend is used by servers which don't need a persistent map, such as Capture the Flag. It can also be useful for development when testing map generation capabilities.
 
 ### Files
 
-A legacy backend for player and authentification data. Everything is stored in plaintext files. It\'s slow, unreliable and clunky. Use of this backend is discouraged now and it\'s possible this backend will be removed in the future.
+A legacy backend for player and authentification data. Everything is stored in plaintext files. It's slow, unreliable and clunky. Use of this backend is discouraged now and it's possible this backend will be removed in the future.
 
 For mod storage, Files uses the legacy JSON-based storage method as opposed to a regular database system. It is slower and will keep the entire mod storage data in memory.
 
