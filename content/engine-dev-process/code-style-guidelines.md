@@ -20,7 +20,7 @@ Use American English, but avoid idioms that may be difficult to understand by no
 
 In case your function parameters don't fit within the defined line length, use the following style. Indention for continuation lines is **exactly** two tabs.
 
-```
+```cpp
 void some_function_name(type1 param1, type2 param2, type3 param3,
 		type4 param4, type5 param5, type6 param6, type7 param7)
 {
@@ -31,7 +31,7 @@ void some_function_name(type1 param1, type2 param2, type3 param3,
 
 Sometimes with complex function declarations, it might be messy to define as many parameters as possible on the same line. This is acceptable too (and currently used in some places):
 
-```
+```cpp
 void some_function_name(
 		const ReallyBigLongTypeName &param1,
 		ReallyBigLongTypeName *param2,
@@ -53,7 +53,7 @@ No more than 7 parameters allowed (except for constructors).
 * Try to stay under 6 levels of indentation.
 * Add spaces between operators so they line up when appropriate (don't go overboard). For example:
 
-```
+```cpp
 np_terrain_base   = settings->getNoiseParams("mgv6_np_terrain_base");
 np_terrain_higher = settings->getNoiseParams("mgv6_np_terrain_higher");
 np_steepness      = settings->getNoiseParams("mgv6_np_steepness");
@@ -73,7 +73,7 @@ The above code looks really nice.
 * Use a space after `if`, `else`, `for`, `do`, `while`, `switch`, `case`, `try`, `catch`, etc.
 * When breaking conditionals, indent following lines of the conditional with two tabs and the statement body with one tab. For example:
 
-```
+```cpp
 for (std::vector<std::string>::iterator it = strings.begin();
 		it != strings.end();
 		++it) {
@@ -84,7 +84,7 @@ for (std::vector<std::string>::iterator it = strings.begin();
 
 * Align backslashes for multi-line macros with spaces:
 
-```
+```cpp
 #define FOOBAR(x) do {    \
 	int __temp = (x); \
 	foo(__temp);      \
@@ -102,7 +102,7 @@ This rule has already been explicitly stated in the [Linux kernel code style](ht
 
 Example:
 
-```
+```cpp
 if (foobar < 3) foobar = 45;      // Bad
 (foobar < 3 && (foobar = 45));    // Bad
 ```
@@ -112,7 +112,7 @@ Violating this rule will result in **instant rejection**.
 
 Examples of good if statement wordings:
 
-```
+```cpp
 if (foobar < 3)
 	foobar = 45;
 
@@ -127,7 +127,7 @@ if (foobar < 6) {
 
 Special exception to the standard bracing/indent rules for nested loops: If a nested loop iterates over a set of coordinates, it is permitted to omit the braces for all but the innermost loop and keep the outer loops at the same indentation level, like so:
 
-```
+```cpp
 for (s16 z = pmin.Z; z <= pmax.Z, z++)
 for (s16 y = pmin.Y; y <= pmax.Y; y++)
 for (s16 x = pmin.X; x <= pmax.X; x++) {
@@ -168,11 +168,10 @@ for (s16 x = pmin.X; x <= pmax.X; x++) {
 * Class definitions should go in header files.
 * Substantial methods (over 4 lines) should be defined outside of the class definition.
 * Functions not part of any class should use `lowercase_underscore_style()`.
-
 * Doxygen comments are acceptable, but **please** put them in the header file.
 * Don't make uninformative comments like this:
 
-```
+```cpp
 // Draw "Loading" screen
 draw_load_screen(L"Loading...", driver, font);
 ```
@@ -181,7 +180,7 @@ draw_load_screen(L"Loading...", driver, font);
 * Add comments to explain a non-trivial but important detail about the code, or explain behavior that is not obvious.
 * For comments with text, be sure to add a space between the text and the comment tokens:
 
-```
+```cpp
 DoThingHere();  // This does thing    <--- yes!
 DoThingHere();  /* This does thing */ <--- yes!
 
@@ -208,7 +207,7 @@ DoThingHere();//This does thing        <--- no!
 * Files should have includes for everything that they depend on. Don't depend on, eg, `"util/numeric.h"` including `<string>`!
 * Uniqueness when compiling headers is ensured by using `#pragma once`. ([Accepted by all coredevs](https://github.com/minetest/minetest/issues/6259))
 
-```
+```cpp
 #pragma once
 
 #include <string>
