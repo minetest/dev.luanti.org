@@ -44,7 +44,7 @@ Replace “`<message>`” with the actual message. You will get a message in the
 * player <message>
 ```
 
-Example: Assume you want to say that you think that Luanti is awesome, in the third person. If you enter “`/me thinks Luanti is awesome.`”, you get:
+Example: Assume you want to say that you think that Luanti is awesome, in the third person. If you enter `/me thinks Luanti is awesome.`, you get:
 
 ```txt
 * Alberto thinks Luanti is awesome.
@@ -54,15 +54,15 @@ Example: Assume you want to say that you think that Luanti is awesome, in the th
 
 A direct message is a chat message which appears only on the chat logs of the sender and a chosen receiver of the message.
 
-You can send a direct message (DM) to someone by using the “`/msg`” [server command](/server-commands/). Say something in the form of:
+You can send a direct message (DM) to someone by using the `/msg` [server command](/server-commands/). Say something in the form of:
 
 ```txt
 /msg <player> <message>
 ```
 
-Replace “`<message>`” by your actual message and “`<player>`” by the name of the player you want to send the message to. The message won’t be publicly visible in the chatlog and only appears to you and the other player. Be aware that direct messages are not _really_ secret, some people could still, in principle, intercept them.
+Replace `<message>` by your actual message and `<player>` by the name of the player you want to send the message to. The message won’t be publicly visible in the chatlog and only appears to you and the other player. Be aware that direct messages are not _really_ secret, some people could still, in principle, intercept them.
 
-Example: If your name is “Alberto” and you entered “`/msg Presto I want to show you my hidden chest.`”, then this will appear in the chat log of Presto:
+Example: If your name is “Alberto” and you entered `/msg Presto I want to show you my hidden chest.`, then this will appear in the chat log of Presto:
 
 ```txt
 DM from Alberto: I want to show you my hidden chest.
@@ -72,7 +72,7 @@ DM from Alberto: I want to show you my hidden chest.
 
 The chat log’s primary function is to log and show the chat messages in the order of appearance. The latest message appears at the lowest line.
 
-You see the chatlog on the [HUD](/hud/) at the upper left part of the screen and in the console. You need to have the HUD enabled or the console opened in order to see the chat log. You can toggle the HUD on and off with F1 (default key binding). The chatlog you see on the HUD is somewhat short and only shows the messages for a limited time. Use the console for a full scrollable chatlog.
+You see the chat log on the [HUD](/hud/) at the upper left part of the screen and in the console. You need to have the HUD enabled or the console opened in order to see the chat log. You can toggle the HUD on and off with F1 (default key binding). The chatlog you see on the HUD is somewhat short and only shows the messages for a limited time. Use the console for a full scrollable chat log.
 
 These are the following types of messages which can appear in the chat log:
 
@@ -100,11 +100,7 @@ DM from player: message
 ```
 
 ### Server messages
-Server messages are messages that are sent from the server, not from a player. The format is:
-
-```txt
-Server -!- message
-```
+Server messages are messages that are sent from the server, not from a player. The format can vary as mods can send any messages into the chat, but generally does not follow the format of regular chat messages from players.
 
 Server messages may be sent to one, some or to all connected players. It depends on the event. You receive server messages on various events. For example as a response to a server command (message to you) or when the server is about to shut down (message to all) etc.
 
@@ -112,7 +108,7 @@ Server messages may be sent to one, some or to all connected players. It depends
 System messages are messages which directly come from the Luanti program which runs on your machine. An example for a system message is:
 
 ```txt
-issued command: /privs
+Issued command: /privs
 ```
 
 This message appears right after you issued the `/privs` command.
