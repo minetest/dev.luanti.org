@@ -241,8 +241,7 @@ Note that these are only _guidelines_ for more readable code. In some (rare) cas
 * You may use exponential notation for numbers with many trailing or leading zeroes:
   `1e3`, `1e-3` instead of `1000`, `0.001`.
 * You may use hexadecimal notation when bit representation matters
-  (such as for ARGB8 hex values). Capitalize the hex digits:
-  `0xFFEEDDCC`.
+  (such as for ARGB8 hex values).
 * Prefer `^` over `math.pow`.
 * Prefer `math.sqrt(x)` over `x ^ 0.5`. [^sqrt]
 * Do not rely on string-to-number coercion done by arithmetic operations.
