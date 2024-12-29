@@ -70,10 +70,5 @@ It will print out a list of libraries it has copied to the binary folder once fi
 ### Something about packages being untrusted or corrupted?
 If you have an existing MSYS2 install that has been dormant for a while without updates, you might run into issues trying to install or update packages as the keyring is outdated. See [this section](https://www.msys2.org/docs/updating/#potential-issues) on the MSYS2 website on how to solve this.
 
-### Building 32-bit
-If you want to build a 32-bit version of Luanti you would want to use the CLANG32 environment (light orange background).
-
-When installing dependencies, use the `mingw-w64-clang-i686-` prefix used for CLANG32 packages instead of `mingw-w64-clang-x86_64-`.
-
 ### Graphics is broken in a VM
 If you're doing this inside of a VM and you want to test the executable but get graphics issues due to a lack of hardware acceleration, you can try downloading the Mesa software renderer as a DLL. [Download the 64-bit version of the DLL here](https://fdossena.com/?p=mesa/index.frag) and put it next to the executable in `bin/`. It will be slow but should be usable for testing.
