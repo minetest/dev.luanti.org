@@ -42,7 +42,7 @@ Some further optional dependencies for the server:
 ## Build LuaJIT from source
 It is recommended to build LuaJIT from source, as the version found in repositories of Debian-based distributions can be quite old.
 
-```
+```bash
 git clone https://github.com/LuaJIT/LuaJIT luajit
 cd luajit
 make amalg
@@ -53,7 +53,7 @@ make amalg
 ## Download
 Clone Luanti with Git. `-b stable-5` will checkout the latest stable version to build, which may be recommended to run a server for stability reasons over the latest development version. Omitting this will clone the latest development version instead.
 
-```
+```bash
 git clone -b stable-5 --depth 1 https://github.com/minetest/minetest.git
 cd minetest
 ```
