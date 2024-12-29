@@ -220,7 +220,7 @@ Minetest Game uses pre-1.8 Minecraft skins (64x32). These support regular body t
 
 If you play Minetest Game, you can build a [bed](https://wiki.luanti.org/Bed "Bed") and sleep at night. On your next life, you will spawn on the bed.
 
-Otherwise, you set your spawn point for _all_ worlds using `static_spawnpoint = (x,y,z)` in your `minetest.conf` file.
+Otherwise, you set your spawn point for _all_ worlds using `static_spawnpoint = (x,y,z)` in your [`minetest.conf`](https://github.com/minetest/minetest/blob/master/minetest.conf.example) file.
 
 ### How do I make the world flat?
 
