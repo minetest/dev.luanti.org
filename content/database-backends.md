@@ -5,7 +5,7 @@ aliases:
 ---
 
 # Database backends
-Luanti uses a database system for certain world data where the backend that stores the data can be switched out depending on the use cases needed. This page lists all databases used and the backends that can be used with them.
+Luanti uses a database system for certain world data where the backend that stores the data can be switched out depending on the use cases needed. This page lists all databases and the backends that can be used with them.
 
 ## Databases
 
