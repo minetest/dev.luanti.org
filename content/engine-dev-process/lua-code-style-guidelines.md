@@ -260,7 +260,7 @@ See [this LuaJIT issue](https://github.com/LuaJIT/LuaJIT/issues/684) for details
   (An exception is made for `string.char`, which does not take a string as its first argument.)
 * Use `s == ""` to check whether a string is empty.
 * Use `#s` (instead of `s:len()`) to get the length of a string.
-* Prefer pattern matching over manual string manipulation.
+* Prefer pattern matching over manual string manipulation if it is simpler.
 * You may rely on `"number: " .. num`, as well as `table.concat({"number: ", num})`,
   converting a number `num` to a string, but explicit format strings or explicit application of `tostring` are often preferable.
 * You must not rely on number-to-string coercion done by `string` functions except for backward compatibility reasons.
