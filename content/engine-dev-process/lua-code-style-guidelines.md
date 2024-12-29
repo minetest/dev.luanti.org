@@ -350,6 +350,7 @@ See [this LuaJIT issue](https://github.com/LuaJIT/LuaJIT/issues/684) for details
     local my = {}
     function my.func(...) ... end
     ```
+
 * Function calls:
   * Use `obj:method(...)` syntactic sugar to call "instance methods".
   * Do not use `f"..."`, `f'...'`, `f[[...]]` or `f{...}` syntactic sugar.
