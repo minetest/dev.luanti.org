@@ -7,7 +7,8 @@ aliases:
 
 # Lua code style guidelines
 
-This is largely based on [the Python style guide](https://www.python.org/dev/peps/pep-0008) except for some indentation and language syntax differences. When in doubt, consult that guide.
+This is largely inspired by [the Python style guide](https://www.python.org/dev/peps/pep-0008) except for some indentation and
+language differences. When in doubt, consult that guide (if applicable).
 
 Note that these are only _guidelines_ for more readable code. In some (rare) cases they may result in _less_ readable code. Use your best judgement.
 
@@ -237,7 +238,7 @@ Note that these are only _guidelines_ for more readable code. In some (rare) cas
   (All numbers are doubles under the hood anyways,
   and doubles represent integers from `-2^53` to `2^53` exactly.)
 * Do not start numbers with just the decimal point. Write `0.5` instead of `.5`.
-* Use exponential notation for numbers with many trailing or leading zeroes:
+* You may use exponential notation for numbers with many trailing or leading zeroes:
   `1e3`, `1e-3` instead of `1000`, `0.001`.
 * You may use hexadecimal notation when bit representation matters
   (such as for ARGB8 hex values). Capitalize the hex digits:
