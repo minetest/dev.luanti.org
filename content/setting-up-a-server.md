@@ -82,19 +82,27 @@ If they are unwilling to do this, or require you to upgrade to a business plan t
 ## Obtaining a server binary
 
 ### Linux
-*Note: If you are going to be running a Luanti server on a non-headless system, using the regular `luanti` binary with the `--server` argument works the same as `luantiserver`. If you are on a headless Linux system without a graphical environment `luantiserver` is recommended as it is smaller and does not have extra dependencies that are unnecessary for a server.*
 
-Usually your Linux distribution of choice will have `luantiserver` in its official repositories. However this package may be several releases outdated, so obtaining a server binary through other means is to be recommended. [This repository by ROllerozxa](https://github.com/rollerozxa/luantiserver) contains up-to-date prebuilt headless server binaries that should work on any relatively recent Linux distro you would run your server on, built from an automated CI workflow that you can fork if you want to customise the build optioms.
+{{< notice info >}}
+If you are going to be running a Luanti server on a non-headless system, using the regular `luanti` binary with the `--server` argument works the same as `luantiserver`. If you are on a headless Linux system without a graphical environment `luantiserver` is recommended as it is smaller and does not have extra dependencies that are unnecessary for a server.
+{{< /notice >}}
 
-You may also choose to build from source manually, in which case you should specify `-DRUN_IN_PLACE=TRUE -DBUILD_CLIENT=FALSE -DBUILD_SERVER=TRUE` which will build a luantiserver binary running in place. When built, you can move `bin/` and `builtin/` to a new folder, or if you're building on a separate machine from the server, transfer them onto the server. See the README.md file for more information about compiling Luanti from source.
+Usually your Linux distribution of choice will have `luantiserver` in its official repositories. However this package may be several releases outdated, so obtaining a server binary through other means is to be recommended.
 
-There also exist ready made Docker images for luantiserver, such as [the Dockerfile in the Luanti source tree](https://github.com/minetest/minetest/blob/master/Dockerfile) or [Warr1024's Docker image](https://hub.docker.com/r/warr1024/minetestserver).
+- **Pre-built third-party server binaries**: [This repository by ROllerozxa](https://github.com/rollerozxa/luantiserver) contains up-to-date prebuilt x86_64 headless server binaries that should work on any relatively recent glibc-based Linux distro, built from an automated CI workflow that you can fork if you want to customise the build optioms.
+
+- **Building from source**: Build Luanti from source with `-DBUILD_CLIENT=0 -DBUILD_SERVER=1`. For more information see [Compiling a headless Linux server](/compiling-a-headless-linux-server/).
+
+- **Docker**: There also exist ready made Docker images for `luantiserver`, such as [the Dockerfile in the Luanti source tree](https://github.com/minetest/minetest/blob/master/Dockerfile) or [Warr1024's Docker image](https://hub.docker.com/r/warr1024/minetestserver).
 
 ### Windows
 The regular Windows builds provided on the download page work fine, running it as `luanti.exe --server` to access the server portion of it.
 
 ## Running the Server
-As of 5.8.0, Luanti no longer ships with a default game meaning you will have to provide your own game to use with the server. You can browse the games on [ContentDB](https://content.luanti.org/packages/?type=game) and download one to put in the games/ folder for your server.
+
+{{< notice warning >}}
+As of 5.8.0, Luanti no longer ships with a default game meaning you will have to provide your own game to use with the server. You can browse the games on [ContentDB](https://content.luanti.org/packages/?type=game) and download one to put in the `games/` folder for your server.
+{{< /notice >}}
 
 ### Linux
 1. Open a terminal.
