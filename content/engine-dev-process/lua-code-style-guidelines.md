@@ -255,7 +255,8 @@ See [this LuaJIT issue](https://github.com/LuaJIT/LuaJIT/issues/684) for details
   You may use long strings (`[[...]]`) to save even more escapes
   or if you need multiline strings.
 * Use "method"-style to call `string.*` functions: `s:find("luanti")` instead of `string.find(s, "luanti")`.
-  (An exception is made for `string.char`, which does not take a string as its first argument.)
+  (Exceptions are made for `string.char`, which does not take a string as its first argument,
+  and for `string.format`, where the first argument is typically a string literal.)
 * Use `s == ""` to check whether a string is empty.
 * Use `#s` (instead of `s:len()`) to get the length of a string.
 * Prefer pattern matching over manual string manipulation if it is simpler.
