@@ -444,7 +444,7 @@ See [this LuaJIT issue](https://github.com/LuaJIT/LuaJIT/issues/684) for details
   ```
 
 
-* Don't use unnecessary parenthesis unless they improve readability a lot.
+* Don't use unnecessary parentheses unless they improve readability a lot.
 
   ```lua
   if y then bar() end -- Good
