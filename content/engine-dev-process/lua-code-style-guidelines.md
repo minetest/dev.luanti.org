@@ -244,7 +244,7 @@ Note that these are only _guidelines_ for more readable code. In some (rare) cas
   (such as for ARGB8 hex values).
 * Prefer `^` over `math.pow`.
 * Prefer `math.sqrt(x)` over `x ^ 0.5`. [^sqrt]
-* Do not rely on string-to-number coercion done by arithmetic operations.
+* Do not rely on string-to-number coercion done by arithmetic operations or `math` functions.
   If you're doing `x + 1` where `x` is a string, write `tonumber(x) + 1` instead to explicitly do the conversion.
 
 [^sqrt]: The two differ very slightly in behavior, leading to `math.sqrt` being an order of magnitude faster on LuaJIT.
@@ -263,6 +263,7 @@ See [this LuaJIT issue](https://github.com/LuaJIT/LuaJIT/issues/684) for details
 * Prefer pattern matching over manual string manipulation.
 * You may rely on `"number: " .. num`, as well as `table.concat({"number: ", num})`,
   converting a number `num` to a string, but explicit format strings or explicit application of `tostring` are often preferable.
+* You must not rely on number-to-string coercion done by `string` functions except for backward compatibility reasons.
 * When building long strings (for example formspecs), prefer `table.concat` over string concatenation:
 
   Bad:
