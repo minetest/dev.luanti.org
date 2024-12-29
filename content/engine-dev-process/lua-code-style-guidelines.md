@@ -190,15 +190,13 @@ Note that these are only _guidelines_ for more readable code. In some (rare) cas
   Good:
 
   ```lua
-  local num = 2 * (3 / 4)
+  local num = 2 * (3 / 4) + 1
   foo({bar=true})
   foo({bar = true})
   local def = {
     foo = true,
     bar = false,
   }
-  i = i + 1
-  table.insert(sometable, v)
   ```
 
   Bad:
