@@ -295,7 +295,7 @@ See [this LuaJIT issue](https://github.com/LuaJIT/LuaJIT/issues/684) for details
 ## Tables
 
 * **Small tables may be placed on one line.**
-  Large tables have one entry per line, with the opening and closing braces on lines without items; and with a comma after the last item.
+  Large tables have one entry per line, with the opening and closing braces on lines without items, and with a comma after the last item.
 
   Good:
 
@@ -330,8 +330,8 @@ See [this LuaJIT issue](https://github.com/LuaJIT/LuaJIT/issues/684) for details
   ```
 
 * Do not mix list-style tables and "dict"-style tables.
-  Use `ipairs` to iterate list-style tables, use `pairs` to iterate "dict"-style tables.
-  Avoid list-like tables with "holes" (for example `{1, nil, 3}`).
+* Use `ipairs` to iterate list-style tables, use `pairs` to iterate "dict"-style tables.
+* Avoid list-like tables with "holes" (for example `{1, nil, 3}`).
 * Use `table.insert` to append items to list-style tables and `table.remove` to remove items from list-style tables.
 * Use syntactic sugar. Write `{name = value}` instead of `{["name"] = value}`. Write `t.name` instead of `t["name"]`.
 * Do not use semicolons to separate table entries.
