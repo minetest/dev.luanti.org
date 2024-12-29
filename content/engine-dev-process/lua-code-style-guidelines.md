@@ -355,25 +355,6 @@ See [this LuaJIT issue](https://github.com/LuaJIT/LuaJIT/issues/684) for details
   * Use `obj:method(...)` syntactic sugar to call "instance methods".
   * Do not use `f"..."`, `f'...'`, `f[[...]]` or `f{...}` syntactic sugar.
 * Prefer returning nothing (default when a function has no return statement) over returning `nil`.
-* `if`-`elseif`-`else` control flow may be redundant with early `return`s:
-  
-  ```lua
-  function f(s)
-    if s == "a" then return 1 end
-    if s == "b" then return 2 end
-    return 3
-  end
-  ```
-
-  can also be written as
-
-  ```lua
-  function f(s)
-    if s == "a" then return 1
-    elseif s == "b" then return 2
-    else return 3 end
-  end
-  ```
 
 ## Naming
 
