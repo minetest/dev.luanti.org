@@ -252,8 +252,7 @@ See [this LuaJIT issue](https://github.com/LuaJIT/LuaJIT/issues/684) for details
 
 * Use double-quoted strings (`"..."`) by default.
 	You may use single-quoted strings (`'...'`) to save some escapes.
-	You may use long strings (`[[...]]`) to save even more escapes
-	or if you need multiline strings.
+	You may use long strings (`[[...]]`) if you need multiline strings.
 * Use "method"-style to call `string.*` functions: `s:find("luanti")` instead of `string.find(s, "luanti")`.
 	(Exceptions are made for `string.char`, which does not take a string as its first argument,
 	and for `string.format`, where the first argument is typically a string literal.)
