@@ -61,7 +61,7 @@
     // If JavaScript is enabled, add a close button and track the state in session storage (not saved across sessions)
     const site_notice = document.getElementById("site-notice");
 
-    if (sessionStorage.getItem("notice-closed") == "true") {
+    if (localStorage.getItem("notice-closed") == "true") {
         site_notice.remove();
     } else {
         const notice_close = document.createElement("div");
@@ -70,7 +70,7 @@
 
         notice_close.addEventListener("click", (e) => {
             e.currentTarget.parentElement.remove();
-            sessionStorage.setItem("notice-closed", "true");
+            localStorage.setItem("notice-closed", "true");
         })
 
         site_notice.appendChild(notice_close);
