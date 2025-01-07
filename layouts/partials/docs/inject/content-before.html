@@ -50,7 +50,7 @@
 </style>
 
 <div id="site-notice">
-    <h3>NOTICE</h3>
+    <h3>Notice</h3>
     <p>
         {{ $about := .Site.GetPage "/about-this-site" }}
         This site is a <strong>work in progress</strong> under active development! Content and URLs may change quickly without notice. Refer to <a href="{{ $about.Permalink }}">the About page</a> for information on the mission statement, roadmap, and how to contribute.
@@ -58,7 +58,7 @@
 </div>
 
 <script>
-    // If JavaScript is enabled, add a close button and track the state in session storage (not saved across sessions)
+    // If JavaScript is enabled, add a close button and track the state in local storage
     const site_notice = document.getElementById("site-notice");
 
     if (localStorage.getItem("notice-closed") == "true") {
