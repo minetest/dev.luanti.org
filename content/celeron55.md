@@ -40,7 +40,7 @@ Other Work
 * [Jukumagic](http://code.google.com/p/jukumagic/) (no longer online)
 * [dcdrive2](http://c55.me/blog/?p=811) (no longer online)
 
-Weblinks
+Web links
 --------
 
 * [Open source game developer Perttu Ahola talks about Minetest with Wikinews](https://en.wikinews.org/wiki/Open_source_game_developer_Perttu_Ahola_talks_about_Minetest_with_Wikinews) - An Interview (when Luanti was still called “Minetest”)

@@ -8,6 +8,8 @@ aliases:
 
 This page contains information for German translators.
 
+<!-- cspell:disable -->
+
 ## Wiederkehrende Übersetzungen
 
 Hier gibt es eine Sammlung von Luanti-spezifischen Vokabeln, die der Konsistenz zuliebe immer gleich übersetzt werden sollten. Wenn ein besonderer Ausdruck auftauchen sollte, der hier noch nicht aufgeführt wurde, bitte an den bestehenden Übersetzungen orientieren und hier einfügen.

@@ -774,10 +774,10 @@ Released on 30 Jan 2022.
 * Add minetest.colorspec\_to\_colorstring (_v-rob_)
 * Put torch/signlike node on floor if paramtype2=="none" (_Wuzzy_)
 * Return ObjectRef from minetest.spawn\_falling\_node() (_benrob0329_)
-* Modifyable player fall damage via armor group (_Wuzzy_)
+* Modifiable player fall damage via armor group (_Wuzzy_)
 * Add vector.to\_string and vector.from\_string (#10323) (_DS_)
 * Add math.round and fix vector.round (_v-rob_)
-* Degrotate support for mesh nodes (_numberZero_) + fixes (_sfan5_, _Wuzzy_)
+* Deg-rotate support for mesh nodes (_numberZero_) + fixes (_sfan5_, _Wuzzy_)
 * lua\_api.txt: Fix style selector examples (_Df458_)
 * Nested Settings are now also contained in to\_table (_SmallJoker_)
 
@@ -810,7 +810,7 @@ Released on 30 Jan 2022.
 * Fix base64 validation and add unittests (_appgurueu_)
 * Fix cloud fog being broken for high clouds (_Wuzzy_)
 * Attachments: various bugfixes (_SmallJoker_)
-* Rendering engine fxes and cleanups (_nerzhul_)
+* Rendering engine fixes and cleanups (_nerzhul_)
 * Multiple OpenGL ES fixes (_sfan5_)
 * Make edit boxes respond to string input (IME) (_yw05_)
 * cURL timeout fixes and increased default timeout (_sfan5_)
@@ -995,7 +995,7 @@ noise_params = {
 * Fix dropped craftitems/tools not using light\_source values (_LoneWolfHT_)
 * Fix when on\_player\_hpchange is called (_SmallJoker_)
 * Use JSON for favorites list, fixing many bugs (_rubenwardy_)
-* Fix hypertext and textarea elementing consuming scroll events (_v-rob_)
+* Fix hypertext and textarea elements consuming scroll events (_v-rob_)
 * Fix ESC in error dialog from closing Minetest (_Yaman Qalieh_)
 * Remove null bytes from TOCLIENT\_BLOCKDATA (_luk3yx_)
 * Load system-wide texture packs too (_Zughy_)
@@ -1053,7 +1053,7 @@ noise_params = {
 * Sanitize world directory names on create. Keep original name separate (_Hugues Ross_)
 * Improve bad/missing default inventory+wield images of node drawtypes, affecting: airlike, signlike, torchlike, raillike, plantlike, plantlike\_rooted, firelike, flowingliquid (_Wuzzy_)
 * Android: Fix ConfirmRegistration and PasswordChange input and scale size (_Maksim_)
-* Formspecs: volume and key settings windows can now be closed by doubleclicking/tapping (_Zughy_)
+* Formspecs: volume and key settings windows can now be closed by double-clicking or double-tapping (_Zughy_)
 
 ### Minetest Game
 
@@ -1097,7 +1097,7 @@ Released on 9 July 2020.
 * No grey screen when C++ errors are thrown by Lua (_pauloue_)
 * Android: add OpenGL ES 2 support (_MoNTE48_)
 * Reuse object\_shader for "wielditem" and "item" entities (_dcbrwn_)
-* Shaders: Fix OpenGL < 4.3 compatiblity (_SmallJoker_)
+* Shaders: Fix OpenGL < 4.3 compatibility (_SmallJoker_)
 * Formspec: properly display altered inventory lists (_DS_)
 * Android: Various input-related fixes (_MoNTE48_)
 * Android: Android Studio support, improve everything (_MoNTE48_)
@@ -1261,7 +1261,7 @@ Released on 5 April 2020.
 ### Misc / Build
 
 * Don't install fonts on ENABLE\_CLIENT=0 configurations (_sfan5_)
-* Fix memleaks in formspecs (_SmallJoker_)
+* Fix memory leaks in formspecs (_SmallJoker_)
 * Android: build fixes & compat fixes (_MoNTE48_, _nerzhul_)
 * Run luacheck in travis, add luacheck (_rubenwardy_)
 * Android: fix cyrillic characters (_Maksim_)
@@ -1540,7 +1540,7 @@ Note that a function being _deprecated_ means that it still exists, but it may g
 * Automatic jumping (_bendeutsch_)
 * Add pitch move mode, toggle with L key
 * Android: Rewritten controls. Add joystick and modify up on-screen buttons (_srifqi_)
-* More keys are changable in settings menu
+* More keys are changeable in settings menu
 * Make direct item selection keys freely bindable via minetest.conf (_Wuzzy_)
 
 #### World / server
@@ -1599,7 +1599,7 @@ Note that a function being _deprecated_ means that it still exists, but it may g
 * Add core.remove\_detached\_inventory (_SmallJoker_)
 * Add disable\_repair group to prevent tool repair (_Wuzzy_)
 * clear\_craft: Return false if recipe not found, don't throw error (_paramat_)
-* Fix string.split returning an empty table if string starts with sepearator (_pyrollo_)
+* Fix string.split returning an empty table if string starts with separator (_pyrollo_)
 
 #### Formspecs / HUD
 
@@ -1619,7 +1619,7 @@ Note that a function being _deprecated_ means that it still exists, but it may g
 
 ##### User interface
 
-* Add clientside translations. (_Ekdohibs_)
+* Add client-side translations. (_Ekdohibs_)
 * Add formspec theming using prepended strings (_rubenwardy_)
 * Zoom: Set zoom FOV per-player using a player object property (_paramat_)
 * Zoom: Move enabling zoom to a new player object property (_paramat_)
@@ -1646,7 +1646,7 @@ Note that a function being _deprecated_ means that it still exists, but it may g
 * ObjectRef: Add add\_velocity() (_HybridDog_)
 * Allow damage for attached objects, add attach/detach callbacks (_SmallJoker_)
 * Optional alpha channel support for entities (_stujones11_)
-* Add static\_save property to luaentites to not save them statically. (_orwell96_)
+* Add static\_save property to luaentities to not save them statically. (_orwell96_)
 * Object properties: Add 'glow', disables light's effect if negative (_basicer_)
 * core.get\_objects\_inside\_radius: Omit removed objects (_HybridDog_)
 * Make entity selection and collision boxes independently settable (_stujones11_)
@@ -1654,7 +1654,7 @@ Note that a function being _deprecated_ means that it still exists, but it may g
 
 ##### Players
 
-* Customizeable max health and max breath for players (not persisted between server restarts) (_SmallJoker_)
+* Customizable max health and max breath for players (not persisted between server restarts) (_SmallJoker_)
 * Add reasons to on\_dieplayer and on\_hpchange (_rubenwardy_)
 * Add minetest.is\_player (_HybridDog_)
 * Add on\_grant and on\_revoke callbacks (_rubenwardy_)
@@ -1725,12 +1725,12 @@ Note that a function being _deprecated_ means that it still exists, but it may g
 #### Client-side
 
 * Add flavour limits controlled by server (_nerzhul_)
-* Disallow exploitable clientside mod functions by default (_paramat_)
+* Disallow exploitable client-side mod functions by default (_paramat_)
 * Rename CSM flavours to restrictions (_SmallJoker_)
 * Remove screenshot API (_red-001_)
 * Don't Load the package library (_red-001_)
 * Remove \`on\_connect\` callback (_red-001_)
-* Add functions to create particles and particlespawners. (_red-001_)
+* Add functions to create particles and particle spawners. (_red-001_)
 * Don't load the IO library. (_red-001_)
 * Add a way to get current locale from CSM (_lisacvuk_)
 * Add callback on open inventory (_Dumbledor_)
@@ -1815,7 +1815,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 * Smooth lighting: Fix light leaking through edge-connected corners (_DTA7_)
 * Darkness detection: Reduce chance of false positives darkening the skybox (_lhofhansl_)
 * Fix sky objects not rendering with OpenGL ES (_stujones11_)
-* Night clouds: Boost brightness for a moonlit appearence (_paramat_)
+* Night clouds: Boost brightness for a moonlit appearance (_paramat_)
 * Night sky: Fix brightness threshold for applying night colours (_paramat_)
 
 #### User interface
@@ -1868,7 +1868,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 
 * Use server's zoom fov for distant world loading. (_lhofhansl_)
 * Fix ipv6\_server=true not accepting IPv4 connections on Windows (_sfan5_)
-* Fix narrow/utf8 difference in incoming/outcoming messages (_numberZero_)
+* Fix narrow/utf8 difference in incoming/outgoing messages (_numberZero_)
 * Fix day\_night\_ratio\_do\_override not being initialised server-side (_rubenwardy_)
 * Fix attached particle spawners far from spawn (_raymoo_)
 * Server: affect bind\_addr on constructor instead of start() (_nerzhul_)
@@ -1929,7 +1929,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 * Don't try to craft a non-existent item (_Esteban_)
 * Fix rotated node placement (_tenplus1_)
 * Item drop: Tune to land exactly 2 nodes away with level view (_paramat_)
-* Check item\_drop amount clientside (_rubenwardy_)
+* Check item\_drop amount client-side (_rubenwardy_)
 * Fix Android node selection distance (_juhdanad_)
 * Safe digging and placing (_bendeutsch_)
 * Fix for empty key/value when reading item string with wear but no metadata (_Jesse McDonald_)
@@ -1976,7 +1976,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 * Fix naming conventions of noise userdata (_rubenwardy_)
 * Fix rounding error in g/set\_node caused by truncation to float (_rubenwardy_)
 * Vector fun
-* CAO footstep sounds: Reduce gain to balance volume (_paramat_)aramat_)_
+* CAO footstep sounds: Reduce gain to balance volume (_paramat_)
 * Fix default item callbacks to work with nil users (_raymoo_)
 * on\_death: Fix callback number of pushed arguments (_SmallJoker_)
 * Fix core.wrap\_text and make its behaviour consistent with the docs (_sfan5_)
@@ -1988,7 +1988,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 
 #### Debug
 
-* Fix missing logs from warningstream (or similar) (_HybridDog_)
+* Fix missing logs from warning stream (or similar) (_HybridDog_)
 * Fix off-by-one in log output line length (_pgimeno_)
 * Profiler: Fix var args not being passed to callback register function (_rubenwardy_)
 

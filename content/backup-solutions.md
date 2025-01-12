@@ -25,6 +25,7 @@ You should use `VACUUM INTO` with the `sqlite3` CLI if you want to create live b
 
 This is an example of a Bash script that can be used to copy the world files of `world` and make backups of the SQLite databases to a new backup directory `.BACKUP` next to the world's directory, which could subsequently be compressed and versioned by timestamp:
 
+<!-- cspell:disable -->
 ```bash
 #!/bin/bash
 
@@ -39,6 +40,7 @@ done
 
 cp world/*.txt world/world.mt "${bakdir}/"
 ```
+<!-- cspell:enable -->
 
 If you have mods that write more text files to the world folder rather than using mod storage you would add it to the list of files to copy in the final line.
 
@@ -48,7 +50,7 @@ If you just want to back up a singleplayer world then it is relatively easy to m
 ## Mod backups
 When you enable mods to a world, a list of enabled mods will be written to `world.mt` in the world's folder. Luanti now throws an error if mods that are supposed to be enabled aren't available, so if you have a world with a few amount of mods you need to restore then you can simply take this list of missing mods and install them from the main menu content browser.
 
-For more elaborate modsets or for servers where you would want to keep track of specific versions of mods to use for a world, then versioning your mods using Git would be useful. You can add repositories inside another Git repository using [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) which will also pin it to a particular commit in the upstream repository. You can keep track of upstream activity manually, or use Dependabot for GitHub which can automatically create pull requests (configurable) when new commits in submodules are detected.
+For more elaborate mod sets or for servers where you would want to keep track of specific versions of mods to use for a world, then versioning your mods using Git would be useful. You can add repositories inside another Git repository using [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) which will also pin it to a particular commit in the upstream repository. You can keep track of upstream activity manually, or use Dependabot for GitHub which can automatically create pull requests (configurable) when new commits in submodules are detected.
 
 ## Other user data
 Luanti saves some other data to the user folder that may be desired to be backed up.

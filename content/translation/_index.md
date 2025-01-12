@@ -63,13 +63,13 @@ There are two types of translations that need maintenance: Client-side (using Ge
 
 To create a new translation, one must create a directory named after the [language code](http://www.mathguide.de/info/tools/languagecode.html), creating a copy of the `po/minetest.pot` file as `po/_LANG_/minetest.po`, and translating the original english text into your language; then `cmake` will detect it and `make` builds the language.
 
-However, it is recomended to contact a core dev to create the .po file for you language and then use [weblate](https://hosted.weblate.org/projects/minetest/minetest/) to translate.
+However, it is recommended to contact a core dev to create the .po file for you language and then use [weblate](https://hosted.weblate.org/projects/minetest/minetest/) to translate.
 
 _Note to coredevs_: Creating a new language directly from weblate is sufficient, no need to mess with the files directly in the repository.
 
 #### How to merge translations from Hosted Weblate
 
-Translations should be merged in bulk, and not too often, to not create too large "noise" in the commit log. A good schedule is once every few months and at the start of the **feature freeze**. This section explains the necessary steps for coredevs. You will need owner access to the hosted repo in order to be able to push the "Rebase" button.
+Translations should be merged in bulk, and not too often, to not create too large "noise" in the commit log. A good schedule is once every few months and at the start of the **feature freeze**. This section explains the necessary steps for cored evs. You will need owner access to the hosted repo in order to be able to push the "Rebase" button.
 
 As of Oct 2019, ShadowNinja, nerzhul, sfan5, rubenwardy, Krock and possibly some other coredevs have such access.
 
@@ -88,7 +88,7 @@ Add weblate as remote: `git remote add weblate [https://hosted.weblate.org/git/m
 7.  Confirm that `git diff weblate/master` is empty, to make sure that you didn't mess up at step 6. Otherwise use `git reflog` to find the latest rebase pass that worked, and retry the commits
 8.  If _required/desired_, do these: (`--author="updatepo.sh <script@mt>"` should be used when committing changes made by the scripts)
     1.  Update `minetest.conf.example` and the dummy `*.cpp` translation file and commit. Do this by uncommenting the lines at the end of builtin/mainmenu/settings/init.lua
-    2.  Run `util/updatepo.sh`, and commit. Note that it creates lots of unneccessary changes, and enlarges repository size disproportionately, therefore run it even less often.
+    2.  Run `util/updatepo.sh`, and commit. Note that it creates lots of unnecessary changes, and enlarges repository size disproportionately, therefore run it even less often.
 9.  Push to the [GitHub repo](https://github.com/minetest/minetest) with e.g. `git push origin HEAD:master`
 10.  Reset the Weblate remote ("Reset" button), rebase it to match now current master, and unlock it. If pushed commits do not yet show up in Weblate you may have to press the "Pull" button.
 
