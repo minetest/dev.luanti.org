@@ -64,12 +64,15 @@ Error messages without crashes
 
 If error message looks similar to the following, move the Luanti installation to a path that only contains ASCII characters. For example: move it to "C:\\Games\\Luanti\\"
 
+<!-- cspell:disable -->
+
 ```
 AsyncErr: ServerThread::run Lua: Runtime error from mod '*builtin*' in callback on_prejoinplayer():
 Failed to open SQLite3 database file C:\Users\ПЛАТЫ\Downloads\minetest-unzip\bin\..\worlds\newname
 \auth.sqlite: unable to open database file
-
 ```
+
+<!-- cspell:enable -->
 
 
 ### “Unsupported texture format”
@@ -82,7 +85,7 @@ This means that a faulty mod or texture pack does not supply an image for an obj
 
 ### "ERROR: No world name given or no game selected" in create world
 
-You need to select a game, pick one you have installed from the gamebar at the bottom of the singleplayer tab.
+You need to select a game, pick one you have installed from the game bar at the bottom of the singleplayer tab.
 
 Crashes
 -------

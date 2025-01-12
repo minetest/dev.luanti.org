@@ -47,7 +47,7 @@ A **schem file (`.mts`)** is used to import building(s) into a world with the [W
 1. Enter in your world (with WorldEdit activated).
 2. Grant yourself all privileges: `/grantme all`
 3. Put a schem file into your “`worlds/<name of your new world>/schems`" folder.
-4. Press F5 to show the coordinatess.
+4. Press F5 to show the coordinates.
 5. Place a position where you want with command: `//pos1`
 6. Import your schem file with `//mtschemplace <name of your schem file>`
 
