@@ -35,7 +35,7 @@ Error messages without crashes
 
 If error message looks similar to the following, move the Luanti installation to a path that only contains ASCII characters. For example: move it to "C:\\Games\\Luanti\\"
 
-{{/* cspell:disable */}}
+{{% comment %}} cspell:disable {{% /comment %}}
 
 ```
 AsyncErr: ServerThread::run Lua: Runtime error from mod '*builtin*' in callback on_prejoinplayer():
@@ -43,7 +43,7 @@ Failed to open SQLite3 database file C:\Users\ПЛАТЫ\Downloads\minetest-unzi
 \auth.sqlite: unable to open database file
 ```
 
-{{/* cspell:enable */}}
+{{% comment %}} cspell:enable {{% /comment %}}
 
 ### “Generating dummy image for \[…\].png”
 
