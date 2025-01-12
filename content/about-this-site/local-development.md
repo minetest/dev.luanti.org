@@ -33,7 +33,7 @@ npm install
 npm test
 ```
 
-You can disable the spell checker with HTML comments:
+You can disable the spell checker with Hugo comments:
 
 ```md
 This text is spell-checked.
