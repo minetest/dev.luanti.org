@@ -8,7 +8,7 @@ aliases:
 
 This page contains information for German translators.
 
-<!-- cspell:disable -->
+{{/* cspell:disable */}}
 
 ## Wiederkehrende Übersetzungen
 

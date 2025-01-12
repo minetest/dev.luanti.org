@@ -38,11 +38,11 @@ You can disable the spell checker with HTML comments:
 ```md
 This text is spell-checked.
 
-<!-- cspell:disable -->
+{{/* cspell:disable */}}
 
 The text is not splel-checked ;)
 
-<!-- cspell:enable -->
+{{/* cspell:enable */}}
 
 Finally, this text is spell-checked again.
 ```

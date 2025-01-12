@@ -25,7 +25,7 @@ You should use `VACUUM INTO` with the `sqlite3` CLI if you want to create live b
 
 This is an example of a Bash script that can be used to copy the world files of `world` and make backups of the SQLite databases to a new backup directory `.BACKUP` next to the world's directory, which could subsequently be compressed and versioned by timestamp:
 
-<!-- cspell:disable -->
+{{/* cspell:disable */}}
 ```bash
 #!/bin/bash
 
@@ -40,7 +40,7 @@ done
 
 cp world/*.txt world/world.mt "${bakdir}/"
 ```
-<!-- cspell:enable -->
+{{/* cspell:enable */}}
 
 If you have mods that write more text files to the world folder rather than using mod storage you would add it to the list of files to copy in the final line.
 
