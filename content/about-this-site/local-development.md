@@ -38,11 +38,11 @@ You can disable the spell checker without triggering build warnings using Hugo's
 ```md
 This text is spell-checked.
 
-{{/* cspell:disable */}}
+{{% comment %}} cspell:disable {{% /comment %}}
 
 The text is not splel-checked ;)
 
-{{/* cspell:enable */}}
+{{% comment %}} cspell:enable {{% /comment %}}
 
 Finally, this text is spell-checked again.
 ```

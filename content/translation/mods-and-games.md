@@ -80,7 +80,7 @@ In the texts (both original and translated texts), some characters will be repla
 
 Consider the example mod `example`. You will find the file `template.txt` with this content:
 
-{{/* cspell:disable */}}
+{{% comment %}} cspell:disable {{% /comment %}}
 ```
 # textdomain:example
 Apple=
@@ -92,11 +92,11 @@ E-mail: <somebody@@example.org>=
 “@=” is the equals sign=
 This text@nhas 2 lines.=Dieser Text@nhat 2 Zeilen.
 ```
-{{/* cspell:enable */}}
+{{% comment %}} cspell:enable {{% /comment %}}
 
 A possible translation in German would be stored under `example.de.tr` with this content:
 
-{{/* cspell:disable */}}
+{{% comment %}} cspell:disable {{% /comment %}}
 ```
 # textdomain:example
 Apple=Apfel
@@ -108,16 +108,16 @@ E-mail: <somebody@@example.org>=E-Mail: <somebody@@example.org>
 “@=” is the equals sign.=»@=« ist das Gleichheitszeichen.
 This text@nhas 2 lines.=Dieser Text@nhat 2 Zeilen.
 ```
-{{/* cspell:enable */}}
+{{% comment %}} cspell:enable {{% /comment %}}
 
 For reference, this is how the English texts could _actually_ show up in Luanti (with the placeholders resolved):
 
 * Apple
 * Pickaxe
 * Welcome, Merlin!
-{{/* cspell:disable */}}
+{{% comment %}} cspell:disable {{% /comment %}}
 * Gnerf has killed Hormel and gained 500 EXP.
-{{/* cspell:enable */}}
+{{% comment %}} cspell:enable {{% /comment %}}
 * E-mail: <somebody@example.org>
 * “=” is the equals sign
 * This text
