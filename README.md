@@ -6,4 +6,4 @@ Theme: [hugo-book](https://themes.gohugo.io/themes/hugo-book/)
 
 See [/content](/content/) for content.
 
-See [About This Site](content/about-this-site.md) for more information
+See [About This Site](content/about-this-site/_index.md) for more information

@@ -20,38 +20,9 @@ If you feel the screen is too dark, you can adjust the display gamma to a more c
 To change the display gamma, open your [minetest.conf](https://wiki.luanti.org/Minetest.conf "Minetest.conf") then add the line:
 
 ```
- display_gamma = 3.0
-
+display_gamma = 3.0
 ```
 
-
-If the screen still appears too dark, there currently is no other easy solution apart from changing your display settings. If nothing else works and you still wish to increase the brightness, you will have to edit a text file. This only works with shaders enabled. Open `(Luanti directory)/client/shaders/nodes_shader/opengl_fragment.glsl` with a text editor, search for this line:
-
-```glsl
-vec4 base = texture2D(baseTexture, uv).rgba;
-
-```
-
-
-and change it to:
-
-```glsl
-vec4 base = texture2D(baseTexture, uv).rgba;
-float factor = 1.2;
-base.rgb *= factor;
-
-```
-
-
-You can try other values instead of 1.2, the higher the brighter. Add a decimal point even if you use integral values, for example `float factor = 2.0;` instead of `float factor = 2;`, as some drivers don't accept it otherwise.
-
-### Everything in the game is in a weird color (particularly red), looks like rainbows, can partially see through things
-
-Turn off shaders. Shaders are not supported by your graphics card.
-
-### There is no sound under Windows
-
-You need to download OpenAL to play sound on Windows (the file needed is [oalinst.exe](http://sfan.sf.funpic.de/oalinst.exe), you need to execute the program after it has finished downloading. Firefox and Chrome users may need to either save file or keep downloading, Internet Explorer users will need to just press run. Other browsers maybe the same or different. If one browser fails, try another.)
 
 ### The textures look blurry, but I want the pixels to show!
 
@@ -68,13 +39,7 @@ If error message looks similar to the following, move the Luanti installation to
 AsyncErr: ServerThread::run Lua: Runtime error from mod '*builtin*' in callback on_prejoinplayer():
 Failed to open SQLite3 database file C:\Users\ПЛАТЫ\Downloads\minetest-unzip\bin\..\worlds\newname
 \auth.sqlite: unable to open database file
-
 ```
-
-
-### “Unsupported texture format”
-
-Don’t worry, this is completely normal. Luanti will still work.
 
 ### “Generating dummy image for \[…\].png”
 
@@ -139,10 +104,6 @@ This means that _env\_meta.txt_ in your world folder got corrupted. Since it doe
 
 ### Windows
 
-#### “MSCP2010.dll is not found” (or similar)
-
-This is because Microsoft C++ Redistribute Package 2010 is not installed. [\[1\]](http://www.microsoft.com/en-us/download/details.aspx?id=5555%7CDownload)
-
 #### Luanti doesn’t even start
 
 If it stops working before the main window even opens, and there are no error messages in debug.txt, then try restarting your computer. (sometimes it crashes with a `0x00005` error, which is caused by Windows updates.) You can try looking in debug.txt for an error message or searching for a similar article in the forums.
@@ -156,4 +117,4 @@ This is a problem with the trackpad configuration in your operating system, not 
 
 To fix under the GNOME desktop environment, install and open "gnome-tweak-tool" and open the "Keyboard & Mouse" section. Then, flip the "Disable While Typing" switch.
 
-To fix under other platforms please search the Web for instructions on changing this setting.
+To fix under other platforms (e.g. Windows) please search the Web for instructions on changing this setting.
