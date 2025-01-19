@@ -14,3 +14,6 @@ hugo.linux
 
 # Node
 node_modules
+
+# A11y checker
+test-results

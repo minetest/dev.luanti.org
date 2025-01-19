@@ -1,8 +1,11 @@
 {
     "devDependencies": {
+        "@axe-core/playwright": "^4.10.1",
+        "@playwright/test": "^1.49.1",
         "cspell": "^8.17.1"
     },
     "scripts": {
-        "test": "cspell content"
+        "test-wip": "cspell content",
+        "test": "playwright test"
     }
 }
