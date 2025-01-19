@@ -6,14 +6,14 @@ bookCollapseSection: true
 # About This Site
 
 This site is created using [Hugo](https://gohugo.io/), with theme [Hugo Book](https://themes.gohugo.io/themes/hugo-book/). 
-The sites source content can be found [here](https://github.com/minetest/dev.luanti.org/tree/master/content).
+The site's source content can be found [on GitHub](https://github.com/minetest/dev.luanti.org/tree/master/content).
 
 ## Contributing
 
-* [Making Changes](/about-this-site/making-changes/)
-* [Guidelines](/about-this-site/guidelines/)
-* [Setting up & running the site locally](/about-this-site/local-development/)
-* [Rules](/about-this-site/rules/)
+* [Making Changes](making-changes.md)
+* [Guidelines](guidelines.md)
+* [Setting up & running the site locally](local-development.md)
+* [Rules](rules.md)
 
 # Mission Statement
 
@@ -23,4 +23,4 @@ Luanti Documentation will be the central resource for the Luanti project as a wh
 * Engine reference and internal structures
 * Server and platform (player-facing) usage and guides
 
-Our Roadmap can be found at [this issue](https://github.com/minetest/dev.luanti.org/issues/113).
+Our roadmap can be found at [GitHub issue #113: Roadmap](https://github.com/minetest/dev.luanti.org/issues/113).
