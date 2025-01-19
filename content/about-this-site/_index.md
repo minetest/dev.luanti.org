@@ -10,10 +10,10 @@ The site's source content can be found [on GitHub](https://github.com/minetest/d
 
 ## Contributing
 
-* [Making Changes](making-changes.md)
-* [Guidelines](guidelines.md)
-* [Setting up & running the site locally](local-development.md)
-* [Rules](rules.md)
+* [Making Changes](/about-this-site/making-changes/)
+* [Guidelines](/about-this-site/guidelines/)
+* [Setting up & running the site locally](/about-this-site/local-development/)
+* [Rules](/about-this-site/rules/)
 
 # Mission Statement
 
