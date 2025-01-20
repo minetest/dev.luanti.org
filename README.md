@@ -21,7 +21,7 @@ See [About This Site](content/about-this-site/_index.md) for more information
   - `test:a11y:tests`: Not meant for independent use, only as part of `test:a11y`
   - `test:spelling`: Reports all apparent spelling errors. WIP, ref [#83](https://github.com/minetest/dev.luanti.org/issues/83) for details.
 - depdendencies
-  - `hugo-extended`: Static site generator that turns Markdown and shortcodes into HTML
+  - `hugo-bin`: Static site generator that turns Markdown and shortcodes into HTML
 - devDependencies
   - [`@axe-core/playwright`](https://npmjs.com/package/@axe-core/playwright): A11y tester bindings for Playwright
   - [`@playwright/test`](https://npmjs.com/package/@playwright/test): Browser automation and test library
