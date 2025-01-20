@@ -6,9 +6,6 @@ title: Local Development
 
 _(anyone)_
 
-To build locally, you will need to first [install Hugo](https://gohugo.io/installation/).
-* Note, you need the extended version
-
 When cloning the repository you need to clone it recursively so that the theme submodule gets included:
 
 ```bash
@@ -22,16 +19,16 @@ git submodule init
 git submodule update --remote
 ```
 
-To launch the Hugo development server run `hugo server`. It will watch and regenerate whenever changes are made.
-
-To generate the site once without starting the server you can simply run `hugo`.
-
-Some additional checks are run in [Node](npmjs.org):
+To build locally, you will need to first [install Node](https://nodejs.org).
 
 ```bash
-npm install
-npm test
+npm install # Installs packages needed to build and test the site
+npm start # Builds and serves the site on a localhost port for manual testing
 ```
+
+Further scripts are described in `package.json` and `readme.md`.
+
+## Spellchecker
 
 You can disable the spell checker with Hugo comments:
 
