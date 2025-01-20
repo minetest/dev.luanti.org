@@ -5,22 +5,10 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        hugo-version:
-          - 'latest'
-          - '0.134.2'
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: true
           fetch-depth: 0
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: ${{ matrix.hugo-version }}
-          extended: true
-
-      - name: Run Hugo
-        run: hugo --panicOnWarning
+      - name: Build site to check for errors
+        run: npm run build:ci

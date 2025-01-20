@@ -13,6 +13,8 @@ See [About This Site](content/about-this-site/_index.md) for more information
 `package.json` dependencies and scripts are described here for readability:
 
 - scripts
+  - `build`: Builds the site to ensure changes are valid
+  - `build:ci`: Builds the site but fails if any warnings are detected. Used in our CI pipeline.
   - `format:fix`: Fixes formatting of the `package.json` file
   - `start`: Builds and serves the site at http://localhost:1313 with Hugo.
   - `test:a11y`: Builds and serves the site, then uses Playwright and axe to test accessibility
