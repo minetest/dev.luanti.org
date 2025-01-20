@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 test.describe('homepage', () => {
   test('should not have any automatically detectable accessibility issues', async ({ page }) => {
-    await page.goto('https://dev.luanti.org/');
+    await page.goto('http://localhost:1313/');
 
     const results = await new AxeBuilder({ page }).analyze();
 
