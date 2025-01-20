@@ -8,13 +8,11 @@
         "test:a11y:tests": "playwright test",
         "test:spelling": "cspell content"
     },
-    "dependencies": {
-        "hugo-extended": "^0.141.0"
-    },
     "devDependencies": {
         "@axe-core/playwright": "^4.10.1",
         "@playwright/test": "^1.49.1",
         "cspell": "^8.17.1",
+        "hugo-bin": "^0.138.0",
         "sort-package-json": "^2.14.0",
         "start-server-and-test": "^2.0.10"
     },
