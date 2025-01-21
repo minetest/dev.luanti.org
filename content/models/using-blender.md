@@ -342,4 +342,4 @@ If you want to be able to render the model (**F12'**), you'll first need to do t
     2.  Click on image dropdown below this and select your UV texture image,
     3.  Under mapping dropdown change coord to UV.
 
-Now, rendering should work…
+Now, rendering should work.
