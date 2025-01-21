@@ -16,15 +16,15 @@ Before you begin making artwork for use with Luanti, there are a few things you 
 
 ### Coordinate spaces
 
-Luanti uses a Lefthanded Y-up coordinate space. In a space like this:
+Luanti uses a left-handed Y-up coordinate space. In a space like this:
 
 *   Z axis points "forward"
 *   Y axis points "up"
 *   X axis points "right"
 
-Blender uses a Righthanded Z-up coordinate space, where forward is instead the positive Y axis. Make sure that your models are facing that direction. When in doubt, hit G, Y, 1 - if the model has moved forward, that means it's facing the right axis. Otherwise you'll have to rotate it.
+Blender uses a right-handed Z-up coordinate space, where forward is instead the positive Y axis. Make sure that your models are facing that direction. When in doubt, hit G, Y, 1 - if the model has moved forward, that means it's facing the right axis. Otherwise you'll have to rotate it.
 
-Be sure to select Lefthanded Y-up in the exporter if it supports that, to avoid surprises.
+Be sure to select left-handed Y-up in the exporter if it supports that, to avoid surprises.
 
 ### Coordinate scale
 
@@ -178,7 +178,7 @@ When the basic model is completed, you'll need to create a texture.
     1.  Mesh/UV Unwrap/Smart UV Project \[see one of the many UV Mapping tutorials if you want seams to match, etc\]  
         \[optional\] Set island margin to 0.004 (this leaves a gap between faces, so there will be less risk of bleeding of colour across sharp edges. 0.002 is approx 1 pixel for a 512 pixel image)
 2.  Move mouse to the top of the 3D window to get and up/down arrow. Right click/split window and size to 50:50.
-    1.  On the R hand new window select the litle cube (3D viewport) icon and switch to UV Map viewport
+    1.  On the R hand new window select the little cube (3D viewport) icon and switch to UV Map viewport
     2.  LowMenubar:New
         1.  Set name - eg 'yourname UV Map'
         2.  Click UV Test Grid (optional)
@@ -193,7 +193,7 @@ When the basic model is completed, you'll need to create a texture.
         1.  Brush  
             Select white (should be selected by default)  
             Strength 1.0 (ie 100% replacement of the underlying colour)  
-            Radi 500 (or whatever brush radius you want)
+            Radius 500 (or whatever brush radius you want)
         2.  Curve  
             select the square profile if you want a solid colour brush  
             select the 'normal distribution curve' if you want a fading brush  
@@ -336,7 +336,7 @@ Rendering the model
 If you want to be able to render the model (**F12'**), you'll first need to do the following steps to enable the texture:
 
 1.  In 3D edit view. Add → Lamp → Hemi. You might need to move this around to adjust lighting direction, but probably not.
-2.  In properties viewpane:-
+2.  In properties viewpane:
 3.  Select checkered box tab,
     1.  Change texture type to Image → Movie,
     2.  Click on image dropdown below this and select your UV texture image,
