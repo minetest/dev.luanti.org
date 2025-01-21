@@ -5,9 +5,9 @@ aliases:
 ---
 
 # Using Blender
-3D models can be used to change the appearance of [players](https://wiki.luanti.org/Player "Player"), [nodes](https://wiki.luanti.org/Node "Node"), [mobs](https://wiki.luanti.org/Mobs "Mobs") and other [entities](https://wiki.luanti.org/index.php?title=Entity&action=edit&redlink=1 "Entity (page does not exist)").
+3D models can be used to change the appearance of [players](/player), [nodes](/nodes), [mobs](/mobs) and other entities.
 
-If you need to create models for your [mod](https://wiki.luanti.org/Mod "Mod"), it is recommended that you use [Blender](http://www.blender.org/).
+If you need to create models for your [mod](/mods), it is recommended that you use [Blender](http://www.blender.org/).
 
 Engine considerations
 ---------------------
@@ -291,7 +291,7 @@ There is no need to write the MTL file as Luanti will not parse it.
 
 ### Exporting B3D
 
-The recommended exporter for B3D models is available at [io\_scene\_b3d](https://github.com/GreenXenith/io_scene_b3d) by GreenXenith. It works on Blender 2.93 and should also work on 3.x versions of Blender too. Learn more at [Which tools to export animated models?](https://forum.minetest.net/viewtopic.php?f=47&t=24292).
+The recommended exporter for B3D models is available at [io\_scene\_b3d](https://github.com/GreenXenith/io_scene_b3d) by GreenXenith. It works on Blender 2.93 and should also work on 3.x versions of Blender too. Learn more at [Which tools to export animated models?](https://forum.luanti.org/viewtopic.php?f=47&t=24292).
 
 #### Installing the exporter
 
@@ -333,7 +333,7 @@ Create or copy the inventory texture
 Rendering the model
 -------------------
 
-If you want to be able to render the model (**F12'**), you'll first need to do the following steps to enable the texture:
+If you want to be able to render the model (`F12`), you'll first need to do the following steps to enable the texture:
 
 1.  In 3D edit view. Add → Lamp → Hemi. You might need to move this around to adjust lighting direction, but probably not.
 2.  In properties viewpane:
