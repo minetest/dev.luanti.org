@@ -50,7 +50,7 @@ Texture of an unknown object.
 |Health             |   |
 |Object collision   |No |
 |Block collision    |No |
-|Entity name        |N/A|
+|Entitystring       |N/A|
 
 
 An **unknown object** is pseudo-object in Luanti to represent an object (such as a [mob](/Mobs)) of which the object definition is unknown. These objects should never appear in the game, and it's always an error when you encounter one.
