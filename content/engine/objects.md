@@ -62,7 +62,7 @@ An unknown object appears as a flat texture with “unknown object” written on
 
 Internally, an unknown object still knows the “real” object it represents and the associated data. You can see its entity/object ID by [pointing](/pointing) it. If an unknown object is found by Luanti, there will also be an error message complaining about that a LuaEntity could not be found (this “LuaEntity” refers to the unknown object), along with its entity ID.
 
-To fix problems with unknown objects, first check the [troubleshooting](/troubleshooting) section. Unknown objects are destroyed when punching or if they receive any amount of damage.
+To fix problems with unknown objects, check the troubleshooting section below. Unknown objects are destroyed when punching or if they receive any amount of damage.
 
 Troubleshooting
 ---------------
