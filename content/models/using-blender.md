@@ -291,7 +291,7 @@ There is no need to write the MTL file as Luanti will not parse it.
 
 ### Exporting B3D
 
-The recommended exporter for B3D models is available at [io\_scene\_b3d](https://github.com/GreenXenith/io_scene_b3d) by GreenXenith[\[1\]](#cite_note-1). It works on Blender 2.93 and should also work on 3.x versions of Blender too.
+The recommended exporter for B3D models is available at [io\_scene\_b3d](https://github.com/GreenXenith/io_scene_b3d) by GreenXenith. It works on Blender 2.93 and should also work on 3.x versions of Blender too. Learn more at [Which tools to export animated models?](https://forum.minetest.net/viewtopic.php?f=47&t=24292).
 
 #### Installing the exporter
 
@@ -343,8 +343,3 @@ If you want to be able to render the model (**F12'**), you'll first need to do t
     3.  Under mapping dropdown change coord to UV.
 
 Now, rendering should work…
-
-Notes and references
---------------------
-
-1.  [↑](#cite_ref-1) As mentioned in the forum thread: [Which tools to export animated models?](https://forum.minetest.net/viewtopic.php?f=47&t=24292)
