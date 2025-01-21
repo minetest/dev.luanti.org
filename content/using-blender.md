@@ -97,7 +97,7 @@ Working with Blender
 
 ### Best practices
 
-[![](https://wiki.luanti.org/images/c/c2/Blender_LockTransforms.png)](https://wiki.luanti.org/File:Blender_LockTransforms.png)
+![](/images/using-blender/Blender_LockTransforms.png)
 
 Locking your objects can prevent accidents from happening.
 
@@ -113,7 +113,7 @@ Locking your objects can prevent accidents from happening.
 
 #### Setting up a reference scene
 
-[![](https://wiki.luanti.org/images/thumb/f/f3/Blender_LinkedFloor.png/300px-Blender_LinkedFloor.png)](https://wiki.luanti.org/File:Blender_LinkedFloor.png)
+![](/images/using-blender/Blender_LinkedFloor.png)
 
 A reference environment can help you maintain a sense of scale when making your models.
 
@@ -213,7 +213,7 @@ Skinning
 Animation
 ---------
 
-[![](https://wiki.luanti.org/images/thumb/9/96/Blender_AnimLayout.png/300px-Blender_AnimLayout.png)](https://wiki.luanti.org/File:Blender_AnimLayout.png)
+![](/images/using-blender/Blender_AnimLayout.png)
 
 An example window layout for working with animations.
 
@@ -221,7 +221,7 @@ When animating, use the _Dope Sheet_ in the _Action Editor_ mode instead of the 
 
 ### Making an Action
 
-[![](https://wiki.luanti.org/images/thumb/e/e2/Blender_FakeUser.png/300px-Blender_FakeUser.png)](https://wiki.luanti.org/File:Blender_FakeUser.png)
+![](/images/using-blender/Blender_FakeUser.png)
 
 Check this to avoid losing your work.
 
@@ -238,7 +238,7 @@ Be sure to set one keyframe for all bones at the beginning and end frames of the
 
 #### Looping an Action
 
-[![](https://wiki.luanti.org/images/thumb/7/7e/Blender_CyclicFCurves.png/300px-Blender_CyclicFCurves.png)](https://wiki.luanti.org/File:Blender_CyclicFCurves.png)
+![](/images/using-blender/Blender_CyclicFCurves.png)
 
 Apply this modifier to your channels to loop them.
 
@@ -251,7 +251,7 @@ To make an action loop correctly, you need to add a looping F-curve modifier to 
 
 ### Arranging Actions in NLA tracks
 
-[![](https://wiki.luanti.org/images/thumb/2/29/Blender_NLA.png/300px-Blender_NLA.png)](https://wiki.luanti.org/File:Blender_NLA.png)
+![](/images/using-blender/Blender_NLA.png)
 
 Mixing actions can save you a lot of time.
 
