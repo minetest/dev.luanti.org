@@ -1,4 +1,10 @@
-# Using Blender - Luanti Wiki
+---
+title: Using Blender
+aliases:
+- /Using_Blender
+---
+
+# Using Blender
 3D models can be used to change the appearance of [players](https://wiki.luanti.org/Player "Player"), [nodes](https://wiki.luanti.org/Node "Node"), [mobs](https://wiki.luanti.org/Mobs "Mobs") and other [entities](https://wiki.luanti.org/index.php?title=Entity&action=edit&redlink=1 "Entity (page does not exist)").
 
 If you need to create models for your [mod](https://wiki.luanti.org/Mod "Mod"), it is recommended that you use [Blender](http://www.blender.org/).
