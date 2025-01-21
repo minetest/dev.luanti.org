@@ -4,6 +4,8 @@ alias:
 - /Items
 ---
 
+# Items
+
 ## Unknown Item
 
 ![](/images/Unknown_Item.png)
