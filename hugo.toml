@@ -7,5 +7,5 @@ enableGitInfo = true
 [params]
     BookTheme = 'auto'
     BookSection = '*'
-    BookRepo = 'https://github.com/minetest/dev.luanti.org'
+    BookRepo = 'https://github.com/luanti-org/dev.luanti.org'
     BookEditPath = 'edit/master'
