@@ -12,16 +12,6 @@ alias:
 
 Inventory image of an unknown item.
 
-|Unknown Item     |                    |
-|-----------------|--------------------|
-|                 |                    |
-|An item in Luanti|                    |
-|Item Type        |Internally-used item|
-|Renewable        |N/A                 |
-|Durability       |N/A                 |
-|Stackable        |Yes (99)            |
-|Itemstring       |N/A                 |
-
 
 An **unknown item** is a pseudo-item in Luanti to represent an item of which the item definition is unknown. These items should never appear in the game, and it's always an error when you encounter it.
 

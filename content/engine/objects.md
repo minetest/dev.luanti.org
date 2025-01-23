@@ -44,16 +44,6 @@ The CAO of each player also exists on the player's clients itself, just like the
 
 Texture of an unknown object.
 
-|Unknown Object     |   |
-|-------------------|---|
-|                   |   |
-|An object in Luanti|   |
-|Health             |   |
-|Object collision   |No |
-|Block collision    |No |
-|Entitystring       |N/A|
-
-
 An **unknown object** is pseudo-object in Luanti to represent an object (such as a [mob](/Mobs)) of which the object definition is unknown. These objects should never appear in the game, and it's always an error when you encounter one.
 
 Behaviour
