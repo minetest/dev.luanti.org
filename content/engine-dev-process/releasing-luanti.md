@@ -236,7 +236,7 @@ After releasing
     *   currently you will need to update machine readable metadata in \_data/release.yml and downloads.html itself.
 *   Post a new topic in the [News section](https://forum.luanti.org/viewforum.php?f=18) of the forum. **See [Changelog](/Changelog "Changelog").**
     *   It is customary to sticky the newest release topic and lock older ones.
-*   Add a new post to the [blog](https://github.com/minetest/blog/)
+*   Add a new post to the [blog](https://github.com/luanti-org/blog/)
 *   Announce the release on [Twitter](https://twitter.com/MinetestProject) and [Mastodon](https://mastodon.online/@Luanti@fosstodon.org). rubenwardy has access.
 
 ### Update wiki version template
