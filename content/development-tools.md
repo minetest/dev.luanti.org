@@ -11,7 +11,7 @@ In addition to this list, you can also see the [Development Tools](https://conte
 
 ## Engine development
 - [Development Test](https://wiki.luanti.org/Games/Development_Test): A testing game for testing various engine features
-- [/minetest/util](https://github.com/minetest/minetest/tree/master/util): Various maintenance utilities
+- [/minetest/util](https://github.com/luanti-org/luanti/tree/master/util): Various maintenance utilities
 
 ## General Lua Tools
 - [luacheck](https://github.com/lunarmodules/luacheck): Lua linter and static code analyser (see also [the chapter in rubenwardy's modding book](https://rubenwardy.com/minetest_modding_book/en/quality/luacheck.html))

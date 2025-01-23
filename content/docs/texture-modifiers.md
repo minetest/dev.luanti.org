@@ -15,14 +15,14 @@ Texture modifiers are partially redundant with hardware colorization. Hardware c
 
 ## Performance Issues
 * All textures are generated on the CPU, not the GPU. Generation is therefore slow and may temporarily block the client thread.
-* Texture modifiers are [kept in client memory forever](https://github.com/minetest/minetest/issues/11531).
-* Cached texture modifiers are [not leveraged when generating new ones](https://github.com/minetest/minetest/issues/11587).
+* Texture modifiers are [kept in client memory forever](https://github.com/luanti-org/luanti/issues/11531).
+* Cached texture modifiers are [not leveraged when generating new ones](https://github.com/luanti-org/luanti/issues/11587).
 * Non-linear (at least quadratic) time complexity of the shotgun parser is possible.
 
 Use texture modifiers mostly statically. Keep dynamically generated textures to a minimum to not fill up the client cache over time. Don't force the client to perform many expensive texture generations in a small timespan if you want a smooth client experience. Do not create large, convoluted texture modifiers if possible.
 
 ## Bugs
-* Large texture modifiers may [freeze the client](https://github.com/minetest/minetest/issues/11829).
+* Large texture modifiers may [freeze the client](https://github.com/luanti-org/luanti/issues/11829).
 * Out-of-bound memory reads are possible using certain texture modifiers. Example: `[lowpart:0:blank.png`.
 * Out-of-bound pixels are often considered "full white" (`#FFFFFFFF`)
 * Certain invalid texture modifiers may lead to client segmentation faults.

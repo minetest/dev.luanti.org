@@ -46,7 +46,7 @@ The data list is ordered in z, y, x. Than means for a 3x3x3 box it will be a lis
 * The next 9 are the same pattern one node toward the red block,
 * And finally the next 9 are the same pattern starting at the red block
 
-Each MapNode holds the node name and the probability to appear. See [Schematic specifier in lua_api.md](https://github.com/minetest/minetest/blob/master/doc/lua_api.md#schematic-specifier) for more details.
+Each MapNode holds the node name and the probability to appear. See [Schematic specifier in lua_api.md](https://github.com/luanti-org/luanti/blob/master/doc/lua_api.md#schematic-specifier) for more details.
 
 A minimal table for a 3x3 bush sample:
 

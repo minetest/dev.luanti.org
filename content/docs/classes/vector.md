@@ -11,7 +11,7 @@ Unless otherwise noted, the `vector` type always refers to the metatable-enhance
 Do note that functions here will accept an old-style (non-metatable) `vector`, but you cannot perform metatable operations with said `vector`.
 
 {{< notice tip >}}
-The respective source code is located [here](https://github.com/minetest/minetest/blob/master/builtin/common/vector.lua).
+The respective source code is located [here](https://github.com/luanti-org/luanti/blob/master/builtin/common/vector.lua).
 {{< /notice >}}
 
 ## `vector` Namespace

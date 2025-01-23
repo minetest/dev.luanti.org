@@ -98,7 +98,7 @@ This consists of:
 
 ### Update website credits
 
-Once the credits are decided on in the previous step, update the website to be in sync with the mainmenu. Simply copy the same `credits.json` to here: [https://github.com/minetest/minetest.github.io/tree/master/\_data](https://github.com/minetest/minetest.github.io/tree/master/_data)
+Once the credits are decided on in the previous step, update the website to be in sync with the mainmenu. Simply copy the same `credits.json` to here: [https://github.com/luanti-org/luanti.github.io/tree/master/\_data](https://github.com/luanti-org/luanti.github.io/tree/master/_data)
 
 ### Update changelog
 
@@ -106,7 +106,7 @@ Changelog can be found [here](/Changelog "Changelog").
 
 ### Ensure protocol version codes have been bumped
 
-If not a patch release: ensure that `PROTOCOL_VERSION` has been increased since the last release. ([deciding discussion](https://github.com/minetest/minetest/issues/11603))
+If not a patch release: ensure that `PROTOCOL_VERSION` has been increased since the last release. ([deciding discussion](https://github.com/luanti-org/luanti/issues/11603))
 
 If formspec features have been added: ensure `LATEST_FORMSPEC_VERSION` has been increased since the last release.
 
@@ -128,7 +128,7 @@ The process with patch releases is slightly different but the script will take c
 
 ### Build Windows version
 
-As of [December 2023](https://github.com/minetest/minetest/pull/14098), we use the **mingw** artifacts of the "windows" CI workflow.
+As of [December 2023](https://github.com/luanti-org/luanti/pull/14098), we use the **mingw** artifacts of the "windows" CI workflow.
 
 *   Extract the outer ZIP file so that users only have one ZIP file to extract (should be named `luanti-5.x.x-win64.zip`)
 
@@ -149,10 +149,10 @@ _Note_: Don't cheat on this by testing in Wine, it has happened that things cras
 
 ### Upload packages to somewhere
 
-*   All official builds are hosted at Github: [https://github.com/minetest/minetest/releases](https://github.com/minetest/minetest/releases)
+*   All official builds are hosted at Github: [https://github.com/luanti-org/luanti/releases](https://github.com/luanti-org/luanti/releases)
 *   The Windows build is created by CI
     *   (see above)
-*   The macOS build is created by [Github Actions](https://github.com/minetest/minetest/actions/workflows/macos.yml)
+*   The macOS build is created by [Github Actions](https://github.com/luanti-org/luanti/actions/workflows/macos.yml)
     *   you will only be able to grab the build **after** the release has been pushed
     *   download the artifact, unpack it once, you should have a `luanti-5.x.x-osx.zip`. This is then uploaded.
 *   Android APKs are also uploaded here when they're done
@@ -180,7 +180,7 @@ Therefore, you'll generate merge commits, but this shouldn't be a problem. In th
 
 ### Tag Android deps
 
-Create a new tag [on this repo](https://github.com/minetest/minetest_android_deps/tags) with the version number of the release. This is to make it easier to figure out which state an APK was built from.
+Create a new tag [on this repo](https://github.com/luanti-org/luanti_android_deps/tags) with the version number of the release. This is to make it easier to figure out which state an APK was built from.
 
 ### Update Launchpad stable build to get Ubuntu builds for the new version
 
@@ -232,7 +232,7 @@ After releasing
 
 ### Write a release notice
 
-*   Don't forget to edit the luanti.org page ([Repo](https://github.com/minetest/minetest.github.io)).
+*   Don't forget to edit the luanti.org page ([Repo](https://github.com/luanti-org/luanti.github.io)).
     *   currently you will need to update machine readable metadata in \_data/release.yml and downloads.html itself.
 *   Post a new topic in the [News section](https://forum.luanti.org/viewforum.php?f=18) of the forum. **See [Changelog](/Changelog "Changelog").**
     *   It is customary to sticky the newest release topic and lock older ones.

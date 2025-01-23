@@ -5,7 +5,7 @@ aliases:
 ---
 
 # Changelog
-Note that not all changes made to the code between releases are listed here. Fixes to bugs that were introduced after the previous release, small internal changes, code style fixes, and changes of the like are not listed. If you want a list of _every_ change made between releases see the [commit log](https://github.com/minetest/minetest/commits/master).
+Note that not all changes made to the code between releases are listed here. Fixes to bugs that were introduced after the previous release, small internal changes, code style fixes, and changes of the like are not listed. If you want a list of _every_ change made between releases see the [commit log](https://github.com/luanti-org/luanti/commits/master).
 
 5.9.1 → 5.10.0
 --------------
@@ -256,7 +256,7 @@ As part of Minetest's efforts to modernise and improve graphics code, we've been
 
 ### Minetest Game
 
-* No longer bundled in Minetest. Please have look at [https://github.com/minetest/minetest\_game/](https://github.com/minetest/minetest_game/)
+* No longer bundled in Minetest. Please have look at [https://github.com/luanti-org/luanti\_game/](https://github.com/luanti-org/luanti_game/)
 
 5.7.0 → 5.8.0
 -------------
@@ -349,7 +349,7 @@ Released on 4 December 2023.
 ### Minetest Game
 
 * **Minetest Game is no longer the default game and no longer installed by default**
-* New water textures (the old ones were [non-free](https://github.com/minetest/minetest_game/issues/3051)) (_Lopano_)
+* New water textures (the old ones were [non-free](https://github.com/luanti-org/luanti_game/issues/3051)) (_Lopano_)
 * Improve leaves textures in "Opaque Leaves" mode (_Wuzzy_)
 * When a player dies in protected air, bones now spawn as a block instead of dropping as an item (_OgelGames_)
 * Add API for sapling growth (_aegroto_)
@@ -369,13 +369,13 @@ Released on 8 April 2023
 ### Deprecations and compatibility notes
 
 * The default key for pitchmove was removed. Specify a key manually to use this feature.
-    * See [https://github.com/minetest/minetest/pull/13319](https://github.com/minetest/minetest/pull/13319) for details
+    * See [https://github.com/luanti-org/luanti/pull/13319](https://github.com/luanti-org/luanti/pull/13319) for details
 * Special handling of `${key}` syntax in metadata values are deprecated
-    * See [https://github.com/minetest/minetest/pull/12970](https://github.com/minetest/minetest/pull/12970) for details
+    * See [https://github.com/luanti-org/luanti/pull/12970](https://github.com/luanti-org/luanti/pull/12970) for details
 * Worlds with unresolved dependencies can no longer be loaded. This ensures that the specified mods are loaded properly.
-    * See [https://github.com/minetest/minetest/pull/12542](https://github.com/minetest/minetest/pull/12542) for details
+    * See [https://github.com/luanti-org/luanti/pull/12542](https://github.com/luanti-org/luanti/pull/12542) for details
 * The default key for (un)limited range was removed. Specify a key manually to use this feature.
-    * See [https://github.com/minetest/minetest/pull/12632](https://github.com/minetest/minetest/pull/12632) for details
+    * See [https://github.com/luanti-org/luanti/pull/12632](https://github.com/luanti-org/luanti/pull/12632) for details
 * Development Test is no longer being distributed in official Minetest releases
     * This was never meant for players to begin with, this “game” is exclusively meant for engine development
     * To get it back, build Minetest from source code (recommended) or download Development Test from [ContentDB](https://content.luanti.org/packages/Minetest/devtest/)
@@ -1481,7 +1481,7 @@ This was chosen for a few reasons:
 * Allows us to release patch/bug fix only releases without adding a silly 4th number
 * Doesn't imply that this version is the first stable/finished version as much as a 1.0.0 does.
 
-For some context, read [the issue that resulted in this change](https://github.com/minetest/minetest/issues/6073).
+For some context, read [the issue that resulted in this change](https://github.com/luanti-org/luanti/issues/6073).
 
 ### Breaking changes and deprecations
 

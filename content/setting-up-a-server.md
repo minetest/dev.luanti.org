@@ -94,7 +94,7 @@ Usually your Linux distribution of choice will have `luantiserver` in its offici
 
 - **Building from source**: Build Luanti from source with `-DBUILD_CLIENT=0 -DBUILD_SERVER=1`. For more information see [Compiling a headless Linux server](/compiling-a-headless-linux-server/).
 
-- **Docker**: There also exist ready made Docker images for `luantiserver`, such as [the Dockerfile in the Luanti source tree](https://github.com/minetest/minetest/blob/master/Dockerfile) or [Warr1024's Docker image](https://hub.docker.com/r/warr1024/minetestserver).
+- **Docker**: There also exist ready made Docker images for `luantiserver`, such as [the Dockerfile in the Luanti source tree](https://github.com/luanti-org/luanti/blob/master/Dockerfile) or [Warr1024's Docker image](https://hub.docker.com/r/warr1024/minetestserver).
 
 ### Windows
 The regular Windows builds provided on the download page work fine, running it as `luanti.exe --server` to access the server portion of it.
@@ -225,7 +225,7 @@ For more mods useful to server administration, see the [Server Moderation and To
 ## Managing your server
 
 ### Server Configuration
-For a detailed explanation of the server configuration file, see [minetest.conf](https://github.com/minetest/minetest/blob/master/minetest.conf.example).
+For a detailed explanation of the server configuration file, see [minetest.conf](https://github.com/luanti-org/luanti/blob/master/minetest.conf.example).
 
 You may also want to consider to use a different [database backend](/database-backends) for your world.
 

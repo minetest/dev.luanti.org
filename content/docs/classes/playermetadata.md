@@ -23,7 +23,7 @@ Used to obtain a mutable PlayerMetaData reference.
 Luanti requiring a valid `player` object means PlayerMetaData is only accessible while players are online; if you need per-player storage while players are offline, you can use ModStorage and save either a serialized table per-player or concatenate the keys of the per-player entries with the playername using a delimiter. Reusing the above example, `fancy_quests:score` might be stored as `<playername>:score` or as key-value pair with key `<playername>` and value `core.write_json{score = ...}` (or `core.serialize`)  in ModStorage.
 {{< /notice >}}
 
-A [feature request](https://github.com/minetest/minetest/issues/6193) to make PlayerMetaData available for offline players exists;
+A [feature request](https://github.com/luanti-org/luanti/issues/6193) to make PlayerMetaData available for offline players exists;
 
 **Returns:**
 - `meta` - PlayerMetaData: Public & shared PlayerMetaData object for the player

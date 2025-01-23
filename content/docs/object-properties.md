@@ -57,7 +57,7 @@ Controls whether the object collides with other objects.
 {{< /notice >}}
 
 {{< notice note >}}
-This works with players as well but you may experience [strange bugs](https://github.com/minetest/minetest/issues/11783).
+This works with players as well but you may experience [strange bugs](https://github.com/luanti-org/luanti/issues/11783).
 {{< /notice >}}
 
 ### `collisionbox`

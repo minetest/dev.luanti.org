@@ -22,7 +22,7 @@ It is recommended you start here, even if you are already apt at programming, to
 
 ### Lua API Reference
 
-The official Lua API documentation is `lua_api.md`. It's available as [markdown](https://github.com/minetest/minetest/blob/master/doc/lua_api.md) or [HTML](https://api.minetest.net/). You can find the plaintext version in your Luanti installation, in the `doc` directory.
+The official Lua API documentation is `lua_api.md`. It's available as [markdown](https://github.com/luanti-org/luanti/blob/master/doc/lua_api.md) or [HTML](https://api.minetest.net/). You can find the plaintext version in your Luanti installation, in the `doc` directory.
 
 This is a concise description of the entire API, explaining functions, data structures, registration templates & more. The core developers of Luanti maintain it, changes going through a quality control process.
 
@@ -30,7 +30,7 @@ Any functions not listed here are subject to change and not guaranteed to be com
 
 ### The Minetest-Docs Project
 
-A work-in-progress project is underway to create new, more detailed, documentation. They can be read from its [GitHub repo](https://github.com/minetest/minetest_docs/), contributions are greatly appreciated.
+A work-in-progress project is underway to create new, more detailed, documentation. They can be read from its [GitHub repo](https://github.com/luanti-org/luanti_docs/), contributions are greatly appreciated.
 
 Useful tools
 ------------

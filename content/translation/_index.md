@@ -50,7 +50,7 @@ Luanti detects the current language by inspecting the `LANG` environment variabl
 
 The available translations are found in source form in the `po/` directory. The `cmake` detects them, and they are built as part of the build process.
 
-The main translation file must be updated now and then using the [this script](https://github.com/minetest/minetest/blob/master/builtin/mainmenu/settings/generate_from_settingtypes.lua) (configuration) and [this one](https://github.com/minetest/minetest/blob/master/util/updatepo.sh) (C++ and Lua translations). Submit a PR after running the generator or poke a core dev to update the translations when it's needed. Note that builtin translations are handled separately, see the maintenance notes below.
+The main translation file must be updated now and then using the [this script](https://github.com/luanti-org/luanti/blob/master/builtin/mainmenu/settings/generate_from_settingtypes.lua) (configuration) and [this one](https://github.com/luanti-org/luanti/blob/master/util/updatepo.sh) (C++ and Lua translations). Submit a PR after running the generator or poke a core dev to update the translations when it's needed. Note that builtin translations are handled separately, see the maintenance notes below.
 
 Maintaining engine translations
 -------------------------------
@@ -99,7 +99,7 @@ Add weblate as remote: `git remote add weblate [https://hosted.weblate.org/git/m
 8.  If _required/desired_, do these: (`--author="updatepo.sh <script@mt>"` should be used when committing changes made by the scripts)
     1.  Update `minetest.conf.example` and the dummy `*.cpp` translation file and commit. Do this by uncommenting the lines at the end of builtin/mainmenu/settings/init.lua
     2.  Run `util/updatepo.sh`, and commit. Note that it creates lots of unnecessary changes, and enlarges repository size disproportionately, therefore run it even less often.
-9.  Push to the [GitHub repo](https://github.com/minetest/minetest) with e.g. `git push origin HEAD:master`
+9.  Push to the [GitHub repo](https://github.com/luanti-org/luanti) with e.g. `git push origin HEAD:master`
 10.  Reset the Weblate remote ("Reset" button), rebase it to match now current master, and unlock it. If pushed commits do not yet show up in Weblate you may have to press the "Pull" button.
 
 ### Server-side builtin translations (`minetest.get_translator`)
@@ -122,6 +122,6 @@ Untranslatable texts
 
 Please note: A couple of things in Luanti can **not** be translated yet:
 
-* Setting help texts for settings of games and mods (`settingtypes.txt`) ([#9070](https://github.com/minetest/minetest/issues/9070))
+* Setting help texts for settings of games and mods (`settingtypes.txt`) ([#9070](https://github.com/luanti-org/luanti/issues/9070))
 * Drop-down list entries in Luanti settings
-* Description of mods, modpacks, games and texture packs ([#9071](https://github.com/minetest/minetest/issues/9071))
+* Description of mods, modpacks, games and texture packs ([#9071](https://github.com/luanti-org/luanti/issues/9071))

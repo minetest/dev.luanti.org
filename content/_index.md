@@ -17,13 +17,13 @@ Contribute to Luanti!
 ---------------------
 
 #### Develop the core engine
-* Browse the [source code](https://github.com/minetest/minetest)
+* Browse the [source code](https://github.com/luanti-org/luanti)
 * [Engine overview](/Engine)
 * Help [make a release](/Releasing_Luanti)
 
 #### Develop a mod or a game
 * Get [introduced to the mod API](/Modding_Intro)
-* Check out the [Lua API Documentation](https://github.com/minetest/minetest/blob/master/doc/lua_api.md)
+* Check out the [Lua API Documentation](https://github.com/luanti-org/luanti/blob/master/doc/lua_api.md)
 
 #### Document, translate, and create
 * Help with the [engine documentation](/Engine)

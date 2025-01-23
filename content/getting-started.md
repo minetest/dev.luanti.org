@@ -43,7 +43,7 @@ If you are on a distribution with up to date enough repositories (e.g. Arch), yo
 
 Otherwise it is recommended to obtain Luanti through other means, such as the [Flatpak package](https://flathub.org/apps/details/net.minetest.Minetest). For Ubuntu and similar, there is the [Luanti PPA](https://launchpad.net/~minetestdevs/+archive/ubuntu/stable).
 
-If all else fails, you can build from source by [cloning the engine repository](https://github.com/minetest/minetest) and [following the build instructions](https://github.com/minetest/minetest/blob/master/doc/compiling/linux.md).
+If all else fails, you can build from source by [cloning the engine repository](https://github.com/luanti-org/luanti) and [following the build instructions](https://github.com/luanti-org/luanti/blob/master/doc/compiling/linux.md).
 
 Playing
 -------

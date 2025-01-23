@@ -34,7 +34,7 @@ cd /c/Users/$USER/Desktop
 Clone Luanti:
 
 ```bash
-git clone --depth 1 https://github.com/minetest/minetest
+git clone --depth 1 https://github.com/luanti-org/luanti
 cd minetest
 ```
 

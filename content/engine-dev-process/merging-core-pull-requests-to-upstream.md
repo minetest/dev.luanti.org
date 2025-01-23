@@ -14,15 +14,15 @@ For guidelines and rules on Git and Github, see [Git Guidelines](/Git_Guidelines
 
 Also see:
 
-* [https://github.com/minetest/minetest/blob/master/.github/CONTRIBUTING.md](https://github.com/minetest/minetest/blob/master/.github/CONTRIBUTING.md)
-* [https://github.com/minetest/minetest/blob/master/doc/direction.md](https://github.com/minetest/minetest/blob/master/doc/direction.md)
+* [https://github.com/luanti-org/luanti/blob/master/.github/CONTRIBUTING.md](https://github.com/luanti-org/luanti/blob/master/.github/CONTRIBUTING.md)
+* [https://github.com/luanti-org/luanti/blob/master/doc/direction.md](https://github.com/luanti-org/luanti/blob/master/doc/direction.md)
 
 Requirements
 ------------
 
 There are five major requirements that each pull request must fullfill in order to be mergeable to upstream Minetest.
 
-1.  It should follow a roadmap in some way, to make sure it fits the whole picture of the project. Different roadmaps and project guidance is managed in [https://github.com/minetest/minetest/blob/master/doc/direction.md](https://github.com/minetest/minetest/blob/master/doc/direction.md). A core dev can decide to review and merge something that doesn't follow direction.md if they consider it to be beneficial to the project.
+1.  It should follow a roadmap in some way, to make sure it fits the whole picture of the project. Different roadmaps and project guidance is managed in [https://github.com/luanti-org/luanti/blob/master/doc/direction.md](https://github.com/luanti-org/luanti/blob/master/doc/direction.md). A core dev can decide to review and merge something that doesn't follow direction.md if they consider it to be beneficial to the project.
 2.  It must work in the first place. Compile it and test it in game, or write mod code that uses it.
 3.  The code style must be correct. [/Code\_style\_guidelines](/Code_style_guidelines)
 4.  The internal interfaces of the code must be good, and it should be reasonably optimized, depending on how often the code is called.

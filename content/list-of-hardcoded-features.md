@@ -12,9 +12,9 @@ Gameplay
 
 ### Health and damage
 
-* The fall damage calculation formula (issue: [#10348](https://github.com/minetest/minetest/pull/10348))
+* The fall damage calculation formula (issue: [#10348](https://github.com/luanti-org/luanti/pull/10348))
 * Nodes that deal direct damage do so always once per second (with `damage_per_second`); no other time interval is possible
-* How breath works in general (issue: [#8042](https://github.com/minetest/minetest/pull/8042))
+* How breath works in general (issue: [#8042](https://github.com/luanti-org/luanti/pull/8042))
 * You lose breath or take drowning damage every 2 seconds, and you regain breath every 0.5 seconds
 * The amount of time the `damage_texture_modifier` is applied when an object takes damage is hardcoded
 
@@ -24,12 +24,12 @@ Gameplay
     * You can change the parameters, but not the formula itself
 * The formula that determines how much your tool will be worn
     * You can change the parameters, but not the formula itself
-* All items can point (issue: [#6651](https://github.com/minetest/minetest/pull/6651))
+* All items can point (issue: [#6651](https://github.com/luanti-org/luanti/pull/6651))
     * `range=0` does not work as you can point when you're inside a node
 
 ### Players
 
-* All players have **all camera modes**, always. They can not be disabled or forced (issue: [#12855](https://github.com/minetest/minetest/issues/12855))
+* All players have **all camera modes**, always. They can not be disabled or forced (issue: [#12855](https://github.com/luanti-org/luanti/issues/12855))
 
 Graphics
 --------
@@ -55,7 +55,7 @@ HUD
 
 ### Formspecs
 
-* No or incomplete styling/theming/customization for ([#8744](https://github.com/minetest/minetest/issues/8744)):
+* No or incomplete styling/theming/customization for ([#8744](https://github.com/luanti-org/luanti/issues/8744)):
     * Scrollbars
     * Drop-down lists
     * Highlight color of selected text

@@ -211,7 +211,7 @@ DoThingHere();//This does thing        <--- no!
 
 * Files should be named using _snake\_case_ style.
 * Files should have includes for everything that they depend on. Don't depend on, eg, `"util/numeric.h"` including `<string>`!
-* Uniqueness when compiling headers is ensured by using `#pragma once`. ([Accepted by all coredevs](https://github.com/minetest/minetest/issues/6259))
+* Uniqueness when compiling headers is ensured by using `#pragma once`. ([Accepted by all coredevs](https://github.com/luanti-org/luanti/issues/6259))
 
 ```cpp
 #pragma once

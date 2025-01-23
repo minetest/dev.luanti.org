@@ -53,7 +53,7 @@ You may use this to determine e.g. whether a target would be visible to a mob. R
 Creates a raycast object; OOP-constructor-style alias for `core.raycast`.
 
 {{< notice info >}}
-[Raycasts work on selection-, not collision boxes, making them coherent with player pointing but not physics (collisions) unless selection- and collision boxes are identical.](https://github.com/minetest/minetest/issues/12673)
+[Raycasts work on selection-, not collision boxes, making them coherent with player pointing but not physics (collisions) unless selection- and collision boxes are identical.](https://github.com/luanti-org/luanti/issues/12673)
 {{< /notice >}}
 
 {{< notice tip >}}
@@ -61,7 +61,7 @@ Have selection boxes, collision boxes (and ideally even visuals) match for all n
 {{< /notice >}}
 
 {{< notice info >}}
-[Serverside raycasts do not support attachments properly; the server is unaware of model specificities, doesn't keep track of automatic rotation etc.](https://github.com/minetest/minetest/issues/10304)
+[Serverside raycasts do not support attachments properly; the server is unaware of model specificities, doesn't keep track of automatic rotation etc.](https://github.com/luanti-org/luanti/issues/10304)
 {{< /notice >}}
 
 **Arguments:**

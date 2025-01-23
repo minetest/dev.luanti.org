@@ -80,7 +80,7 @@ Probability values in `param1` are encoded in unsigned 8 bits. They are indexed 
 Official definition
 -------------------
 
-The official definition of version 4 of this file format follows and has been copied from [/src/mapgen/mg\_schematic.h](https://github.com/minetest/minetest/blob/5.1.0/src/mapgen/mg_schematic.h) in the source code of version 5.1.0.
+The official definition of version 4 of this file format follows and has been copied from [/src/mapgen/mg\_schematic.h](https://github.com/luanti-org/luanti/blob/5.1.0/src/mapgen/mg_schematic.h) in the source code of version 5.1.0.
 
 ```
 All values are stored in big-endian byte order.
@@ -110,8 +110,8 @@ For each node in schematic:
 ```
 
 
-* Source code 5.1.0: [/src/mapgen/mg\_schematic.h](https://github.com/minetest/minetest/blob/5.1.0/src/mapgen/mg_schematic.h)
-* Source code bleeding edge: [/src/mapgen/mg\_schematic.h](https://github.com/minetest/minetest/blob/master/src/mapgen/mg_schematic.h)
+* Source code 5.1.0: [/src/mapgen/mg\_schematic.h](https://github.com/luanti-org/luanti/blob/5.1.0/src/mapgen/mg_schematic.h)
+* Source code bleeding edge: [/src/mapgen/mg\_schematic.h](https://github.com/luanti-org/luanti/blob/master/src/mapgen/mg_schematic.h)
 
 Version changes
 ---------------

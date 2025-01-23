@@ -96,7 +96,7 @@ Redis is an in-memory key-value datastore that can be used both as a cache and f
 As of March 2024 Redis switched to a non-free license for future versions. Forks of the final free Redis version, such as [Redict](https://redict.io) and [Valkey](https://valkey.io), may serve as a compatible drop-in replacement for Luanti's Redis support.
 
 {{< notice note >}}
-The use of Redis was deprecated in 5.9.0 and was set to be removed in 5.10, but is no longer deprecated (see [Luanti issue #14822](https://github.com/minetest/minetest/issues/14822)).
+The use of Redis was deprecated in 5.9.0 and was set to be removed in 5.10, but is no longer deprecated (see [Luanti issue #14822](https://github.com/luanti-org/luanti/issues/14822)).
 {{< /notice >}}
 
 #### Extra world.mt settings for Redis
@@ -126,7 +126,7 @@ host=<db_host> user=<db_user> password=<db_password> dbname=<db_name>
 
 ### MariaDB (WIP)
 
-A WIP MariaDB database backend was implemented in [#13266](https://github.com/minetest/minetest/pull/13266), but was abandoned before it could be merged. The addition of a MariaDB backend is approved by the core developers and the pull request may be adopted by someone who is interested in it being available in upstream.
+A WIP MariaDB database backend was implemented in [#13266](https://github.com/luanti-org/luanti/pull/13266), but was abandoned before it could be merged. The addition of a MariaDB backend is approved by the core developers and the pull request may be adopted by someone who is interested in it being available in upstream.
 
 MariaDB allows about the same capabilities as PostgreSQL and has the same qualities as it, running as a separate database server.
 

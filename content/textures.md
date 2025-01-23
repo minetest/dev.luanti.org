@@ -17,7 +17,7 @@ When run with no arguments `optipng` optimizes completely losslessly (no color, 
 * **`-o7 -zm1-9`**: Sets both optipng and zlib's optimization/compression levels to the highest available. Will take significantly longer to optimise but can further reduce the file size.
 * **`-nc`**: Disables color type reduction. **This is necessary if you have color data you want to preserve in transparent pixels, such as ones in leaf textures.**
 
-A general-purpose script for optimizing images as aggressively as possible without losing color information can be found in Minetest Game: [optimize_textures.sh](https://github.com/minetest/minetest_game/blob/master/utils/optimize_textures.sh)
+A general-purpose script for optimizing images as aggressively as possible without losing color information can be found in Minetest Game: [optimize_textures.sh](https://github.com/luanti-org/luanti_game/blob/master/utils/optimize_textures.sh)
 
 For lossy optimisation of PNG files, there is `pngquant`. It will throw away (hopefully unnoticeable) colour data and replace it with dithering. This is useful for larger images (e.g. game backgrounds) where the loss of colour data isn't noticeable, but the filesize is substantially smaller.
 

@@ -11,7 +11,7 @@ aliases:
 
 **minetest.conf** is the configuration file used for numerous purposes. This file is read every time the game starts and is always created/modified when the menu quits.
 
-A file called [minetest.conf.example](https://github.com/minetest/minetest/blob/master/minetest.conf.example) is provided as an example. See that file for a more complete list of options.
+A file called [minetest.conf.example](https://github.com/luanti-org/luanti/blob/master/minetest.conf.example) is provided as an example. See that file for a more complete list of options.
 
 Location
 --------

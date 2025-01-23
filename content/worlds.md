@@ -27,7 +27,7 @@ The files such as `env_meta.txt` **must** be in the root of the world’s folder
 World directory content
 -----------------------
 
-See [world\_format.md](https://github.com/minetest/minetest/blob/master/doc/world_format.md) in the Luanti source tree.
+See [world\_format.md](https://github.com/luanti-org/luanti/blob/master/doc/world_format.md) in the Luanti source tree.
 
 Schem file Creation / Import
 ----------------------------

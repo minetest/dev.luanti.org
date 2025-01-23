@@ -213,7 +213,7 @@ Hopefully if your using Linux you'll know how to do something similar, or someon
 
 ### Special Textures
 
-Luanti has some "special" textures which can be provided by texture packs to retexture engine-provided or special textures. See [texture\_packs.txt](https://github.com/minetest/minetest/blob/master/doc/texture_packs.txt) in the Luanti source tree contains a list of all these special textures
+Luanti has some "special" textures which can be provided by texture packs to retexture engine-provided or special textures. See [texture\_packs.txt](https://github.com/luanti-org/luanti/blob/master/doc/texture_packs.txt) in the Luanti source tree contains a list of all these special textures
 
 Editing or Creating Textures
 ----------------------------
@@ -239,7 +239,7 @@ Textures for Luanti maybe any size, but square images whose size is a power of 2
 
 Generally Luanti games and mods use the `.png` image format, but `.jpg`, `.bmp` `.tga` are also supported and may exist in some mods.
 
-Also check out the \[[texture\_packs.txt](http://github.com/minetest/minetest/blob/master/doc/texture_packs.txt)\] documentation in the Luanti source tree.
+Also check out the \[[texture\_packs.txt](http://github.com/luanti-org/luanti/blob/master/doc/texture_packs.txt)\] documentation in the Luanti source tree.
 
 #### Where to Start
 

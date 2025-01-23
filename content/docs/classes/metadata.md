@@ -23,7 +23,7 @@ No type information is stored for values; values will be coerced to and from str
 {{< /notice >}}
 
 {{< notice warning >}}
-[Getters currently resolve the value `${key}` to the value associated with `key`](https://github.com/minetest/minetest/issues/12577).
+[Getters currently resolve the value `${key}` to the value associated with `key`](https://github.com/luanti-org/luanti/issues/12577).
 {{< /notice >}}
 
 {{< notice tip >}}

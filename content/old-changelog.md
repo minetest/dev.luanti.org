@@ -205,7 +205,7 @@ Backported release containing only bug fixes and small features. 0.4.17 was rele
 
 * Introducing Client-Side modding (CSM for the initiated). You can now have local mods to read various client data and handle different client events. This new modding step is very secure, you don't have access to all standard Lua API, just a subset, to protect your computers. Mods should be installed in @user\_path@/clientmods.
 * You will also have access to Client side commands, starting with a dot.
-* If you want to know more about CSM API, please look at [Client Side Modding documentation](https://github.com/minetest/minetest/blob/master/doc/client_lua_api.md)
+* If you want to know more about CSM API, please look at [Client Side Modding documentation](https://github.com/luanti-org/luanti/blob/master/doc/client_lua_api.md)
 * Added by nerzhul, red-001, bigfoot547, Dumbeldor and paly2.
 
 ### Server Modding

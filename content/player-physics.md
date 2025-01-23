@@ -38,7 +38,7 @@ The idea is to add functionality to the Lua API by allowing to set modifiers (li
 
 This solution has strong community support, but sadly, it did not succeed yet.
 
-[https://github.com/minetest/minetest/pull/7269](https://github.com/minetest/minetest/pull/7269)
+[https://github.com/luanti-org/luanti/pull/7269](https://github.com/luanti-org/luanti/pull/7269)
 
 So we’re currently stuck with mod-based solutions, sadly.
 

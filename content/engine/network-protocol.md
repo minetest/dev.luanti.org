@@ -9,11 +9,11 @@ aliases:
 High-level protocol
 -------------------
 
-The high-level protocol is clearly written down and updated in [networkprotocol.h](https://github.com/minetest/minetest/blob/master/src/network/networkprotocol.h).
+The high-level protocol is clearly written down and updated in [networkprotocol.h](https://github.com/luanti-org/luanti/blob/master/src/network/networkprotocol.h).
 
-For specifics, refer to [client.cpp](https://github.com/minetest/minetest/blob/master/src/client.cpp) and [server.cpp](https://github.com/minetest/minetest/blob/master/src/server.cpp) for the sending, and [clientpackethandler.cpp](https://github.com/minetest/minetest/blob/master/src/network/clientpackethandler.cpp) and [serverpackethandler.cpp](https://github.com/minetest/minetest/blob/master/src/network/serverpackethandler.cpp) for the receiving.
+For specifics, refer to [client.cpp](https://github.com/luanti-org/luanti/blob/master/src/client.cpp) and [server.cpp](https://github.com/luanti-org/luanti/blob/master/src/server.cpp) for the sending, and [clientpackethandler.cpp](https://github.com/luanti-org/luanti/blob/master/src/network/clientpackethandler.cpp) and [serverpackethandler.cpp](https://github.com/luanti-org/luanti/blob/master/src/network/serverpackethandler.cpp) for the receiving.
 
-There is also an ascii art inside [clientiface.h](https://github.com/minetest/minetest/blob/master/src/clientiface.h) describing the protocol from a high level perspective.
+There is also an ascii art inside [clientiface.h](https://github.com/luanti-org/luanti/blob/master/src/clientiface.h) describing the protocol from a high level perspective.
 
 Actual minimum protocol version is: **24**. This corresponds to version **0.4.11**.
 
@@ -65,7 +65,7 @@ The actual SRP exchange is done in accordance with [RFC 2945](https://tools.ietf
 Low-level protocol
 ------------------
 
-References: [connection.h](https://github.com/minetest/minetest/blob/master/src/network/connection.h) [connection.cpp](https://github.com/minetest/minetest/blob/master/src/network/connection.cpp)
+References: [connection.h](https://github.com/luanti-org/luanti/blob/master/src/network/connection.h) [connection.cpp](https://github.com/luanti-org/luanti/blob/master/src/network/connection.cpp)
 
 The Luanti protocol is a small layer on top of UDP. There is a header and four packet types.
 

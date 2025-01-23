@@ -93,7 +93,7 @@ Sneaking used to be very buggy, but it has improved over time.
 
 ### Old bug: Avoiding fall damage
 
-Up to version 0.4.15, you don't suffer any fall damage if you fall on a normal block's edge or on a slab or snow or on some other non-cubic shapes while holding down the sneak key. This bug is known as [issue 329](https://github.com/minetest/minetest/issues/329) and is fixed since version 0.4.16.
+Up to version 0.4.15, you don't suffer any fall damage if you fall on a normal block's edge or on a slab or snow or on some other non-cubic shapes while holding down the sneak key. This bug is known as [issue 329](https://github.com/luanti-org/luanti/issues/329) and is fixed since version 0.4.16.
 
 ### The Sneak Glitch was a bug
 

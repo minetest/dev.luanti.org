@@ -31,5 +31,5 @@ You can also play Luanti on Linux phones. Starting with version 5.9.0[^2], Luant
 
 There is no iOS support due to legal uncertainties and lack of developer time. While the "MultiCraft" fork of Luanti supports iOS, it contains advertising and is still based on the outdated engine version 5.4.1, so it isn't recommended.
 
-[^1]: See PR [#14542](https://github.com/minetest/minetest/pull/14542) and its various predecessors.
-[^2]: See PRs [#14075](https://github.com/minetest/minetest/pull/14075) and [#14400](https://github.com/minetest/minetest/pull/14400).
+[^1]: See PR [#14542](https://github.com/luanti-org/luanti/pull/14542) and its various predecessors.
+[^2]: See PRs [#14075](https://github.com/luanti-org/luanti/pull/14075) and [#14400](https://github.com/luanti-org/luanti/pull/14400).

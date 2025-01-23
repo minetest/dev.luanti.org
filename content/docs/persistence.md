@@ -120,7 +120,7 @@ Use of the `data = assert(core.deserialize(lua, safe))` idiom is recommended.
 {{< /notice >}}
 
 {{< notice warning >}}
-[`core.deserialize` errors on large objects on LuaJIT](https://github.com/minetest/minetest/issues/7574)
+[`core.deserialize` errors on large objects on LuaJIT](https://github.com/luanti-org/luanti/issues/7574)
 {{< /notice >}}
 
 ## Engine-provided default persistence

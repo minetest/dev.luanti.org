@@ -25,7 +25,7 @@ When Luanti was initially created in 2010 it intended to replicate what Minecraf
 
 ### Who created Luanti?
 
-Luanti was originally created by [Perttu "celeron55" Ahola](https://www.c55.me/). The engine is currently developed by [this random bunch of lunatics](https://github.com/orgs/minetest/people) as well as [the community](https://github.com/minetest/minetest/graphs/contributors).
+Luanti was originally created by [Perttu "celeron55" Ahola](https://www.c55.me/). The engine is currently developed by [this random bunch of lunatics](https://github.com/orgs/minetest/people) as well as [the community](https://github.com/luanti-org/luanti/graphs/contributors).
 
 ### What is Luanti written in?
 
@@ -33,11 +33,11 @@ The Luanti engine is primarily written in C++ using a [forked version of the Irr
 
 ### Can I change the code myself?
 
-[Yes.](https://github.com/minetest/minetest/) Luanti is freely licensed ([LGPL 2.1 and others](https://github.com/minetest/minetest/blob/master/LICENSE.txt)).
+[Yes.](https://github.com/luanti-org/luanti/) Luanti is freely licensed ([LGPL 2.1 and others](https://github.com/luanti-org/luanti/blob/master/LICENSE.txt)).
 
 ### When will the next version of Luanti be released?
 
-Check the [GitHub milestones](https://github.com/minetest/minetest/milestones) for a good idea of how far along the next version is.
+Check the [GitHub milestones](https://github.com/luanti-org/luanti/milestones) for a good idea of how far along the next version is.
 
 #### Why did the version change from 0.4.17.1 to 5.0.0?
 
@@ -69,11 +69,11 @@ It is certainly possible to improve the UI, and some games style their GUI wonde
 
 ### The main menu sucks!
 
-[We're working on it.](https://github.com/minetest/minetest/issues/6733)
+[We're working on it.](https://github.com/luanti-org/luanti/issues/6733)
 
 ### Is Luanti multi-threaded?
 
-Yes. Luanti's client and server run in different threads. The server also runs map generation in worker threads, although this is limited to a single thread currently due to issues (but [can be changed in settings](https://github.com/minetest/minetest/blob/eea2a97/minetest.conf.example#L2973-L2984)). The client runs mesh generation in worker threads. As of 5.7.0, mapblock rendering is done in parallel on several threads.
+Yes. Luanti's client and server run in different threads. The server also runs map generation in worker threads, although this is limited to a single thread currently due to issues (but [can be changed in settings](https://github.com/luanti-org/luanti/blob/eea2a97/minetest.conf.example#L2973-L2984)). The client runs mesh generation in worker threads. As of 5.7.0, mapblock rendering is done in parallel on several threads.
 
 It's rare for games to be heavily concurrent as it's not needed for smaller games - it's usually only found in MMOs. It's a lot harder to write multi-threaded gameplay logic, which is in conflict with Luanti's aim to be an easy-to-use content creation platform. There is an API for mods to run tasks in a worker thread, however.
 
@@ -84,7 +84,7 @@ The name "Luanti" is a play on words from the Finnish word "Luonti" meaning crea
 ### What is "Minetest"?
 It is the old name for Luanti, which is slowly being replaced with the new name but will realistically never fully disappear.
 
-The origin of the old name was due to it starting as an experiment (a **test**, if you will) to replicate **Mine**craft Alpha all the way back in 2010. The name stuck, and [no one could agree](https://forum.luanti.org/viewtopic.php?f=5&t=17133) [on a new one](https://github.com/minetest/minetest/issues/13510). [Until we actually did](https://blog.luanti.org/2024/10/13/Introducing-Our-New-Name/).
+The origin of the old name was due to it starting as an experiment (a **test**, if you will) to replicate **Mine**craft Alpha all the way back in 2010. The name stuck, and [no one could agree](https://forum.luanti.org/viewtopic.php?f=5&t=17133) [on a new one](https://github.com/luanti-org/luanti/issues/13510). [Until we actually did](https://blog.luanti.org/2024/10/13/Introducing-Our-New-Name/).
 
 ### Can you add support for iOS?
 
@@ -158,7 +158,7 @@ Minetest Game is not designed with a story or goal in mind. It is simply a sandb
 
 ### You should add \[insert feature here\] to Minetest Game!
 
-Minetest Game is [currently in maintenance-only mode](https://github.com/minetest/minetest_game/issues/2710). New gameplay features are not being considered and should be added yourself as a mod.
+Minetest Game is [currently in maintenance-only mode](https://github.com/luanti-org/luanti_game/issues/2710). New gameplay features are not being considered and should be added yourself as a mod.
 
 ### How does \[insert item or block here\] work? How do I craft it?
 
@@ -196,7 +196,7 @@ Yes. It is recommended to use an external program to bind them, as the current e
 
 ### Why can't I change settings in the pause screen?
 
-Many settings require the game to reload anyway, but otherwise there simply isn't a menu implemented to do it. [Contributions welcome](https://github.com/minetest/minetest/pulls).
+Many settings require the game to reload anyway, but otherwise there simply isn't a menu implemented to do it. [Contributions welcome](https://github.com/luanti-org/luanti/pulls).
 
 ### How big is the map?
 
@@ -220,7 +220,7 @@ Minetest Game uses pre-1.8 Minecraft skins (64x32). These support regular body t
 
 If you play Minetest Game, you can build a [bed](https://wiki.luanti.org/Bed "Bed") and sleep at night. On your next life, you will spawn on the bed.
 
-Otherwise, you set your spawn point for _all_ worlds using `static_spawnpoint = (x,y,z)` in your [`minetest.conf`](https://github.com/minetest/minetest/blob/master/minetest.conf.example) file.
+Otherwise, you set your spawn point for _all_ worlds using `static_spawnpoint = (x,y,z)` in your [`minetest.conf`](https://github.com/luanti-org/luanti/blob/master/minetest.conf.example) file.
 
 ### How do I make the world flat?
 
@@ -256,7 +256,7 @@ In Minetest Game, you can avoid getting lost again if use `/sethome` at home to 
 
 ### How do I generate a map of my world?
 
-To generate a top-down image of your world you can use [`minetestmapper`](https://github.com/minetest/minetestmapper), and to generate an isometric view of a part of the world you can use [`maprenderer`](https://github.com/minetest-go/maprenderer).
+To generate a top-down image of your world you can use [`minetestmapper`](https://github.com/luanti-org/luantimapper), and to generate an isometric view of a part of the world you can use [`maprenderer`](https://github.com/minetest-go/maprenderer).
 
 ### Can I use WorldPainter with Luanti?
 
@@ -288,7 +288,7 @@ Luanti uses the [Lua language](https://www.lua.org/) for games and mods. It is s
 
 ### How can I learn to make games and mods?
 
-We recommend the [Luanti Modding Book](https://rubenwardy.com/minetest_modding_book/en/index.html) to start. For more experienced users there is the [Lua API reference](https://github.com/minetest/minetest/blob/master/doc/lua_api.md) available in the Luanti source tree, which is also available [in a pretty HTML version](https://api.luanti.org/).
+We recommend the [Luanti Modding Book](https://rubenwardy.com/minetest_modding_book/en/index.html) to start. For more experienced users there is the [Lua API reference](https://github.com/luanti-org/luanti/blob/master/doc/lua_api.md) available in the Luanti source tree, which is also available [in a pretty HTML version](https://api.luanti.org/).
 
 If you need further help feel free to ask any questions in the forums or in any of the discussion channels (e.g. IRC, Discord...).
 
@@ -310,11 +310,11 @@ Lua can easily outperform a bridge to Java in most cases. If you really need to 
 
 ### What is the Luanti API?
 
-The Luanti API gives you access to everything the engine currently has to offer. You can find the latest API reference [here](https://github.com/minetest/minetest/blob/master/doc/lua_api.md). A ReadTheDocs version can be read [here](https://api.luanti.org/).
+The Luanti API gives you access to everything the engine currently has to offer. You can find the latest API reference [here](https://github.com/luanti-org/luanti/blob/master/doc/lua_api.md). A ReadTheDocs version can be read [here](https://api.luanti.org/).
 
 ### Can mods overwrite the engine?
 
-Luanti mods must use the engine-provided API. Unlike Minecraft, Luanti mods cannot change the engine. If you think the engine is missing a feature, consider [opening an issue](https://github.com/minetest/minetest/issues) or [write the feature yourself](https://github.com/minetest/minetest/pulls).
+Luanti mods must use the engine-provided API. Unlike Minecraft, Luanti mods cannot change the engine. If you think the engine is missing a feature, consider [opening an issue](https://github.com/luanti-org/luanti/issues) or [write the feature yourself](https://github.com/luanti-org/luanti/pulls).
 
 ### What is a formspec?
 
@@ -348,7 +348,7 @@ _See [Troubleshooting#Error messages without crashes](https://wiki.luanti.org/Tr
 
 ### Why can't I make other keybinds?
 
-This is a missing feature. [Contributions welcome](https://github.com/minetest/minetest/pulls).
+This is a missing feature. [Contributions welcome](https://github.com/luanti-org/luanti/pulls).
 
 ### How do I make models for my mods?
 
@@ -364,4 +364,4 @@ Yes, but this is not officially supported in the engine, you will need to mainta
 
 ### Can I sell games I make with Luanti?
 
-As long as you comply with [the license](https://github.com/minetest/minetest/blob/master/LICENSE.txt), yes. For the engine, you will need to publish the source code to any modifications you've made to it. If you use others' mods in the game then make sure you comply with their license terms and that they don't contain non-free assets that prevent commercial usage.
+As long as you comply with [the license](https://github.com/luanti-org/luanti/blob/master/LICENSE.txt), yes. For the engine, you will need to publish the source code to any modifications you've made to it. If you use others' mods in the game then make sure you comply with their license terms and that they don't contain non-free assets that prevent commercial usage.

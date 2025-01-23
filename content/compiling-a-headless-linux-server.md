@@ -54,7 +54,7 @@ make amalg
 Clone Luanti with Git. `-b stable-5` will checkout the latest stable version to build, which may be recommended to run a server for stability reasons over the latest development version. Omitting this will clone the latest development version instead.
 
 ```bash
-git clone -b stable-5 --depth 1 https://github.com/minetest/minetest.git
+git clone -b stable-5 --depth 1 https://github.com/luanti-org/luanti.git
 cd minetest
 ```
 
