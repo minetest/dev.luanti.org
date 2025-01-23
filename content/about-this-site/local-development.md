@@ -9,7 +9,7 @@ _(anyone)_
 When cloning the repository you need to clone it recursively so that the theme submodule gets included:
 
 ```bash
-git clone --recursive https://github.com/minetest/dev.luanti.org
+git clone --recursive https://github.com/luanti-org/dev.luanti.org
 ```
 
 If you have already cloned you can fetch the submodules as such:

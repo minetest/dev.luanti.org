@@ -19,7 +19,7 @@ See [About This Site](content/about-this-site/_index.md) for more information
   - `start`: Builds and serves the site at http://localhost:1313 with Hugo.
   - `test:a11y`: Builds and serves the site, then uses Playwright and axe to test accessibility
   - `test:a11y:tests`: Not meant for independent use, only as part of `test:a11y`
-  - `test:spelling`: Reports all apparent spelling errors. WIP, ref [#83](https://github.com/minetest/dev.luanti.org/issues/83) for details.
+  - `test:spelling`: Reports all apparent spelling errors. WIP, ref [#83](https://github.com/luanti-org/dev.luanti.org/issues/83) for details.
 - depdendencies
   - `hugo-extended`: Static site generator that turns Markdown and shortcodes into HTML
 - devDependencies

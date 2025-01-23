@@ -6,7 +6,7 @@ bookCollapseSection: true
 # About This Site
 
 This site is created using [Hugo](https://gohugo.io/), with theme [Hugo Book](https://themes.gohugo.io/themes/hugo-book/). 
-The site's source content can be found [on GitHub](https://github.com/minetest/dev.luanti.org/tree/master/content).
+The site's source content can be found [on GitHub](https://github.com/luanti-org/dev.luanti.org/tree/master/content).
 
 ## Contributing
 
@@ -23,4 +23,4 @@ Luanti Documentation will be the central resource for the Luanti project as a wh
 * Engine reference and internal structures
 * Server and platform (player-facing) usage and guides
 
-Our roadmap can be found at [GitHub issue #113: Roadmap](https://github.com/minetest/dev.luanti.org/issues/113).
+Our roadmap can be found at [GitHub issue #113: Roadmap](https://github.com/luanti-org/dev.luanti.org/issues/113).
