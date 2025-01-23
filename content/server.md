@@ -46,17 +46,6 @@ The next time you log into the server, you will input the username and password 
 
 The next time you log into the server, you will input the username and password you registered with and press the _Login_ button.
 
-Playing on the server
----------------------
-
-![](/images/server/Switchboard_PVP_spawn.jpg)
-
-At the spawn of Switchboard PVP made by yngwie123
-
-![](/images/server/Just_Test_Tribute.jpg)
-
-Playing on Just Test Tribute
-
 ### Basics
 
 The gameplay in a multiplayer server is basically the same as in a singleplayer game. The same rules apply. See [Getting Started](/getting-started#gameplay) for gameplay-related concepts. Well, at least in theory.
