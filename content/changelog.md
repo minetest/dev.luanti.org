@@ -146,7 +146,7 @@ Released 2024-08-11
 
 ### Deprecations and compatibility notes
 
-* "mod\_translation\_updater.py" is now located at [https://github.com/minetest/modtools](https://github.com/minetest/modtools) (_Zughy_)
+* "mod\_translation\_updater.py" is now located at [https://github.com/luanti-org/modtools](https://github.com/luanti-org/modtools) (_Zughy_)
 * The setting "opaque\_water" is now called "translucent\_liquids". (_Xeno333_)
 * Disabling fog and camera updates now requires the "debug" privilege (_sfan5_)
 * Since 5.9.0-dev, the Minetest repository now includes IrrlichtMt. The minetest/irrlicht repository is no longer a dependency of newer releases.

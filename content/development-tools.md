@@ -7,7 +7,7 @@ aliases:
 # Development Tools
 This page contains a list of tools that are useful for developing games and mods for Luanti, or working with parts of the engine.
 
-In addition to this list, you can also see the [Development Tools](https://content.luanti.org/packages/?tag=developer_tools) tag on ContentDB for mods useful for development and the [modtools](https://github.com/minetest/modtools) repository for officially maintained modding tools.
+In addition to this list, you can also see the [Development Tools](https://content.luanti.org/packages/?tag=developer_tools) tag on ContentDB for mods useful for development and the [modtools](https://github.com/luanti-org/modtools) repository for officially maintained modding tools.
 
 ## Engine development
 - [Development Test](https://wiki.luanti.org/Games/Development_Test): A testing game for testing various engine features
@@ -50,7 +50,7 @@ In addition to this list, you can also see the [Development Tools](https://conte
 
 ## Translation
 - [Gettext utils](https://www.gnu.org/software/gettext/): For maintaining content translations for the new .po/Gettext format
-- [mod_translation_updater](https://github.com/minetest/modtools/blob/main/mod_translation_updater.py): Python script to create and update legacy .tr mod translation files
+- [mod_translation_updater](https://github.com/luanti-org/modtools/blob/main/mod_translation_updater.py): Python script to create and update legacy .tr mod translation files
 
 ## ContentDB
 - [cdbrelease](https://gitlab.com/sztest/cdbrelease): Release automation tool for ContentDB packages

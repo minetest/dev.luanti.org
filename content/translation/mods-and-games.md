@@ -131,7 +131,7 @@ As a mod or game developer, if you want to implement translation support, please
 
 We highly recommend you use PO instead of TR, if you can.
 
-If you’re stuck with TR, the [modtools](https://github.com/minetest/modtools) contain a an extremely useful tool that can automatically generate and update TR files for mods.
+If you’re stuck with TR, the [modtools](https://github.com/luanti-org/modtools) contain a an extremely useful tool that can automatically generate and update TR files for mods.
 
 ### Online translation
 
