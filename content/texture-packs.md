@@ -6,10 +6,6 @@ alias:
 
 # Texture Packs
 
-![](/images/texture-packs/Texture_comparison.png)
-
-The default texture pack (left), vs HDX-256 (right).
-
 A **texture pack** is a collection of files that are used to change the in-game textures of:
 
 *   [blocks](/Nodes)
