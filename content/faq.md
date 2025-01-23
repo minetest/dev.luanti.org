@@ -158,7 +158,7 @@ Minetest Game is not designed with a story or goal in mind. It is simply a sandb
 
 ### You should add \[insert feature here\] to Minetest Game!
 
-Minetest Game is [currently in maintenance-only mode](https://github.com/luanti-org/luanti_game/issues/2710). New gameplay features are not being considered and should be added yourself as a mod.
+Minetest Game is [currently in maintenance-only mode](https://github.com/luanti-org/minetest_game/issues/2710). New gameplay features are not being considered and should be added yourself as a mod.
 
 ### How does \[insert item or block here\] work? How do I craft it?
 

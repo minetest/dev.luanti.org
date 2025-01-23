@@ -256,7 +256,7 @@ As part of Minetest's efforts to modernise and improve graphics code, we've been
 
 ### Minetest Game
 
-* No longer bundled in Minetest. Please have look at [https://github.com/luanti-org/luanti\_game/](https://github.com/luanti-org/luanti_game/)
+* No longer bundled in Minetest. Please have look at [https://github.com/luanti-org/minetest_game/](https://github.com/luanti-org/minetest_game/)
 
 5.7.0 → 5.8.0
 -------------
@@ -349,7 +349,7 @@ Released on 4 December 2023.
 ### Minetest Game
 
 * **Minetest Game is no longer the default game and no longer installed by default**
-* New water textures (the old ones were [non-free](https://github.com/luanti-org/luanti_game/issues/3051)) (_Lopano_)
+* New water textures (the old ones were [non-free](https://github.com/luanti-org/minetest_game/issues/3051)) (_Lopano_)
 * Improve leaves textures in "Opaque Leaves" mode (_Wuzzy_)
 * When a player dies in protected air, bones now spawn as a block instead of dropping as an item (_OgelGames_)
 * Add API for sapling growth (_aegroto_)

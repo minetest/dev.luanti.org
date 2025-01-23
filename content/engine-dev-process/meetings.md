@@ -727,7 +727,7 @@ Also have a look at "One Approval" PRs and decide on whether to merge, request c
 
 **MTG discussion/reviews**
 
-* [Don't block fluid (water, lava) flow by flowers, mushrooms, grass and saplings](https://github.com/luanti-org/luanti_game/pull/2942)
+* [Don't block fluid (water, lava) flow by flowers, mushrooms, grass and saplings](https://github.com/luanti-org/minetest_game/pull/2942)
     * Does this break builds? Does this count as a feature? **\->** Closed as too close to a feature
 
 2021-09-04
@@ -798,8 +798,8 @@ Also have a look at "One Approval" PRs and decide on whether to merge, request c
 
 **MTG discussion/reviews**
 
-* [https://github.com/luanti-org/luanti\_game/pull/2803](https://github.com/luanti-org/luanti_game/pull/2803) Texture compression issue
-    * Based on issue [https://github.com/luanti-org/luanti\_game/issues/2801](https://github.com/luanti-org/luanti_game/issues/2801)
+* [https://github.com/luanti-org/minetest_game/pull/2803](https://github.com/luanti-org/minetest_game/pull/2803) Texture compression issue
+    * Based on issue [https://github.com/luanti-org/minetest_game/issues/2801](https://github.com/luanti-org/minetest_game/issues/2801)
     * imagefilters.cpp imageCleanTransparent() might need fixing to get white-filled opaque leaves after adding colors to the texture
     * Affected textures are whitelisted, but ExeVirus review that again
 
@@ -877,8 +877,8 @@ Logs: [http://irc.minetest.net/minetest-dev/2020-10-03#i\_5738345](http://irc.mi
 
 **MTG discussion/reviews**
 
-* Wall extension (trivial): [https://github.com/luanti-org/luanti\_game/pull/2237](https://github.com/luanti-org/luanti_game/pull/2237)
-* Craftguide: [https://github.com/luanti-org/luanti\_game/pull/2396](https://github.com/luanti-org/luanti_game/pull/2396)
+* Wall extension (trivial): [https://github.com/luanti-org/minetest_game/pull/2237](https://github.com/luanti-org/minetest_game/pull/2237)
+* Craftguide: [https://github.com/luanti-org/minetest_game/pull/2396](https://github.com/luanti-org/minetest_game/pull/2396)
 
 2020-06-06
 ----------
@@ -926,7 +926,7 @@ Most important first.
 
 **MTG discussion/reviews**
 
-* Probably 5.3.0 or later: Craft guide: [https://github.com/luanti-org/luanti\_game/pull/2396](https://github.com/luanti-org/luanti_game/pull/2396)
+* Probably 5.3.0 or later: Craft guide: [https://github.com/luanti-org/minetest_game/pull/2396](https://github.com/luanti-org/minetest_game/pull/2396)
     * Should this be added in 5.2 or not?
 
 2020-01-11
@@ -949,7 +949,7 @@ Most important first.
 
 **MTG discussion/reviews**
 
-* Craftguide from pauloue [https://github.com/luanti-org/luanti\_game/pull/2396](https://github.com/luanti-org/luanti_game/pull/2396)
+* Craftguide from pauloue [https://github.com/luanti-org/minetest_game/pull/2396](https://github.com/luanti-org/minetest_game/pull/2396)
 
 2019-08-10
 ----------
@@ -1107,7 +1107,7 @@ Arranged by: Krock
 
 **MTG discussion/reviews**
 
-* Tools: rebalance ([https://github.com/luanti-org/luanti\_game/issues/1681](https://github.com/luanti-org/luanti_game/issues/1681))
+* Tools: rebalance ([https://github.com/luanti-org/minetest_game/issues/1681](https://github.com/luanti-org/minetest_game/issues/1681))
     * Needs either a levelling system and/or special abilities for different materials to add variety
     * paramat suggests removing bronze, which is incorrectly a stronger tool than steel ([http://irc.minetest.net/minetest-dev/2018-04-07#i\_5272959](http://irc.minetest.net/minetest-dev/2018-04-07#i_5272959))
     * Future mese concept: [http://irc.minetest.net/minetest-dev/2018-04-07#i\_5273013](http://irc.minetest.net/minetest-dev/2018-04-07#i_5273013)

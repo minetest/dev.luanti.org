@@ -17,7 +17,7 @@ This page contains a hopefully complete list of terminology related to Luanti.
 -   [**Game**](https://wiki.luanti.org/Games): A collection of mods and some additional metadata, which can be selected from the main menu. Not to be confused with Modpack which is a pack of mods selectable like regular mods.
     -   Previously were referred to as **Subgames**, but this term is outdated. Please update any references to it as such.
 -   [**Minetest Game**](http://wiki.minetest.net/Games/Minetest%20Game) (abbreviated MTG): The name of the game that used to be shipped with Luanti by default.
-    -   [minetest_game](https://github.com/luanti-org/luanti_game): Repository name of Minetest Game and technical name of the game.
+    -   [minetest_game](https://github.com/luanti-org/minetest_game): Repository name of Minetest Game and technical name of the game.
 -   [**Mods**](https://wiki.luanti.org/Mods) : What all games consist of, or can be added on top of an existing game. They are written in Lua using Luanti's modding API.
     -   Sometimes abbreviated SSM, Server-Side Mod to make the distinction that regular Luanti mods run on the server as compared to CSMs which run on the client.
 -   **Client-Side Mod** (abbreviated **CSM**): An experimental API allowing for the client itself to run Lua code.
