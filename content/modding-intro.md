@@ -28,9 +28,9 @@ This is a concise description of the entire API, explaining functions, data stru
 
 Any functions not listed here are subject to change and not guaranteed to be compatible across versions, though usually they are.
 
-### The Minetest-Docs Project
+### The minetest_docs Project
 
-A work-in-progress project is underway to create new, more detailed, documentation. They can be read from its [GitHub repo](https://github.com/luanti-org/luanti_docs/), contributions are greatly appreciated.
+minetest_docs was a project to create new, more detailed documentation. The final contents from the project can currently be found under the [/docs/](/docs/) directory here.
 
 Useful tools
 ------------
