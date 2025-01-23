@@ -35,7 +35,7 @@ In `minetest.conf`, you can configure most (but not all) keys, but a few more ke
 A few things to note:
 
 * Controls are written in the format `keymap_<action name> = <key name>`, e.g. `keymap_forward = KEY_KEY_W`
-* The list of possible controls (value right of the equals sign) can be seen in [\[1\]](https://github.com/minetest/irrlicht/blob/master/include/Keycodes.h). If your key isn't listed there, try writing the literal character
+* The list of possible controls (value right of the equals sign) can be seen in [\[1\]](https://github.com/luanti-org/luanti/blob/master/irr/include/Keycodes.h). If your key isn't listed there, try writing the literal character
 * To disable a control completely, leave the part right of the equals sign empty, e.g. `keymap_toggle_debug =`
 
 See [Controls](https://wiki.luanti.org/Controls "Controls") for a list of controls and their setting name (if available).

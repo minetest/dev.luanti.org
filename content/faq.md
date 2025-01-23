@@ -59,7 +59,7 @@ When you boot up Luanti for the first time, it will point you to the content bro
 
 Irrlicht is a rather ancient real-time 3D rendering library. Currently Luanti uses it for rendering, managing the window, the underlying GUI, input handling, model and image format support.
 
-As it's old and mostly unmaintained, there is work on moving away from Irrlicht. Currently Luanti uses its own fork of Irrlicht called [IrrlichtMt](https://github.com/minetest/irrlicht), which is supposed to distill Irrlicht down to what Luanti actually uses, along with fixing issues that were previously out of reach. The goal is to reduce the reliance on Irrlicht in favour of SDL2 and our own rendering pipeline.
+As it's old and mostly unmaintained, there is work on moving away from Irrlicht. Currently Luanti uses its own fork of Irrlicht called [IrrlichtMt](https://github.com/luanti-org/luanti/tree/master/irr#irrlichtmt-version-19), which is supposed to distill Irrlicht down to what Luanti actually uses, along with fixing issues that were previously out of reach. The goal is to reduce the reliance on Irrlicht in favour of SDL2 and our own rendering pipeline.
 
 ### Why does the UI look so old?
 
