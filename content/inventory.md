@@ -1,7 +1,12 @@
-# Inventory - Luanti Wiki
+---
+title: Inventory
+aliases:
+- /Inventory
+---
 
+# Inventory
 
-An **inventory** is primarily used to store [item stacks](https://wiki.luanti.org/Item_stack "Item stack"). There are other uses, such as [crafting](https://wiki.luanti.org/Crafting "Crafting"). An inventory consists of a rectangular grid of item slots. Each item slot can be either empty or hold one item stack. Item stacks can be moved freely between slot and slot, given that the destination slot is either empty or of the same item type.
+An **inventory** is primarily used to store [item stacks](https://dev.luanti.org/item-stack). There are other uses, such as crafting. An inventory consists of a rectangular grid of item slots. Each item slot can be either empty or hold one item stack. Item stacks can be moved freely between slot and slot, given that the destination slot is either empty or of the same item type.
 
 Controls
 --------
@@ -42,56 +47,40 @@ The inventory has many shortcuts for convenience. Using the mouse and the shift 
 When you're **holding no item stack on your cursor**:
 
 *   Shift+click: **Move item stack** to other inventory (if available)
-*   Hold down Shift+click while moving mouse over item slots: Continously **move item stacks** to other inventory (if available)
-*   Double click: **Pick up all itemstacks of the same type** in the inventory
+*   Hold down Shift+click while moving mouse over item slots: Continuously **move item stacks** to other inventory (if available)
+*   Double click: **Pick up all item stacks of the same type** in the inventory
 *   Pick up an item stack with leftclick, keep the mouse button pressed and drag cursor over slots: **Pick up items** of the same type
-*   Shift+click on crafting output slot: **[Craft](https://wiki.luanti.org/Crafting "Crafting") and move** result to inventory
+*   Shift+click on crafting output slot: **Craft and move** result to inventory
     *   Left mouse button: **Craft as many as possible**
     *   Mouse wheel: **Craft 10 times**
     *   Right mouse button: **Craft once**
 
 When you're **holding an item stack on your cursor**:
 
-*   Drag cursor over slots while leftclicking: **Split stacks evenly** over the slots you touched
-*   Drag cursor over slots while middleclicking: **Place 10 items** on every slot you touched
-*   Drag cursor over slots while rightclicking: **Place 1 item** on every slot you touched
+*   Drag cursor over slots while left-clicking: **Split stacks evenly** over the slots you touched
+*   Drag cursor over slots while middle-clicking: **Place 10 items** on every slot you touched
+*   Drag cursor over slots while right-clicking: **Place 1 item** on every slot you touched
 
 ### Inventory debug
 
-This is something for developers and only works if you have the “debug” [privilege](https://wiki.luanti.org/Privileges "Privileges"). If you press F5 when the inventory menu is open, you activate the inventory debug. The formspec elements that your cursor hovers will be highlighted. Press F5 again to disable inventory debug.
+This is something for developers and only works if you have the “debug” [privilege](https://dev.luanti.org/privileges). If you press F5 when the inventory menu is open, you activate the inventory debug. The formspec elements that your cursor hovers will be highlighted. Press F5 again to disable inventory debug.
 
-Inventories in [Minetest Game](https://wiki.luanti.org/Games/Minetest_Game "Games/Minetest Game")
--------------------------------------------------------------------------------------------------
+Inventories in [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/)
+-------------------------------------------------------------------------------------------
 
 ### Player inventory
 
-[![](https://wiki.luanti.org/images/thumb/d/db/Inventory.png/250px-Inventory.png)](https://wiki.luanti.org/File:Inventory.png)
+[![](https://dev.luanti.org/images/thumb/d/db/Inventory.png/250px-Inventory.png)](https://dev.luanti.org/File:Inventory.png)
 
-The player inventory is in the [inventory menu](https://wiki.luanti.org/Inventory_menu "Inventory menu") and has a size of 8 rows and 4 lines, providing 32 item slots of storage. It is always available. The top line makes the [hotbar](https://wiki.luanti.org/Hotbar "Hotbar").
-
-### [Chest](https://wiki.luanti.org/Chest "Chest") and [Locked Chest](https://wiki.luanti.org/Locked_Chest "Locked Chest")
-
-Chests and locked chests both provide 8 × 4 inventories.
-
-### [Bookshelf](https://wiki.luanti.org/Bookshelf "Bookshelf")
-
-A bookshelf has a special 8×2 inventory which can only be used for 1 [book](https://wiki.luanti.org/Book "Book") per slot.
-
-### [Vessels Shelf](https://wiki.luanti.org/Vessels_Shelf "Vessels Shelf")
-
-A vessels shelf has a special 8×2 inventory which can only be used for glass bottles and drinking glasses.
-
-### [Bones](https://wiki.luanti.org/Bones "Bones")
-
-When a [player](https://wiki.luanti.org/Player "Player") dies, a bones block is generated. It has an inventory which contains all the items of the player who died. The bones’ inventory acts in many special ways, see [Bones](https://wiki.luanti.org/Bones "Bones") for more information.
+The player inventory is in the [inventory menu](https://dev.luanti.org/inventory-menu) and has a size of 8 rows and 4 lines, providing 32 item slots of storage. It is always available. The top line makes the hotbar.
 
 ### Other inventories
 
-Other inventories are the [crafting grid](https://wiki.luanti.org/Crafting#Crafting_grid_and_output_slot "Crafting") and in the [furnace](https://wiki.luanti.org/Furnace "Furnace"). The crafting grid has the same properties of an inventory but you can also [craft](https://wiki.luanti.org/Crafting "Crafting") new items with it. You keep your items if you store them in the crafting grid and close the inventory menu. Even the fuel and smelting slots of the furnace are in fact just special cases of inventories which are, in this case, 1×1 inventories, even though the latter is limited to “fuel”-type items.
+Other inventories are the crafting grid and in the furnace. The crafting grid has the same properties of an inventory but you can also craft new items with it. You keep your items if you store them in the crafting grid and close the inventory menu. Even the fuel and smelting slots of the furnace are in fact just special cases of inventories which are, in this case, 1×1 inventories, even though the latter is limited to “fuel”-type items.
 
-Inventories in other [games](https://wiki.luanti.org/Games "Games")
--------------------------------------------------------------------
+Inventories in other games
+--------------------------
 
-Other [mods](https://wiki.luanti.org/Mods "Mods") or games can completely customize the inventory menu to change the inventories there and also add inventories basicly whereever the modder wants to. In fact, Minetest Game just shows one possibility to use inventories.
+Other [mods](https://dev.luanti.org/mods) or games can completely customize the inventory menu to change the inventories there and also add inventories basically wherever the modder wants to. In fact, Minetest Game just shows one possibility to use inventories.
 
-For the purpose of this wiki, an ordinary inventory in the inventory menu is refered to as “player inventory”.
+For the purpose of this wiki, an ordinary inventory in the inventory menu is referred to as “player inventory”.
