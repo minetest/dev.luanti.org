@@ -14,25 +14,14 @@ Inventory menu
 
 The **inventory menu** is a special in-game menu where the player normally, but not necessarily, finds an inventory and other related stuff.
 
-### Notable examples
-
+### Engine built-in
 ![](/images/inventory/Inventory_menu_illustrated.png)
 
-Illustration of the default inventory menu in [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/).
+Illustration of the default inventory menu in the engine.
 
 The default inventory menu consists of a 3 × 3 crafting grid with an output slot at the upper part and an 8 × 4 inventory (which is also referred to as the “player inventory”) at the lower part. The first line of the player inventory make the hotbar.
 
 The default inventory menu is used in games that do not specify a different inventory menu.
-
-![](/images/inventory/Creative_inventory_menu.png)
-
-Illustration of the creative inventory menu in Minetest Game, using the [sfinv mod](https://content.luanti.org/packages/rubenwardy/sfinv/).
-
-The creative inventory menu is a variant of the default inventory menu and is used when creative mode is turned on. It adds a creative inventory and a trash slot.
-
-The creative inventory is an unchangeable take-only inventory with almost all available items. Since there are many _available_ items, the creative inventory is organized in several pages which can be flipped using the buttons **<<** and **>>**.
-
-The trash slot destroys any item stack which is placed into it immediately. It is useful to get rid of unwanted items.
 
 ### In other games
 
@@ -96,20 +85,3 @@ When you're **holding an item stack on your cursor**:
 ### Inventory debug
 
 This is something for developers and only works if you have the “debug” [privilege](/privileges). If you press F5 when the inventory menu is open, you activate the inventory debug. The formspec elements that your cursor hovers will be highlighted. Press F5 again to disable inventory debug.
-
-Inventories in Minetest Game
-----------------------------
-
-### Player inventory
-
-![](/images/inventory/Inventory.png)
-
-The player inventory in Minetest Game
-
-The default player inventory has a size of 8 rows and 4 lines, providing 32 item slots of storage. It is always available. The top line makes the hotbar.
-
-### Other inventories
-
-Other inventories are the crafting grid and in the furnace. The crafting grid has the same properties of an inventory but you can also craft new items with it. You keep your items if you store them in the crafting grid and close the inventory menu. Even the fuel and smelting slots of the furnace are in fact just special cases of inventories which are, in this case, 1×1 inventories, even though the latter is limited to “fuel”-type items.
-
-For the purpose of this wiki, an ordinary inventory in the inventory menu is referred to as “player inventory”.
