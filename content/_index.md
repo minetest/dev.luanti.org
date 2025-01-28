@@ -5,35 +5,16 @@ aliases:
 - "/Main_Page"
 ---
 
-# Luanti Developer Wiki
+# Luanti Documentation
 
-Welcome to the **Luanti Developer Wiki**, here you learn how Luanti and games and mods for Luanti are developed.
+Welcome to the **Luanti Documentation** website. This is a work-in-progress effort with the purpose of acting as a central hub for well-maintained documentation about the Luanti engine, for players as well as for developers.
 
-**Luanti** is a [game engine](https://en.wikipedia.org/wiki/Game_engine) inspired by Minecraft, Infiniminer and others. It's licensed under the GNU LGPL 2.1, with artwork generally covered by CC BY-SA 3.0. There are two major parts to the system, the first being a [core engine](/Engine/Structure "Engine structure") written in C++, the second being a modding API that exposes useful functions to a Lua environment.
+It was started from the remnants of the old Luanti Developer Wiki, and currently resides at the dev.luanti.org domain though this is subject to change. Content from the [Luanti Wiki](https://wiki.luanti.org) which are solely engine-related in nature are also in the process of being migrated over to here.
 
-The Luanti Wiki for players is located at [wiki.luanti.org](https://wiki.luanti.org/).
+For more information about this site as well as how to contribute to the content, see [About This Site](/about-this-site/).
 
-Contribute to Luanti!
----------------------
+## Contents
 
-#### Develop the core engine
-* Browse the [source code](https://github.com/luanti-org/luanti)
-* [Engine overview](/Engine)
-* Help [make a release](/Releasing_Luanti)
+All pages currently available are listed in the left sidebar, accessible through the hamburger menu to the left on mobile. Some pages are listed under categories and sub-categories, which can be expanded by clicking on the arrow icons to the right. The search bar also allows you to discover what is currently available.
 
-#### Develop a mod or a game
-* Get [introduced to the mod API](/Modding_Intro)
-* Check out the [Lua API Documentation](https://github.com/luanti-org/luanti/blob/master/doc/lua_api.md)
-
-#### Document, translate, and create
-* Help with the [engine documentation](/Engine)
-* Help complete this wiki by checking out the [contributors](https://github.com/wsor4035/devwiki/graphs/contributors) page
-* Help [translate Luanti](/Translation) into other languages
-
-#### Be an excellent community member
-* Find out how you can start contributing like a pro
-
-Content Index
--------------
-
-Before you start, you should look at the [terminology](/terminology).
+The structure of the documentation is subject to change and a more proper content index will be available in the future.

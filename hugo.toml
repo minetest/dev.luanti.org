@@ -1,6 +1,6 @@
 baseURL = 'https://dev.luanti.org/'
 languageCode = 'en-us'
-title = 'Developer Wiki'
+title = 'Luanti Documentation'
 theme = ['hugo-notice', 'hugo-book']
 enableGitInfo = true
 
