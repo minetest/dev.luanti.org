@@ -7,7 +7,7 @@ aliases:
 
 # Inventory
 
-An **inventory** is primarily used to store [item stacks](https://dev.luanti.org/item-stack). There are other uses, such as crafting. An inventory consists of a rectangular grid of item slots. Each item slot can be either empty or hold one item stack. Item stacks can be moved freely between slot and slot, given that the destination slot is either empty or of the same item type.
+An **inventory** is primarily used to store [item stacks](/items#item-stack). There are other uses, such as crafting. An inventory consists of a rectangular grid of item slots. Each item slot can be either empty or hold one item stack. Item stacks can be moved freely between slot and slot, given that the destination slot is either empty or of the same item type.
 
 Inventory menu
 --------------
@@ -36,7 +36,7 @@ The trash slot destroys any item stack which is placed into it immediately. It i
 
 ### In other games
 
-The inventory menu can be completely customized. [Mods](https://dev.luanti.org/mods) may add inventories and basically add every other available menu widget the modders would like to. Mods can change the design of the menu and much more. In fact the inventory menu is really just a menu. The inventory menu can be designed to contain much more than just inventories or it can be designed to contain no inventories at all.
+The inventory menu can be completely customized. [Mods](/mods) may add inventories and basically add every other available menu widget the modders would like to. Mods can change the design of the menu and much more. In fact the inventory menu is really just a menu. The inventory menu can be designed to contain much more than just inventories or it can be designed to contain no inventories at all.
 
 Controls
 --------
@@ -95,10 +95,10 @@ When you're **holding an item stack on your cursor**:
 
 ### Inventory debug
 
-This is something for developers and only works if you have the “debug” [privilege](https://dev.luanti.org/privileges). If you press F5 when the inventory menu is open, you activate the inventory debug. The formspec elements that your cursor hovers will be highlighted. Press F5 again to disable inventory debug.
+This is something for developers and only works if you have the “debug” [privilege](/privileges). If you press F5 when the inventory menu is open, you activate the inventory debug. The formspec elements that your cursor hovers will be highlighted. Press F5 again to disable inventory debug.
 
-Inventories in [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/)
--------------------------------------------------------------------------------------------
+Inventories in Minetest Game
+----------------------------
 
 ### Player inventory
 
