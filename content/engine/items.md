@@ -49,11 +49,6 @@ For example:
 *   Water flow: Dropped items move with the flow of water
 *   Destruction: Dropped items get destroyed if they touch lava or fire
 
-Engine-provided items
----------------------
-
-While the game has full control in the items that are provided, the engine provides some mostly technical items that are available in any game.
-
 Unknown Item
 ------------
 
