@@ -102,7 +102,7 @@ Inventories in [Minetest Game](https://content.luanti.org/packages/Minetest/mine
 
 ### Player inventory
 
-![](/images/Inventory.png)
+![](/images/inventory/Inventory.png)
 
 The player inventory in Minetest Game
 
