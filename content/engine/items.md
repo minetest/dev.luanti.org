@@ -21,7 +21,7 @@ Item stacks can be stored in inventories and can also appear in the world itself
 
 #### In an inventory
 
-In the inventory, item stacks are represented by an icon and optionally a number. The number is the size of the item stack. If there is no number, the size is 1. Refer to [inventory controls](/inventory#Controls) for instructions how to use item stacks in inventories.
+In the inventory, item stacks are represented by an icon and optionally a number. The number is the size of the item stack. If there is no number, the size is 1. Refer to [inventory controls](/inventory#controls) for instructions how to use item stacks in inventories.
 
 #### In the world
 
