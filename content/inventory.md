@@ -70,7 +70,9 @@ Inventories in [Minetest Game](https://content.luanti.org/packages/Minetest/mine
 
 ### Player inventory
 
-[![](https://dev.luanti.org/images/thumb/d/db/Inventory.png/250px-Inventory.png)](https://dev.luanti.org/File:Inventory.png)
+![](/images/Inventory.png)
+
+The player inventory in Minetest Game
 
 The player inventory is in the [inventory menu](https://dev.luanti.org/inventory-menu) and has a size of 8 rows and 4 lines, providing 32 item slots of storage. It is always available. The top line makes the hotbar.
 
