@@ -1,5 +1,8 @@
-# Light - Luanti Wiki
+---
+title: Light
+---
 
+# Light
 
 In Luanti, **light** is entirely block-based, just like the rest of the world.
 
@@ -17,7 +20,7 @@ There are two types of light: Sunlight and artificial light.
 
 ### Artificial light
 
-Artificial light is emitteed by luminous blocks. Artificial light has a light level from 1-14.
+Artificial light is emitted by luminous blocks. Artificial light has a light level from 1-14.
 
 ### Sunlight
 
@@ -36,34 +39,28 @@ Artificial light will lose one level of brightness for each transparent or semi-
 
 Note that “transparency” here does not always mean you can see through a block. It only means that the block is able to carry brightness from its adjacent blocks.
 
-Light in Minetest Game
-----------------------
+Light in [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/)
+-------------------------------------------------------------------------------------
 
-### Examples for transparent blocks
+### Examples of transparent blocks
 
-*   [Air](https://wiki.luanti.org/Air "Air")
-*   [Glass](https://wiki.luanti.org/Glass "Glass")
-*   [Obsidian Glass](https://wiki.luanti.org/Obsidian_Glass "Obsidian Glass")
+*   [Air](/nodes#air)
+*   Glass
+*   Obsidian Glass
 *   A few small plants
 
-### Examples for semi-transparent blocks
+### Examples of semi-transparent blocks
 
-*   [Water](https://wiki.luanti.org/Water "Water"), [River Water](https://wiki.luanti.org/River_Water "River Water") and [Lava](https://wiki.luanti.org/Lava "Lava")
-*   [Leaves](https://wiki.luanti.org/Leaves "Leaves") and the like
-*   [Fences](https://wiki.luanti.org/Fence "Fence") and the like
-*   [Ice](https://wiki.luanti.org/Ice "Ice")
-*   [Mese Block](https://wiki.luanti.org/Mese_Block "Mese Block")
-*   [Slabs](https://wiki.luanti.org/Slab "Slab") and [Stairs](https://wiki.luanti.org/Stair "Stair")
-*   [Doors](https://wiki.luanti.org/Door "Door"), [Trapdoors](https://wiki.luanti.org/Trapdoor "Trapdoor") and the like
+*   Water, River Water and Lava
+*   Leaves and the like
+*   Fences and the like
+*   Ice
+*   Mese Block
+*   Slabs and Stairs
+*   Doors, Trapdoors and the like
 *   A few other small plants
 
-### Examples for opaque blocks
+### Examples of opaque blocks
 
-*   [Stone](https://wiki.luanti.org/Stone "Stone")
-*   [Wooden Planks](https://wiki.luanti.org/Wooden_Planks "Wooden Planks")
-
-See also
---------
-
-*   [Luminous blocks](https://wiki.luanti.org/Category:Luminous "Category:Luminous")
-*   [Time of day](https://wiki.luanti.org/Time_of_day "Time of day")
+*   Stone
+*   Wooden Planks
