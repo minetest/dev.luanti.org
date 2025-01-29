@@ -37,42 +37,7 @@ Screenshots
 
 ### Games
 
-As Luanti is an engine, the actual in-game appearance heavily depends on the actual game being played. This is a selection of some of the games that are available for Luanti. A full list of games can be found on [ContentDB](https://content.luanti.org/packages/?type=game)
-
-![](/images/luanti/Minetest_Game_tower.jpg)
-
-[Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/)
-
-![](/images/luanti/MineClone_2.png)
-
-{{% comment %}} cspell:disable {{% /comment %}}
-[VoxeLibre (formerly known as MineClone 2)](https://content.luanti.org/packages/Wuzzy/mineclone2/)
-
-![](/images/luanti/Exile.jpg)
-
-[Exile](https://content.luanti.org/packages/Mantar/exile/)
-
-![](/images/luanti/NodeCore.jpg)
-
-[NodeCore](https://content.luanti.org/packages/Warr1024/nodecore/)
-
-![](/images/luanti/Lord_of_the_Test.jpg)
-
-[Lord of the Test](https://content.luanti.org/packages/Amaz/lordofthetest/)
-
-![](/images/luanti/Repixture.jpg)
-
-[Repixture](https://content.luanti.org/packages/Wuzzy/repixture/)
-
-![](/images/luanti/Farlands_Reloaded.jpg)
-
-[Farlands Reloaded](https://content.luanti.org/packages/wsor4035/farlands_reloaded/)
-
-![](/images/luanti/Hades_Revisited.jpg)
-
-[Hades Revisited](https://content.luanti.org/packages/Wuzzy/hades_revisited/)
-{{% comment %}} cspell:enable {{% /comment %}}
-
+As Luanti is an engine, the actual in-game appearance heavily depends on the actual game being played. A full list of games can be found on [ContentDB](https://content.luanti.org/packages/?type=game)
 
 ### Mods
 
