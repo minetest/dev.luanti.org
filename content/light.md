@@ -1,5 +1,7 @@
 ---
 title: Light
+aliases:
+- /Light
 ---
 
 # Light
