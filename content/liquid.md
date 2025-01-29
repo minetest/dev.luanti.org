@@ -1,5 +1,7 @@
 ---
 title: Liquid
+aliases:
+- /Liquid
 ---
 
 # Liquid
