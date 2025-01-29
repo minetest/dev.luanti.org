@@ -1,9 +1,11 @@
 ---
 title: Luanti
+aliases:
+- /Luanti
+- /Minetest
 ---
 
 # Luanti
-
 
 ![](/images/luanti/Luanti_logo.png)
 
