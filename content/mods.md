@@ -1,13 +1,16 @@
-# Mods - Luanti Wiki
+---
+title: Mods
+aliases:
+- /Mods
+---
 
+# Mods
 
-[![](https://wiki.luanti.org/images/thumb/7/79/Mesecons_example.jpg/300px-Mesecons_example.jpg)](https://wiki.luanti.org/File:Mesecons_example.jpg)
+**Mods** (short for **modifications** or **modules**) are user-created modifications to a game in such a way that adds to or alters the gameplay. Some larger mods may add a lot of content to the game, while other smaller mods may add more settings/customization options or tweak the gameplay in small ways. [Server](/server) mods or plugins mainly give server admins more options and ease of use, and all mods for singleplayer can also be used in multiplayer.
 
-**Mods** (short for **modifications** or **modules**) are user-created modifications to a game in such a way that adds to or alters the gameplay. Some larger mods may add a lot of content to the game, while other smaller mods may add more settings/customization options or tweak the gameplay in small ways. [Server](https://wiki.luanti.org/Server "Server") mods or plugins mainly give server admins more options and ease of use, and all mods for singleplayer can also be used in multiplayer.
+While Luanti mods are generally safe to install as they run by default in a sandboxed environment, one should exercise caution with mods as they may modify your world data in an undesired way. A good way to protect your game from such problems is to regularly [back up](/backup-solutions) your world folder(s) when installing new mods.
 
-While Luanti mods are generally safe to install as they run by default in a sandboxed environment, one should exercise caution with mods as they may modify your world data in an undesired way. A good way to protect your game from such problems is to regularily [back up](https://wiki.luanti.org/Backup_Solutions "Backup Solutions") your world folder(s) when installing new mods.
-
-To browse the selection of mods available for Luanti games, see [ContentDB](https://content.minetest.net/packages/?type=mod).
+To browse the selection of mods available for Luanti games, see [ContentDB](https://content.luanti.org/packages/?type=mod).
 
 Modpacks
 --------
@@ -22,30 +25,28 @@ A Client-Side Mod (short: “CSM”) is a mod used to customize your Luanti clie
 Finding mods
 ------------
 
-Generally, all mods you would want are available on [ContentDB](https://content.minetest.net/) nowadays. They can be installed from the main menu by going to the _Content_ tab and clicking on the _Browse online content_ button.
+Generally, all mods you would want are available on [ContentDB](https://content.luanti.org/). They can be installed from the main menu by going to the _Content_ tab and clicking on the _Browse online content_ button.
 
-For old or experimental mods, check the [Mods](https://forum.minetest.net/viewforum.php?f=46) subforum.
+For old or experimental mods, check the [Mods](https://forum.luanti.org/viewforum.php?f=46) subforum.
 
 Installation
 ------------
 
 Starting with version 5.0.0, mods can be installed using the _Content_ tab in Luanti.
 
-To manually install content for Luanti, see [How to install content](https://content.minetest.net/help/installing/).
+To manually install content for Luanti, see [How to install content](https://content.luanti.org/help/installing/).
 
 Creating mods
 -------------
 
-Mods are written in the scripting language [Lua](https://www.lua.org/). The official Lua API documentation can be found at [lua\_api.txt](https://github.com/minetest/minetest/blob/master/doc/lua_api.txt) or in HTML format [here](https://minetest.gitlab.io/minetest/).
+Mods are written in the scripting language [Lua](https://www.lua.org/). The official Lua API documentation can be found at [lua\_api.md](https://github.com/luanti-org/luanti/blob/master/doc/lua_api.md) or in HTML format at [api.luanti.org](https://api.luanti.org/).
 
 ### Modding tutorials
 
-*   [Minetest Modding Book](https://rubenwardy.com/minetest_modding_book/en/index.html) by [rubenwardy](https://rubenwardy.com/) with editing by [Shara](https://forum.minetest.net/memberlist.php?mode=viewprofile&u=19807).
-*   [Intro to modding on the developer wiki](https://dev.minetest.net/Modding_Intro)
+*   [Minetest Modding Book](https://rubenwardy.com/minetest_modding_book/en/index.html) by [rubenwardy](https://rubenwardy.com/) with editing by [Shara](https://forum.luanti.org/memberlist.php?mode=viewprofile&u=19807).
+*   [Intro to modding on this site](/modding-intro)
 
 Listing actual running mods
 ---------------------------
 
-The ingame [server command](https://wiki.luanti.org/Server_commands "Server commands") _/mods_ will list the active mods of the actual running game.
-
-[![](https://wiki.luanti.org/images/thumb/0/02/Modsonservers.png/300px-Modsonservers.png)](https://wiki.luanti.org/File:Modsonservers.png)
+The in-game [server command](/server-commands) `/mods` will list the active mods of the actual running game.
