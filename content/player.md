@@ -6,10 +6,6 @@ aliases:
 
 # Player
 
-![](/images/player/Player_large.png)
-
-The default player skin
-
 The **player** or **“player character”** is the character that a user controls. The official name given for the player's appearance is “Sam”, which is a recursive acronym for “Sam ain’t Minecraft”.
 
 {{< notice info >}}As with all aspects of the game, the player behavior can be heavily customized by mods. Below are some common practices, but these do not apply to all games.{{< /notice >}}
