@@ -1,9 +1,15 @@
-# Punching - Luanti Wiki
+---
+title: Punching
+aliases:
+- /Punching
+- /punch
+---
 
+# Punching
 
-**Punching** is your primary means of attacking in close range and performed with the left mouse button. Hitting a [player](https://wiki.luanti.org/Player "Player") or [mob](https://wiki.luanti.org/Mobs "Mobs") may cause direct damage. The damage dealt depends on these criteria:
+**Punching** is your primary means of attacking in close range and performed with the left mouse button. Hitting a [player](/player) or [mob](/mobs) may cause direct damage. The damage dealt depends on these criteria:
 
-*   The kind of [weapon](https://wiki.luanti.org/Tool#Weapons "Tool") (including the [hand](https://wiki.luanti.org/Hand "Hand")) you are currently using
+*   The kind of [weapon](/tool#weapons) (including the [hand](/hand)) you are currently using
 *   The punch interval of the weapon
 *   The time since the last punch
 *   The damage type of the weapon and the armor of the victim
@@ -20,18 +26,13 @@ Armor type
 
 This is a rather advanced concept which is rarely used extensively in games.
 
-A punch only deals damage if the victim has an armor [group](https://wiki.luanti.org/Groups "Groups") which the weapon has as a damage group. For example, if your weapon has the damage group “stone” and you attack an enemy with the armor group “flesh”, it doesn't deal damage, but enemies with the armor group “stone” can be harmed. In games, armor groups and damage groups are currently rarely used.
+A punch only deals damage if the victim has an armor [group](/groups) which the weapon has as a damage group. For example, if your weapon has the damage group “stone” and you attack an enemy with the armor group “flesh”, it doesn't deal damage, but enemies with the armor group “stone” can be harmed. In games, armor groups and damage groups are currently rarely used.
 
-In [Minetest Game](https://wiki.luanti.org/Games/Minetest_Game "Games/Minetest Game"), you don't have to worry about armor types. All players and weapons have the armor/damage type “flesh” which means everyone can deal damage to everyone.
+In Minetest Game, you don't have to worry about armor types. All players and weapons have the armor/damage type “flesh” which means everyone can deal damage to everyone.
 
 Other uses
 ----------
 
 Some items will trigger a special action when you press the Punch key while wielding them. In this case, you will only use the wielded item instead of actually punching something.
 
-In [Minetest Game](https://wiki.luanti.org/Games/Minetest_Game "Games/Minetest Game"), you can eat [apples](https://wiki.luanti.org/Apple "Apple") and other food items that way.
-
-See also
---------
-
-*   [How to kill](https://wiki.luanti.org/How_to_kill "How to kill")
+In Minetest Game, you can eat apples and other food items that way.
