@@ -1,28 +1,37 @@
-# Player - Luanti Wiki
+---
+title: Player
+aliases:
+- /Player
+---
 
+# Player
 
-[![](https://wiki.luanti.org/images/a/ab/Player_large.png)](https://wiki.luanti.org/File:Player_large.png)
+![](/images/player/Player_large.png)
 
-The **player** (actually: “player character”[\[1\]](#cite_note-1)) is the character users control. The official name given for the player's appearance is “Sam”, which is a recursive acronym for “Sam ain’t Minecraft”.  
+The default player skin
+
+The **player** or **“player character”** is the character that a user controls. The official name given for the player's appearance is “Sam”, which is a recursive acronym for “Sam ain’t Minecraft”.
+
+{{< notice info >}}As with all aspects of the game, the player behavior can be heavily customized by mods. Below are some common practices, but these do not apply to all games.{{< /notice >}}
 
 Health
 ------
 
-Players start with 10 [hearts](https://wiki.luanti.org/Hearts "Hearts") ([![Heart.png](https://wiki.luanti.org/images/thumb/d/d9/Heart.png/16px-Heart.png)](https://wiki.luanti.org/File:Heart.png)[![Heart.png](https://wiki.luanti.org/images/thumb/d/d9/Heart.png/16px-Heart.png)](https://wiki.luanti.org/File:Heart.png)[![Heart.png](https://wiki.luanti.org/images/thumb/d/d9/Heart.png/16px-Heart.png)](https://wiki.luanti.org/File:Heart.png)[![Heart.png](https://wiki.luanti.org/images/thumb/d/d9/Heart.png/16px-Heart.png)](https://wiki.luanti.org/File:Heart.png)[![Heart.png](https://wiki.luanti.org/images/thumb/d/d9/Heart.png/16px-Heart.png)](https://wiki.luanti.org/File:Heart.png)[![Heart.png](https://wiki.luanti.org/images/thumb/d/d9/Heart.png/16px-Heart.png)](https://wiki.luanti.org/File:Heart.png)[![Heart.png](https://wiki.luanti.org/images/thumb/d/d9/Heart.png/16px-Heart.png)](https://wiki.luanti.org/File:Heart.png)[![Heart.png](https://wiki.luanti.org/images/thumb/d/d9/Heart.png/16px-Heart.png)](https://wiki.luanti.org/File:Heart.png)[![Heart.png](https://wiki.luanti.org/images/thumb/d/d9/Heart.png/16px-Heart.png)](https://wiki.luanti.org/File:Heart.png)[![Heart.png](https://wiki.luanti.org/images/thumb/d/d9/Heart.png/16px-Heart.png)](https://wiki.luanti.org/File:Heart.png)) which are equal to 20 hit points (HP). The smallest unit of health is 0.5 hearts ([![Half heart.png](https://wiki.luanti.org/images/thumb/9/92/Half_heart.png/16px-Half_heart.png)](https://wiki.luanti.org/File:Half_heart.png)) or 1 hit point. Players die when they have lost all hearts.
+Players start with 10 [hearts](/hearts) which are equal to 20 hit points (HP). The smallest unit of health is 0.5 hearts or 1 hit point. Players die when they have lost all hearts.
 
-Players can restore health by consuming [food](https://wiki.luanti.org/Category:Food "Category:Food"). Players can lose health by various means, including, but not limited to: Falling too hard, touching a harmful block (such as [lava](https://wiki.luanti.org/Lava "Lava")), drowning in a [liquid](https://wiki.luanti.org/Liquid "Liquid") or getting attacked by other players (if PvP is enabled).
+Players can restore health by consuming food. Players can lose health by various means, including, but not limited to: Falling too hard, touching a harmful block such as lava, drowning in a [liquid](/liquid) or getting attacked by other players (if PvP is enabled).
 
 Breath
 ------
 
-Players have up to 10 breath points, represented by bubbles. Players start at 10 breath points and normally the breath quickly increases up to 10 in steps of 1 breath point. If players have full breath, the breath meter in the HUD is usually hidden. While the player is inside a [liquid](https://wiki.luanti.org/Liquid "Liquid") with drowning damage, breath will be reduced by 1 every 2 seconds. If the breath reaches 0, the player will take damage every 2 seconds as long the player is inside the liquid. The damage taken depends on the liquid type.
+Players have up to 10 breath points, represented by bubbles. Players start at 10 breath points and normally the breath quickly increases up to 10 in steps of 1 breath point. If players have full breath, the breath meter in the HUD is usually hidden. While the player is inside a [liquid](/liquid) with drowning damage, breath will be reduced by 1 every 2 seconds. If the breath reaches 0, the player will take damage every 2 seconds as long the player is inside the liquid. The damage taken depends on the liquid type.
 
 Death
 -----
 
-When players lose their health, they die. After death, the player can immediately respawn, with health and breath restored. The new spawn position is usually somewhere near the initial spawning position. Other consequences of death (usually negative) heavily depend on the [game](https://wiki.luanti.org/Games "Games") and [mods](https://wiki.luanti.org/Mods "Mods") being used.
+When players lose their health, they die. After death, the player can immediately respawn, with health and breath restored. The new spawn position is usually somewhere near the initial spawning position. Other consequences of death (usually negative) heavily depend on the game and [mods](/mods) being used.
 
-When a player dies in [Minetest Game](https://wiki.luanti.org/Games/Minetest_Game "Games/Minetest Game"), the player loses all items in the inventory. [Bones](https://wiki.luanti.org/Bones "Bones") which contain the contents of the player inventory are left behind at the place of death.
+When a player dies in [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/), the player loses all items in the inventory. Bones which contain the contents of the player inventory are left behind at the place of death.
 
 Name
 ----
@@ -32,16 +41,4 @@ As of version 5.1.0, player names may consist only of the characters a-z, A-Z, 0
 Appearance
 ----------
 
-Players appear as 3D models similar to Minecraft. However, they never hold any [blocks](https://wiki.luanti.org/Blocks "Blocks") or [items](https://wiki.luanti.org/Items "Items") in [hand](https://wiki.luanti.org/Hand "Hand") and never look up or down. As of version 0.4.10, there is a third person view to see oneself. Press F7 to switch between camera modes.[\[2\]](#cite_note-2)  
-The pitch (vertical viewing angle) of a player is not visible to other players by default. The pitch of a player is between -89.5 and 89.5 degrees.  
-
-See also
---------
-
-*   [Skin](https://wiki.luanti.org/index.php?title=Skin&action=edit&redlink=1 "Skin (page does not exist)")
-
-Footnotes
----------
-
-1.  [↑](#cite_ref-1) In the Luanti community, “player” has become synonymous with “player character” for unknown reasons. Thus, in Luanti, “player” can refer to the player character _controlled by the player_ or the _actual player_ who plays at the computer.
-2.  [↑](#cite_ref-2) [https://forum.minetest.net/viewtopic.php?f=18&t=9041](https://forum.minetest.net/viewtopic.php?f=18&t=9041)
+Players appear as 3D models similar to Minecraft. However, they never hold any [blocks](/nodes) or [items](/items) in [hand](/hand) and never look up or down. As of version 0.4.10, there is a third person view to see oneself. Press F7 to switch between camera modes. The pitch (vertical viewing angle) of a player is not visible to other players by default. The pitch of a player is between -89.5 and 89.5 degrees.  
