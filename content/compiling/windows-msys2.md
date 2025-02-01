@@ -1,5 +1,7 @@
 ---
-title: Compiling on Windows using MSYS2
+title: Windows - MSYS2
+aliases:
+- /compiling-on-windows-using-msys2/
 ---
 
 # Compiling on Windows using MSYS2

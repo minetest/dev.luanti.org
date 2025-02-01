@@ -1,5 +1,7 @@
 ---
-title: Compiling a headless Linux server
+title: Linux - headless server
+aliases:
+- /compiling-a-headless-linux-server/
 ---
 
 # Compiling a headless Linux server
