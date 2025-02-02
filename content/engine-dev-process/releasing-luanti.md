@@ -239,12 +239,6 @@ After releasing
 *   Add a new post to the [blog](https://github.com/luanti-org/blog/)
 *   Announce the release on [Twitter](https://twitter.com/MinetestProject) and [Mastodon](https://mastodon.online/@Luanti@fosstodon.org). rubenwardy has access.
 
-### Update wiki version template
-
-{{< notice info>}}We are working on [fixing the link to the version number template](https://github.com/luanti-org/dev.luanti.org/issues/172).{{< /notice>}}
-
-There is a special wiki template containing the version number used to make updating various wiki pages by hand less tedious. Update it so it includes the latest version.
-
 ### Notify known package maintainers
 
 *   **Arch Linux**/Manjaro: can be flagged outdated on the [package page](https://archlinux.org/packages/extra/x86_64/minetest/)
