@@ -5,7 +5,7 @@ aliases:
 ---
 
 # ContentDB
-The **ContentDB** (short for “Content Database”) is the official source to download [mods](https://wiki.luanti.org/Mods "Mods"), [games](https://wiki.luanti.org/Games "Games") and [texture packs](https://wiki.luanti.org/Texture_Packs "Texture Packs") that have been developed by the Luanti community. It's the fastest and most convenient method to obtain those things.
+The **ContentDB** (short for “Content Database”) is the official source to download [mods](/mods), games and [texture packs](/texture-packs) that have been developed by the Luanti community. It's the fastest and most convenient method to obtain those things.
 
 The ContentDB can be accessed in Luanti (“Content” tab) or with your browser via [content.luanti.org](https://content.luanti.org/).
 
@@ -32,7 +32,7 @@ And that's really all there is to it!
 
 The website of the ContentDB is at [content.luanti.org](https://content.luanti.org/).
 
-The main advantage of the website is that it contains more information to read, more screenshots to admire and more links to click on. You can also download the stuff from here as well, but then you need to manually install it to the correct location, of course. See [Mods](https://wiki.luanti.org/Mods "Mods"), [Games](https://wiki.luanti.org/Games "Games") or [Texture Packs](https://wiki.luanti.org/Texture_Packs "Texture Packs") to learn more.
+The main advantage of the website is that it contains more information to read, more screenshots to admire and more links to click on. You can also download the stuff from here as well, but then you need to manually install it to the correct location, of course. See [mods](/mods) or [texture packs](/texture-packs) to learn more.
 
 On software freedom
 -------------------

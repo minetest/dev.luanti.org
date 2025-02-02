@@ -15,7 +15,7 @@ celeron55 _(old picture)_
 
 celeron55 in 2012, using his Panasonic Toughbook CF-51.
 
-Perttu Ahola, better known as **celeron55** is the founder and lead developer of [Luanti](https://wiki.luanti.org/Luanti "Luanti").
+Perttu Ahola, better known as **celeron55** is the founder and lead developer of [Luanti](/luanti).
 
 Biography
 ---------

@@ -6,8 +6,7 @@ aliases:
 
 # Coordinates
 
-
-The [Luanti](https://wiki.luanti.org/Luanti "Luanti") world is a large cube. And because of this, a position in the world can be easily expressed with Cartesian **coordinates**. That is, for each position in the world, there are 3 values X, Y and Z.
+A [Luanti](/luanti) world is a large cube. And because of this, a position in the world can be easily expressed with Cartesian **coordinates**. That is, for each position in the world, there are 3 values X, Y and Z.
 
 Notation
 --------
@@ -34,17 +33,17 @@ Finding your coordinates
 
 ### Debug screen
 
-You usually can view your coordinates by using the [debug](https://wiki.luanti.org/Debug "Debug") screen (open with F5).
+You usually can view your coordinates by using the [debug](/content-dev/debug) screen (open with F5).
 
-For this to work, the game/server needs to allow this _or_ you have the “debug” [privilege](https://wiki.luanti.org/Privileges "Privileges").
+For this to work, the game/server needs to allow this _or_ you have the “debug” [privilege](/privileges).
 
 By default, games _do_ allow you to access the coordinates in the debug screen, so this works most of the time.
 
-Some games might choose to hide the coordinates from the debug screen to regular players. Maybe you’re suppoed to “earn” the right to see the coordinates (e.g. with a special item), or maybe the coordinates are hidden completely to make the game more difficult. But, if you have the “debug” privilege, you are guaranteed to have access.
+Some games might choose to hide the coordinates from the debug screen to regular players. Maybe you’re supposed to “earn” the right to see the coordinates (e.g. with a special item), or maybe the coordinates are hidden completely to make the game more difficult. But, if you have the “debug” privilege, you are guaranteed to have access.
 
 ### Mods
 
 There are also mods which add tools which, when you carry then, show you the coordinates:
 
-* [Orienteering](https://content.luanti.org/packages/Wuzzy/orienteering/) \[orienteering\]
-* [Compass GPS](https://forum.minetest.net/viewtopic.php?t=9373) \[compassgps\]
+* [Orienteering](https://content.luanti.org/packages/Wuzzy/orienteering/)
+* [Compass GPS](https://forum.luanti.org/viewtopic.php?t=9373)
