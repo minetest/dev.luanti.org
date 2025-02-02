@@ -1,4 +1,4 @@
-# Luanti Developer Wiki
+# Luanti Documentation
 
 Hosted by GitHub Pages, generated with [Hugo](https://gohugo.io/).
 
@@ -20,7 +20,7 @@ See [About This Site](content/about-this-site/_index.md) for more information
   - `test:a11y`: Builds and serves the site, then uses Playwright and axe to test accessibility
   - `test:a11y:tests`: Not meant for independent use, only as part of `test:a11y`
   - `test:spelling`: Reports all apparent spelling errors. WIP, ref [#83](https://github.com/luanti-org/dev.luanti.org/issues/83) for details.
-- depdendencies
+- dependencies
   - `hugo-extended`: Static site generator that turns Markdown and shortcodes into HTML
 - devDependencies
   - [`@axe-core/playwright`](https://npmjs.com/package/@axe-core/playwright): A11y tester bindings for Playwright
