@@ -24,7 +24,7 @@ This page contains a hopefully complete list of terminology related to Luanti.
     -   **Server-Sent Client-Side Mod** (abbreviated **SSCSM**): A currently unimplemented feature referring to CSMs being sent from the server to the client, to allow for code to be run on the client for improved latency, among other things.
 -   **Modpack**: A collection of mods which can be selected like a regular mod. Not to be confused with a Game, which can be selected from the main menu as its own distinct game.
 -   **Texture pack**: A collection of textures that can replace the textures in games and mods. May only support specific games and/or mods.
--   **[ContentDB](https://content.minetest.net/)** (abbreviated CDB): The official place to upload and download games, mods and texture packs. It is what powers the content browser accessible from the main menu.
+-   **[ContentDB](https://content.luanti.org/)** (abbreviated CDB): The official place to upload and download games, mods and texture packs. It is what powers the content browser accessible from the main menu.
 -   **Server**: The program that manages and distributes mod, texture and sound data to the players. It also does all of the mod initiation.
 -   **Client**: The program that the player uses to connect to singleplayer or multiplayer games. Handles the rendering of the world.
     -   In singleplayer, the client will start a server in the background restricted to the *singleplayer* user which will then join it, acting both as a client and a server in that case.

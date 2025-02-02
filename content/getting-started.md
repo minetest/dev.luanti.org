@@ -50,7 +50,7 @@ When first booting up Luanti, it will ask you to install a game. The button that
 
 To install mods or texture packs, go to the "Content" tab, press "Browse Online Content" and pick the type of package you want to browse. To enable a texture pack select it in the content tab, and to enable mods you have installed, you need to select the world you want to play with mods in, press "Select mods", and enable the wanted mods.
 
-For an interactive introduction to common Luanti gameplay elements, there is the [Tutorial](https://content.minetest.net/packages/Wuzzy/tutorial/) game.
+For an interactive introduction to common Luanti gameplay elements, there is the [Tutorial](https://content.luanti.org/packages/Wuzzy/tutorial/) game.
 
 ### Play Online
 

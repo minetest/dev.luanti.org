@@ -283,4 +283,4 @@ There are numerous places that run and use Git (or equivalent software) as a pla
 
 Nowadays, ContentDB is where all Luanti content is hosted and distributed. It can be easily accessed and installed from the Luanti main menu.
 
-Go onto the [ContentDB create package](https://content.minetest.net/packages/new/) page (ContentDB account required), if your texture pack is hosted on a Git repository you can input it to automatically import metadata and whatnot.
+Go onto the [ContentDB create package](https://content.luanti.org/packages/new/) page (ContentDB account required), if your texture pack is hosted on a Git repository you can input it to automatically import metadata and whatnot.

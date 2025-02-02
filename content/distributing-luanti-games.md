@@ -5,7 +5,7 @@ title: Distributing Luanti Games
 # Distributing Luanti Games
 This page contains (at times very opinionated) notes about taking a Luanti game and distributing it outside of Luanti. It assumes that you know how to compile Luanti from source.
 
-Luanti as an engine itself doesn't have any official means to export a game into a self-contained package with the engine, instead games are published on [ContentDB](https://content.minetest.net/packages/?type=game) which allows your game to be installed from the main menu content browser. However as Luanti is free software you can fork the engine to rebrand it and bundle it with your game for distribution outside of the Luanti ecosystem.
+Luanti as an engine itself doesn't have any official means to export a game into a self-contained package with the engine, instead games are published on [ContentDB](https://content.luanti.org/packages/?type=game) which allows your game to be installed from the main menu content browser. However as Luanti is free software you can fork the engine to rebrand it and bundle it with your game for distribution outside of the Luanti ecosystem.
 
 *(This page is somewhat outdated, but still contains useful information that can be reapplied for the latest version of Luanti)*
 

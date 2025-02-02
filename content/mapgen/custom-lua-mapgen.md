@@ -15,7 +15,7 @@ Even with the new mapgen environment you should still be wary of some pitfalls t
 ## Examples
 A good initial example of how to write a custom Lua mapgen is [lvm_example](https://content.luanti.org/packages/ROllerozxa/lvm_example/). It incorporates most optimisations techniques to create a performant mapgen and uses Perlin noise to generate random looking terrain, but has not been updated yet to use the new async mapgen environment.
 
-For more examples of custom Lua mapgens, see the [Custom mapgen](https://content.minetest.net/packages/?type=mod&page=1&tag=custom_mapgen) tag on ContentDB.
+For more examples of custom Lua mapgens, see the [Custom mapgen](https://content.luanti.org/packages/?type=mod&page=1&tag=custom_mapgen) tag on ContentDB.
 
 ## Libraries
 - [Luamap](https://content.luanti.org/packages/MisterE/luamap/) is a library that seeks to take out some of the pain of making custom mapgens by abstracting it away.

@@ -13,7 +13,7 @@ Beginner tutorials for Players
 
 If you're new and do not know what to do, see below.
 
-* [Tutorial](https://content.minetest.net/packages/Wuzzy/tutorial/): Fully-playable tutorial game teaching the basics of common Luanti gameplay
+* [Tutorial](https://content.luanti.org/packages/Wuzzy/tutorial/): Fully-playable tutorial game teaching the basics of common Luanti gameplay
 * [How to build your first house](https://wiki.luanti.org/How_to_build_your_first_house "How to build your first house") **(Minetest Game)**
 
 General information
@@ -43,7 +43,7 @@ Mods
 Texture Packs
 -------------
 
-[Texture packs](https://wiki.luanti.org/Texture_Packs "Texture Packs") change the look of Luanti. Tired of looking at the same old textures? [ContentDB](https://content.minetest.net/packages/?type=txp) offers many texture packs for you to pick between.
+[Texture packs](https://wiki.luanti.org/Texture_Packs "Texture Packs") change the look of Luanti. Tired of looking at the same old textures? [ContentDB](https://content.luanti.org/packages/?type=txp) offers many texture packs for you to pick between.
 
 * [Installing texture packs](https://wiki.luanti.org/Texture_Packs#Installation "Texture Packs")
 * [Creating texture packs](https://wiki.luanti.org/Texture_Packs#Texture_Pack_Creation "Texture Packs")

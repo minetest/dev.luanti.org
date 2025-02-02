@@ -14,7 +14,7 @@ Security considerations
 Installing a mod
 ----------------
 
-Mods can be installed from ContentDB in the "Browse online content" button in Luanti 5.0+. Mods downloaded this way are automatically installed and get checked for updates. See [Installing content](https://content.minetest.net/help/installing/).
+Mods can be installed from ContentDB in the "Browse online content" button in Luanti 5.0+. Mods downloaded this way are automatically installed and get checked for updates. See [Installing content](https://content.luanti.org/help/installing/).
 
 For mods downloaded manually, you would clone the source repository or extract the Zip archive into your mods folder.
 
