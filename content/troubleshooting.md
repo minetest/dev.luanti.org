@@ -90,7 +90,7 @@ tools.lua:61: attempt to call global 'nodeupdate' (a nil value)
 ```
 
 
-The first two errors are caused by an outdated Luanti version, latter by an old mod which tries to call API functions which were removed. In the first case, you can [update Luanti](http://minetest.net/download) or try an in-development build to see whether it works. For the second case, check for mod updates or tell the author about your problem.
+The first two errors are caused by an outdated Luanti version, latter by an old mod which tries to call API functions which were removed. In the first case, you can [update Luanti](http://luanti.org/download) or try an in-development build to see whether it works. For the second case, check for mod updates or tell the author about your problem.
 
 #### “Assertion '0' failed”
 

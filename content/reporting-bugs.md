@@ -15,7 +15,7 @@ Luanti is never finished, it is constantly a work in progress. Thus all bug repo
 
 A bug might already be reported or even fixed by the time you are having problems. Please check the following sources for solution prior reporting:
 
-* [Newest Luanti version](https://www.minetest.net/downloads/) - are you using the most recent one?
+* [Newest Luanti version](https://www.luanti.org/downloads/) - are you using the most recent one?
 * [GitHub issue tracker](https://github.com/luanti-org/luanti/issues?q=is%3Aissue)
 * [Libera IRC (English)](https://kiwiirc.com/nextclient/irc.libera.chat:+6697/#minetest) (answers might take a while)
 * [Luanti Forums: 'Problems'](https://forum.luanti.org/viewforum.php?f=6)

@@ -442,7 +442,7 @@ Notes inherited from the meeting 2023-04-16
 
 **Organization Discussion**
 
-* ["Host the generated Lua API documentation under api.minetest.net"](https://github.com/luanti-org/luanti/issues/13072) (Zughy)
+* ["Host the generated Lua API documentation under api.luanti.org"](https://github.com/luanti-org/luanti/issues/13072) (Zughy)
     * Assigned to rubenwardy to move it to GitHub
 * Feature freeze starting on January 22? I suggest to keep every feature currently listed in the milestone (Zughy)
     * focus on the Privacy Policy (sample available)
