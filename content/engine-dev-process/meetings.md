@@ -45,7 +45,7 @@ Past Meetings
 * Feature freeze time (Zughy)
     * Feature freeze has started. Still undecided about what to do with SDL2
 * PLEASE finish the [renaming process](https://github.com/luanti-org/luanti/issues/15322) before FOSDEM (Zughy)
-    * Luanti organisation has been created on GitHub, the rest is in the works. For more details see the [IRC log](https://irc.minetest.net/minetest-dev/2025-01-19#i_6236220)
+    * Luanti organisation has been created on GitHub, the rest is in the works. For more details see the [IRC log](https://irc.luanti.org/minetest-dev/2025-01-19#i_6236220)
 
 2024-12-22
 ----------
@@ -93,7 +93,7 @@ Past Meetings
 2024-10-13
 ----------
 
-Meeting: [https://irc.minetest.net/minetest-dev/2024-10-13#i\_6208356](https://irc.minetest.net/minetest-dev/2024-10-13#i_6208356)
+Meeting: [https://irc.luanti.org/minetest-dev/2024-10-13#i\_6208356](https://irc.luanti.org/minetest-dev/2024-10-13#i_6208356)
 
 **Organization Discussion**
 
@@ -111,8 +111,8 @@ Meeting: [https://irc.minetest.net/minetest-dev/2024-10-13#i\_6208356](https://i
 * 5.9.1: [https://github.com/luanti-org/luanti/milestone/27](https://github.com/luanti-org/luanti/milestone/27)
 * [Add gameid aliases](https://github.com/luanti-org/luanti/issues/14543) (herowl)
 * (low priority) Future development cycle idea by pgimeno. Almost permanent feature freeze. (again, Krock)
-    * Idea submission: [https://irc.minetest.net/minetest-dev/2024-07-17#i\_6185892](https://irc.minetest.net/minetest-dev/2024-07-17#i_6185892)
-    * Meeting discussion 1: [https://irc.minetest.net/minetest-dev/2024-08-04#i\_6189904](https://irc.minetest.net/minetest-dev/2024-08-04#i_6189904)
+    * Idea submission: [https://irc.luanti.org/minetest-dev/2024-07-17#i\_6185892](https://irc.luanti.org/minetest-dev/2024-07-17#i_6185892)
+    * Meeting discussion 1: [https://irc.luanti.org/minetest-dev/2024-08-04#i\_6189904](https://irc.luanti.org/minetest-dev/2024-08-04#i_6189904)
     * TODO: Set up a poll
 * Thoughts on the latest proposed core dev (Zughy)
     * Context?
@@ -124,7 +124,7 @@ Meeting: [https://irc.minetest.net/minetest-dev/2024-10-13#i\_6208356](https://i
 
 * 5.9.1: [https://github.com/luanti-org/luanti/milestone/27](https://github.com/luanti-org/luanti/milestone/27)
     * Currently 10 PRs ready (merged) that could be included. Not all milestone issues will be fixed in time.
-* [Separate repo for requesting and discussing new features](https://github.com/luanti-org/luanti/issues/11568). See [here and next page](https://irc.minetest.net/minetest-dev/2024-09-01#i_6197652) for further info (Zughy)
+* [Separate repo for requesting and discussing new features](https://github.com/luanti-org/luanti/issues/11568). See [here and next page](https://irc.luanti.org/minetest-dev/2024-09-01#i_6197652) for further info (Zughy)
     * A few core devs tend to be opposed to this idea. For a definitive result, a poll might be appropriate.
 
 2024-08-18
@@ -142,8 +142,8 @@ Meeting: [https://irc.minetest.net/minetest-dev/2024-10-13#i\_6208356](https://i
     * SDL character lookup issue:
     * `SDL_GetScancodeFromKey(SDLK_SLASH)` idea from _y5nw_ --> [https://github.com/luanti-org/luanti/pull/14894](https://github.com/luanti-org/luanti/pull/14894) (hacky workaround, updated)
     * See also: meeting discussion
-* Future development cycle idea by pgimeno. Almost permanent feature freeze. [https://irc.minetest.net/minetest-dev/2024-07-17#i\_6185892](https://irc.minetest.net/minetest-dev/2024-07-17#i_6185892) (Krock)
-    * [https://irc.minetest.net/minetest-dev/2024-08-04#i\_6189904](https://irc.minetest.net/minetest-dev/2024-08-04#i_6189904)
+* Future development cycle idea by pgimeno. Almost permanent feature freeze. [https://irc.luanti.org/minetest-dev/2024-07-17#i\_6185892](https://irc.luanti.org/minetest-dev/2024-07-17#i_6185892) (Krock)
+    * [https://irc.luanti.org/minetest-dev/2024-08-04#i\_6189904](https://irc.luanti.org/minetest-dev/2024-08-04#i_6189904)
 * [https://github.com/luanti-org/luanti/pull/13987](https://github.com/luanti-org/luanti/pull/13987) (observers)
     * Krock will check code paths to determine the risks.
 
@@ -173,7 +173,7 @@ Meeting: [https://irc.minetest.net/minetest-dev/2024-10-13#i\_6208356](https://i
 **PR discussion/reviews**
 
 * [3d line rendering](https://github.com/luanti-org/luanti/pull/13020#issuecomment-1944150506): thoughts on grorp's primitive suggestion (Zughy)
-    * [https://irc.minetest.net/minetest-dev/2024-03-03#i\_6156739](https://irc.minetest.net/minetest-dev/2024-03-03#i_6156739)
+    * [https://irc.luanti.org/minetest-dev/2024-03-03#i\_6156739](https://irc.luanti.org/minetest-dev/2024-03-03#i_6156739)
     * general agreement to grorp's comment
     * low priority for PR author as of now
     * Idea: attach to object bones for more versatility (future PR)
@@ -184,7 +184,7 @@ Meeting: [https://irc.minetest.net/minetest-dev/2024-10-13#i\_6208356](https://i
     * 14347 (pointing range): sfan5 is on it, Desour maybe too
     * 14369 (preserve metatables): appguru is on it
 * [Camera API (draft)](https://github.com/luanti-org/luanti/pull/14325)
-    * Questions & inputs: [https://irc.minetest.net/minetest-dev/2024-03-03#i\_6156971](https://irc.minetest.net/minetest-dev/2024-03-03#i_6156971)
+    * Questions & inputs: [https://irc.luanti.org/minetest-dev/2024-03-03#i\_6156971](https://irc.luanti.org/minetest-dev/2024-03-03#i_6156971)
 
 2024-02-18
 ----------
@@ -197,7 +197,7 @@ Meeting: [https://irc.minetest.net/minetest-dev/2024-10-13#i\_6208356](https://i
     * Wiki update WIP
 * When do we want 6.0 to happen? After 5.9, after 5.10, even later? (appgurueu)
     * Not worth it at the moment, too few breakages on the list (doc/breakages.md) (Krock, sfan5)
-    * Reference: [https://irc.minetest.net/minetest-dev/2024-02-18#i\_6153824](https://irc.minetest.net/minetest-dev/2024-02-18#i_6153824)
+    * Reference: [https://irc.luanti.org/minetest-dev/2024-02-18#i\_6153824](https://irc.luanti.org/minetest-dev/2024-02-18#i_6153824)
 
 **PR discussion/reviews**
 
@@ -213,10 +213,10 @@ Meeting: [https://irc.minetest.net/minetest-dev/2024-10-13#i\_6208356](https://i
 **Organization Discussion**
 
 * PRs are on the rise and FOSDEM is coming. If it keeps going like this, it'll probably be PR hell all over again. What can we do to avoid both core devs burnouts and contributors being ignored/waiting for ages? Is the roadmap working? (Zughy)
-* Suggestion about core devs supporting PRs having to self-assign such PRs, see [here](https://irc.minetest.net/minetest-dev/2024-01-15#i_6146007). No general "we" should be accepted (Zughy)
+* Suggestion about core devs supporting PRs having to self-assign such PRs, see [here](https://irc.luanti.org/minetest-dev/2024-01-15#i_6146007). No general "we" should be accepted (Zughy)
     * Added the assignment guideline to [Git Guidelines](/Git_Guidelines#Issue_and_Pull-Request_Management). (Krock)
     * Try to assign yourself to PRs that you support to ensure they're not forgotten - even more so on such that are not on the roadmap.
-    * The guidelines are currently a mess: [https://irc.minetest.net/minetest-dev/2024-01-21#i\_6147476](https://irc.minetest.net/minetest-dev/2024-01-21#i_6147476) - need cleaning up into doc/
+    * The guidelines are currently a mess: [https://irc.luanti.org/minetest-dev/2024-01-21#i\_6147476](https://irc.luanti.org/minetest-dev/2024-01-21#i_6147476) - need cleaning up into doc/
 
 **PR discussion/reviews**
 
@@ -346,7 +346,7 @@ Also discussed:
 **Organization Discussion**
 
 * welcome srifqi
-* 5.7.1 release (justified by [Android crashes](https://irc.minetest.net/minetest-dev/2023-05-23#i_6086412))
+* 5.7.1 release (justified by [Android crashes](https://irc.luanti.org/minetest-dev/2023-05-23#i_6086412))
 
 **PR discussion/reviews**
 
@@ -826,7 +826,7 @@ Various concepts to judge:
 2020-10-03
 ----------
 
-Logs: [http://irc.minetest.net/minetest-dev/2020-10-03#i\_5738345](http://irc.minetest.net/minetest-dev/2020-10-03#i_5738345)
+Logs: [http://irc.luanti.org/minetest-dev/2020-10-03#i\_5738345](http://irc.luanti.org/minetest-dev/2020-10-03#i_5738345)
 
 **Organization Discussion**
 
@@ -886,7 +886,7 @@ Logs: [http://irc.minetest.net/minetest-dev/2020-10-03#i\_5738345](http://irc.mi
 **Organisation Discussion**
 
 * Allow or deny UTF-8 characters in the source code? [relevant PR](https://github.com/luanti-org/luanti/pull/9828)
-    * Many different encodings. Non-ASCII characters should be avoided [http://irc.minetest.net/minetest-dev/2020-06-06#i\_5698515](http://irc.minetest.net/minetest-dev/2020-06-06#i_5698515)
+    * Many different encodings. Non-ASCII characters should be avoided [http://irc.luanti.org/minetest-dev/2020-06-06#i\_5698515](http://irc.luanti.org/minetest-dev/2020-06-06#i_5698515)
 * Translations and minetest.conf.example need updating. Volunteers?
     * Reminder. Will be done when feature freeze starts.
 * Feature freeze date
@@ -901,7 +901,7 @@ Logs: [http://irc.minetest.net/minetest-dev/2020-10-03#i\_5738345](http://irc.mi
 **Suspected issues**
 
 * [network desync](https://github.com/luanti-org/luanti/issues/9592)
-    * sfan5: [http://irc.minetest.net/minetest-dev/2020-06-06#i\_5698555](http://irc.minetest.net/minetest-dev/2020-06-06#i_5698555) not important for release, networking limits
+    * sfan5: [http://irc.luanti.org/minetest-dev/2020-06-06#i\_5698555](http://irc.luanti.org/minetest-dev/2020-06-06#i_5698555) not important for release, networking limits
 * Wireframe glitch (graphics related)
     * Driver issue. Wait for AMD to fix their stuff
 
@@ -972,7 +972,7 @@ Arranged by: Krock
 
 Arranged by: rubenwardy
 
-Logs: [http://irc.minetest.net/minetest-dev/2019-06-29#i\_5561978](http://irc.minetest.net/minetest-dev/2019-06-29#i_5561978)
+Logs: [http://irc.luanti.org/minetest-dev/2019-06-29#i\_5561978](http://irc.luanti.org/minetest-dev/2019-06-29#i_5561978)
 
 **Organisation discussion**
 
@@ -1004,7 +1004,7 @@ Arranged by: Krock
 **Organisation discussion**
 
 * Will there be a 0.4.18 release?
-    * [http://irc.minetest.net/minetest-dev/2018-07-14#i\_5358759](http://irc.minetest.net/minetest-dev/2018-07-14#i_5358759) - sounds like a definitive "no"?
+    * [http://irc.luanti.org/minetest-dev/2018-07-14#i\_5358759](http://irc.luanti.org/minetest-dev/2018-07-14#i_5358759) - sounds like a definitive "no"?
 * Specify a rough 5.0.0 release date (month, year)
     * Freeze for multiple weeks for testing & fixing
 * Forums: Clarify which rules (amongst license) apply for WIP modpacks/mods/games
@@ -1039,7 +1039,7 @@ Arranged by: Krock
 * Protocol cleanups [https://github.com/luanti-org/luanti/pull/7348](https://github.com/luanti-org/luanti/pull/7348)
     * Review needed (compat break)
 * CSM keypress - is this advantage acceptable? [https://github.com/luanti-org/luanti/pull/7008](https://github.com/luanti-org/luanti/pull/7008)
-    * Needs flavors to be added: [http://irc.minetest.net/minetest-dev/2018-06-11#i\_5329651](http://irc.minetest.net/minetest-dev/2018-06-11#i_5329651)
+    * Needs flavors to be added: [http://irc.luanti.org/minetest-dev/2018-06-11#i\_5329651](http://irc.luanti.org/minetest-dev/2018-06-11#i_5329651)
 
 2018-05-19
 ----------
@@ -1053,7 +1053,7 @@ Proposed time: 18:00 UTC
 * 0.4.17 - backport missing fixes and set date for freeze
     * ~Android-specific fix for [https://pastebin.com/j4mjniaq](https://pastebin.com/j4mjniaq) must be added too (during freeze?)~
     * Needs buildbot fixes (404 packages)
-    * Backport [https://github.com/luanti-org/luanti/commit/4bb41a19d](https://github.com/luanti-org/luanti/commit/4bb41a19d) ([http://irc.minetest.net/minetest-dev/2018-05-19#i\_5310266](http://irc.minetest.net/minetest-dev/2018-05-19#i_5310266))
+    * Backport [https://github.com/luanti-org/luanti/commit/4bb41a19d](https://github.com/luanti-org/luanti/commit/4bb41a19d) ([http://irc.luanti.org/minetest-dev/2018-05-19#i\_5310266](http://irc.luanti.org/minetest-dev/2018-05-19#i_5310266))
 * 0.4.17 - set release date
 
 **PR discussion/reviews**
@@ -1077,7 +1077,7 @@ It's now almost a month since the last meeting - it time for the next one. Propo
 * Whether to leave the issue number link in a commit message when merging on Github
     * MTE: Keep the numbers if they're inserted automatically (high PR count, helpful for the web interface blame or fast jumps in commits)
     * MTG: The numbers may be removed if wanted (small amount of PRs)
-    * [http://irc.minetest.net/minetest-dev/2018-05-05#i\_5298887](http://irc.minetest.net/minetest-dev/2018-05-05#i_5298887)
+    * [http://irc.luanti.org/minetest-dev/2018-05-05#i\_5298887](http://irc.luanti.org/minetest-dev/2018-05-05#i_5298887)
 
 **PR discussion/reviews**
 
@@ -1094,7 +1094,7 @@ Arranged by: Krock
 **Organisation discussion**
 
 * Questions related to 0.4.17, 0.4.18 or future development?
-* 0.4.17 release should be moved to 21/22 April for backports ([http://irc.minetest.net/minetest-dev/2018-04-07#i\_5272834](http://irc.minetest.net/minetest-dev/2018-04-07#i_5272834))
+* 0.4.17 release should be moved to 21/22 April for backports ([http://irc.luanti.org/minetest-dev/2018-04-07#i\_5272834](http://irc.luanti.org/minetest-dev/2018-04-07#i_5272834))
     * Feature/backport freeze after 14 April to have enough time for testing
 
 **PR discussion/review**
@@ -1109,8 +1109,8 @@ Arranged by: Krock
 
 * Tools: rebalance ([https://github.com/luanti-org/minetest_game/issues/1681](https://github.com/luanti-org/minetest_game/issues/1681))
     * Needs either a levelling system and/or special abilities for different materials to add variety
-    * paramat suggests removing bronze, which is incorrectly a stronger tool than steel ([http://irc.minetest.net/minetest-dev/2018-04-07#i\_5272959](http://irc.minetest.net/minetest-dev/2018-04-07#i_5272959))
-    * Future mese concept: [http://irc.minetest.net/minetest-dev/2018-04-07#i\_5273013](http://irc.minetest.net/minetest-dev/2018-04-07#i_5273013)
+    * paramat suggests removing bronze, which is incorrectly a stronger tool than steel ([http://irc.luanti.org/minetest-dev/2018-04-07#i\_5272959](http://irc.luanti.org/minetest-dev/2018-04-07#i_5272959))
+    * Future mese concept: [http://irc.luanti.org/minetest-dev/2018-04-07#i\_5273013](http://irc.luanti.org/minetest-dev/2018-04-07#i_5273013)
 
 2018-03-31
 ----------
@@ -1130,7 +1130,7 @@ Arranged by: Krock
 * Any new, important bugfixes to backport?
     * Added the \`core.rotate\_node\` bugfix, otherwise probably not. It's pretty much stable.
 * Volunteer for cherry-picking the ToDo backport commits ([https://github.com/luanti-org/luanti/pull/6746](https://github.com/luanti-org/luanti/pull/6746))
-    * `<sfan5>` probably me ([http://irc.minetest.net/minetest-dev/2018-03-31#i\_5264276](http://irc.minetest.net/minetest-dev/2018-03-31#i_5264276))
+    * `<sfan5>` probably me ([http://irc.luanti.org/minetest-dev/2018-03-31#i\_5264276](http://irc.luanti.org/minetest-dev/2018-03-31#i_5264276))
 
 2018-03-10
 ----------
@@ -1140,33 +1140,33 @@ Arranged by: Krock
 **Organisation discussion**
 
 * New Doxygen rule
-    * Log: [http://irc.minetest.net/minetest-dev/2018-03-10#i\_5249578](http://irc.minetest.net/minetest-dev/2018-03-10#i_5249578)
+    * Log: [http://irc.luanti.org/minetest-dev/2018-03-10#i\_5249578](http://irc.luanti.org/minetest-dev/2018-03-10#i_5249578)
     * Opposed: paramat, sfan5, SmallJoker, Shara
     * Comments in the functions directly are more welcome
 * Group issues in projects?
-    * Log: [http://irc.minetest.net/minetest-dev/2018-03-10#i\_5249600](http://irc.minetest.net/minetest-dev/2018-03-10#i_5249600)
+    * Log: [http://irc.luanti.org/minetest-dev/2018-03-10#i\_5249600](http://irc.luanti.org/minetest-dev/2018-03-10#i_5249600)
     * Purpose is unclear and questionable due missing information, needs to be discussed later again
 
 **PR discussion/reviews**
 
 * Remove texture pack caching ([https://github.com/luanti-org/luanti/pull/6660](https://github.com/luanti-org/luanti/pull/6660))
 * Don’t create CSM script env ([https://github.com/luanti-org/luanti/pull/6951](https://github.com/luanti-org/luanti/pull/6951))
-    * Log: [http://irc.minetest.net/minetest-dev/2018-03-10#i\_5249625](http://irc.minetest.net/minetest-dev/2018-03-10#i_5249625)
+    * Log: [http://irc.luanti.org/minetest-dev/2018-03-10#i\_5249625](http://irc.luanti.org/minetest-dev/2018-03-10#i_5249625)
     * Needs improvement, questionable solution due request of server-provided CSM ([https://github.com/luanti-org/luanti/issues/5393](https://github.com/luanti-org/luanti/issues/5393))
 * “Bugfix” for 0.4-backported rotate\_node calls ([https://github.com/luanti-org/luanti/pull/6900](https://github.com/luanti-org/luanti/pull/6900))
     * SmallJoker will test again and possibly merge after success
 * Android C++11 build fix ([https://github.com/luanti-org/luanti/pull/6796](https://github.com/luanti-org/luanti/pull/6796))
-    * Log: [http://irc.minetest.net/minetest-dev/2018-03-10#i\_5249684](http://irc.minetest.net/minetest-dev/2018-03-10#i_5249684)
+    * Log: [http://irc.luanti.org/minetest-dev/2018-03-10#i\_5249684](http://irc.luanti.org/minetest-dev/2018-03-10#i_5249684)
     * sfan5 and nerzhul will try to test it soon. It does not break the regular setup, so a merge is to expect soon
-    * Confirmed working by Wayward\_One ([http://irc.minetest.net/minetest-dev/2018-03-10#i\_5249720](http://irc.minetest.net/minetest-dev/2018-03-10#i_5249720))
+    * Confirmed working by Wayward\_One ([http://irc.luanti.org/minetest-dev/2018-03-10#i\_5249720](http://irc.luanti.org/minetest-dev/2018-03-10#i_5249720))
 * Autogenerated settings header ([https://github.com/luanti-org/luanti/pull/6728](https://github.com/luanti-org/luanti/pull/6728))
-    * Log: [http://irc.minetest.net/minetest-dev/2018-03-10#i\_5249703](http://irc.minetest.net/minetest-dev/2018-03-10#i_5249703) (stub)
+    * Log: [http://irc.luanti.org/minetest-dev/2018-03-10#i\_5249703](http://irc.luanti.org/minetest-dev/2018-03-10#i_5249703) (stub)
     * Needs attention
 
 **0.4.17 release schedule**
 
 * Definitive release date
-    * absent nerzhul: “release 0.4.17 ASAP” ([http://irc.minetest.net/minetest-dev/2018-03-10#i\_5249422](http://irc.minetest.net/minetest-dev/2018-03-10#i_5249422))
+    * absent nerzhul: “release 0.4.17 ASAP” ([http://irc.luanti.org/minetest-dev/2018-03-10#i\_5249422](http://irc.luanti.org/minetest-dev/2018-03-10#i_5249422))
 * Are there any new, important bugfixes to backport?
 * Volunteer for cherry-picking the 6 TODO (+ ^ from above) commits ([https://github.com/luanti-org/luanti/pull/6746](https://github.com/luanti-org/luanti/pull/6746))
 
