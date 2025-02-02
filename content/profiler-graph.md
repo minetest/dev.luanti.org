@@ -25,4 +25,4 @@ The following graphs are available:
 See also
 --------
 
-* [Debug](https://wiki.minetest.net/Debug)
+* [Debug](/debug)

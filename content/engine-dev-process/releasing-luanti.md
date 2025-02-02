@@ -241,7 +241,9 @@ After releasing
 
 ### Update wiki version template
 
-There is a special wiki template containing the version number at [\[1\]](https://wiki.minetest.net/Template:Version), used to make updating various wiki pages by hand less tedious. Update it so it includes the latest version.
+{{< notice info>}}We are working on [fixing the link to the version number template](https://github.com/luanti-org/dev.luanti.org/issues/172).{{< /notice>}}
+
+There is a special wiki template containing the version number used to make updating various wiki pages by hand less tedious. Update it so it includes the latest version.
 
 ### Notify known package maintainers
 

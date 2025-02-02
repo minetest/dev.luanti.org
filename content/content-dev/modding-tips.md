@@ -7,7 +7,7 @@ aliases:
 
 # Modding Tips
 
-This page is a random collection of various tips and tricks, and solutions to common tasks/problems that occur frequently in mod/game development. See also: [Modding FAQ](https://wiki.minetest.net/FAQ#Game_and_Mod_Development)
+This page is a random collection of various tips and tricks, and solutions to common tasks/problems that occur frequently in mod/game development. See also: [Modding FAQ](/faq/#game-and-mod-development)
 
 Troubleshooting
 ---------------
@@ -55,7 +55,7 @@ Note that non-positional sounds do not have to be mono, so you don't have to tou
 
 ### The mapgen generates some nodes that let me see through the world but I still collide and/or interact with them
 
-This can happen in the mapgen v6 if you forgot to set some mapgen aliases, or a mapgen alias is set to a non-existing node. What is happening here is that these “broken” nodes are [Ignore](https://wiki.minetest.net/Ignore) nodes because the v6 mapgen doesn't know which node to place here (because the given node name was invalid or undefined).
+This can happen in the mapgen v6 if you forgot to set some mapgen aliases, or a mapgen alias is set to a non-existing node. What is happening here is that these “broken” nodes are [ignore](/nodes/#ignore) nodes because the v6 mapgen doesn't know which node to place here (because the given node name was invalid or undefined).
 
 If you are using the mapgen v6, you must make sure that the mapgen aliases are set to a valid value. See `lua_api.md` for a list.
 

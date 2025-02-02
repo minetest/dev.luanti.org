@@ -16,7 +16,7 @@ For the log dating 2011-11-07, the subject discussion starts at the end.
 Node
 ----
 
-Simply put, nodes are the "cubes" that make the world.
+Simply put, [nodes](/nodes) are the "cubes" that make the world.
 
 A node in Luanti is a cubic section of the world with the size 1×1×1 set in a 3-D raster. Each node has one, and only one distinct type like dirt, sand, stone, air, water source, etc. Every node in the world has whole-number coordinates like (4,6,12). This means you can't place a node at a position like (4.5, 7.553, -64.5). There can only be node per 3-D position, e.g. there can't be a stone _and_ sand node at the same position.
 
@@ -28,7 +28,7 @@ In the Luanti code, a node (represented by the C++ class `MapNode`) contains onl
 
 Nodes don't have any interactive functionality, this is done by the client and the client knows what to do depending on what type of node it is.
 
-Special nodes are [ignore](http://wiki.minetest.net/Ignore), [air](http://wiki.minetest.net/Air) and [unknown node](https://wiki.minetest.net/Unknown_Node) which are the only nodes added by Luanti directly (rather than a mod or game).
+Special nodes are ignore, air, and unknown node. These are the only nodes added by Luanti directly (rather than a mod or game).
 
 * Ignore: Where map is not generated, there's ignore. `core.get_node` gives ignore also if the map is not loaded, so to get the node in unloaded chunks you can use LuaVoxelManipulator.
 * Air: Air is set when a node is removed. For the player it's empty space.

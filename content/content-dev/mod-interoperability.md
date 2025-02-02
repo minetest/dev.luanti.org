@@ -75,15 +75,13 @@ This includes things usually found in RPGs (role-playing games) like stats, leve
 
 #### Mobs
 
-Mobs are non-player creatures to interact with the world, they may be peaceful or attack on sight. Usually they are based on entities. Luanti does not support mobs natively, but if you still want to add custom mobs, you have various mods to choose from, each of them with somewhat different priorities. Most APIs are not compatible which each other, so in general you should only use the API which suits your needs in the best way. If you want to create a game, you have to be very careful with interoperability.
+[Mobs](/mobs) are non-player creatures to interact with the world, they may be peaceful or attack on sight. Usually they are based on entities. Luanti does not support mobs natively, but if you still want to add custom mobs, you have various mods to choose from, each of them with somewhat different priorities. Most APIs are not compatible which each other, so in general you should only use the API which suits your needs in the best way. If you want to create a game, you have to be very careful with interoperability.
 
 Note: Only mature mods with their own dedicated API are listed. Note: There are multiple mods with the short name “mobs”, you can only use one of these mods at once.
 
 * [Mobs Redo](https://content.luanti.org/packages/TenPlus1/mobs/) \[mobs\] Fork of Simple Mobs, is backwards-compatible to Simple Mobs
 * [Mobkit](https://content.luanti.org/packages/Termos/mobkit/) \[mobkit\]
 * [Creatura](https://content.luanti.org/packages/ElCeejo/creatura/) \[creatura\] An animal focused API
-
-See also: [Mobs page on the Community Wiki](http://wiki.minetest.net/Mobs)
 
 #### Protection
 

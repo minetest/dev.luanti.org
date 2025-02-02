@@ -1457,7 +1457,7 @@ Note: 5.0.0 is based on 0.4.16, not 0.4.17. 0.4.17 was created by backporting ch
 
 ### New Version Scheme
 
-Basically, the leading 0 has been dropped. The [version scheme](https://wiki.minetest.net/Version_number) was thus changed from
+Basically, the leading 0 has been dropped. The [version scheme](/version-number) was thus changed from
 
 ```
 ZERO.MAJOR.MINOR.PATCH

@@ -15,7 +15,7 @@ _Skip to Step 1 if you already know about dynamic DNS._
 
 DNS just means "Domain Name System". A domain name is a label that's easy for people to read or remember, which computers can use to look up an internet address (IP address).
 
-For example, the domain "wiki.minetest.net" tells your computer to go to 89.188.9.43
+For example, the domain "docs.luanti.org" tells your computer to go to an IP address like 89.188.9.43
 
 If your game server is being run from your home, its internet address is likely to change over time, so having a domain name means you can give that out to friends/players and it won't change, even as your IP address changes. A domain name can also direct Web browsers to your server's webpage, if you have one.
 
@@ -26,7 +26,7 @@ A domain that points to an address which may change is called "Dynamic DNS", and
 Step 1: choose a domain
 -----------------------
 
-Just like "wiki.minetest.net", your domain will have 3 parts seperated with dots. You'll get to name the left-most part, and the rest you select from an available list. We'll use [FreeDNS](https://freedns.afraid.org/) because they have thousands of free domains to choose from.
+Just like "docs.luanti.org", your domain will have 3 parts separated with dots. You'll get to name the left-most part, and the rest you select from an available list. We'll use [FreeDNS](https://freedns.afraid.org/) because they have thousands of free domains to choose from.
 
 [The full list you can choose from is here](https://freedns.afraid.org/domain/registry/)
 
