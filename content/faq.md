@@ -6,10 +6,10 @@ aliases:
 
 # FAQ
 
-This is a collection of some **frequently asked questions** about Luanti. For technical problems, refer to [Troubleshooting](https://wiki.luanti.org/Troubleshooting "Troubleshooting").
+This is a collection of some **frequently asked questions** about Luanti. For technical problems, refer to [Troubleshooting](/troubleshooting).
 
 ## What is Luanti?
-Luanti is a free software game engine designed to create [voxel](https://en.wikipedia.org/wiki/Voxel)\-based games. A detailed description can be found at [Luanti](https://wiki.luanti.org/Luanti "Luanti").
+Luanti is a free software game engine designed to create [voxel](https://en.wikipedia.org/wiki/Voxel)\-based games. A detailed description can be found at [Luanti](/luanti).
 
 ## About the Engine
 
@@ -162,7 +162,7 @@ Minetest Game is [currently in maintenance-only mode](https://github.com/luanti-
 
 ### How does \[insert item or block here\] work? How do I craft it?
 
-Refer to [Blocks](https://wiki.luanti.org/Blocks "Blocks") and [Items](https://wiki.luanti.org/Items "Items") for information on usage and crafting. You can also install a [crafting guide](https://wiki.luanti.org/Crafting_guide "Crafting guide") mod to view available crafting recipes.
+Refer to [nodes](/nodes) and [items](/engine/items) for information on usage and crafting. You can also install a crafting guide mod to view available crafting recipes.
 
 ### I was told there were dungeons. Where are they?
 
@@ -176,7 +176,7 @@ Some mods are part of games. Mods like `default` and `wool` are usually part of 
 
 ### How do I see my coordinates or check my FPS?
 
-Use the F5 key to toggle debug info. The top of your screen may display your FPS and coordinates, among other information. If the game or server you're playing on disables this information then it won't be visible. Pressing F5 again will toggle the profiler, and then wireframe mode if the **debug** [privilege](https://wiki.luanti.org/Privileges "Privileges") is possessed. A final press will toggle debug info off.
+Use the F5 key to toggle debug info. The top of your screen may display your FPS and coordinates, among other information. If the game or server you're playing on disables this information then it won't be visible. Pressing F5 again will toggle the profiler, and then wireframe mode if the **debug** [privilege](/privileges) is possessed. A final press will toggle debug info off.
 
 ### Why is my FPS so low?
 
@@ -188,11 +188,11 @@ On many systems your OS fullscreen key (such as alt+F11 on Ubuntu) should work j
 
 ### What are the controls? How do I change them?
 
-_See [Controls](https://wiki.luanti.org/Controls "Controls")._
+_See [Controls](/controls)._
 
 ### Can I use a controller or gamepad?
 
-Yes. It is recommended to use an external program to bind them, as the current engine implementation of them functions poorly. See [Gamepads](https://wiki.luanti.org/Gamepads "Gamepads") for more info.
+Yes. It is recommended to use an external program to bind them, as the current engine implementation of them functions poorly. See [Gamepads](/gamepads) for more info.
 
 ### Why can't I change settings in the pause screen?
 
@@ -218,7 +218,7 @@ Minetest Game uses pre-1.8 Minecraft skins (64x32). These support regular body t
 
 ### How do I set my spawn point?
 
-If you play Minetest Game, you can build a [bed](https://wiki.luanti.org/Bed "Bed") and sleep at night. On your next life, you will spawn on the bed.
+If you play Minetest Game, you can build a bed and sleep at night. On your next life, you will spawn on the bed.
 
 Otherwise, you set your spawn point for _all_ worlds using `static_spawnpoint = (x,y,z)` in your [`minetest.conf`](https://github.com/luanti-org/luanti/blob/master/minetest.conf.example) file.
 
@@ -228,29 +228,29 @@ Use the `flat` mapgen when creating your world and disable all the mapgen flags.
 
 ### Can I add fancy shaders?
 
-As of 5.6.0, Luanti comes with toggleable dynamic shadows. Game support is required, if your game in particular does not support it you may use the `[enable_shadows](https://content.luanti.org/packages/ROllerozxa/enable_shadows/)` mod. More advanced post-processing shaders, such as bloom or volumetric lighting, are in 5.7.0.
+As of 5.6.0, Luanti comes with toggle-able dynamic shadows. Game support is required, if your game in particular does not support it you may use the `[enable_shadows](https://content.luanti.org/packages/ROllerozxa/enable_shadows/)` mod. More advanced post-processing shaders, such as bloom or volumetric lighting, are in 5.7.0.
 
 ### How do I increase the brightness?
 
-_See [Troubleshooting#The\_screen\_is\_too\_dark](https://wiki.luanti.org/Troubleshooting#The_screen_is_too_dark "Troubleshooting")._
+_See [Troubleshooting#The\_screen\_is\_too\_dark](/troubleshooting/#the-screen-is-too-dark)._
 
 ### How do I fly?
 
-To fly, you first need the "fly" [privilege](https://wiki.luanti.org/Privileges "Privileges"). Use the K key to toggle flying. Ascend with the jump key (default: space bar) and descend with the sneak key (default: shift).
+To fly, you first need the "fly" [privilege](/privileges). Use the K key to toggle flying. Ascend with the jump key (default: space bar) and descend with the sneak key (default: shift).
 
-See also: [Controls](https://wiki.luanti.org/Controls "Controls")
+See also: [Controls](/controls)
 
 ### How do I sprint?
 
-With default Luanti behavior you can "go fast" using the "fast" [privilege](https://wiki.luanti.org/Privileges "Privileges") (toggled with the J key) and your auxiliary key (default: E). This is a lot faster than natural sprinting. There are [some mods](https://content.luanti.org/packages/?type=mod&q=sprint) and games that implement conventional sprinting.
+With default Luanti behavior you can "go fast" using the "fast" [privilege](/privileges) (toggled with the J key) and your auxiliary key (default: E). This is a lot faster than natural sprinting. There are [some mods](https://content.luanti.org/packages/?type=mod&q=sprint) and games that implement conventional sprinting.
 
-See [Controls](https://wiki.luanti.org/Controls "Controls").
+See also: [Controls](/controls).
 
 ### How do I find my house again?
 
 You can keep track of your coordinates using debug info (F5), if the game lets you see this information. If you want, you can teleport to coordinates using `/teleport x y z`
 
-_See [Server commands#Teleportation](https://wiki.luanti.org/Server_commands#Teleportation "Server commands"). Requires "teleport" [privilege](https://wiki.luanti.org/Privileges "Privileges")_.
+_See [Server commands#Teleportation](/server/commands/#teleportation). Requires "teleport" [privilege](/privileges)_.
 
 In Minetest Game, you can avoid getting lost again if use `/sethome` at home to save your home position and `/home` to teleport back to it.
 
@@ -330,7 +330,7 @@ Biomes are distributed according to their heat and humidity values. These values
 
 ### What is devtest?
 
-[Development Test (devtest)](https://wiki.luanti.org/index.php?title=FAQ&action=history) is a game for testing engine features and doing mod development. It provides a minimal set of game content along with an extensive library of content for testing engine features. It is available in the source tree, or can be downloaded from ContentDB.
+Development Test (devtest) is a game for testing engine features and doing mod development. It provides a minimal set of game content along with an extensive library of content for testing engine features. It is available in the source tree, or can be downloaded from ContentDB.
 
 ### What is mod security?
 
@@ -344,7 +344,7 @@ There is no built-in debugger in Luanti, apart from "printf-style debugging" wit
 
 ### I get an error or warning message, what does it mean?
 
-_See [Troubleshooting#Error messages without crashes](https://wiki.luanti.org/Troubleshooting#Error_messages_without_crashes "Troubleshooting")._
+_See [Troubleshooting#Error messages without crashes](/troubleshooting/#error-messages-without-crashes)._
 
 ### Why can't I make other keybinds?
 
@@ -360,7 +360,7 @@ Yes, you can make both static and animated models using Blockbench now that Luan
 
 ### Can I distribute games outside of Luanti?
 
-Yes, but this is not officially supported in the engine, you will need to maintain a rebranded fork of the engine. See [Distributing Luanti Games](/distributing-luanti-games/) for notes on how to do so.
+Yes, but this is not officially supported in the engine, you will need to maintain a re-branded fork of the engine. See [Distributing Luanti Games](/distributing-luanti-games/) for notes on how to do so.
 
 ### Can I sell games I make with Luanti?
 
