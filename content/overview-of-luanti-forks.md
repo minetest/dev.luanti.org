@@ -21,15 +21,15 @@ The following projects are known Luanti forks, which may or may not be active at
 
 ### Voxelands
 
-**[Voxelands](http://www.voxelands.com/)** was started under the name “Minetest Classic” on the 15th of April 2013 (date of [earliest recorded commit](https://gitorious.org/minetest-classic/minetest-classic/commit/2c4e0bcbc94abca621aeaa6f5159d2637179da47)) by darkrose as a fork of the latest stable release of the 0.3 series of Minetest-c55 (“Minetest-c55” was the earlier name of Luanti).
+**Voxelands** was started under the name “Minetest Classic” on the 15th of April 2013 (date of [earliest recorded commit](https://gitorious.org/minetest-classic/minetest-classic/commit/2c4e0bcbc94abca621aeaa6f5159d2637179da47)) by darkrose as a fork of the latest stable release of the 0.3 series of Minetest-c55 (“Minetest-c55” was the earlier name of Luanti).
 
-The fork was motivated by a dissatisfaction of Luanti becoming more and more a game engine rather than a game. Voxelands developers also claim that with the start of 0.4 series (and the introduction of the [Lua modding API](https://wiki.luanti.org/Mods "Mods")), Luanti has decreased in performance, which is another key motivation for Voxelands. Voxelands is incompatible with Luanti and now quite different.
+The fork was motivated by a dissatisfaction of Luanti becoming more and more a game engine rather than a game. Voxelands developers also claim that with the start of 0.4 series (and the introduction of the [Lua modding API](/mods) Luanti has decreased in performance, which is another key motivation for Voxelands. Voxelands is incompatible with Luanti and now quite different.
 
 Key goals of Voxelands are keeping the game at least as performant as the Minetest-c55 0.3 series, adding new content, maintaining balanced gameplay with a focus of in-world functionality, backporting bugfixes and some features from the 0.4 series and maintaining backwards compatibility to the 0.3 series at the network protocol level.
 
 ### Blocklife
 
-[Blocklife](https://forum.luanti.org/viewtopic.php?f=14&t=12021) was first announced on the Luanti forum on Thu Apr 30, 2015 by gibucsoft. It started with only few noticeable changes to version 0.4.7 and came with a game that included some more mods than Minetst Game. The most interesting feature was the use of two hands that could each be used seperately. On 23th May 2018 gibucsoft anounced to once more start developing. This time the block size might get reduced to a tenth in sidelength. The goal would be to have a more reallistic shaped “round” world.
+[Blocklife](https://forum.luanti.org/viewtopic.php?f=14&t=12021) was first announced on the Luanti forum on Thu Apr 30, 2015 by gibucsoft. It started with only few noticeable changes to version 0.4.7 and came with a game that included some more mods than Minetest Game. The most interesting feature was the use of two hands that could each be used separately. On 23th May 2018 gibucsoft announced to once more start developing. This time the block size might get reduced to a tenth in side length. The goal would be to have a more realistic shaped “round” world.
 
 ### Freeminer
 
@@ -45,7 +45,7 @@ The project goals have been vaguely described as something along the lines of �
 
 ### Minetest-M13
 
-An ancient fork. No activity recorded since 2012.
+[Minetest-M13](https://minetestm13.weebly.com/) is an ancient fork. No activity recorded since 2012.
 
 ### Various forks of the Android version
 
@@ -60,6 +60,7 @@ The _official_ Android versions can be found here:
 
 Many of these Luanti forks come and go rather quickly. Here are some known names in Google Play (because it changes so quickly, this list ls likely outdated and incomplete):
 
+{{% comment %}} cspell:disable {{% /comment %}}
 * Worldcraft: Exploration Lite
 * WorldCraft 2 : Pocket Edition
 * PixelCraft — 3D Survival!
@@ -70,10 +71,11 @@ Many of these Luanti forks come and go rather quickly. Here are some known names
 * Voxel Craft : Castle Build PE
 * World Craft 3D
 * Squeake Craft PLUS
+{{% comment %}} cspell:enable {{% /comment %}}
 
 [Discussion thread](https://forum.luanti.org/viewtopic.php?f=3&t=16707).
 
-Not much is known about these forks so far (feel free to edit this wiki page!). But we do know all these forks are illegetimate proprietary forks and/or they contain anti-features such as ads. For most of these, there's no source code provided, there's a proprietary license or no license at all. None of these problems exist in Luanti.
+Not much is known about these forks so far (feel free to edit this wiki page!). But we do know all these forks are illegitimate proprietary forks and/or they contain anti-features such as ads. For most of these, there's no source code provided, there's a proprietary license or no license at all. None of these problems exist in Luanti.
 
 Note we are absolutely not against unofficial forks of Luanti and creating awesome new things with it (that's the whole point of being free software!). But for Android, we simply have not been impressed by the results so far. However, if you think you found a great Luanti fork for Android, please tell us in the [forums](https://forum.luanti.org/viewtopic.php?f=3&t=16707).
 
@@ -85,6 +87,7 @@ Just like with Android, we also had people forking Luanti for iOS. The similar p
 
 Here's a list (we can't recommend any of these):
 
+{{% comment %}} cspell:disable {{% /comment %}}
 * [Buildcraft](https://itunes.apple.com/us/app/buildcraft-multiplayer-block-game/id740372768?mt=8)
 * [Worldcraft 2](https://itunes.apple.com/us/app/worldcraft-survival-2/id900353132?mt=8)
 * [Worldcraft Pocket Edition](https://itunes.apple.com/us/app/worldcraft-pocket-edition/id796349324?mt=8)
@@ -92,5 +95,6 @@ Here's a list (we can't recommend any of these):
 * FreeCraft (No iTunes Store link at the moment)
 
 None of these are free software either. Buildcraft even forces you to perform an in-app purchases to make its ads go away.
+{{% comment %}} cspell:enable {{% /comment %}}
 
 [Discussion thread](https://forum.luanti.org/viewtopic.php?f=3&t=16707).
