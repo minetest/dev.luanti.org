@@ -14,7 +14,7 @@ Security considerations
 Installing a Client-side mod
 ----------------------------
 
-After downloading a [Client-side mod](https://wiki.luanti.org/Mods#Client-Side_Mods "Mods") (e.g. from the [Client-side modding forum](https://forum.minetest.net/viewforum.php?f=53)) you usually have a Zip archive. In order to get the mod running, you have to unpack it into the clientmods folder.
+After downloading a [Client-side mod](https://wiki.luanti.org/Mods#Client-Side_Mods "Mods") (e.g. from the [Client-side modding forum](https://forum.luanti.org/viewforum.php?f=53)) you usually have a Zip archive. In order to get the mod running, you have to unpack it into the clientmods folder.
 
 You may have to change the folder name to the “technical” mod name (e.g. rename `colour_chat-master` to `colour_chat`). You can usually find the mod name in the title of the forum topic—It is the last name within the square brackets in the topic title. For example, if the title is `[clientmod] Lol Mod [1.0] [anotherlolmod]`, then the folder must be renamed to `anotherlolmod`.
 

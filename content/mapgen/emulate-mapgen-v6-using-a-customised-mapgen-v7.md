@@ -95,4 +95,4 @@ The emulation is only approximate, it differs in the following ways:
 
 * * *
 
-This page is based on a [forum post by paramat](https://forum.minetest.net/viewtopic.php?f=3&t=24831).
+This page is based on a [forum post by paramat](https://forum.luanti.org/viewtopic.php?f=3&t=24831).

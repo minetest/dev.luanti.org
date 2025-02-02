@@ -63,6 +63,6 @@ error_page 405 =200 $uri;
 
 ## See Also
 * [sfan5's remote media build script](https://gist.github.com/sfan5/6351560)
-* [Forum topic with comments](https://forum.minetest.net/viewtopic.php?f=3&t=9260)
-* [MtMediaServer](https://forum.minetest.net/viewtopic.php?f=14&t=17411)
+* [Forum topic with comments](https://forum.luanti.org/viewtopic.php?f=3&t=9260)
+* [MtMediaServer](https://forum.luanti.org/viewtopic.php?f=14&t=17411)
 * [mt_media_collector](https://github.com/ShadowNinja/mt_media_collector)

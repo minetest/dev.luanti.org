@@ -29,7 +29,7 @@ Key goals of Voxelands are keeping the game at least as performant as the Minete
 
 ### Blocklife
 
-[Blocklife](https://forum.minetest.net/viewtopic.php?f=14&t=12021) was first announced on the Luanti forum on Thu Apr 30, 2015 by gibucsoft. It started with only few noticeable changes to version 0.4.7 and came with a game that included some more mods than Minetst Game. The most interesting feature was the use of two hands that could each be used seperately. On 23th May 2018 gibucsoft anounced to once more start developing. This time the block size might get reduced to a tenth in sidelength. The goal would be to have a more reallistic shaped “round” world.
+[Blocklife](https://forum.luanti.org/viewtopic.php?f=14&t=12021) was first announced on the Luanti forum on Thu Apr 30, 2015 by gibucsoft. It started with only few noticeable changes to version 0.4.7 and came with a game that included some more mods than Minetst Game. The most interesting feature was the use of two hands that could each be used seperately. On 23th May 2018 gibucsoft anounced to once more start developing. This time the block size might get reduced to a tenth in sidelength. The goal would be to have a more reallistic shaped “round” world.
 
 ### Freeminer
 
@@ -71,11 +71,11 @@ Many of these Luanti forks come and go rather quickly. Here are some known names
 * World Craft 3D
 * Squeake Craft PLUS
 
-[Discussion thread](https://forum.minetest.net/viewtopic.php?f=3&t=16707).
+[Discussion thread](https://forum.luanti.org/viewtopic.php?f=3&t=16707).
 
 Not much is known about these forks so far (feel free to edit this wiki page!). But we do know all these forks are illegetimate proprietary forks and/or they contain anti-features such as ads. For most of these, there's no source code provided, there's a proprietary license or no license at all. None of these problems exist in Luanti.
 
-Note we are absolutely not against unofficial forks of Luanti and creating awesome new things with it (that's the whole point of being free software!). But for Android, we simply have not been impressed by the results so far. However, if you think you found a great Luanti fork for Android, please tell us in the [forums](https://forum.minetest.net/viewtopic.php?f=3&t=16707).
+Note we are absolutely not against unofficial forks of Luanti and creating awesome new things with it (that's the whole point of being free software!). But for Android, we simply have not been impressed by the results so far. However, if you think you found a great Luanti fork for Android, please tell us in the [forums](https://forum.luanti.org/viewtopic.php?f=3&t=16707).
 
 If you want to avoid proprietary forks with annoying anti-features altogether, we recommend you start to use [F-Droid](https://f-droid.org/) instead of Google Play. F-Droid software is a repository maintained by free software zealots like us in which fishy proprietary software is not allowed in the first place. :-)
 
@@ -93,4 +93,4 @@ Here's a list (we can't recommend any of these):
 
 None of these are free software either. Buildcraft even forces you to perform an in-app purchases to make its ads go away.
 
-[Discussion thread](https://forum.minetest.net/viewtopic.php?f=3&t=16707).
+[Discussion thread](https://forum.luanti.org/viewtopic.php?f=3&t=16707).

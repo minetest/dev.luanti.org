@@ -18,7 +18,7 @@ A bug might already be reported or even fixed by the time you are having problem
 * [Newest Luanti version](https://www.minetest.net/downloads/) - are you using the most recent one?
 * [GitHub issue tracker](https://github.com/luanti-org/luanti/issues?q=is%3Aissue)
 * [Libera IRC (English)](https://kiwiirc.com/nextclient/irc.libera.chat:+6697/#minetest) (answers might take a while)
-* [Luanti Forums: 'Problems'](https://forum.minetest.net/viewforum.php?f=6)
+* [Luanti Forums: 'Problems'](https://forum.luanti.org/viewforum.php?f=6)
 
 ### Gathering information
 

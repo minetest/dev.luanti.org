@@ -199,7 +199,7 @@ This mapgen has a long history of development and has seen countless improvement
 
 The mapgen “math” was introduced in Minetest 0.4.8 by proller. This was really a collection of 3 different map generators based on simple maths. It was capable of creating Menger sponges, mandelboxes and spheres. Mods could adds biomes with Minetest's biome API, but this was never used in Minetest Game, so only stone worlds were created by default.
 
-This map generator has been removed in Minetest 0.4.10 when proller left the project because it was considered to be of very low quality and had many obvious lighting problems (see [forum topic](https://forum.minetest.net/viewtopic.php?f=3&t=7256#p148920)).
+This map generator has been removed in Minetest 0.4.10 when proller left the project because it was considered to be of very low quality and had many obvious lighting problems (see [forum topic](https://forum.luanti.org/viewtopic.php?f=3&t=7256#p148920)).
 
 The math mapgen is being continued in [Freeminer](https://wiki.luanti.org/Overview_of_Minetest_forks#Freeminer "Overview of Minetest forks"), a fork of Minetest.
 
@@ -242,4 +242,4 @@ In Minetest Game, these rivers are made out of [River Water](https://wiki.luanti
 *carpathian mapgen in Minetest 0.5.0-dev-8221d3bc*  
 [![](/images/mapgen/Mapgen_carpathian.jpg)](/images/mapgen/Mapgen_carpathian.jpg)
 
-Introduced in the developer version on 6th July 2017 by vlapsley. It has been first showcased [in the forums](https://forum.minetest.net/viewtopic.php?f=9&t=17174). About 1.5 years later, it was finally released in a stable Minetest release: Minetest 5.0.0. This mapgen is notable for its complex mountains (multiple variants: terraced, stepped, very big, ridged) and hills. Vast flat plains, mountains and oceans dominate the landscape. Fjords are also possible, but rare.
+Introduced in the developer version on 6th July 2017 by vlapsley. It has been first showcased [in the forums](https://forum.luanti.org/viewtopic.php?f=9&t=17174). About 1.5 years later, it was finally released in a stable Minetest release: Minetest 5.0.0. This mapgen is notable for its complex mountains (multiple variants: terraced, stepped, very big, ridged) and hills. Vast flat plains, mountains and oceans dominate the landscape. Fjords are also possible, but rare.

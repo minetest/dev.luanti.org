@@ -9,7 +9,7 @@ aliases:
 
 This is a list of unofficial [Luanti](/Luanti)-related software.
 
-This is not a comprehensive list, for more see [Luanti-related projects](https://forum.minetest.net/viewforum.php?f=14) in the forum.
+This is not a comprehensive list, for more see [Luanti-related projects](https://forum.luanti.org/viewforum.php?f=14) in the forum.
 
 Mapping
 -------
@@ -43,7 +43,7 @@ Name | Description | Info/webpage | Author
 [mcimport](https://github.com/minetest-tools/mcimport) | A world converter for whole Minecraft maps (saves), outputting a new, playable Luanti world. For GNU/Linux. | [Forum](https://forum.luanti.org/viewtopic.php?f=14&t=13709) | [many contributors](https://github.com/minetest-tools/mcimport/graphs/contributors)
 [mcresconvert](https://github.com/minetest-tools/mcresconvert) | Convert Minecraft resource packs and texture packs to Luanti texture packs | [Forum](https://forum.luanti.org/viewtopic.php?f=4&t=14283) | [many contributors](https://github.com/minetest-tools/mcresconvert/graphs/contributors)
 
-Twoelk also describes [other converters for importing Minecraft data into Luanti](https://forum.minetest.net/viewtopic.php?p=251194&sid=8558c08027ecfd8d6f08620c9344882f#p251194).
+Twoelk also describes [other converters for importing Minecraft data into Luanti](https://forum.luanti.org/viewtopic.php?p=251194&sid=8558c08027ecfd8d6f08620c9344882f#p251194).
 
 Servers
 -------
