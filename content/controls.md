@@ -149,7 +149,7 @@ _The “noclip” privilege is required to use this._
 Changing controls in `minetest.conf`
 ------------------------------------
 
-With `minetest.conf`, you can change the controls which are unavailable in the settings menu. See [minetest.conf#Controls](/minetest.conf/#controls) for more information.
+With `minetest.conf`, you can change the controls which are unavailable in the settings menu. See [minetest.conf#Controls](/minetest-conf/#controls) for more information.
 
 Inventory controls
 ------------------
