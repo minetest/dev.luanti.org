@@ -21,7 +21,7 @@ The following projects are known Luanti forks, which may or may not be active at
 
 ### Voxelands
 
-**Voxelands** was started under the name “Minetest Classic” on the 15th of April 2013 (date of [earliest recorded commit](https://gitorious.org/minetest-classic/minetest-classic/commit/2c4e0bcbc94abca621aeaa6f5159d2637179da47)) by darkrose as a fork of the latest stable release of the 0.3 series of Minetest-c55 (“Minetest-c55” was the earlier name of Luanti).
+**Voxelands** was started under the name “Minetest Classic” on the 15th of April 2013 by darkrose as a fork of the latest stable release of the 0.3 series of Minetest-c55 (“Minetest-c55” was the earlier name of Luanti).
 
 The fork was motivated by a dissatisfaction of Luanti becoming more and more a game engine rather than a game. Voxelands developers also claim that with the start of 0.4 series (and the introduction of the [Lua modding API](/mods) Luanti has decreased in performance, which is another key motivation for Voxelands. Voxelands is incompatible with Luanti and now quite different.
 
