@@ -10,7 +10,7 @@ The **player** or **“player character”** is the character that a user contro
 
 ## Health
 
-Players start with 10 [hearts](/hearts) which are equal to 20 hit points (HP). The smallest unit of health is 0.5 hearts or 1 HP. Players die when they have lost all hearts.
+Players start with 10 hearts, which is equal to 20 hit points (HP). The smallest unit of health is 0.5 hearts or 1 HP. Players die when they have lost all hearts.
 
 Players can restore health by consuming food. Players can lose health by various means, including, but not limited to: Falling too hard, touching a harmful block such as lava, drowning in a [liquid](/liquid) or getting attacked by other players (if PvP is enabled).
 
