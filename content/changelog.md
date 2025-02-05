@@ -13,9 +13,17 @@ Note that not all changes made to the code between releases are listed here. Fix
 To be released (TM). Newest entries on top of the section.
 
 ### Deprecations and compatibility notes
+
 * Clients >= 5.11.0 will no longer support BMP texture files. This deprecation was first announced in 5.8.0.
 * Basic shaders support is now mandatory. New minimum required OpenGL version: 2.0.
     * See [https://github.com/luanti-org/luanti/issues/15370](https://github.com/luanti-org/luanti/issues/15370) for details.
+* A bug related to skeletal animation has been fixed. The bug occurs when bones have "perfect" 180° rotations, equivalent to negatively scaling two axes.
+  If these bones are then animated via bone overrides, the overridden rotation will incorrectly appear to be relative to the 180° rotation.
+  This may result in wrong bone rotations for mods that rely on this bug. These mods need to fix the rotations passed to `set_bone_override` / the deprecated `set_bone_position`.
+  Multiple workarounds are possible to ensure consistency with older Luanti clients which exhibit the bug,
+  such as editing models to not have perfect rotations, overriding bone scale to force newer clients to replicate the bug,
+  or overriding bone scale to work around the bug on older clients which support setting scale. 
+  See [the issue](https://github.com/luanti-org/luanti/issues/15692) for details.
 
 ### Client / Audiovisuals
 
