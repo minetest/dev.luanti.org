@@ -22,7 +22,7 @@ To be released (TM). Newest entries on top of the section.
   This may result in wrong bone rotations for mods that rely on this bug. These mods need to fix the rotations passed to `set_bone_override` / the deprecated `set_bone_position`.
   Multiple workarounds are possible to ensure consistency with older Luanti clients which exhibit the bug,
   such as editing models to not have perfect rotations, overriding bone scale to force newer clients to replicate the bug,
-  or overriding bone scale to work around the bug on older clients which support setting scale. 
+  or overriding bone scale to work around the bug on older clients which support setting scale.
   See [the issue](https://github.com/luanti-org/luanti/issues/15692) for details.
 
 ### Client / Audiovisuals
@@ -54,6 +54,7 @@ To be released (TM). Newest entries on top of the section.
 
 ### Script API / Modding
 
+* `core.protocol_versions` for easier engine version lookups (_rollerozxa_, _appgurueu_, _sfan5_)
 * Allow overriding fonts via media files (_appgurueu_)
 * New in-game debug view: highlight bounding boxes (_sfan5_)
 * New function `core.spawn_tree_on_vmanip` (_cx384_)
@@ -71,7 +72,7 @@ To be released (TM). Newest entries on top of the section.
 * Improve sleep accuracy on FPS limiter (_Hanicef_)
     * This mainly affects Windows clients.
 * Texture filters/generation speed improvement (_sfan5_)
-* Performance improvements in rendering (_sfan5_, _Desour_)
+* Performance improvements in rendering (world and formspec) (_sfan5_, _Desour_, _appgurueu_)
     * New setting `mesh_buffer_min_vertices` for fine-tuning.
 * Crash fixes (_appgurueu_, _Krock_)
 * Replaced minetest.net with luanti.org in several places (_veprogames_)
