@@ -3,10 +3,12 @@
         "prepare": "git submodule init && git submodule update",
         "build": "hugo",
         "build:ci": "hugo --panicOnWarning",
+        "clean": "rm -rf public && echo Clear browser cache as well!",
         "format:fix": "sort-package-json",
         "start": "hugo server",
         "test:a11y": "start-test start 1313 test:a11y:tests",
         "test:a11y:tests": "playwright test",
+        "test:links": "linkinator ./public -r",
         "test:spelling": "cspell content"
     },
     "dependencies": {
@@ -16,6 +18,7 @@
         "@axe-core/playwright": "^4.10.1",
         "@playwright/test": "^1.49.1",
         "cspell": "^8.17.1",
+        "linkinator": "^6.1.2",
         "sort-package-json": "^2.14.0",
         "start-server-and-test": "^2.0.10"
     },
