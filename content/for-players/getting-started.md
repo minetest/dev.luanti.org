@@ -14,7 +14,7 @@ Welcome to Luanti! This page explains what Luanti is all about, how to get it, a
 * You can play **offline or online**, in singleplayer or multiplayer.
 * Most games (but not all!) have a sandbox gameplay focused on construction, mining and creativity.
 * You can browse the list of games available on [ContentDB](https://content.luanti.org/packages/?type=game).
-* You can install **[mods](/mods/) to modify** certain **aspects of gameplay**. Mods are an **inherent** part of Luanti, it is even what games consist of.
+* You can install **[mods](/for-players/mods/) to modify** certain **aspects of gameplay**. Mods are an **inherent** part of Luanti, it is even what games consist of.
 * **Mods work out of the box when playing on [servers](/server/)**, no additional installations required. Mods are server-side, everything is handled automatically.
 
 ## Getting Luanti
@@ -62,7 +62,7 @@ When you are new to a server, you need to first register. Press the register but
 
 ### Basic Controls
 
-_Most of these can be changed in the “Change Keys” menu. For a more complete list of keyboard controls, see [Controls](/controls/)._
+_Most of these can be changed in the “Change Keys” menu. For a more complete list of keyboard controls, see [Controls](/for-players/controls/)._
 
 The default and most important controls are:
 

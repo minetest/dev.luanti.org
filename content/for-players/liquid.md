@@ -6,7 +6,7 @@ aliases:
 
 # Liquid
 
-**Liquids** are special dynamic [nodes](/nodes) in Luanti. They behave quite differently than in real life. Liquids like to spread and flow to their surrounding blocks and players can swim and drown in them.
+**Liquids** are special dynamic [nodes](/for-players/nodes) in Luanti. They behave quite differently than in real life. Liquids like to spread and flow to their surrounding blocks and players can swim and drown in them.
 
 Liquid forms
 ------------
@@ -33,8 +33,8 @@ All liquids share the following properties:
 *   _All properties of nodes_
 *   Renewability: Renewable liquids can create new sources (see below)
 *   Flowing range: How many flowing liquids are created at maximum per liquid source, it determines how far the liquid will “spread”. This is a number ranging from 0 to 8. If 0, no flowing liquids are generated at all. Usually, liquids have a flowing range of 8
-*   Viscosity: How slow [players](/player) move through it and how fast new flowing liquids are created (i.e. how fast the liquid spreads)
-*   Drowning damage: If set, it will a) reduce your [breath](/player#breath) (“bubbles”) while you are inside and b) will cause this amount of damage to you every 2 seconds if you ran out of breath while inside
+*   Viscosity: How slow [players](/for-players/player) move through it and how fast new flowing liquids are created (i.e. how fast the liquid spreads)
+*   Drowning damage: If set, it will a) reduce your [breath](/for-players/player#breath) (“bubbles”) while you are inside and b) will cause this amount of damage to you every 2 seconds if you ran out of breath while inside
 
 Behaviour
 ---------
@@ -67,7 +67,7 @@ Interaction with liquids
 
 ### Swimming and diving
 
-Swimming in a liquid is fairly straightforward: The usual direction keys for basic movement, the jump key for rising and the sneak key for sinking. Note that the controls are different if the [pitch move mode](/controls#pitch-move-mode) is enabled.
+Swimming in a liquid is fairly straightforward: The usual direction keys for basic movement, the jump key for rising and the sneak key for sinking. Note that the controls are different if the [pitch move mode](/for-players/controls#pitch-move-mode) is enabled.
 
 The physics for swimming and diving in a liquid are, in detail:
 
@@ -79,4 +79,4 @@ The physics for swimming and diving in a liquid are, in detail:
 
 ### Pointing to liquids
 
-Liquids are usually not [pointable](/pointing). However, all liquids can be pointed by special items. In [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/), one example is the bucket.
+Liquids are usually not [pointable](/for-players/pointing). However, all liquids can be pointed by special items. In [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/), one example is the bucket.

@@ -38,4 +38,4 @@ A few things to note:
 * The list of possible controls (value right of the equals sign) can be seen in [\[1\]](https://github.com/luanti-org/luanti/blob/master/irr/include/Keycodes.h). If your key isn't listed there, try writing the literal character
 * To disable a control completely, leave the part right of the equals sign empty, e.g. `keymap_toggle_debug =`
 
-See [controls](/controls) for a list of controls and their setting name (if available).
+See [controls](/for-players/controls) for a list of controls and their setting name (if available).

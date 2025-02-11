@@ -11,7 +11,7 @@ This is an overview of all controls used in Luanti.
 Changing controls
 -----------------
 
-There are two ways to change the controls: Either by using the options menu accessible inside the game or by editing [minetest.conf](/minetest-conf). See minetest.conf.example to learn the setting names. Note that some controls are fixed and cannot be changed at all.
+There are two ways to change the controls: Either by using the options menu accessible inside the game or by editing [minetest.conf](/for-players/minetest-conf). See minetest.conf.example to learn the setting names. Note that some controls are fixed and cannot be changed at all.
 
 Game controls
 -------------
@@ -115,7 +115,7 @@ Mobile controls when a menu or inventory is displayed:
 
 ### Controllers and Gamepads
 
-You'll need to use an external program to bind a controller. See [gamepads](/gamepads) for more info.
+You'll need to use an external program to bind a controller. See [gamepads](/for-players/gamepads) for more info.
 
 Movement modes
 --------------
@@ -149,14 +149,14 @@ _The “noclip” privilege is required to use this._
 Changing controls in `minetest.conf`
 ------------------------------------
 
-With `minetest.conf`, you can change the controls which are unavailable in the settings menu. See [minetest.conf#Controls](/minetest-conf/#controls) for more information.
+With `minetest.conf`, you can change the controls which are unavailable in the settings menu. See [minetest.conf#Controls](/for-players/minetest-conf/#controls) for more information.
 
 Inventory controls
 ------------------
 
-See [Inventory#Controls](/inventory/#controls "Inventory").
+See [Inventory#Controls](/for-players/inventory/#controls "Inventory").
 
 Console controls
 ----------------
 
-See [Console#Controls overview](/console/#controls-overview).
+See [Console#Controls overview](/for-players/console/#controls-overview).

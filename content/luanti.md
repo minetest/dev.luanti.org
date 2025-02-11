@@ -11,9 +11,9 @@ aliases:
 
 **Luanti** is a [free software](https://en.wikipedia.org/wiki/Free_software) [game engine](https://en.wikipedia.org/wiki/Game_engine) to create various games based on [voxel](https://en.wikipedia.org/wiki/Voxel) gameplay, inspired by InfiniMiner, Minecraft, and the like. Luanti was originally created by Perttu Ahola (alias “[celeron55](/celeron55)”).
 
-The basic idea of each game is always the same: The [player](/player) is thrown into a huge [world](/worlds) made out of cubes/[blocks](/nodes). Most of the time, these cubes make the landscape and these blocks can be removed and placed almost entirely freely. Using the collected [items](/items), new [tools](/tool) and other items can be crafted. Games in Luanti can, however, be much more complex than this.
+The basic idea of each game is always the same: The [player](/for-players/player) is thrown into a huge [world](/for-players/worlds) made out of cubes/[blocks](/for-players/nodes). Most of the time, these cubes make the landscape and these blocks can be removed and placed almost entirely freely. Using the collected [items](/for-players/items), new [tools](/for-players/tool) and other items can be crafted. Games in Luanti can, however, be much more complex than this.
 
-A core concept of Luanti is a built-in [modding](/mods) capability, based on the Lua programming language. Mods allow one or more certain aspects of an existing game to be modified. Luanti mods can be as simple as adding a few decoration blocks or very complex by (for example) introducing complex new gameplay concepts or generating a completely different kind of world, and many other things. For the player, using a new mod requires to copy or extract some files into a certain location and pressing some buttons in Luanti's interface.
+A core concept of Luanti is a built-in [modding](/for-players/mods) capability, based on the Lua programming language. Mods allow one or more certain aspects of an existing game to be modified. Luanti mods can be as simple as adding a few decoration blocks or very complex by (for example) introducing complex new gameplay concepts or generating a completely different kind of world, and many other things. For the player, using a new mod requires to copy or extract some files into a certain location and pressing some buttons in Luanti's interface.
 
 Luanti can be played alone or [online](/server) together with multiple players.
 
@@ -25,8 +25,8 @@ Features
 *   A big cube-based world to discover (61840 nodes (cubes) in every dimension)
 *   Procedurally generated world
 *   Several [world generators](/mapgen) with many adjustable parameters
-*   Extremely high configurability with an advanced settings editor and built-in descriptions, or by using a [configuration file](/minetest-conf)
-*   Customize the graphics and sounds through [texture packs](/texture-packs)
+*   Extremely high configurability with an advanced settings editor and built-in descriptions, or by using a [configuration file](/for-players/minetest-conf)
+*   Customize the graphics and sounds through [texture packs](/for-players/texture-packs)
 *   Download games, mods and texture packs from the built-in [ContentDB](https://content.luanti.org/)
 *   Singleplayer mode and [online multiplayer mode](/server "Server")
 *   Server list
@@ -91,6 +91,6 @@ See also
 --------
 
 *   [Download Luanti](http://www.luanti.org/downloads/)
-*   [Getting Started](/getting-started)
+*   [Getting Started](/for-players/getting-started)
 *   [Version Number](/version-number)
 *   [Main Page](/)

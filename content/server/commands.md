@@ -7,21 +7,21 @@ aliases:
 
 # Server commands
 
-**Server commands** (also called “**chat commands**”) are special commands to the server that can be entered by any player via the [chat](/chat) to cause the server to do something.
+**Server commands** (also called “**chat commands**”) are special commands to the server that can be entered by any player via the [chat](/for-players/chat) to cause the server to do something.
 
 Command basics
 --------------
 
-Luanti comes with a set of built-in commands, but games and [mods](/mods) may add custom commands or even alter or remove some of the built-in-commands.
+Luanti comes with a set of built-in commands, but games and [mods](/for-players/mods) may add custom commands or even alter or remove some of the built-in-commands.
 
 There are many commands, but you only need to remember the `/help` command. This will give you a list of all commands that are _currently_ available, plus a brief explanation.
 
-There are a few commands which can be issued by everyone, but some commands only work if you have certain [privileges](/privileges) granted on the server. Use the command `/privs` to see your own privileges. If not noted otherwise, the commands in this article are assumed to require no privileges.
+There are a few commands which can be issued by everyone, but some commands only work if you have certain [privileges](/for-players/privileges) granted on the server. Use the command `/privs` to see your own privileges. If not noted otherwise, the commands in this article are assumed to require no privileges.
 
 Issuing a command
 -----------------
 
-To issue a command, simply type it like a [chat](/chat) message or use the [console](/console). Alternatively, you can just press the “/” key (only in default [controls](/controls)) which simply opens a chat window where the “/” has already been typed for you and then type the command right away. The command itself will _not_ appear in the chat. Since every command starts with “/”, this means that ordinary chat messages can’t start with “/”; they will be interpreted as a command instead, even if such a command does not exist. You can tell whether or not a command was successful by the server’s response.
+To issue a command, simply type it like a [chat](/for-players/chat) message or use the [console](/for-players/console). Alternatively, you can just press the “/” key (only in default [controls](/for-players/controls)) which simply opens a chat window where the “/” has already been typed for you and then type the command right away. The command itself will _not_ appear in the chat. Since every command starts with “/”, this means that ordinary chat messages can’t start with “/”; they will be interpreted as a command instead, even if such a command does not exist. You can tell whether or not a command was successful by the server’s response.
 {{% comment %}} cspell:disable {{% /comment %}}
 If you see something like “`-!- Invalid command: /blargh`” in the chat, you probably misspelled something.
 {{% comment %}} cspell:enable {{% /comment %}}
@@ -78,11 +78,11 @@ These commands require the “shout” privilege to work.
 * `/msg <player> <message>`—Send a direct message `<message>` to `<player>`; but not to the other players. **Note**: The message is not really secret. Anyone intercepting the network traffic and the server operator could still, in principle, read it
 * `/me <action>`—Makes a text in the format “\* `<your name> <action>`” appear in the chat log. E.g. “/me eats pizza.” leads to “\* Alfred eats pizza.” (if your name is “Alfred”)
 
-See [Chat](/chat) for details
+See [Chat](/for-players/chat) for details
 
 #### Items
 
-* `/give <player> <itemstring> [<count> [<wear>]]`—Give the specified item (see [itemstrings](/itemstrings)) `<count>` times (default: 1) to the player. `<wear>` specifies the damage for tools (0-65535) and is meaningless for other items, higher means more damage (default: 0). Requires the “give” privilege
+* `/give <player> <itemstring> [<count> [<wear>]]`—Give the specified item (see [itemstrings](/for-players/itemstrings)) `<count>` times (default: 1) to the player. `<wear>` specifies the damage for tools (0-65535) and is meaningless for other items, higher means more damage (default: 0). Requires the “give” privilege
 * `/giveme <itemstring> [<count> [<wear>]]`—Give item to yourself. `<count>` and `<wear>` have the same meaning as for /give. Requires the “give” privilege.
 * `/pulverize`—Destroys the wielded item. Can be used by any player
 * `/clearinv [<name>]`—Destroys all items in your inventory (no argument provided) or in someone else's inventory (`name` provided). To clear someone else's inventory, you need the “server” privilege
@@ -99,7 +99,7 @@ See [Chat](/chat) for details
 
 Teleportation is the immediate displacement of any player to a given position. All of the following commands require the “teleport” privilege:
 
-* `/teleport <x>,<y>,<z>`—Teleports yourself to given [coordinates](/coordinates)
+* `/teleport <x>,<y>,<z>`—Teleports yourself to given [coordinates](/for-players/coordinates)
 * `/teleport <target_player>`—Teleports yourself to the player with the name `<target\_player>`
 * `/teleport <player> <x>,<y>,<z>`—Teleports `<player>` to given coordinates. Also requires the “bring” privilege
 * `/teleport <player1> <player2>`—Teleports `<player1>` to `<player2>`. Also requires the “bring” privilege
@@ -169,10 +169,10 @@ All of these commands require the “server” privilege.
 
 * `/shutdown [-r]`—Shuts down the server. If `-r` is provided, players are given an offer to reconnect
 * `/shutdown <delay> [-r]`—Shuts down the server in `<delay>` seconds or aborts a pending shutdown if the number is -1. If `-r` is provided, players are given an offer to reconnect
-* `/set <variable>`—Shows the value of the given server `<variable>` (see [minetest.conf](/minetest-conf) for a list of variables)
+* `/set <variable>`—Shows the value of the given server `<variable>` (see [minetest.conf](/for-players/minetest-conf) for a list of variables)
 * `/set <variable> <new value>`—Sets the existing server `<variable>` to the given `<new value>`
 * `/set -n <variable> <initial value>`—Creates a new server variable named `<variable>` and sets it to `<initial value>`
-* `/clearobjects [full|quick]`—Clears objects/entities (removes dropped [items](/items), [mobs](/mobs) and possibly more) on the server. In “quick” mode (default), objects in loaded mapblocks are removed immediately, while other objects are removed when the mapblock they're in is loaded. In “full” mode, all objects are cleared. Quick mode is very fast, but the full mode may slow down the server to a crawl for 10 to more than 60 seconds or even freeze it.
+* `/clearobjects [full|quick]`—Clears objects/entities (removes dropped [items](/for-players/items), [mobs](/for-players/mobs) and possibly more) on the server. In “quick” mode (default), objects in loaded mapblocks are removed immediately, while other objects are removed when the mapblock they're in is loaded. In “full” mode, all objects are cleared. Quick mode is very fast, but the full mode may slow down the server to a crawl for 10 to more than 60 seconds or even freeze it.
 * `/auth_reload`—Reloads _auth.txt_, which is the authentication data, containing privileges and Base64-scrambled passwords
 * `/emergeblocks here [<radius>]`—Starts loading (or generating, if inexistent) map blocks around the player's current position with an optional radius (in nodes)
 * `/emergeblocks <pos1> <pos2>`—Starts loading (or generating, if inexistent) map blocks contained in the area within pos1 and pos2

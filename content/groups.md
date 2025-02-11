@@ -6,9 +6,9 @@ aliases:
 
 # Groups
 
-**Groups** is a concept for [nodes](/nodes), [items](/engine/items) and [tools](/tool) in Luanti. Any of these may be a member of a group or multiple groups, or none at all. Groups are used mainly for crafting recipes, to determine damage, to determine digging time and lots of other stuff as well.
+**Groups** is a concept for [nodes](/for-players/nodes), [items](/for-players/items) and [tools](/for-players/tool) in Luanti. Any of these may be a member of a group or multiple groups, or none at all. Groups are used mainly for crafting recipes, to determine damage, to determine digging time and lots of other stuff as well.
 
-{{< notice info>}}Below are some sample groups from [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/). [Mods](/mods) often remove or heavily modify these groups, so they may not apply to other games.{{< /notice >}}
+{{< notice info>}}Below are some sample groups from [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/). [Mods](/for-players/mods) often remove or heavily modify these groups, so they may not apply to other games.{{< /notice >}}
 
 List of ordinary groups used by crafting recipes
 -----------------------------------------------------------------------------------------------

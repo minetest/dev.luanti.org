@@ -49,7 +49,7 @@ The next time you log into the server, you will input the username and password 
 
 ### Basics
 
-The gameplay in a multiplayer server is basically the same as in a singleplayer game. The same rules apply. See [Getting Started](/getting-started#gameplay) for gameplay-related concepts. Well, at least in theory.
+The gameplay in a multiplayer server is basically the same as in a singleplayer game. The same rules apply. See [Getting Started](/for-players/getting-started#gameplay) for gameplay-related concepts. Well, at least in theory.
 
 In practice, every server is different. They could just host the vanilla Minetest Game, or host Minetest Game with many crazy mods installed, or even host an entirely different game. Be prepared to be surprised! :D To see the game a server is running, you can check the **gameid** in the server list, and to see the modset it is running you can type `/mods` if it hasn't been disabled. If the server administrator is nice they may provide the game with modset for download somewhere.
 
@@ -59,12 +59,12 @@ Also, different servers are usually managed by different people, they also may o
 
 In multiplayer servers, these things become more important:
 
-*   [Chat](/chat): learn how to communicate with other players
-*   [Privileges](/privileges): learn what you can and can’t do on a server
+*   [Chat](/for-players/chat): learn how to communicate with other players
+*   [Privileges](/for-players/privileges): learn what you can and can’t do on a server
 *   [Server commands](/server-commands): learn how to use server commands. They are also sometimes useful for players; for example, you can pulverize an item, teleport (if you are allowed to), and more
     *   Find out more about the server with commands like “/mods”, “/privs”, “/status”.
-*   The [mods](/mods) installed on the server
-    *   Take note of [mobs](/mobs), PvP (fighting “player-vs-player”), and server rules
+*   The [mods](/for-players/mods) installed on the server
+    *   Take note of [mobs](/for-players/mobs), PvP (fighting “player-vs-player”), and server rules
 *   Custom settings which may affect gameplay
 *   When you press Esc, the game will not be paused like in single player mode
 

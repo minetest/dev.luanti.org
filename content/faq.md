@@ -6,7 +6,7 @@ aliases:
 
 # FAQ
 
-This is a collection of some **frequently asked questions** about Luanti. For technical problems, refer to [Troubleshooting](/troubleshooting).
+This is a collection of some **frequently asked questions** about Luanti. For technical problems, refer to [Troubleshooting](/for-players/troubleshooting).
 
 ## What is Luanti?
 Luanti is a free software game engine designed to create [voxel](https://en.wikipedia.org/wiki/Voxel)\-based games. A detailed description can be found at [Luanti](/luanti).
@@ -45,7 +45,7 @@ Luanti switched to [semver](https://semver.org/) after 0.4.17.1 because the lead
 
 ### How do I install and run Luanti?
 
-See [Getting Started](/getting-started/).
+See [Getting Started](/for-players/getting-started/).
 
 ### How do I update Luanti?
 
@@ -162,7 +162,7 @@ Minetest Game is [currently in maintenance-only mode](https://github.com/luanti-
 
 ### How does \[insert item or block here\] work? How do I craft it?
 
-Refer to [nodes](/nodes) and [items](/engine/items) for information on usage and crafting. You can also install a crafting guide mod to view available crafting recipes.
+Refer to [nodes](/for-players/nodes) and [items](/for-players/items) for information on usage and crafting. You can also install a crafting guide mod to view available crafting recipes.
 
 ### I was told there were dungeons. Where are they?
 
@@ -176,7 +176,7 @@ Some mods are part of games. Mods like `default` and `wool` are usually part of 
 
 ### How do I see my coordinates or check my FPS?
 
-Use the F5 key to toggle debug info. The top of your screen may display your FPS and coordinates, among other information. If the game or server you're playing on disables this information then it won't be visible. Pressing F5 again will toggle the profiler, and then wireframe mode if the **debug** [privilege](/privileges) is possessed. A final press will toggle debug info off.
+Use the F5 key to toggle debug info. The top of your screen may display your FPS and coordinates, among other information. If the game or server you're playing on disables this information then it won't be visible. Pressing F5 again will toggle the profiler, and then wireframe mode if the **debug** [privilege](/for-players/privileges) is possessed. A final press will toggle debug info off.
 
 ### Why is my FPS so low?
 
@@ -188,11 +188,11 @@ On many systems your OS fullscreen key (such as alt+F11 on Ubuntu) should work j
 
 ### What are the controls? How do I change them?
 
-_See [Controls](/controls)._
+_See [Controls](/for-players/controls)._
 
 ### Can I use a controller or gamepad?
 
-Yes. It is recommended to use an external program to bind them, as the current engine implementation of them functions poorly. See [Gamepads](/gamepads) for more info.
+Yes. It is recommended to use an external program to bind them, as the current engine implementation of them functions poorly. See [Gamepads](/for-players/gamepads) for more info.
 
 ### Why can't I change settings in the pause screen?
 
@@ -200,7 +200,7 @@ Many settings require the game to reload anyway, but otherwise there simply isn'
 
 ### How big is the map?
 
-The map is a cube with a side length of 61840 nodes. The map has thus a volume equal to the volume of 618403 nodes = 236,487,637,504,000 nodes. The coordinates range from −30912 to 30927 in all dimensions. See also [World boundaries](/world-boundaries/)
+The map is a cube with a side length of 61840 nodes. The map has thus a volume equal to the volume of 618403 nodes = 236,487,637,504,000 nodes. The coordinates range from −30912 to 30927 in all dimensions. See also [World boundaries](/for-players/world-boundaries/)
 
 ### The map is too small! Can it be expanded?
 
@@ -232,25 +232,25 @@ As of 5.6.0, Luanti comes with toggle-able dynamic shadows. Game support is requ
 
 ### How do I increase the brightness?
 
-_See [Troubleshooting#The\_screen\_is\_too\_dark](/troubleshooting/#the-screen-is-too-dark)._
+_See [Troubleshooting#The\_screen\_is\_too\_dark](/for-players/troubleshooting/#the-screen-is-too-dark)._
 
 ### How do I fly?
 
-To fly, you first need the "fly" [privilege](/privileges). Use the K key to toggle flying. Ascend with the jump key (default: space bar) and descend with the sneak key (default: shift).
+To fly, you first need the "fly" [privilege](/for-players/privileges). Use the K key to toggle flying. Ascend with the jump key (default: space bar) and descend with the sneak key (default: shift).
 
-See also: [Controls](/controls)
+See also: [Controls](/for-players/controls)
 
 ### How do I sprint?
 
-With default Luanti behavior you can "go fast" using the "fast" [privilege](/privileges) (toggled with the J key) and your auxiliary key (default: E). This is a lot faster than natural sprinting. There are [some mods](https://content.luanti.org/packages/?type=mod&q=sprint) and games that implement conventional sprinting.
+With default Luanti behavior you can "go fast" using the "fast" [privilege](/for-players/privileges) (toggled with the J key) and your auxiliary key (default: E). This is a lot faster than natural sprinting. There are [some mods](https://content.luanti.org/packages/?type=mod&q=sprint) and games that implement conventional sprinting.
 
-See also: [Controls](/controls).
+See also: [Controls](/for-players/controls).
 
 ### How do I find my house again?
 
 You can keep track of your coordinates using debug info (F5), if the game lets you see this information. If you want, you can teleport to coordinates using `/teleport x y z`
 
-_See [Server commands#Teleportation](/server/commands/#teleportation). Requires "teleport" [privilege](/privileges)_.
+_See [Server commands#Teleportation](/server/commands/#teleportation). Requires "teleport" [privilege](/for-players/privileges)_.
 
 In Minetest Game, you can avoid getting lost again if use `/sethome` at home to save your home position and `/home` to teleport back to it.
 
@@ -344,7 +344,7 @@ There is no built-in debugger in Luanti, apart from "printf-style debugging" wit
 
 ### I get an error or warning message, what does it mean?
 
-_See [Troubleshooting#Error messages without crashes](/troubleshooting/#error-messages-without-crashes)._
+_See [Troubleshooting#Error messages without crashes](/for-players/troubleshooting/#error-messages-without-crashes)._
 
 ### Why can't I make other keybinds?
 

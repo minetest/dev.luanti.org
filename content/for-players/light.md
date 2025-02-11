@@ -46,7 +46,7 @@ Light in [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_g
 
 ### Examples of transparent blocks
 
-*   [Air](/nodes#air)
+*   [Air](/for-players/nodes#air)
 *   Glass
 *   Obsidian Glass
 *   A few small plants

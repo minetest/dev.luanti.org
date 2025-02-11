@@ -8,7 +8,7 @@ aliases:
 # Creating texture packs
 
 
-[Texture packs](/texture-packs "Texture Packs") are a simple folder containing image files named after the default ones. Luanti has very few requirements for using a texture pack and texture packs are normally used by games for example Minetest Game.
+[Texture packs](/for-players/texture-packs "Texture Packs") are a simple folder containing image files named after the default ones. Luanti has very few requirements for using a texture pack and texture packs are normally used by games for example Minetest Game.
 
 Image Structure
 ---------------

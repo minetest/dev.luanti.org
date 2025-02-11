@@ -12,10 +12,10 @@ This article is incomplete. Please help expand this article to include more usef
 
 In the **Heads-Up Display**, you might see:
 
-*   [Crosshair](/pointing)
+*   [Crosshair](/for-players/pointing)
 *   Hotbar
-*   [Inventory](/inventory)
+*   [Inventory](/for-players/inventory)
 *   Minimap
-*   [Chat](/chat)
-*   [Console](/console)
+*   [Chat](/for-players/chat)
+*   [Console](/for-players/console)
 *   [Debug](/content-dev/debug)

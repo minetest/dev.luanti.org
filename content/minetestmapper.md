@@ -12,7 +12,7 @@ aliases:
 
 Sample minetestmapper output
 
-The **minetestmapper** creates 2D maps of your [world](/worlds), where one [node](/nodes) corresponds to one pixel.
+The **minetestmapper** creates 2D maps of your [world](/for-players/worlds), where one [node](/for-players/nodes) corresponds to one pixel.
 
 ### Usage
 

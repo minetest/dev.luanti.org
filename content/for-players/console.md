@@ -5,7 +5,7 @@ aliases:
 ---
 
 # Console
-The **console** is part of Luanti’s GUI and makes it a bit easier to keep track of the [chat](/chat/) and system messages. You also can type in chat messages and commands and scroll through an extensive log of messages.
+The **console** is part of Luanti’s GUI and makes it a bit easier to keep track of the [chat](/for-players/chat/) and system messages. You also can type in chat messages and commands and scroll through an extensive log of messages.
 
 ## Usage
 The console acts similar to the chat window but makes things just a bit more convenient. If you type a line which does not begin with a “/” and hit Enter this line will be send as ordinary chat message. If the line _does_ begin with a “/”, the line will be interpreted as command. See [Server commands](/server-commands/) for detailed usage instructions.

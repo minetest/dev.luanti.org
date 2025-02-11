@@ -22,7 +22,7 @@ As of version 5.0.0, Luanti comes with the following privileges:
   * **fly**—allows the player to activate fly mode
   * **noclip**—allows the player to activate "noclip" mode, which allows them to fly through walls
 * chat-related:
-  * **shout**—can [chat](/chat "Chat") with other people
+  * **shout**—can [chat](/for-players/chat "Chat") with other people
 * world–manipulation-related:
   * **settime**—can set time of day using `/time`
 * moderation-related:
@@ -41,7 +41,7 @@ Irrevokable privileges
 
 A player’s privileges may be irrevokable in certain situations. It is not possible to revoke these privileges with `/revoke` then.
 
-In multiplayer [servers](/server "Server"), the player whose name equals the [minetest.conf](/minetest-conf "Minetest.conf") setting “name” automatically has all privileges and all of these are irrevokable. This is also the case for players who started a server (not a dedicated server). In singleplayer, you start with **interact**, **shout**, **privs** and **basic\_privs**. These privileges are irrevokable.
+In multiplayer [servers](/server "Server"), the player whose name equals the [minetest.conf](/for-players/minetest-conf "Minetest.conf") setting “name” automatically has all privileges and all of these are irrevokable. This is also the case for players who started a server (not a dedicated server). In singleplayer, you start with **interact**, **shout**, **privs** and **basic\_privs**. These privileges are irrevokable.
 
 Privileges from mods and games
 -----------------------------------------------------------------------
@@ -52,7 +52,7 @@ Privileges from mods and games
 
 ### Mods
 
-[Mods](/mods "Mods") may make additional privileges available on the server. Issue the server command `/help privs` to receive a full list (and short descriptions) of all possible privileges on the server.
+[Mods](/for-players/mods "Mods") may make additional privileges available on the server. Issue the server command `/help privs` to receive a full list (and short descriptions) of all possible privileges on the server.
 
 Server configuration
 --------------------

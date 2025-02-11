@@ -12,13 +12,13 @@ The **player** or **“player character”** is the character that a user contro
 
 Players start with 10 hearts, which is equal to 20 hit points (HP). The smallest unit of health is 0.5 hearts or 1 HP. Players die when they have lost all hearts.
 
-Players can restore health by consuming food. Players can lose health by various means, including, but not limited to: Falling too hard, touching a harmful block such as lava, drowning in a [liquid](/liquid) or getting attacked by other players (if PvP is enabled).
+Players can restore health by consuming food. Players can lose health by various means, including, but not limited to: Falling too hard, touching a harmful block such as lava, drowning in a [liquid](/for-players/liquid) or getting attacked by other players (if PvP is enabled).
 
 The built-in health system can be completely disabled by the game or mods, or by the player through the per-world `enable_damage` setting if made accessible by the game.
 
 ## Breath
 
-Players have up to 10 breath points, represented by bubbles. Players start at 10 breath points and normally the breath quickly increases up to 10 in steps of 1 breath point. If players have full breath, the breath meter in the HUD is usually hidden. While the player is inside a [liquid](/liquid) with drowning damage, breath will be reduced by 1 every 2 seconds. If the breath reaches 0, the player will take damage every 2 seconds as long the player is inside the liquid. The damage taken depends on the liquid type.
+Players have up to 10 breath points, represented by bubbles. Players start at 10 breath points and normally the breath quickly increases up to 10 in steps of 1 breath point. If players have full breath, the breath meter in the HUD is usually hidden. While the player is inside a [liquid](/for-players/liquid) with drowning damage, breath will be reduced by 1 every 2 seconds. If the breath reaches 0, the player will take damage every 2 seconds as long the player is inside the liquid. The damage taken depends on the liquid type.
 
 The built-in breath system can be completely disabled by the game or mods as part of the health system, or by the player through the per-world `enable_damage` setting if made accessible by the game.
 

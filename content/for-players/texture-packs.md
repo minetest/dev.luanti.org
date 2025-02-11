@@ -8,9 +8,9 @@ aliases:
 
 A **texture pack** is a collection of files that are used to change the in-game textures of:
 
-*   [blocks](/Nodes)
-*   [items](/Items)
-*   [mobs](/Mobs)
+*   [blocks](/for-players/nodes)
+*   [items](/for-players/items)
+*   [mobs](/for-players/mobs)
 *   GUI
 
 The native resolution of Luanti's textures are 16 × 16 pixels.

@@ -5,9 +5,9 @@ aliases:
 ---
 
 # Using Blender
-3D models can be used to change the appearance of [players](/player), [nodes](/nodes), [mobs](/mobs) and other entities.
+3D models can be used to change the appearance of [players](/for-players/player), [nodes](/for-players/nodes), [mobs](/for-players/mobs) and other entities.
 
-If you need to create models for your [mod](/mods), it is recommended that you use [Blender](http://www.blender.org/).
+If you need to create models for your [mod](/for-players/mods), it is recommended that you use [Blender](http://www.blender.org/).
 
 Engine considerations
 ---------------------

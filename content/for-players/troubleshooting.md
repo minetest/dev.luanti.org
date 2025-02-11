@@ -8,7 +8,7 @@ aliases:
 
 This page lists common technical problems like crashes and error messages (enclosed in quotation marks) and possible solutions or explanations. For general questions, refer to [FAQ](/faq "FAQ").
 
-For information on how to report bugs, read [Reporting bugs](/reporting-bugs "Reporting bugs").
+For information on how to report bugs, read [Reporting bugs](/for-players/reporting-bugs "Reporting bugs").
 
 Graphics and sound
 ------------------
@@ -17,7 +17,7 @@ Graphics and sound
 
 If you feel the screen is too dark, you can adjust the display gamma to a more comfortable value. By default, it is set to 2.2 out of the possible choices between 1.0 and 3.0, with _higher_ numbers being brighter.
 
-To change the display gamma, open your [minetest.conf](/minetest-conf "Minetest.conf") then add the line:
+To change the display gamma, open your [minetest.conf](/for-players/minetest-conf "Minetest.conf") then add the line:
 
 ```
 display_gamma = 3.0
@@ -72,7 +72,7 @@ If you're unsure of the correct name: check the mod's topic title on the forum a
 
 **Invalid installation**
 
-Ensure that you installed the mod correctly (empty mod directory?), read again [Installing Mods](/installing-mods "Installing Mods").
+Ensure that you installed the mod correctly (empty mod directory?), read again [Installing Mods](/for-players/installing-mods "Installing Mods").
 
 **Still does not work**
 

@@ -18,7 +18,7 @@ This page contains a hopefully complete list of terminology related to Luanti.
     -   Previously were referred to as **Subgames**, but this term is outdated. Please update any references to it as such.
 -   [**Minetest Game**](https://content.luanti.org/packages/Minetest/minetest_game/) (abbreviated MTG): The name of the game that used to be shipped with Luanti by default.
     -   [minetest_game](https://github.com/luanti-org/minetest_game): Repository name of Minetest Game and technical name of the game.
--   [**Mods**](/mods) : What all games consist of, or can be added on top of an existing game. They are written in Lua using Luanti's modding API.
+-   [**Mods**](/for-players/mods) : What all games consist of, or can be added on top of an existing game. They are written in Lua using Luanti's modding API.
     -   Sometimes abbreviated SSM, Server-Side Mod to make the distinction that regular Luanti mods run on the server as compared to CSMs which run on the client.
 -   **Client-Side Mod** (abbreviated **CSM**): An experimental API allowing for the client itself to run Lua code.
     -   **Server-Sent Client-Side Mod** (abbreviated **SSCSM**): A currently unimplemented feature referring to CSMs being sent from the server to the client, to allow for code to be run on the client for improved latency, among other things.
@@ -28,7 +28,7 @@ This page contains a hopefully complete list of terminology related to Luanti.
 -   **Server**: The program that manages and distributes mod, texture and sound data to the players. It also does all of the mod initiation.
 -   **Client**: The program that the player uses to connect to singleplayer or multiplayer games. Handles the rendering of the world.
     -   In singleplayer, the client will start a server in the background restricted to the *singleplayer* user which will then join it, acting both as a client and a server in that case.
--   **[minetest.conf](/minetest-conf)**: A file in the root directory of Luanti's user directory which contains configuration settings for Luanti. A list of the settings can be found in the main menu's "All settings" menu or in [**minetest.conf.example**](https://github.com/luanti-org/luanti/blob/master/minetest.conf.example).
+-   **[minetest.conf](/for-players/minetest-conf)**: A file in the root directory of Luanti's user directory which contains configuration settings for Luanti. A list of the settings can be found in the main menu's "All settings" menu or in [**minetest.conf.example**](https://github.com/luanti-org/luanti/blob/master/minetest.conf.example).
 
 ## In-game Content
 

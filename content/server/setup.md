@@ -237,7 +237,7 @@ You may also want to consider to use a different [database backend](/database-ba
 Running /help in-game will show you a list of the built-in engine commands as well as any server commands installed by mods.
 
 ### Privilege System
-See the [privileges](/privileges) page for detailed information on the privilege system.
+See the [privileges](/for-players/privileges) page for detailed information on the privilege system.
 
 ## See also
 - If your server has lots of media it may be useful to set up a [remote media server](Remote_Media) for it.

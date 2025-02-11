@@ -32,7 +32,7 @@ There's a mod that solves the problem of interoperability:
 
 Note the idea of this mod requires that ALL mods use it. If even just one mod (except \[playerphysics\], of course) uses `set_physics_override` directly, interoperability is destroyed.
 
-For further discussion of the problem with `set_physics_override`, see [Player physics](/Player_physics "Player physics").
+For further discussion of the problem with `set_physics_override`, see [Player physics](/for-players/player_physics "Player physics").
 
 #### Internationalization
 
@@ -75,7 +75,7 @@ This includes things usually found in RPGs (role-playing games) like stats, leve
 
 #### Mobs
 
-[Mobs](/mobs) are non-player creatures to interact with the world, they may be peaceful or attack on sight. Usually they are based on entities. Luanti does not support mobs natively, but if you still want to add custom mobs, you have various mods to choose from, each of them with somewhat different priorities. Most APIs are not compatible which each other, so in general you should only use the API which suits your needs in the best way. If you want to create a game, you have to be very careful with interoperability.
+[Mobs](/for-players/mobs) are non-player creatures to interact with the world, they may be peaceful or attack on sight. Usually they are based on entities. Luanti does not support mobs natively, but if you still want to add custom mobs, you have various mods to choose from, each of them with somewhat different priorities. Most APIs are not compatible which each other, so in general you should only use the API which suits your needs in the best way. If you want to create a game, you have to be very careful with interoperability.
 
 Note: Only mature mods with their own dedicated API are listed. Note: There are multiple mods with the short name “mobs”, you can only use one of these mods at once.
 

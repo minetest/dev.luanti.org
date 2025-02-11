@@ -37,7 +37,7 @@ A **schem file (`.mts`)** is used to import building(s) into a world with the [W
 * To **create a schem file** :
 
 1. Type in your world name (with WorldEdit activated).
-2. Grant yourself all [privileges](/privileges/): `/grantme all`
+2. Grant yourself all [privileges](/for-players/privileges/): `/grantme all`
 3. Press F5 to show the coordinates.
 4. Select the area to export by commands with `//pos1` and `//pos2` (these positions corresponds to an invisible diagonal of a cuboid selection).
 5. Create your schem file with `//mtschemcreate <name of your schem file>`. The file will be created into your “`worlds/<my_world>/schems`” folder.

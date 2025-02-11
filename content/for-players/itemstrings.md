@@ -7,12 +7,12 @@ aliases:
 # Itemstrings
 
 
-**Itemstrings** are the internal names for items, blocks, nodes (everything which can be stored in an [inventory](/inventory)).
+**Itemstrings** are the internal names for items, blocks, nodes (everything which can be stored in an [inventory](/for-players/inventory)).
 
 Syntax
 ------
 
-An usual itemstring consists of a the name of the [mod](/mods) where the item originates from followed by a “:” followed by an item name. All itemstrings are case sensitive.
+An usual itemstring consists of a the name of the [mod](/for-players/mods) where the item originates from followed by a “:” followed by an item name. All itemstrings are case sensitive.
 
 ```
 <mod_name>:<item_name>
@@ -40,13 +40,13 @@ Example: `/giveme default:torch`—give yourself a torch
 Special itemstrings
 -------------------
 
-There are itemstrings which do not follow the usual syntax rules. These itemstrings are always available, regardless of the activated [mods](/mods):
+There are itemstrings which do not follow the usual syntax rules. These itemstrings are always available, regardless of the activated [mods](/for-players/mods):
 
-*   [`air`](/nodes/#air)
-*   [`ignore`](/nodes/#ignore)
+*   [`air`](/for-players/nodes/#air)
+*   [`ignore`](/for-players/nodes/#ignore)
 
 See also
 --------
 
-*   [Items](/engine/items)
-*   [Nodes](/nodes)
+*   [Items](/for-players/items)
+*   [Nodes](/for-players/nodes)

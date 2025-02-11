@@ -146,7 +146,7 @@ The mapgen “v6” (also known as “mgv6”) is the direct continuation of [ve
 *singlenode mapgen in Minetest 0.4.13*  
 [![](/images/mapgen/Mapgen_singlenode.jpg)](/images/mapgen/Mapgen_singlenode.jpg)
 
-This mapgen was introduced in Minetest 0.4.6 by [celeron55](/celeron55 "Celeron55"). It creates a world with only Air (can be changed with configuration) and is intended to be used by games and mods for making custom map generators, so they can start completely from scratch. The name “singlenode” means that it generates a _single_ type of _node_ everywhere, [Air](/nodes/#air) by default.
+This mapgen was introduced in Minetest 0.4.6 by [celeron55](/celeron55 "Celeron55"). It creates a world with only Air (can be changed with configuration) and is intended to be used by games and mods for making custom map generators, so they can start completely from scratch. The name “singlenode” means that it generates a _single_ type of _node_ everywhere, [Air](/for-players/nodes/#air) by default.
 
 This map generator has been hidden from the map generator selection screen for a couple of versions up to 0.4.16, in which it has been re-enabled again.
 

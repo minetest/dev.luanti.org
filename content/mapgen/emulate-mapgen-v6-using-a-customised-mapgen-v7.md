@@ -12,7 +12,7 @@ It is actually possible to approximately emulate Mapgen v6 in Mapgen v7 using cu
 How to emulate mapgen v6
 ------------------------
 
-First, copy and paste the lines below into your [`minetest.conf`](/minetest-conf "Minetest.conf") file before starting a new Mapgen v7 world:
+First, copy and paste the lines below into your [`minetest.conf`](/for-players/minetest-conf "Minetest.conf") file before starting a new Mapgen v7 world:
 
 ```
 mgv7_spflags = nomountains, noridges, nofloatlands, nocaverns

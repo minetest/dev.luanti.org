@@ -6,7 +6,7 @@ aliases:
 
 # Tutorials
 
-New to Luanti? Need help setting up a [server](/server "Server") or making a [texture pack](/texture-packs "Texture Packs")? Then you've come to the right place. On this page is a comprehensive list of all the tutorials/guides on the Minetest Wiki.
+New to Luanti? Need help setting up a [server](/server "Server") or making a [texture pack](/for-players/texture-packs "Texture Packs")? Then you've come to the right place. On this page is a comprehensive list of all the tutorials/guides on the Minetest Wiki.
 
 Beginner tutorials for Players
 ------------------------------
@@ -19,10 +19,10 @@ If you're new and do not know what to do, see below.
 General information
 -------------------
 
-* [Controls](/controls "Controls")
+* [Controls](/for-players/controls "Controls")
 * [Server commands](/server/commands "Server commands")
-* [Privileges](/privileges "Privileges")
-* [minetest.conf](/minetest-conf "Minetest.conf")
+* [Privileges](/for-players/privileges "Privileges")
+* [minetest.conf](/for-players/minetest-conf "Minetest.conf")
 
 Servers
 -------
@@ -35,15 +35,15 @@ Luanti offers a fun online multiplayer mode. With this guide you can set up your
 Mods
 ----
 
-[Mods](/mods "Mods") are packages that may add or change something in a game. Each game for Luanti has its own ecosystem of mods that extend that particular game, or there are game-agnostic mods that support all games.
+[Mods](/for-players/mods "Mods") are packages that may add or change something in a game. Each game for Luanti has its own ecosystem of mods that extend that particular game, or there are game-agnostic mods that support all games.
 
-* [Installing Mods](/installing-mods)
-* [Installing Client-Side Mods](/installing-client-side-mods "Installing Client-Side Mods")
+* [Installing Mods](/for-players/installing-mods)
+* [Installing Client-Side Mods](/for-players/installing-client-side-mods "Installing Client-Side Mods")
 
 Texture Packs
 -------------
 
-[Texture packs](/texture-packs) change the look of Luanti. Tired of looking at the same old textures? [ContentDB](https://content.luanti.org/packages/?type=txp) offers many texture packs for you to pick between.
+[Texture packs](/for-players/texture-packs) change the look of Luanti. Tired of looking at the same old textures? [ContentDB](https://content.luanti.org/packages/?type=txp) offers many texture packs for you to pick between.
 
 * Installing texture packs
 * Creating texture packs

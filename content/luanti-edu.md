@@ -44,7 +44,7 @@ Minecraft is much better known and many children and teenagers are already playi
 
 ### Possible errors that might occur for Minecraft users
 
-The biggest mistake you can make with Luanti is to consider only the naked system you get with the installation. Because Luanti is (almost) nothing without the extensions ([mods](/mods)) and games. The main developers are very reluctant to stick to fixed features. But extending Luanti is much easier than it is with Minecraft if you're not an absolute computer layman.
+The biggest mistake you can make with Luanti is to consider only the naked system you get with the installation. Because Luanti is (almost) nothing without the extensions ([mods](/for-players/mods)) and games. The main developers are very reluctant to stick to fixed features. But extending Luanti is much easier than it is with Minecraft if you're not an absolute computer layman.
 
 On this page we have therefore gathered information to help you learn about important enhancements that make Luanti a fully-fledged replacement for Minecraft. Surely it will take some time before a Luanti variant will be released, which will make it easy for teachers with little personal experience to manage larger numbers of students. The fact that there is no company behind Luanti will certainly have an impact. That's how community members develop what they like ... sometimes better than in Minecraft... but here and there there is a lack of details.
 
@@ -66,10 +66,10 @@ We are working to expand this page with the following sections:
     *    How to have a special map for your game
     *   Installation of a tutorial game to learn how to use Luanti
     *   Navigating a Luanti world
-    *   How to use [texture packs](/texture-packs)
+    *   How to use [texture packs](/for-players/texture-packs)
 *   Luanti [servers](/server)
     *   Short tutorial for students to visit a server
-    *   What is allowed and what is not ([privileges](/privileges))
+    *   What is allowed and what is not ([privileges](/for-players/privileges))
 *   How to improve the Luanti performance
 
 Luanti offers the possibility to simply create a local server that can be used with other users that are in the same LAN/WLAN. This is very useful for schools or if you meet with others in a foreign location.
@@ -79,7 +79,7 @@ Luanti offers the possibility to simply create a local server that can be used w
 Installation of Extensions (Mods)
 ---------------------------------
 
-Anything that Luanti doesn't seem to offer in comparison to Minecraft can be inserted into Luanti via an extension or modification, called a mod. It may seem difficult at first, but many mods are available. You just have to find the right mod. You can install a [mod](/mods) for a singleplayer world, or for all players on your [server](/server).
+Anything that Luanti doesn't seem to offer in comparison to Minecraft can be inserted into Luanti via an extension or modification, called a mod. It may seem difficult at first, but many mods are available. You just have to find the right mod. You can install a [mod](/for-players/mods) for a singleplayer world, or for all players on your [server](/server).
 
 ### Types of Mods
 
@@ -90,7 +90,7 @@ Hundreds of mods are available via the official [ContentDB](https://content.luan
 *   New **materials** _(rock types, minerals, etc.)_ are added during the creation of the world.
 *   When the world is created, more or other plants and **biomes** _(a local ecosystem with special dirt and plants)_ are created. Sometime you can use this new material to build blocks or items.
 *   New items like **tools** to dig, hoe, chop or new weapons are added.
-*   [**Mobs**](/mobs) _(self-acting creatures, in humans, animals or monster form)_ that can interact with the player are supplemented.
+*   [**Mobs**](/for-players/mobs) _(self-acting creatures, in humans, animals or monster form)_ that can interact with the player are supplemented.
 *   Change the environment completely _(e.g. play on the planet Mars)_
 *   Prepared **buildings** will be added _(villages with inhabitants, abandoned mines, pyramids, ...)_
 
@@ -111,9 +111,9 @@ So far there are not yet any good providers where you can quickly order and set 
 
 If you have successfully installed the Luanti server and can also reach it with the local Luanti client, you should make some settings which are mainly about protecting the server from unauthorized access. This can be done not only by mods but also by settings in a special file.
 
-*   [`minetest.conf`](/minetest-conf)
+*   [`minetest.conf`](/for-players/minetest-conf)
 *   [Make the server visible in the public server list](/server)
-*   [Define the texture pack used on your server](/texture-packs)
+*   [Define the texture pack used on your server](/for-players/texture-packs)
 
 If the server is set up correctly, it can start. If you share the server address or point to the server in the public server list, other users will come to the server and so it may happen that you have to intervene as an administrator. So here are some important commands and options you have as admin:
 

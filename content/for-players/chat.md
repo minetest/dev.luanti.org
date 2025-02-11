@@ -13,7 +13,7 @@ The **in-game chat functionality** allows players to communicate with each other
 ## Sending messages
 First of all, before you can chat anything at all, you require the “shout” privilege. Most servers give you this privilege by default, or they may require you to do something before you are granted access to chat.
 
-You can chat either by opening the chat window or the [console](/console/) which can be opened with the keys T or F10, respectively (assuming you use the default key bindings). Use the chat window or the console to enter a chat message. There are two types of chat messages: Public and direct.
+You can chat either by opening the chat window or the [console](/for-players/console/) which can be opened with the keys T or F10, respectively (assuming you use the default key bindings). Use the chat window or the console to enter a chat message. There are two types of chat messages: Public and direct.
 
 ### Public messages
 A public message is a message which is visible to all connected players.

@@ -6,7 +6,7 @@ aliases:
 
 # Hand
 
-The **hand** is the most basic “tool” in Luanti. The hand is capable of breaking blocks and [punching](/punching). But these features might differ in games. The hand is automatically selected when you wield nothing.
+The **hand** is the most basic “tool” in Luanti. The hand is capable of breaking blocks and [punching](/for-players/punching). But these features might differ in games. The hand is automatically selected when you wield nothing.
 
 The “implicit” hand
 -------------------
@@ -18,7 +18,7 @@ The hand in [Minetest Game](https://content.luanti.org/packages/Minetest/minetes
 
 The hand can dig weak blocks such as sand, dirt, tree, glass and many more, but slowly. Many wood-based blocks can be broken by hand.
 
-The hand also deals minimal damage. It has a [pointing](/pointing) range of 4, which means you can point to blocks up to 4 block lengths away
+The hand also deals minimal damage. It has a [pointing](/for-players/pointing) range of 4, which means you can point to blocks up to 4 block lengths away
 
 ### Stats
 

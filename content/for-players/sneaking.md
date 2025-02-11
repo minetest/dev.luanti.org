@@ -6,14 +6,14 @@ aliases:
 
 # Sneaking
 
-Sneaking is part of the basic [controls](/controls) in Luanti with many useful capabilities. Normally, sneaking slows you down and protects you from accidentally falling off ledges. In some games, sneaking allows you to use powerful “sneak ladders” which can be climbed super fast.
+Sneaking is part of the basic [controls](/for-players/controls) in Luanti with many useful capabilities. Normally, sneaking slows you down and protects you from accidentally falling off ledges. In some games, sneaking allows you to use powerful “sneak ladders” which can be climbed super fast.
 
 Sneaking is a surprisingly diverse move; this article will explain all the details.
 
 Controls
 --------
 
-The default key for sneaking is Shift. You will sneak as long as you hold down the sneak key. You can not sneak while you are at any climbable block (like a ladder), inside a [liquid](/liquid) or have activated [Fly Mode](/controls#movement-modes).
+The default key for sneaking is Shift. You will sneak as long as you hold down the sneak key. You can not sneak while you are at any climbable block (like a ladder), inside a [liquid](/for-players/liquid) or have activated [Fly Mode](/for-players/controls#movement-modes).
 
 Capabilities
 ------------
@@ -69,7 +69,7 @@ Alternative sneak elevator in a corner formation
 
 A sneak elevator (also called “sneak ladder”) is a vertical structure that can be climbed up very fast if you have the Sneak Glitch capability.
 
-In its simplest form, a sneak elevator is just a vertical line of solid blocks which are spaced apart by one empty block (like [air](/nodes#air)) each, so that empty and solid blocks are alternating. Sneak elevators can be built very easily built into high flat walls and cliffs, because you can continue to dig out the holes for the sneak elevator while climbing up. Sneak elevators don't have to be that simple, there are some variants that also work (see screenshots).
+In its simplest form, a sneak elevator is just a vertical line of solid blocks which are spaced apart by one empty block (like [air](/for-players/nodes#air)) each, so that empty and solid blocks are alternating. Sneak elevators can be built very easily built into high flat walls and cliffs, because you can continue to dig out the holes for the sneak elevator while climbing up. Sneak elevators don't have to be that simple, there are some variants that also work (see screenshots).
 
 To climb up a sneak elevator, stand in front of the sneak elevator, then hold down both the sneak key and the jump key. You will move up the entire structure at an insane speed. This only works if you have the Sneak Glitch capability.
 

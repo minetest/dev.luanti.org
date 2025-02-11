@@ -9,7 +9,7 @@ aliases:
 Security considerations
 -----------------------
 
-**Prior to installing any [Client-side mods](/mods/#client-side-mods), please make sure that you have received it from someone you trust. Malicious code can damage your computer, violate your privacy or cause your computer to take part in illegal activities.**
+**Prior to installing any [Client-side mods](/for-players/mods/#client-side-mods), please make sure that you have received it from someone you trust. Malicious code can damage your computer, violate your privacy or cause your computer to take part in illegal activities.**
 
 Installing a Client-side mod
 ----------------------------
