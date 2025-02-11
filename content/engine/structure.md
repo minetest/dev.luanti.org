@@ -25,9 +25,9 @@ When playing a game, there must always be a server. A singleplayer game will con
 
 ### Environment
 
-Both the server and the client have an Environment. An environment contains the map, any nodes, players, [objects](/Engine/Objects "Engine/Objects"), and various other things. The environment is "stepped" by an interval called a dtime, updating the world and running Lua callbacks.
+Both the server and the client have an Environment. An environment contains the map, any nodes, players, [objects](/for-players/objects "Engine/Objects"), and various other things. The environment is "stepped" by an interval called a dtime, updating the world and running Lua callbacks.
 
-The map is a container of MapBlocks. A MapBlock contains 16x16x16 nodes, any [static objects](/Engine/Objects "Engine/Objects"), and meta data.
+The map is a container of MapBlocks. A MapBlock contains 16x16x16 nodes, any [static objects](/for-players/objects "Engine/Objects"), and meta data.
 
 ### Server
 
