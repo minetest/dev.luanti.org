@@ -16,7 +16,7 @@ Useful Resources
 
 * [Engine Structure](/Engine/Structure "Engine/Structure") - for an introduction and light reference to the engine's structure. Start here.
 * [Basic data structures](/Engine/Basic_data_structures "Engine/Basic data structures") - general data structures.
-* [Objects](//objects "Engine/Objects") - documentation on active and static objects.
+* [Objects](/objects "Engine/Objects") - documentation on active and static objects.
 * Doxygen - For a complete (but often missing comments) reference to code. You'll need to generate this yourself
 * See [All rules regarding development](/engine-dev-process/all-rules-regarding-development).
 
