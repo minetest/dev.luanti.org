@@ -50,7 +50,7 @@ The node is not stuck somewhere the player can't point it.
 
     the dug sound is played.
 
-*   Now the server recieves the digging completion event.
+*   Now the server receives the digging completion event.
 
     Anticheat probably, e.g due to lag, thinks the player dug the node too fast.
 
