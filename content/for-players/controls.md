@@ -86,12 +86,31 @@ Same as for PC, with one difference: If you have a 1-button mouse, you can emula
 
 ### Mobile devices (Android / iOS)
 
-(Note: This section and the list of controls might be incomplete)
-
 The controls on mobile devices are severely restricted compared to the PC and you only have very basic controls. You can't do everything a PC player could do.
 
-The touchscreen is used for everything.
+The [touchscreen](#touchscreen) is used for everything.
 
+### Touchscreen
+
+{{< notice note >}}
+Touchscreen support was mobile (Android) only till version 5.5.0 when [desktop support](https://github.com/luanti-org/luanti/pull/10729) was added. Runtime 
+toggling of touchscreen controls was [added](https://github.com/luanti-org/luanti/pull/14075) in 5.9.0. Rudimentary detection was 
+[added](https://github.com/luanti-org/luanti/pull/14400) in 5.9.0, with [full support](https://github.com/luanti-org/luanti/pull/14542) being added 
+in 5.10.0.
+{{< /notice >}}
+
+In release 5.10.0 the touchscreen interface was improved to use a grid layout for controls with text being listed under the controls so users no longer 
+had to guess what they did.
+
+{{< video src="https://samsinventory.docs.luanti.org/files/videos/touchscreen-grid.mp4" type="video/mp4" >}}
+
+In release 5.11.0 an editor was added for rearranging the controls.
+
+{{< video src="https://samsinventory.docs.luanti.org/files/videos/touchscreen-editor.mp4" type="video/mp4" >}}
+
+{{< notice warning >}}
+The controls listed below maybe outdated.
+{{< /notice >}}
 
 |Action                 |Control                                     |
 |-----------------------|--------------------------------------------|
@@ -103,10 +122,8 @@ The touchscreen is used for everything.
 |Sneak                  |Press on-screen button in right lower corner|
 |Move left/up/right/down|Press on-screen button in left lower corner |
 |Display inventory      |Press on-screen button in left lower corner |
-
-
   
-Mobile controls when a menu or inventory is displayed:
+Touchscreen controls when a formspec(such as a menu or inventory) is displayed:
 
 * double tap outside menu area: close menu
 * tap on an item stack: select that stack
