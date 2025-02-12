@@ -9,7 +9,7 @@ aliases:
 Security considerations
 -----------------------
 
-**Mods are by default run in a secure environment that restricts access to the filesystem and execution of external programs, however not all sandboxes are 100% secure. Additionally do not mark mods as trusted or disable mod security altogether if you are not aware of what you are doing, as they will run unsandboxed at the same privileges as Luanti. This applies not only to malicious mods but benign ones with security vulnerabilities. Exercise caution when downloading mods outside of official channels such as ContentDB where mods are vetted by the community for safety and security.**
+**Mods are by default run in a secure environment that restricts access to the filesystem and execution of external programs, however not all sandboxes are 100% secure. Additionally do not mark mods as trusted or disable mod security altogether if you are not aware of what you are doing, as they will run un-sandboxed at the same privileges as Luanti. This applies not only to malicious mods but benign ones with security vulnerabilities. Exercise caution when downloading mods outside of official channels such as ContentDB where mods are vetted by the community for safety and security.**
 
 Installing a mod
 ----------------
@@ -36,14 +36,14 @@ Differences between the three kinds of places mods can be loaded from:
 
 *   In the `/mods` folder technically parallel to the `/bin` folder the executable is in.
 
-On different installations this may very well also be in some other Luanti location such as a shared, `system/game`, user or hidden folder. Only mods in this place are **togglable**. Mods in this folder can be run with any world created by any game. This is therefore an easy place to create mod conflicts that might even crash Luanti.
+On different installations this may very well also be in some other Luanti location such as a shared, `system/game`, user or hidden folder. Only mods in this place are **toggle-able**. Mods in this folder can be run with any world created by any game. This is therefore an easy place to create mod conflicts that might even crash Luanti.
 
 *   In a `/games/<some_game>/mods` folder.
 
 In case of "Minetest Game", this could be a sub-folder of `<someplace>/minetest/games/minetest_game/mods` or `<some_other_place>/minetest(or ~/.minetest)/games/minetest_game/mods`.
 
-Mods loaded from such locations are considered to be an essential part of said game and are **not togglable**. These mods apply to all worlds created with this game but not to any world created by another game (although many games may include the same mods)
+Mods loaded from such locations are considered to be an essential part of said game and are **not toggle-able**. These mods apply to all worlds created with this game but not to any world created by another game (although many games may include the same mods)
 
 *   In a `/worlds/<name_of_some_world>/worldmods` folder inside the sub-folder of a specific world.
 
-Mods in a worldmods folder are **not togglable** and will run on and only on that specific world, and cannot be accessed from any other world.
+Mods in a worldmods folder are **not toggle-able** and will run on and only on that specific world, and cannot be accessed from any other world.

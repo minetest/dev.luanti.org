@@ -36,12 +36,12 @@ As of version 5.0.0, Luanti comes with the following privileges:
   * **server**—can do server maintenance stuff such as `/shutdown`, `/clearobjects`, `/set`, …
   * **debug**—can access advanced [debug](/content-dev/debug "Debug") features and information, such as the wirewrame in the debug screens (F5). It also prevents the game from restricting information in the debug screen and from restricting the “toggle block bounds” key.
 
-Irrevokable privileges
+Irrevocable privileges
 ----------------------
 
-A player’s privileges may be irrevokable in certain situations. It is not possible to revoke these privileges with `/revoke` then.
+A player’s privileges may be irrevocable in certain situations. It is not possible to revoke these privileges with `/revoke` then.
 
-In multiplayer [servers](/server "Server"), the player whose name equals the [minetest.conf](/for-players/minetest-conf "Minetest.conf") setting “name” automatically has all privileges and all of these are irrevokable. This is also the case for players who started a server (not a dedicated server). In singleplayer, you start with **interact**, **shout**, **privs** and **basic\_privs**. These privileges are irrevokable.
+In multiplayer [servers](/server "Server"), the player whose name equals the [minetest.conf](/for-players/minetest-conf "Minetest.conf") setting “name” automatically has all privileges and all of these are irrevocable. This is also the case for players who started a server (not a dedicated server). In singleplayer, you start with **interact**, **shout**, **privs** and **basic\_privs**. These privileges are irrevocable.
 
 Privileges from mods and games
 -----------------------------------------------------------------------

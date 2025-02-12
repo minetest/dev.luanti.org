@@ -15,12 +15,12 @@ Usually games and mods register their own nodes, but the engine also registers s
 ## Built-in nodes
 
 ### Air
-Air (itemstring `air`, `CONTENT_AIR` in C++) is a technical node that exists in every generated area that no other node exists in. It is a fully transparent node, using the airlike drawtype and being unpointable.
+Air (itemstring `air`, `CONTENT_AIR` in C++) is a technical node that exists in every generated area that no other node exists in. It is a fully transparent node, using the airlike drawtype and being un-pointable.
 
 There is a node in every position of the voxel grid, i.e. there cannot be "nothing" somewhere. If it looks like nothing, it's usually Air. When the player digs a node, that node is usually replaced by Air.
 
 ### Ignore
-Ignore (itemstring `ignore`, `CONTENT_IGNORE` in C++) is an airlike technical node that exists in place of ungenerated and unloaded mapblocks. If `core.get_node` is called on an unloaded mapblock, it will return Ignore.
+Ignore (itemstring `ignore`, `CONTENT_IGNORE` in C++) is an airlike technical node that exists in place of un-generated and unloaded mapblocks. If `core.get_node` is called on an unloaded mapblock, it will return Ignore.
 
 ### Unknown Node
 An unknown node takes the place of any node that exists in the world that is no longer being registered, whether it be due to a mod being removed of updates to a game changing itemstrings. Unknown Node is not a node in itself, but can be any node with an unregistered itemstring. If you have disabled mods that provided the nodes then enabling the mod again will make the node reappear just like how it was before, as all metadata is preserved even in its unknown state.

@@ -30,7 +30,7 @@ Welcome to Luanti! This page explains what Luanti is all about, how to get it, a
 
 ### macOS
 
-* [Download Luanti for macOS](http://www.luanti.org/downloads/). You can pick the official .app, Homebrew or the Macports version.
+* [Download Luanti for macOS](http://www.luanti.org/downloads/). You can pick the official .app, Homebrew or the MacPorts version.
 
 ### Linux
 

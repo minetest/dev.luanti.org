@@ -5,7 +5,7 @@ aliases:
 ---
 
 # Pointing
-**Pointing** means to look at something with the crosshair (which is in the center of your screen) on it while being close enough to it. When something is pointed, it is highlighted, either by a wireframe or by some sort of “halo”. Pointing things is neccessary for tasks like mining, [building](/building "Building"), using …
+**Pointing** means to look at something with the crosshair (which is in the center of your screen) on it while being close enough to it. When something is pointed, it is highlighted, either by a wireframe or by some sort of “halo”. Pointing things is necessary for tasks like mining, [building](/building "Building"), using …
 
 The default distance for pointing is less than 4 blocks away. In Minetest Game, this distance increases to 10 when using creative mode. It is possible for items and held nodes to have their own pointing range.
 

@@ -482,7 +482,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * (Android) Only simulate holding down fast key if fast\_move is toggled to true (Zeno)
 * dofile error reporting for syntax errors (est31)
 * Don't crash when saplings try to grow on unknown nodes (y.st, ShadowNinja)
-* Remove unneccessary space for tab completion (Nathaniel Olsen)
+* Remove unnecessary space for tab completion (Nathaniel Olsen)
 * Fix some issues with animations, and allow non-looped animations to be defined (MirceaKitsune)
 * Fix bug when craft input isn't replaced (TeTpaAka)
 * Fix string conversion error message (est31)
