@@ -6,7 +6,7 @@ aliases:
 
 # IRC
 
-**IRC** stands for **I**nternet **R**elay **C**hat. It is one of the platforms that Luanti uses for real-time chat and also serves as a common ground between other platforms such as Discord and Matrix.
+Internet Relay Chat (IRC) is one of the platforms that Luanti uses for real-time chat. IRC also serves as a common ground between other platforms such as Discord and Matrix.
 
 All the engaged people from the community and the developer team can be found there, and most prolific modders will also be available there.
 
@@ -55,7 +55,7 @@ Some people don't know how to behave in IRC, so here are some simple rules:
 - Don't spam
 - Don't flood the channel with messages or bot commands
 - Use a pastebin, such as [0bin](https://0bin.net) if you want to post more than 4 lines (e.g. error messages or code)
-- Annoying, racist or any form of degrogatory term against any user or channel operator will probably get you quieted or even banned.
+- Annoying, racist or any form of derogatory term against any user or channel operator will probably get you quieted or even banned.
 - If you're going to ask someone something, saying "please" goes a very long way.
 - The channels are not playgrounds and are frequently used for talks which are not off-topic.
 - Off-topic is allowed, but excessive use of it is disallowed.
