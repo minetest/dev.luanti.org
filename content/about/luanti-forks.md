@@ -5,7 +5,7 @@ aliases:
 - /Overview_of_Minetest_forks
 ---
 
-# Overview of Luanti forks
+# Luanti forks
 
 A software is said to be a **fork** if it is a derivation of a copy of another software; that is, if it is based on its source code and other related data. Luanti has seen some forks in its history. This article gives an overview of some of the known forks of Luanti.
 

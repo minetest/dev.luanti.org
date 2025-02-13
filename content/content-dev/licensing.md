@@ -7,8 +7,7 @@ aliases:
 
 # Licensing
 
-
-Recently a considerable number of Luanti-based games have been appearing in the Android playstore, and Google Play. See the [list of Luanti forks](/overview-of-luanti-forks "Overview of Luanti forks") for examples of these.
+A considerable number of Luanti-based games have appeared in the Android play store and Google Play. See the [list of Luanti forks](/about/luanti-forks) for examples of these.
 
 _Please look at: [FlightGear](http://www.flightgear.org/flightprosim.html) as they have the same issue as Luanti has._
 
@@ -55,7 +54,7 @@ The legal text behind this is in [section 4](https://www.gnu.org/licenses/lgpl.h
 What to do if I spot a program that is possibly infringing Luanti's license?
 ----------------------------------------------------------------------------
 
-If you think that a certain program is infringing on Luanti's LGPL 2.1 license, please check with the program's website to see if it is licensed under similar terms, and if the source code is being distributed.If the license seems to be proprietary, and if the developer alleges that the program is their own work, then contact [celeron55](mailto:celeron55@gmail.com). Alternatively, join the [Luanti IRC channel](http://webchat.freenode.net/?channels=#minetest) and report it there. It doesn't matter if anyone replies or not, it will be logged and the community will check on it themselves. There is also an attempt to list forks of Luanti at the "[Making a list of Luanti forks for Android](https://forum.luanti.org/viewtopic.php?p=242219#p242219)" thread in the forums. If the programm you discovered is missing there you could add it.
+If you think that a certain program is infringing on Luanti's LGPL 2.1 license, please check with the program's website to see if it is licensed under similar terms, and if the source code is being distributed.If the license seems to be proprietary, and if the developer alleges that the program is their own work, then contact [celeron55](mailto:celeron55@gmail.com). Alternatively, join the [Luanti IRC channel](http://webchat.freenode.net/?channels=#minetest) and report it there. It doesn't matter if anyone replies or not, it will be logged and the community will check on it themselves. There is also an attempt to list forks of Luanti at the "[Making a list of Luanti forks for Android](https://forum.luanti.org/viewtopic.php?p=242219#p242219)" thread in the forums. If the program you discovered is missing there you could add it.
 
 ### What not to do if a program is infringing Luanti's license
 
