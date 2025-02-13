@@ -7,7 +7,7 @@ aliases:
 # Old Changelog
 This is the old changelog for outdated Minetest versions (later renamed to “Luanti”) and posterity.
 
-For the latest versions, see [Changelog](/Changelog "Changelog").
+For the latest versions, see [Changelog](/about/changelog "Changelog").
 
 0.4.17.1 → 0.4.17.2 (Android Only)
 ----------------------------------

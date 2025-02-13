@@ -102,7 +102,7 @@ Once the credits are decided on in the previous step, update the website to be i
 
 ### Update changelog
 
-Changelog can be found [here](/Changelog "Changelog").
+Changelog can be found [here](/about/changelog "Changelog").
 
 ### Ensure protocol version codes have been bumped
 
@@ -234,7 +234,7 @@ After releasing
 
 *   Don't forget to edit the luanti.org page ([Repo](https://github.com/luanti-org/luanti.github.io)).
     *   currently you will need to update machine readable metadata in \_data/release.yml and downloads.html itself.
-*   Post a new topic in the [News section](https://forum.luanti.org/viewforum.php?f=18) of the forum. **See [Changelog](/Changelog "Changelog").**
+*   Post a new topic in the [News section](https://forum.luanti.org/viewforum.php?f=18) of the forum. **See [Changelog](/about/changelog "Changelog").**
     *   It is customary to sticky the newest release topic and lock older ones.
 *   Add a new post to the [blog](https://github.com/luanti-org/blog/)
 *   Announce the release on [Twitter](https://twitter.com/MinetestProject) and [Mastodon](https://mastodon.online/@Luanti@fosstodon.org). rubenwardy has access.
