@@ -11,7 +11,7 @@ Welcome to the **Luanti Documentation** website. This is a work-in-progress effo
 
 Content from the Luanti Developer Wiki as well as content from the Luanti Wiki relating to the Luanti engine in general have been migrated here, and now redirect to their new location.
 
-For more information about this site as well as how to contribute to the content, see [About This Site](/about-this-site/).
+For more information about Luanti as well as how to contribute to this site, see [About](/about/).
 
 ## Contents
 

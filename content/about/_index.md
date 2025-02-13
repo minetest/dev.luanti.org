@@ -10,10 +10,10 @@ The site's source content can be found [on GitHub](https://github.com/luanti-org
 
 ## Contributing
 
-* [Making Changes](/about-this-site/making-changes/)
-* [Guidelines](/about-this-site/guidelines/)
-* [Setting up & running the site locally](/about-this-site/local-development/)
-* [Rules](/about-this-site/rules/)
+* [Making Changes](/about/making-changes/)
+* [Guidelines](/about/guidelines/)
+* [Setting up & running the site locally](/about/local-development/)
+* [Rules](/about/rules/)
 
 # Mission Statement
 
