@@ -703,7 +703,6 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Fix map\_seed not changed when creating a new world after login to another (_fz72_)
 * Add modname convention checking, fixes issues with mod enabling (_est31_, _Novatux_)
 * Fix problems related to still receiving damage after dying (_SmallJoker_, _gregorycu_)
-
 * Add `vein` and `blob` ore type (_kwolekr_)
 * Change assignment to global in a function to warning (_rubenwardy_)
 
@@ -883,7 +882,6 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Fixed minetest.place\_schematic() when defined by a Lua table _(kwolekr)_
 * Ignore .name directories and files in main menu _(SmallJoker)_
 * Fixed some typos _(sapier, rubenwardy, William Teder, ShadowNinja, kahrl, Zeno)_
-
 * New drawtypes: mesh _(RealBadAngel)_, firelike _(TriBlade9)_, glasslike\_framed\_optional _(BlockMen)_
 * New texture modifiers: ^\[mask _(sfan5)_, ^\[colorize _(BlockMen)_
 * New formspec element: scrollbar _(sapier)_
@@ -1123,7 +1121,6 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Fixed GenericCAO not grabing member objects, causing them to be deleted early _(sapier)_
 * Fixed support for Max OSX _(mdoege)_
 * Fixed regression in light calculation _(sapier)_
-
 * Passed pointed\_thing to after\_place\_node _(ShadowNinja)_
 * Documented "wielditem" visual _(ShadowNinja)_
 * Passed pointed\_thing to on\_rightclick _(Novatux)_
@@ -1237,7 +1234,6 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Fixed InventoryList reading order _(ShadowNinja)_
 * Initialize world before creating BanManager and RollbackManager _(ShadowNinja)_
 * Fixed exception caused by destroying sockets on Server shutdown _(kwolekr)_
-
 * Added area parameters back to calc\_lighting() and set\_lighting() _(kwolekr)_
 * Added get\_light\_data() and set\_light\_data() to LuaVoxelManip _(kwolekr)_
 * Added minetest.swap\_node _(Novatux)_
@@ -1369,7 +1365,6 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Fixed crash when pressing Enter key in formspec menu _(kahrl)_
 * Fixed rename modpack button not working, fixes #1019 _(PilzAdam)_
 * Don't continue trying to deserialize blank block data _(kwolekr)_
-
 * Added ingame modstore to download mods from mmdb _(sapier)_
 * Added `minetest.register_decoration()` _(kwolekr)_
 * Added schematic support; new functions `minetest.place_schematic()` and `minetest.create_schematic()` _(kwolekr)_
@@ -1491,7 +1486,6 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Corrected segfault when registering new biomes _(sweetbomber)_
 * Reduced video memory consumption by not generating unnecessary `[forcesingle` textures _(kahrl)_
 * Close console when it loses focus but it is still on screen _(Exio4)_
-
 * Added `player:set_physics_override()` to set per-player physics _(Taoki & PilzAdam)_
 * Use `node_box` for `selection_box` if `drawtype = "nodebox"` and `selection_box = nil` _(kaeza)_
 * Added `minetest.env:line_of_sight()` and `minetest.env:find_path()` _(sapier)_
@@ -1571,7 +1565,6 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Fixed new\_style\_water (shaders are not used for this anymore) _(PilzAdam)_
 * Fixed backface\_culling in tiledef; both sides of flowing liquids are now visible _(doserj)_
 * Hopefully fix node replacement bug (where the node that is pointed at is replaced) _(0gb.us)_
-
 * Added `minetest.get_all_craft_recipes(output)` _(RealBadAngel)_
 * Allow any character in formspec strings with escape characters _(kwolekr)_
 * Added ability to pass multiple parameters to `minetest.after()` _(Jeija)_
@@ -1652,7 +1645,6 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Fixed a crash when clicking "Configure" when no world is selected in Singleplayer menu _(doserj)_
 * Fixed dropped item collision with nodeboxes _(jordan4ibanez)_
 * Fixed a glitch where the player gets liquids in his inventory when a server lags _(PilzAdam)_
-
 * Added ability to change the itemstack in placenode callbacks _(PilzAdam)_
 * Added ability to create multi-line textfields in formspecs _(Jeija)_
 * Add on\_rightclick(pos, node, clicker) callback for nodes _(PilzAdam)_
@@ -1703,7 +1695,6 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Head no longer shifts downwards when you are inside transparent blocks such as glass or nodeboxes _(Calinou)_
 * Directories beginning with a "." are now ignored when searching for mods on Windows _(matttpt)_
 * Fixed the automagic render distance tuner _(celeron55)_
-
 * Added 3D model support for entities _(Taoki)_
 * Added attachment support (so that entities can "ride" other entities) _(Taoki)_
 * Backgrounds and images can now be used in formspecs _(RealBadAngel)_
