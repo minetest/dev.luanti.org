@@ -20,7 +20,7 @@ All versions of Luanti support custom textures with a folder under the main Luan
 Installation
 ------------
 
-Since version 5.0, texture packs available in [ContentDB](/contentdb) are available in the Content tab -> Browse online content button. Texture packs downloaded in such a way are automatically installed.
+Since version 5.0, texture packs available in [ContentDB](/about/contentdb) are available in the Content tab -> Browse online content button. Texture packs downloaded in such a way are automatically installed.
 
 In any version of Luanti, the way to install a custom texture pack is by doing the following:
 
