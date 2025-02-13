@@ -9,7 +9,7 @@ aliases:
 
 ![](/images/luanti/Luanti_logo.png)
 
-**Luanti** is a [free software](https://en.wikipedia.org/wiki/Free_software) [game engine](https://en.wikipedia.org/wiki/Game_engine) to create various games based on [voxel](https://en.wikipedia.org/wiki/Voxel) gameplay, inspired by InfiniMiner, Minecraft, and the like. Luanti was originally created by Perttu Ahola (alias “[celeron55](/celeron55)”).
+**Luanti** is a [free software](https://en.wikipedia.org/wiki/Free_software) [game engine](https://en.wikipedia.org/wiki/Game_engine) to create various games based on [voxel](https://en.wikipedia.org/wiki/Voxel) gameplay, inspired by InfiniMiner, Minecraft, and the like. Luanti was originally created by Perttu Ahola (alias “[celeron55](/about/history/celeron55)”).
 
 The basic idea of each game is always the same: The [player](/for-players/player) is thrown into a huge [world](/for-players/worlds) made out of cubes/[blocks](/for-players/nodes). Most of the time, these cubes make the landscape and these blocks can be removed and placed almost entirely freely. Using the collected [items](/for-players/items), new [tools](/for-players/tool) and other items can be crafted. Games in Luanti can, however, be much more complex than this.
 
