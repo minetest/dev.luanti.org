@@ -7,7 +7,7 @@ aliases:
 
 # Luanti
 
-![](/images/luanti/Luanti_logo.png)
+![Luanti logo](/images/luanti/Luanti_logo.png)
 
 **Luanti** is a [free software](https://en.wikipedia.org/wiki/Free_software) [game engine](https://en.wikipedia.org/wiki/Game_engine) to create various games based on [voxel](https://en.wikipedia.org/wiki/Voxel) gameplay, inspired by InfiniMiner, Minecraft, and the like. Luanti was originally created by Perttu Ahola (alias “[celeron55](/about/history/celeron55)”).
 

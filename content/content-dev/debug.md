@@ -28,7 +28,7 @@ The basic debug information is located at the top left of the screen. It looks l
 
 #### First row
 
-*   **Luanti X.Y.Z**: The [version number](/version-number) of [Luanti](/Luanti)
+*   **Luanti X.Y.Z**: The [version number](/version-number) of [Luanti](/about/luanti)
 *   **FPS**: Number of [frames per second](https://en.wikipedia.org/wiki/Frames_per_second), denotes how fast everything is [rendered](https://en.wikipedia.org/wiki/Rendering_%28computer_graphics%29). Higher = better. It is limited at 60 by default. An FPS lower than 30 is pretty bad (try to lower graphics settings or close some background applications)
 *   **drawtime**: An average time (in milliseconds) it's taking to render each frame, not including processing other than rendering. Lower is better
 *   **dtime jitter**: Jitter in the time difference between rendering frames, including all processing. Luanti remembers the previous drawtime values over a few seconds in the past. This value shows how much higher than the average the _peak_ value (over the last few seconds) was. A value of 50% or lower is considered okay

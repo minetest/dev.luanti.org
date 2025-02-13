@@ -9,7 +9,7 @@ aliases:
 This is a collection of some **frequently asked questions** about Luanti. For technical problems, refer to [Troubleshooting](/for-players/troubleshooting).
 
 ## What is Luanti?
-Luanti is a free software game engine designed to create [voxel](https://en.wikipedia.org/wiki/Voxel)\-based games. A detailed description can be found at [Luanti](/luanti).
+Luanti is a free software game engine designed to create [voxel](https://en.wikipedia.org/wiki/Voxel)\-based games. A detailed description can be found at [Luanti](/about/luanti).
 
 ## About the Engine
 
