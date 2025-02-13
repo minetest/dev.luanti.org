@@ -126,7 +126,7 @@ You can find all kinds of community-made content on [the Luanti ContentDB](https
 
 ## Terminology
 
-For a complete list of Luanti terminology, see [Terminology](/terminology/).
+For a complete list of Luanti terminology, see [Glossary](/about/glossary/).
 
 ## About Minetest Game
 

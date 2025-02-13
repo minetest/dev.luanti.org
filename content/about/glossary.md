@@ -1,10 +1,10 @@
 ---
-title: Terminology
+title: Glossary
 aliases:
 - /Terminology
 ---
 
-# Terminology
+# Glossary
 
 This page contains a hopefully complete list of terminology related to Luanti.
 
@@ -38,7 +38,7 @@ This page contains a hopefully complete list of terminology related to Luanti.
     -   Other needed files, such as ban lists, seed numbers and protected areas.
 -   **Nodes**: 1×1×1 meter individual cubes in the game, and are grouped and loaded by their mapblocks. Informally referred to as blocks by regular players.
     -   **Node Metadata**: Additional data that is attached to a node's position in the map. For example container nodes use this to store their inventories, and signs use this to store what is written on them.
-    -   **Liquids**: Nodes with *some* kind of property related to liquids. In development, this term is problematic when used without any clarification, as node properties related to liquids are decoupled. To avoid confusion, say to which *precise* technical property you refer to, for example, the "liquid" drawtype, liquid spreading/flowing, liquid visocity, liquid player movement physics, etc.
+    -   **Liquids**: Nodes with *some* kind of property related to liquids. In development, this term is problematic when used without any clarification, as node properties related to liquids are decoupled. To avoid confusion, say to which *precise* technical property you refer to, for example, the "liquid" drawtype, liquid spreading/flowing, liquid viscosity, liquid player movement physics, etc.
 -   **Blocks**/**MapBlocks**: 16×16×16 groups of nodes.
 -   **Sectors**: Stacks of single mapblocks, extending from the absolute bottom of the map to the top.
 -   **MapChunks**: Groups of 80x80x80 nodes (5x5x5 mapblocks), they are an abstraction used only for mapgen for performance reasons.
@@ -57,9 +57,9 @@ This page contains a hopefully complete list of terminology related to Luanti.
 ## Lua and Modding-related
 
 -   **Lua**: A simple, minimal and fast programming language which is used for Luanti's API.
--   **Modding API**/**Lua API**/**Luanti API**: a selection of functions and values, used by mod files to modify, extend or add features and blocks. API stands for **A**pplication **P**rogramming **I**nterface.
+-   **Modding API**/**Lua API**/**Luanti API**: a selection of functions and values, used by mod files to modify, extend or add features and blocks. API stands for Application Programming Interface.
 -   [**lua_api.md**](https://github.com/luanti-org/luanti/blob/master/doc/lua_api.md): A file in the `doc/` directory that contains the full reference of the Lua API. The same content is also available in [HTML format](https://api.luanti.org/).
 
 ## Notes
 
-[^1]: Officially, Luanti's rendering library is called "IrrlichtMt", but the name "Irrlicht" is used interchangingly. When we say "Irrlicht", we usually mean Luanti's rendering library, not the original one
+[^1]: Officially, Luanti's rendering library is called "IrrlichtMt", but the name "Irrlicht" is used interchangeably. When we say "Irrlicht", we usually mean Luanti's rendering library, not the original one
