@@ -6,7 +6,7 @@ aliases:
 ---
 
 # Meetings
-Core developer meetings are held when needed. They take place in the #minetest-dev [IRC](/irc) channel.
+Core developer meetings are held when needed. They take place in the #minetest-dev [IRC](/about/irc) channel.
 
 This Wiki page contains the meeting plans for upcoming meetings, and meeting notes for previous meetings.
 
