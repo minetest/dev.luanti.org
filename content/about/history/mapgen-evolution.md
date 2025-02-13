@@ -12,7 +12,7 @@ This page shows the development history of the [map generators](/mapgen "Map gen
 Development of a single map generator
 -------------------------------------
 
-Initially, Luanti (then called “Minetest-c55”, later “Minetest”) had only one map generator which was continously improved and had its own version number, where each version replaced the previous one. The earliest map generators are based on 2D Perlin noise.
+Initially, Luanti (then called “Minetest-c55”, later “Minetest”) had only one map generator which was continuously improved and had its own version number, where each version replaced the previous one. The earliest map generators are based on 2D Perlin noise.
 
 ### Early development
 
@@ -30,7 +30,7 @@ In the very first known version of Minetest-c55, there was just flat terrain mad
 *Undefinable terrain*  
 [![](/images/mapgen/Earliest_terrain.png)](/images/mapgen/Earliest_terrain.png)
 
-The terrain was no longer flat and the pyramids are gone. The terrain generation was horrible, but at least terrain could be generated. It consisted of grass blocks and stone at surface. Very simple squareish caves could be found below the surface. The terrain was still not random.
+The terrain was no longer flat and the pyramids are gone. The terrain generation was horrible, but at least terrain could be generated. It consisted of grass blocks and stone at surface. Very simple square-ish caves could be found below the surface. The terrain was still not random.
 
 #### minetest-c55-101024231736
 
@@ -130,7 +130,7 @@ Version 6 was the last version of the only map generator before support for mult
 Development of multiple map generators
 --------------------------------------
 
-Since Minetest 0.4.6, players are able to choose one of multiple map generators, with v6 being the default selection initially. Since then, more and more map generators have been added and existing map generators have been improved over time. From this point on, there is no longer a single “version” of the map generator and the concept of a map generator “version” no longer applies. Each map generator is now developed independently. It is important to understand that the mapgens v5 and v6 should not be viewed as inferior to v7, instead they should just be viewed as different mapgens. “v5”, “v6” and “v7” are now just names, not version numbers. All mapgens currently included in Minetest regularily receive bugfixes and new features.
+Since Minetest 0.4.6, players are able to choose one of multiple map generators, with v6 being the default selection initially. Since then, more and more map generators have been added and existing map generators have been improved over time. From this point on, there is no longer a single “version” of the map generator and the concept of a map generator “version” no longer applies. Each map generator is now developed independently. It is important to understand that the mapgens v5 and v6 should not be viewed as inferior to v7, instead they should just be viewed as different mapgens. “v5”, “v6” and “v7” are now just names, not version numbers. All mapgens currently included in Minetest regularly receive bugfixes and new features.
 
 In Minetest 0.4.15, v7 became the new default selection.
 
@@ -154,7 +154,7 @@ This map generator has been hidden from the map generator selection screen for a
 
 This mapgen was introduced in Minetest 0.4.6 by proller and contained many experimental features. It is based on v6. Major new features included floating islands at Y=500 and above, rare huge caves, and a more extreme terrain near the world boundaries in form of larger biomes, higher mountains and deeper oceans. It has been removed in version 0.4.10 because it was considered to be of low quality.
 
-*   *Most of the surface in the indev mapgen is almost indentical to v6 (Minetest 0.4.9)*  
+*   *Most of the surface in the indev mapgen is almost identical to v6 (Minetest 0.4.9)*  
     [![](/images/mapgen/Mapgen_indev_spawn.jpg)](/images/mapgen/Mapgen_indev_spawn.jpg)
 
 *   *Floating islands in indev mapgen, Minetest 0.4.9*  
@@ -194,7 +194,7 @@ This mapgen has a long history of development and has seen countless improvement
 *“mandelbox” mode of the math mapgen in Minetest 0.4.9*  
 [![](/images/mapgen/Mapgen_math_mandelbox.jpg)](/images/mapgen/Mapgen_math_mandelbox.jpg)
 
-*“mengersponge” mode of the math mapgen in Minetst 0.4.9 with lighting bugs*  
+*“mengersponge” mode of the math mapgen in Minetest 0.4.9 with lighting bugs*  
 [![](/images/mapgen/Mapgen_math_mengersponge.jpg)](/images/mapgen/Mapgen_math_mengersponge.jpg)
 
 The mapgen “math” was introduced in Minetest 0.4.8 by proller. This was really a collection of 3 different map generators based on simple maths. It was capable of creating Menger sponges, mandelboxes and spheres. Mods could adds biomes with Minetest's biome API, but this was never used in Minetest Game, so only stone worlds were created by default.
