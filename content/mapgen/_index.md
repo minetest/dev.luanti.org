@@ -80,7 +80,7 @@ Here are examples of landscapes generated with the different map generators:
 
 All map generators described in full detail.
 
-To learn more about detailed configuration, see [Map generator features](/mapgen/features "Map generator features"). To learn more about the history of the map generators, see [Map Generator Evolution](/mapgen/evolution "Map Generator Evolution").
+To learn more about detailed configuration, see [Map generator features](/mapgen/features "Map generator features"). To learn more about the history of the map generators, see [Map Generator Evolution](/about/history/mapgen-evolution "Map Generator Evolution").
 
 ### v5
 
@@ -149,4 +149,4 @@ See also
 
 *   [Stability of each mapgen](https://forum.luanti.org/viewtopic.php?f=18&t=19132), a post by paramat on the forums describing which map generators are "officially stable" (last updated 2019)
 *   [Map generator features](/mapgen/features "Map generator features")
-*   [Map Generator Evolution](/mapgen/evolution "Map generator evolution")
+*   [Map Generator Evolution](/about/history/mapgen-evolution "Map generator evolution")
