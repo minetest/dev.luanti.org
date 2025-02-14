@@ -10,7 +10,7 @@ Note that not all changes made to the code between releases are listed here. Fix
 5.10.0 → 5.11.0
 ---------------
 
-To be released (TM). Newest entries on top of the section.
+Released on 14th February 2025.
 
 ### Deprecations and compatibility notes
 
