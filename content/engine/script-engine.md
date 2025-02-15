@@ -14,7 +14,7 @@ Conventions
 Initialization
 --------------
 
-There are basicaly two initialization phases, on creation of application prototypes register lua\_api modules to ScriptApi. Once server is started a new ScriptApi instance is created wich initializes a new Lua stack using all initialization functions provided by lua\_api.
+There are basicaly two initialization phases, on creation of application prototypes register lua\_api modules to ScriptApi. Once server is started a new ScriptApi instance is created which initializes a new Lua stack using all initialization functions provided by lua\_api.
 
 Note about the image: Its partially outdated. Since commit 4e1f50035e860a00636ca5d804c267119df99601, the registerModApiModule function has been removed.
 

@@ -3474,7 +3474,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Fixed array limit check when reading Lua specialtiles table _(MetaDucky)_
 * Fixed invalid listname and listsize not handled correctly in set\_size _(sapier)_
 * Handle blank blocks in database _(kwolekr)_
-* Fixed multicaller support in RequestQueue _(sapier)_
+* Fixed multi-caller support in RequestQueue _(sapier)_
 * Fixed result of processed request being written to invalid (non-existent) ResultQueue if requesting thread timed out _(sapier)_
 * Fixed gettext compile issues under win32 _(MetaDucky)_
 * Made mapgen V6 respect water\_level setting _(kwolekr)_
@@ -3482,16 +3482,16 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Fixed crash when pressing Enter key in formspec menu _(kahrl)_
 * Fixed rename modpack button not working, fixes #1019 _(PilzAdam)_
 * Don't continue trying to deserialize blank block data _(kwolekr)_
-* Added ingame modstore to download mods from mmdb _(sapier)_
+* Added in-game modstore to download mods from mmdb _(sapier)_
 * Added `minetest.register_decoration()` _(kwolekr)_
 * Added schematic support; new functions `minetest.place_schematic()` and `minetest.create_schematic()` _(kwolekr)_
-* Seperated formspecs of furnace and chests to provide override by mods _(BlockMen)_
+* Separated formspecs of furnace and chests to provide override by mods _(BlockMen)_
 * Added Lua VoxelManip _(kwolekr)_ [http://forum.luanti.org/viewtopic.php?id=6396](http://forum.luanti.org/viewtopic.php?id=6396)
 * Added vector helpers _(ShadowNinja)_
 * Added `range` to item definition _(PilzAdam)_
 * Added `after_use` to item definition _(Novatux)_
 * Added `liquid_range` to node definition _(PilzAdam)_
-* Added `collide_with_objects` to entitiy definition, to disable object <-> object collision _(PilzAdam)_
+* Added `collide_with_objects` to entity definition, to disable object <-> object collision _(PilzAdam)_
 * Added `minetest.facedir_to_dir()` and 6d facedir support for `minetest.dir_to_facedir()` _(hdastwb)_
 * Added gettext for `image_button` _(BlockMen)_
 * Added `stepheight` to entity definition _(sapier)_
@@ -3558,7 +3558,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Move cave generation to cavegen.cpp and restructure it into a class _(kwolekr)_
 * Added icons to select games in menu; `menu/menu_<background/overlay/header/footer>.png` of selected game is used in the main menu (TP can use `<gameid>_menu_<background/overlay/header/footer>.png`) _(celeron55)_
 * Added `--videomodes` option to show available video modes _(kahrl)_
-* Added ability to play `main_menu.ogg` (`main_menu.<1-9>.ogg` are supported too; they are choosen randomly if present) in main menu _(RealBadAngel)_
+* Added ability to play `main_menu.ogg` (`main_menu.<1-9>.ogg` are supported too; they are chosen randomly if present) in main menu _(RealBadAngel)_
 * Drop common mods system, _Survival_ and _Build_ game; minetest\_game includes all common mods and the bones mod from _Survival_ now _(PilzAdam)_ [http://forum.luanti.org/viewtopic.php?id=6034](http://forum.luanti.org/viewtopic.php?id=6034)
 * Changed mod system a bit: All user mods are installed in `$path_user/mods/` now; they can be enabled per world in the configure world window or in `world.mt` with `load_mod_<modname>` _(PilzAdam)_ [http://forum.luanti.org/viewtopic.php?id=6066](http://forum.luanti.org/viewtopic.php?id=6066)
 * Split `init.lua` of the default mod into several files _(PilzAdam)_
@@ -3594,7 +3594,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Fixed favorite server list in globally installed versions of Minetest (RUN\_IN\_PLACE=0) _(Zeg9)_
 * Fixed favorite server list on windows _(sfan5)_
 * Fixed handling of mods in games in the configure world GUI _(kahrl)_
-* Fixed static data of objects not beeing stored correctly on deactivation _(sapier)_
+* Fixed static data of objects not being stored correctly on deactivation _(sapier)_
 * Removed _Meshbuffer ran out of indices_ limitation _(kahrl)_
 * Fixed `isBlockInSight()` for higher FOV _(Warr1024)_
 * Don't teleport back when a player is detached or turns free move off and holds shift _(PilzAdam)_
@@ -3626,14 +3626,14 @@ No official changelog exists yet, however you can find an unofficial one here: [
 
 **Big gameplay changes**
 
-* Added lavacooling near water; lava source turns into obsidian, flowing lava turns into stone _(PilzAdam)_
-* Added junglewood (with stairs and slabs), jungleleaves and junglesaplings _(PilzAdam)_
+* Added lava cooling near water; lava source turns into obsidian, flowing lava turns into stone _(PilzAdam)_
+* Added jungle wood (with stairs and slabs), jungle leaves and jungle saplings _(PilzAdam)_
 * Added obsidian, obsidian shards and obsidian glass _(PilzAdam & jojoa1997)_
 * Added grass (5 different heights) _(PilzAdam)_
 * Added growing for papyrus (on dirt and grass near water) and cactus (on sand) _(PilzAdam)_
-* Added stonebricks crafted from 4 stones _(PilzAdam)_
+* Added stone bricks crafted from 4 stones _(PilzAdam)_
 * Added gold _(PilzAdam)_
-* Added diamonds and diamond tools, wich are slightly faster and wear out slower than mese tools _(PilzAdam)_
+* Added diamonds and diamond tools, which are slightly faster and wear out slower than mese tools _(PilzAdam)_
 * Added mese axe, shovel and sword; mese pick is not the ultimate tool anymore _(PilzAdam)_
 * Added copper, bronze and bronze tools; bronze can be crafted with copper ingot and steel ingot; bronze tools have same digging times but more uses than steel tools _(PilzAdam)_
 
@@ -3652,9 +3652,9 @@ No official changelog exists yet, however you can find an unofficial one here: [
 
 **Map generation changes**
 
-* Readded dungeons (disabled by default, enable with "dungeons" flag in "mg\_flags" setting) _(kwolekr)_
+* Re-added dungeons (disabled by default, enable with "dungeons" flag in "mg\_flags" setting) _(kwolekr)_
 * Speed up lighting a lot _(kwolekr)_
-* Readded jungles (disabled by default, enable with "jungles" flag in "mg\_flags" setting) _(kwolekr)_
+* Re-added jungles (disabled by default, enable with "jungles" flag in "mg\_flags" setting) _(kwolekr)_
 * Generate apple trees _(kwolekr)_
 * Moved ore generation back to core; improved ore generation speed _(kwolekr)_
 * Added `singlenode` mapgen _(celeron55)_
@@ -3687,7 +3687,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Added ability to pass multiple parameters to `minetest.after()` _(Jeija)_
 * Added `player:set_look_yaw()` and `player:set_look_pitch()` _(RealBadAngel)_
 * Added ability to load mods from the pseudo game _common_ via `common_mods` in game.conf _(celeron55)_
-* Added support for a minetest.conf file in games, wich override the default values _(celeron55)_
+* Added support for a minetest.conf file in games, which override the default values _(celeron55)_
 * Added 6d facedir to rotate nodes with _facedir_ drawtype _(RealBadAngel)_
 * Added function and wrapper to predict and assign 6d rotation via `minetest.rotate_and_place()` _(VanessaE and EvergreenTree)_
 * Added `minetest.add_particle()`, `minetest.add_particlespawner()` and `minetest.delete_particlespawner()` _(Jeija)_
@@ -3763,9 +3763,9 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Fixed dropped item collision with nodeboxes _(jordan4ibanez)_
 * Fixed a glitch where the player gets liquids in his inventory when a server lags _(PilzAdam)_
 * Added ability to change the itemstack in placenode callbacks _(PilzAdam)_
-* Added ability to create multi-line textfields in formspecs _(Jeija)_
+* Added ability to create multi-line text fields in formspecs _(Jeija)_
 * Add on\_rightclick(pos, node, clicker) callback for nodes _(PilzAdam)_
-* Added minetest.show\_fromspec(playername, formspec) to show formspecs via Lua _(sapier)_
+* Added minetest.show\_formspec(playername, formspec) to show formspecs via Lua _(sapier)_
 
 0.4.3 → 0.4.4
 -------------
@@ -3797,6 +3797,8 @@ No official changelog exists yet, however you can find an unofficial one here: [
 
 ### Bug fixes
 
+{{% comment %}} cspell:disable {{% /comment %}}
+
 * Fixed falling sand and gravel sometimes incorrectly landing _(PilzAdam)_
 * Fixed empty bucket being named "emtpy bucket" (khonkhortisan and PilzAdam)
 * Fixed slab to full block transformation _(PilzAdam)_
@@ -3820,3 +3822,5 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Allow transparent image buttons _(khonkhortisan)_
 * Added shutdown hook interface to Lua API _(matttpt)_
 * Added "attached\_node" group to make nodes which are not attached to any other walkable node drop _(PilzAdam)_
+
+{{% comment %}} cspell:enable {{% /comment %}}
