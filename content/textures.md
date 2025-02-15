@@ -30,7 +30,7 @@ Since 5.5.0 Luanti has a built-in function to encode PNG files, `core.encode_png
 JPEG is a lossy image format. It is useful for large photorealistic textures such as skyboxes or high-resolution textures.
 
 ### Optimising
-JPEG images can be optimised using `guetzli`, which reencodes a JPEG image as optimal as possible for the lowest filesize while not reducing the quality.
+JPEG images can be optimised using `guetzli`, which re-encodes a JPEG image as optimal as possible for the lowest filesize while not reducing the quality.
 
 ## TGA (`.tga`)
 TGA is a simple format, that either is an uncompressed stream of pixel data or with RLE encoding, depending on the format type of the file.
