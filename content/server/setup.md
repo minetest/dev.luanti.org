@@ -12,7 +12,7 @@ This page is a guide, separated into sections, for setting up a Luanti server. I
 ## Choosing Hardware
 It's recommended that you use a VPS or dedicated server to host a game server which you want to make publicly available. Residential Internet connections tend to be unreliable and also have less upload speed. You may also not be able to keep a server online 24/7 when hosting from home.
 
-That being said, hosting from home will work fine if you have some hardware you can keep online, and you have a good enough Internet connection. Keep in mind that if you are behind CGNAT, you are unable to host a public server from home at all as it won't be accessible to the wider internet.
+That being said, hosting from home will work fine if you have some hardware you can keep online, and you have a good enough Internet connection. Keep in mind that if you are behind [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT), you are unable to host a public server from home at all as it won't be accessible to the wider internet.
 
 Luanti does have a *Host Server* option in the main menu, which is fine for temporary servers for a couple of friends, but if you want to run a public server you would want to run it dedicated as it can be kept online independent of the client being active.
 
@@ -91,7 +91,7 @@ If you are going to be running a Luanti server on a non-headless system, using t
 
 Usually your Linux distribution of choice will have `luantiserver` in its official repositories. However this package may be several releases outdated, so obtaining a server binary through other means is to be recommended.
 
-- **Pre-built third-party server binaries**: [The luantiserver repository by ROllerozxa](https://github.com/rollerozxa/luantiserver) contains up-to-date prebuilt x86_64 headless server binaries that should work on any relatively recent glibc-based Linux distro, built from an automated CI workflow that you can fork if you want to customise the build optioms.
+- **Pre-built third-party server binaries**: [The luantiserver repository by ROllerozxa](https://github.com/rollerozxa/luantiserver) contains up-to-date prebuilt x86_64 headless server binaries that should work on any relatively recent glibc-based Linux distro, built from an automated CI workflow that you can fork if you want to customise the build options.
 
 - **Building from source**: Build Luanti from source with `-DBUILD_CLIENT=0 -DBUILD_SERVER=1`. For more information see [Compiling a headless Linux server](/compiling-a-headless-linux-server/).
 
@@ -108,9 +108,9 @@ As of 5.8.0, Luanti no longer ships with a default game, meaning you will have t
 
 ### Linux
 1. Open a terminal.
-2. Navigate to wherever you've put your Luanti server files (referred to as /Luanti/ from now on), and run the server with `/bin/luantiserver`. **(PLEASE READ THE NOTES BELOW!)**
-	-   If you want to specify a specific game ID, the game ID choices are located in `/Luanti/games/`. Add in `--gameid `**`thegameid`** to the end of the command.
-	-   If you get the error "Multiple worlds are available.", the world choices are located in `/Luanti/worlds/`. Add in `--worldname `**`theWorld`** to the end of the command.
+2. Navigate to wherever you've put your Luanti server files (referred to as /Luanti/ from now on), and run the server with `/bin/luantiserver`.
+	-   If you want to specify a specific game ID, the game ID choices are located in `/Luanti/games/`. Add in `--gameid yourGameId`** to the end of the command.
+	-   If you get the error "Multiple worlds are available.", the world choices are located in `/Luanti/worlds/`. Add in `--worldname yourWorldName`** to the end of the command.
 3. If your server crashes, then look in the `debug.txt` log file in `/Luanti/`
 4. Make sure you make your server [safe from damage](#Protecting_your_server).
 
@@ -128,7 +128,7 @@ done
 
 If you're on a headless server you'd want to run the server in some kind of multiplexer like `screen`. Run `screen -h 10000 -S luanti ./run_server.sh`, `Ctrl+A Ctrl+D` to detach, and `screen -r` to reattach at a later date.
 
-If you're going to be running multiple servers you may want to separate their files between eachother. One good way to do that would be to make a servers/ folder as a sibling to your bin/ folder, make a folder for each server, and use something like this for running the server:
+If you're going to be running multiple servers you may want to separate their files between each other. One good way to do that would be to make a servers/ folder as a sibling to your bin/ folder, make a folder for each server, and use something like this for running the server:
 
 ```bash
 #!/bin/bash
@@ -218,7 +218,7 @@ The engine rollback functionality is very limited and can't roll back griefing c
 - Never grant privileges to a player just because they use a name you recognise. Player names are not reserved between servers, so you should always confirm who the player is.
 - Install and configure a chat filter mod like [filter](https://content.luanti.org/packages/sofar/filter/), to prevent swearing and/or sexual chat. This is useful to inform players of the rules rather than actual enforcement, as working around filters is fairly easy.
 
-For more mods useful to server administration, see the [Server Moderation and Tools](https://content.luanti.org/packages/?tag=server_tools) tag on ContentDB. See also the [SzUtilPack](https://content.luanti.org/packages/Warr1024/szutilpack/) package which is a modpack by Warr1024 that contains a lot of useful mods for server management such as automatic restarts, pruning players or additional useful chatcommands.
+For more mods useful to server administration, see the [Server Moderation and Tools](https://content.luanti.org/packages/?tag=server_tools) tag on ContentDB. See also the [SzUtilPack](https://content.luanti.org/packages/Warr1024/szutilpack/) package which is a modpack by Warr1024 that contains a lot of useful mods for server management such as automatic restarts, pruning players or additional useful chat commands.
 
 ### Protecting the host machine
 - Standard advice on Linux/Windows server security applies.
