@@ -2223,7 +2223,7 @@ Backported release containing only bug fixes and small features. 0.4.17 was rele
 * Fix default item callbacks to work with nil users
 * Prevent from crafting non-existent, unknown items
 * Profiler: Fix var args not being passed to callback register function
-* Unkown nodes: Provide position on interact
+* Unknown nodes: Provide position on interact
 * Fix attached particle spawners far from spawn
 * Localplayer: Fix disable\_jump effect and standing node position
 * Fix blocks written by vmanip not being marked as modified
@@ -2268,12 +2268,12 @@ Backported release containing only bug fixes and small features. 0.4.17 was rele
 * Sounds: add fading sounds _(Bremaweb, krock)_
 * Save automatically window size when modified. This behaviour can be disabled in client settings _(nerzhul)_
 * Add cancel button to password change formspec _(red-001)_
-* Improve pause menu with more user friendly informations and update keys dynamicly depending on your configuration _(red-001)_
+* Improve pause menu with more user friendly information and update keys dynamically depending on your configuration _(red-001)_
 * Merge singleplayer & server tab on desktop clients _(octacian)_
 * Add /clearinv chat command _(octacian)_
 * Add keyword-based search to server-list and advance settings _(red-001, rubenwardy)_
 * Add hardware-based itemstacks and node coloring _(juhdanad)_
-* Undersampling which should make minetest run better on low end devices _(numberZero)_
+* Undersampling which should make Minetest run better on low end devices _(numberZero)_
 
 ### Cheat fixes
 
@@ -2295,16 +2295,16 @@ Backported release containing only bug fixes and small features. 0.4.17 was rele
 * PostgreSQL bugfix on blocks deletion _(nerzhul)_
 * Windows integration enhancements _(???)_
 * Wieldmesh natural orientation _(kilbith)_
-* Memleak fix on client disconnection _(nerzhul)_
+* Memory leak fix on client disconnection _(nerzhul)_
 * Various performance fixes _(???)_
 * Fix Windows icon _(adrido)_
-* Fix various minor memleaks _(nerzhul?)_
+* Fix various minor memory leaks _(nerzhul?)_
 * Recent LuaJIT fixes _(nerzhul)_
 * Reduce network packet reading/writing memory usage _(???)_
 * Binding tab now doesn't exit game when used _(sofar)_
 * Light update for mapblocks _(juhdanad)_
 * Client: reduce fake object reactions in client event queue _(nerzhul)_
-* Crashfix when reading schematic calls from API in some cases _(nerzhul)_
+* Crash fix when reading schematic calls from API in some cases _(nerzhul)_
 * Limit sound volume when incorrect value was set into config _(???)_
 * Fix Cursor lock problem when window is inactive _(krock)_
 * Particles are now sent to client regarding distance (huge performance improvement on particle servers) _(paramat)_
@@ -2336,7 +2336,7 @@ Backported release containing only bug fixes and small features. 0.4.17 was rele
 * Remove core.cause\_crash Lua call _(nerzhul)_
 * Add on\_flood server Lua callback _sofar)_
 * Add clouds API _(bendeutsch)_
-* Add private node meta to prevent some informations to be leaked to client (example: chest contents) _(sfan5)_
+* Add private node meta to prevent some information from being leaked to client (example: chest contents) _(sfan5)_
 
 ### Other / Misc
 
@@ -2412,11 +2412,11 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Add /emergeblocks command and core.emerge\_area() Lua API (kwolekr)
 * Add get\_biome\_id(biome\_name) callback (Duane Robertson)
 * Added minetest.wallmounted\_to\_dir (Fernando Carmona Varo)
-* Allow setting chunksize in core.set\_mapgen\_params (kwolekr)
+* Allow setting chunk size in core.set\_mapgen\_params (kwolekr)
 * ABMs: Make catch-up behaviour optional (paramat)
 * Decoration API: Add flag for placement on liquid surface (paramat)
 * Add more ways to pass data to check\_player\_privs (Robert Zenz)
-* Add option to disable backface culling for models (BlockMen)
+* Add option to disable back-face culling for models (BlockMen)
 * Schematics: Add core.place\_schematic\_on\_vmanip API (kwolekr)
 * Add LuaSecureRandom (est31)
 * Allow craft replacements to use groups (TeTpaAka)
@@ -2544,9 +2544,9 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Optimise MapBlockMesh related functions (gregorycu)
 * Fix minor memory leak (Android) (Zeno)
 * Fix occlusion (Miguel Almeida)
-* ClientInterface::getClientIDs doesn't need a std::list. Use a std::vector for better perfs (nerzhul)
+* ClientInterface::getClientIDs doesn't need a std::list. Use a std::vector for better performance (nerzhul)
 * Fix some rendering glitches (BlockMen)
-* Fix mapgen using unitialised height map values (Zeno)
+* Fix mapgen using uninitialised height map values (Zeno)
 * Fix Android text bug (no text displaying) (Zeno)
 * Improve Clouds::render mathematics (nerzhul)
 * For usages of assert() that are meant to persist in Release builds (when NDEBUG is defined), replace those usages with persistent alternatives (Zeno)
@@ -2555,8 +2555,8 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Don't use luaL\_checkstring to read node names, it's only for arguments (ShadowNinja)
 * Heightmaps: Fix uninitialised values in mgv5/mgv6. findGroundLevel: Return -MAP\_GENERATION\_LIMIT if surface not found (paramat)
 * Make the dummy backend only look up blocks once (ShadowNinja)
-* Fix unitialized data when creating TOSERVER\_INIT packet (nerzhul)
-* Fix memleak pointed by issue #2439. Also change bzero to memset. bzero doesn't work on windows (nerzhul)
+* Fix uninitialized data when creating TOSERVER\_INIT packet (nerzhul)
+* Fix memory leak pointed by issue #2439. Also change bzero to memset. bzero doesn't work on windows (nerzhul)
 * Stop formspecs closing with double-click in empty area (Zeno)
 * Ensure that heightmap is initialized before use (Zeno)
 * lua\_api/l\_mapgen: Fix overlapping areas of minetest.generate\_ores/decorations (paramat)
@@ -2576,7 +2576,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Fix crash caused by null texture in GUI formspec/HUD. (Aaron Suen)
 * Fix players spawned at (0,0,0) in some rare cases instead of static\_spawnpoint (nerzhul)
 * Crafting speedup (est31)
-* Fix uninitialized variabled in ConnectionEvent (nerzhul)
+* Fix uninitialized variables in ConnectionEvent (nerzhul)
 * Fix a rare crash case un SendPlayerHP (nerzhul)
 * Schematics: Fix core.schematic\_create() (kwolekr)
 * fix infinite spawners (obneq)
@@ -2709,10 +2709,10 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * SAPI/Noise: Add PerlinNoiseMap:getMapSlice() function (kwolekr)
 * Mgv5/v7: Fix generateBiomes biome recalculation logic Biomegen down to y = -192 for mgv5 deep oceans. Improve code (paramat)
 * Biome API, mgv7: Increase heat/humidity spreads. Improve mgv7 noise parameters (paramat)
-* Mgv6: Enable snowbiomes by default. Double biome noise spread. 3 octaves, 0.5 persistence for humidity (paramat)
+* Mgv6: Enable snow biomes by default. Double biome noise spread. 3 octaves, 0.5 persistence for humidity (paramat)
 * Mgv5/mgv7: Trigger biome recalculation at underwater surfaces (paramat)
 * Minimal: Edit mapgen aliases. Use blob ore for clay, update other ores. Update simple biomes. Cleanup code (paramat)
-* Minimal: Add snow biome and jungleleaves nodes. Add mapgen aliases (paramat)
+* Minimal: Add snow biome and jungle leaves nodes. Add mapgen aliases (paramat)
 * Biome API: Enable biome generation to lower world limit (paramat)
 * Mgv6: Don't create air gap in tundra at y = 48 in custom high terrain (paramat)
 * Biome API: Add noise defined biome blend (paramat)
@@ -2872,7 +2872,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Scale form elements consistently using new font engine by sapier _(Zefram)_
 * Made dropped items larger and rotate faster _(Calinou)_
 * Increase third person view distance _(Calinou)_
-* Made directional fog colors respect tonemap _(Taoki)_
+* Made directional fog colors respect tone map _(Taoki)_
 * Display serverlist flags as icons _(kahrl, kilbith, VanessaE et al.)_
 
 **Build system changes**
@@ -3017,7 +3017,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Added minetest.clear\_registered\_biomes() _(kwolekr)_
 * Added new noise parameters: flags and lacunarity _(kwolekr)_
 * Added support for NoiseParams in minetest.get\_perlin() _(kwolekr)_
-* Exposed mapgen chunksize in on\_mapgen\_init callbacks _(kwolekr)_
+* Exposed mapgen chunk size in on\_mapgen\_init callbacks _(kwolekr)_
 
 ### Vanilla game changes (minetest\_game)
 
@@ -3074,11 +3074,11 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Added enable\_tnt setting _(ShadowNinja, Yepoleb)_
 * Optimized TNT explosion _(ShadowNinja)_
 * Added option for custom opening and closing sound for doors _(Jat15, Zefram)_
-* Removed generation of flowers, papyrus, cactus and grass (plant) generation from other mapgenerators than v6 _(paramat)_
+* Removed generation of flowers, papyrus, cactus and grass (plant) generation from other map generators than v6 _(paramat)_
 * Removed ore definitions for indev mapgen _(paramat)_
 * Added all saplings to group sapling _(PilzAdam)_
 * Allowed the group book to be placed in bookshelf _(PilzAdam)_
-* Added a minetest.conf.example with all settings from minetest\_game, that can be changed in mintest.conf _(PilzAdam)_
+* Added a minetest.conf.example with all settings from minetest\_game, that can be changed in minetest.conf _(PilzAdam)_
 * Removed remains of weather and finite liquids _(PilzAdam)_
 * Restructured and moved furnace code to furnace.lua _(PilzAdam)_
 
@@ -3104,7 +3104,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Made pause menu actually pause singleplayer game and use lower maximum FPS in it _(celeron55)_
 * Prevented placing node when player would be inside new node _(BlockMen)_
 * Drop an item instead a stack while sneaking _(Lord89James)_
-* Added support for exiting formspecs by doubleclicking outside _(sapier)_
+* Added support for exiting formspecs by double-clicking outside _(sapier)_
 
 **Logistic changes**
 
@@ -3122,7 +3122,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Pass arguments by reference, reducing data copies _(Selat)_
 * Cleaned up client init states by bumping protocol version _(sapier)_
 * Added support for named threads on Linux, BSD, and Windows (MSVC-only) _(sapier, ShadowNinja)_
-* Infered ipv6\_server from bind\_address; fixed client connect to IN(6)ADDR\_ANY _(kahrl)_
+* Inferred ipv6\_server from bind\_address; fixed client connect to IN(6)ADDR\_ANY _(kahrl)_
 * Fixed all warnings reported by clang _(sfan5)_
 * Removed locks that aren't absolutely required from JThread _(sapier)_
 * Use narrow\_to\_wide in gettext instead of operating system dependent conversion function _(sapier)_
@@ -3144,10 +3144,10 @@ No official changelog exists yet, however you can find an unofficial one here: [
 
 * Added waypoint HUD element _(RealBadAngel)_
 * Added on-the-fly normal map generation _(RealBadAngel)_
-* Made sun and moon textureable _(RealBadAngel)_
+* Made sun and moon texture-able _(RealBadAngel)_
 * Made formspec text-area word-wrap _(RealBadAngel)_
 * Added support for DPI based HUD scaling _(sapier)_
-* Made debug text adjust it's border to the screensize _(ShadowNinja)_
+* Made debug text adjust it's border to the screen size _(ShadowNinja)_
 * Added download rate to non-HTTP media progress bar _(sapier)_
 * Added support for interlaced-polarized, top-bottom, and side-by-side 3D screens _(sapier)_
 * Made pause menu hide before "Shutting down..." message is drawn _(sapier)_
@@ -3162,7 +3162,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Made flag strings clear specified flag with 'no' prefix _(kwolekr)_
 * Added check to avoid usage of broken LuaJIT < 2.0.0-beta-8 _(sapier)_
 * Lots of new and updated translations _(many contributors)_
-* Improved performance of ABMs by only calcuating object counts once _(CiaranG)_
+* Improved performance of ABMs by only calculating object counts once _(CiaranG)_
 * Improved win32 file version information _(sapier)_
 * Documented CMake options in README _(sfan5)_
 * Corrected misleading detached inventory error message _(CiaranG)_
@@ -3235,13 +3235,13 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Fixed day/night passing at the wrong speed on some architectures _(sapier)_
 * Handle missing tablecolumns\[\] _(kahrl)_
 * Fixed wrong status text rectangle _(sapier)_
-* Fixed GenericCAO not grabing member objects, causing them to be deleted early _(sapier)_
+* Fixed GenericCAO not grabbing member objects, causing them to be deleted early _(sapier)_
 * Fixed support for Max OSX _(mdoege)_
 * Fixed regression in light calculation _(sapier)_
 * Passed pointed\_thing to after\_place\_node _(ShadowNinja)_
 * Documented "wielditem" visual _(ShadowNinja)_
 * Passed pointed\_thing to on\_rightclick _(Novatux)_
-* Added forceloading _(Novatux)_
+* Added force-loading _(Novatux)_
 * Added InvRef::get/set\_lists() _(ShadowNinja)_
 * Mapgen V6: Added flag to stop mud flow _(kwolekr)_
 * Allowed vertical axis particle rotation constraint _(khonkhortisan)_
@@ -3291,7 +3291,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Made punching bones pick up items _(Krock)_
 * Made items drop if no space for bones _(Krock)_
 * Don't create bones when inventory is empty _(arsdragonfly)_
-* Added cuboid wieldhand _(paramat)_
+* Added cuboid wield hand _(paramat)_
 * Many new textures, added inventory backgrounds _(BlockMen)_
 
 ### Master server (server list)
@@ -3392,7 +3392,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Change static ContentFeatures array into a vector _(rathgit, kahrl)_
 * Allow multiple singleplayer games at the same time _(PilzAdam)_
 * Added texture pack selection to main menu _(Novatux)_
-* Don't write files directly but rather write to a temporary file that gets renamed after succesfully written; fixes many causes of corrupted files _(PilzAdam)_
+* Don't write files directly but rather write to a temporary file that gets renamed after successfully written; fixes many causes of corrupted files _(PilzAdam)_
 * Adjust the Lua API structure and improve header inclusion to decrease compile time _(kahrl)_
 * Database abstraction, LevelDB support _(sfan5, wieszak, xyz)_
 * Use the Settings Lua interface to read world.mt _(PilzAdam)_
@@ -3422,7 +3422,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 
 **Other changes**
 
-* Play `player_damage.ogg` when recieving damage and `player_falling_damage.ogg` on falling damage _(PilzAdam)_
+* Play `player_damage.ogg` when receiving damage and `player_falling_damage.ogg` on falling damage _(PilzAdam)_
 * Added basic unicode support to the console in Linux _(Exio)_
 * Added a setting for max loop count per step in liquid update _(PilzAdam)_
 * Added math mapgen with fractal based worlds _(proller)_
@@ -3434,11 +3434,11 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Added curl, freetype and luaJIT to CMAKE\_BUILD\_INFO _(PilzAdam)_
 * Lowered the default max\_users from 100 to 15 _(ShadowNinja)_
 * Removed doc/gpl-2.0.txt, add doc/lgpl-2.1.txt _(kahrl)_
-* Masterserver update _(proller)_
-* Moved new core devs to the "Core Developpers" section of mainmenu _(Novatux)_
+* Master server update _(proller)_
+* Moved new core devs to the "Core Developers" section of mainmenu _(Novatux)_
 * Added ShadowNinja's email address to the main menu credits _(ShadowNinja)_
 * Used a doT.js template for the serverlist _(ShadowNinja)_
-* Added default\_privs to masterserver and JS autoload _(proller)_
+* Added default\_privs to master server and JS autoload _(proller)_
 * Added BlockMen to core dev list _(PilzAdam)_
 * Added missing RequestQueue doc _(sapier)_
 * Prevent enabling Shaders if Direct3D is used _(PilzAdam)_
