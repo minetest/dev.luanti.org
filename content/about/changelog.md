@@ -9,6 +9,79 @@ aliases:
 
 Note that not all changes made to the code between releases are listed here. Fixes to bugs that were introduced after the previous release, small internal changes, code style fixes, and changes of the like are not listed. If you want a list of _every_ change made between releases see the [commit log](https://github.com/luanti-org/luanti/commits/master).
 
+5.10.0 → 5.11.0
+---------------
+
+Released on 14th February 2025.
+
+### Deprecations and compatibility notes
+
+* Clients >= 5.11.0 will no longer support BMP texture files. This deprecation was first announced in 5.8.0.
+* Basic shaders support is now mandatory. New minimum required OpenGL version: 2.0.
+    * See [https://github.com/luanti-org/luanti/issues/15370](https://github.com/luanti-org/luanti/issues/15370) for details.
+* A bug related to skeletal animation has been fixed. The bug occurs when bones have "perfect" 180° rotations, equivalent to negatively scaling two axes.
+  If these bones are then animated via bone overrides, the overridden rotation will incorrectly appear to be relative to the 180° rotation.
+  This may result in wrong bone rotations for mods that rely on this bug. These mods need to fix the rotations passed to `set_bone_override` / the deprecated `set_bone_position`.
+  Multiple workarounds are possible to ensure consistency with older Luanti clients which exhibit the bug,
+  such as editing models to not have perfect rotations, overriding bone scale to force newer clients to replicate the bug,
+  or overriding bone scale to work around the bug on older clients which support setting scale.
+  See [the issue](https://github.com/luanti-org/luanti/issues/15692) for details.
+
+### Client / Audiovisuals
+
+* Fix shadow flicker on camera offset update (_sfan5_)
+* In-game settings menu (_grorp_)
+* Add chat console scrollbar (_chmodsayshello_)
+* Fix occasional z-fighting rendering issues by overlay textures (_sfan5_)
+* Fix MSAA and bloom flashing artifacts (_lhofhansl_)
+* Main menu additions
+    * Add mods button (_cx384_)
+    * Add server url button (_siliconsniffer_)
+    * Add server favorite button (_siliconsniffer_)
+    * Player list for public servers (_siliconsniffer_)
+* Fix bloom with post_processing_texture_bits < 16 (_sfan5_)
+* Fix distorted Sun, Moon and Star visuals based on Orbit Tilt (_veprogames_)
+* New setting `transparency_sorting_group_by_buffers`. This may improve performance at the cost of visual issues. (_Desour_)
+* Implement an editor to customize the touchscreen controls (_grorp_)
+    * This screen can be opened though the pause/exit menu.
+* Support FSAA in combination with post-processing (_grorp_)
+* Support `video_driver = opengl3` for non-SDL builds (_Krock_)
+* Rendering-related fixes (_grorp_, _sfan5_)
+
+### World / Server / Environment
+
+* Fix incorrect/outdated player inventory contents after failed "drop" action (_Krock_)
+* Fix clients sometimes erroneously disconnecting after 30 seconds (_sfan5_)
+* Restore proper rollback database indexing (_appgurueu_)
+
+### Script API / Modding
+
+* `core.protocol_versions` for easier engine version lookups (_rollerozxa_, _appgurueu_, _sfan5_)
+* Allow overriding fonts via media files (_appgurueu_)
+* New in-game debug view: highlight bounding boxes (_sfan5_)
+* New function `core.spawn_tree_on_vmanip` (_cx384_)
+* Fixed fruit placement regression in L-system trees (_cx384_)
+* Continued work on the glTF model reader (_appgurueu_)
+    * STEP (function) interpolation is now supported.
+* New function `core.settings:get_pos`. This deprecates `core.setting_get_pos`. (_AFCMS_)
+* Add particle blend mode "clip" (_appgurueu_)
+* Documentation improvements (_kno10_, _luk3yx_, _Wuzzy_, _cs384_, _fineless71_)
+* Invalid `ore_type` values in `core.register_ore` now result in a proper error (_cx384_)
+* Add optional relative weight parameter to biomes (_kno10_)
+
+### Misc / Maintenance
+
+* Improve sleep accuracy on FPS limiter (_Hanicef_)
+    * This mainly affects Windows clients.
+* Texture filters/generation speed improvement (_sfan5_)
+* Performance improvements in rendering (world and formspec) (_sfan5_, _Desour_, _appgurueu_)
+    * New setting `mesh_buffer_min_vertices` for fine-tuning.
+* Crash fixes (_appgurueu_, _Krock_)
+* Replaced minetest.net with luanti.org in several places (_veprogames_)
+* Implement script sandboxing for main menu (_sfan5_) + follow-up bugfixes (_sfan5_)
+* Code cleanups and minor fixes (_grorp_, _sfan5_, _appgurueu_)
+
+
 5.9.1 → 5.10.0
 --------------
 

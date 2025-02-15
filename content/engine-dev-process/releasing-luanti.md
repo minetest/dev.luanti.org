@@ -27,9 +27,10 @@ Checklist
 - Release
   - [ ] Run bump_version and verify
   - [ ] Push new tag
-  - [ ] Tag minetest_android_deps repo
+  - [ ] Tag luanti_android_deps repo
   - [ ] Build and upload Windows version
   - [ ] Build and upload Android version
+  - [ ] Update Launchpad stable build (Ubuntu version)
   - [ ] (Minor/Major) Publish blog post
   - [ ] Create forum topic
   - [ ] Notify rubenwardy to announce on Twitter, etc.
@@ -43,7 +44,7 @@ Feature Freeze
 
 ### Announce a feature freeze
 
-(_Skip for patch releases_) Usually, a **feature freeze for one week is announced in #minetest-dev**. New features aren't accepted in this time and people focus on finding and fixing bugs. To find high priority issues faster, consider linking a release candidate binary to get more test results. This release candidate is usually also posted on the forums (News section).
+(_Skip for patch releases_) Usually, a **feature freeze for one week is announced in #luanti-dev**. New features aren't accepted in this time and people focus on finding and fixing bugs. To find high priority issues faster, consider linking a release candidate binary to get more test results. This release candidate is usually also posted on the forums (News section).
 
 The feature freeze and release date is set by core developers.
 
@@ -121,10 +122,10 @@ The process with patch releases is slightly different but the script will take c
 
 *   **Define** a new version number by running `util/bump_version.sh`. Verify that this script correctly:
     *   changes TRUE to FALSE for the line _set(DEVELOPMENT\_BUILD TRUE)_ in CMakeLists.txt
-    *   updates the version number and release date in misc/net.minetest.minetest.appdata.xml
+    *   updates the version number and release date in misc/net.minetest.minetest.metainfo.xml
     *   and commits.
 *   **Tag** the version in local git (the script does this) to allow the CMake versioning script to remove the git hash from the version. Do not push the tag to GitHub yet.
-*   **Build**, get newest minetest\_game, run and check if the thing seems to be working.
+*   **Build**, run and check if the thing seems to be working.
 
 ### Build Windows version
 
@@ -138,7 +139,7 @@ Note that the correct build only shows up after the release commit has been push
 
 #### Mini checklist of things to test
 
-_Note_: Don't cheat on this by testing in Wine, it has happened that things crash/break in wine while they are fine on real Windows.
+_Note_: Don't cheat on this by testing in Wine, it has happened that things crash/break in Wine while they are fine on real Windows.
 
 *   check that the build identifies itself as 5.x.x not 5.x.x-dev or 5.x.x-abc4de7
 *   click some menu buttons
@@ -152,21 +153,21 @@ _Note_: Don't cheat on this by testing in Wine, it has happened that things cras
 *   All official builds are hosted at Github: [https://github.com/luanti-org/luanti/releases](https://github.com/luanti-org/luanti/releases)
 *   The Windows build is created by CI
     *   (see above)
-*   The macOS build is created by [Github Actions](https://github.com/luanti-org/luanti/actions/workflows/macos.yml)
-    *   you will only be able to grab the build **after** the release has been pushed
-    *   download the artifact, unpack it once, you should have a `luanti-5.x.x-osx.zip`. This is then uploaded.
+*   The macOS build is built and signed by SFENCE
+    *   the file is named something like `luanti_5.11.0-macos11.3_arm64.zip`, which contains the minimum macOS version it can run on.
 *   Android APKs are also uploaded here when they're done
     *   these are signed before uploading, see a few sections below
+*   There is a PPA for stable builds on Ubuntu (see below).
 
-### Update branches and tags of minetest on GitHub
+### Update branches and tags on GitHub
 
 Tagging is handled by the script for the engine.
 
-The new release should be merged to the stable-5 branch on both minetest. **Its important to merge, and not just rebase**, so that git describe works.
+The new release should be merged to the stable-5 branch. **Its important to merge, and not just rebase**, so that git describe works.
 
 #### The problem on the stable-5 branch
 
-Usually, merging releases onto the stable branch just consists of adding the commits to the branch, as it contains direct ancestors of master commits, and git can do a fast forward. During release/freeze of 5.0.1 (both minetest and minetest\_game), the ancestor rule has been broken.
+Usually, merging releases onto the stable branch just consists of adding the commits to the branch, as it contains direct ancestors of master commits, and git can do a fast forward. During release/freeze of 5.0.1 (both luanti and minetest\_game), the ancestor rule has been broken.
 
 Therefore, you'll generate merge commits, but this shouldn't be a problem. In the case of merge conflicts, ensure that the changes on stable-5 are all discarded in favor of the tagged commit at master, by doing a merge commit like:
 
@@ -184,16 +185,15 @@ Create a new tag [on this repo](https://github.com/luanti-org/luanti_android_dep
 
 ### Update Launchpad stable build to get Ubuntu builds for the new version
 
-celeron55, rubenwardy, and ShadowNinja have access.
+celeron55, rubenwardy, ShadowNinja, and luatic have access.
 
 Process:
 
-*   Go to [minetest-c55/upstream](https://code.launchpad.net/~minetestdevs/minetest-c55/+git/upstream) and [minetest-c55/upstream\_game](https://code.launchpad.net/~minetestdevs/minetest-c55/+git/upstream_game) and click "start import".
-*   First, find out the commit hashes of the minetest and minetest\_game git repos corresponding to the release.
+*   Go to [minetest-c55/upstream](https://code.launchpad.net/~minetestdevs/minetest-c55/+git/upstream) and click *start import*.
 *   Now visit the [recipe](https://code.launchpad.net/~minetestdevs/+recipe/minetest-stable).
 *   At the bottom of the page there is a section called "Recipe contents". In this section you need to edit the recipe. Make sure you update:
-    *   The version number at the end of the first line. Doing this is a must otherwise there would be duplicate packages which would lead to a fail. The version number has a format like `5.1.1-ppa0`. You should keep the ppa postfix so that it's easy to differentiate the package by origin, ppa or upstream Debian.
-    *   The commit hash of the main minetest repo in the second line.
+    *   The version number at the end of the first line. Doing this is a must otherwise there would be duplicate packages which would lead to a fail. The version number has a format like `5.11.0-ppa0`. You should keep the ppa postfix so that it's easy to differentiate the package by origin, ppa or upstream Debian.
+    *   The Git tag corresponding to the Luanti version (for example `5.11.0`) in the second line.
 *   Check whether everything has been updated correctly.
 *   Click the green "Request builds" link, enable the newer distro versions, and click confirm.
 
@@ -232,7 +232,7 @@ After releasing
 
 ### Write a release notice
 
-*   Don't forget to edit the luanti.org page ([Repo](https://github.com/luanti-org/luanti.github.io)).
+*   Don't forget to edit the luanti.org page ([Repo](https://github.com/luanti-org/luanti-org.github.io)).
     *   currently you will need to update machine readable metadata in \_data/release.yml and downloads.html itself.
 *   Post a new topic in the [News section](https://forum.luanti.org/viewforum.php?f=18) of the forum. **See [Changelog](/about/changelog "Changelog").**
     *   It is customary to sticky the newest release topic and lock older ones.
@@ -241,15 +241,16 @@ After releasing
 
 ### Notify known package maintainers
 
-*   **Arch Linux**/Manjaro: can be flagged outdated on the [package page](https://archlinux.org/packages/extra/x86_64/minetest/)
-*   **Debian**/Ubuntu: has [own version tracking](https://tracker.debian.org/pkg/minetest), no need to contact
+*   **Arch Linux**/Manjaro: can be flagged outdated on the [package page](https://archlinux.org/packages/extra/x86_64/luanti/)
+*   **Debian**/Ubuntu: has [own version tracking](https://tracker.debian.org/pkg/luanti), no need to contact
 *   **Fedora** and others: should automatically show up [here](https://release-monitoring.org/project/1978/), but can be flagged manually
 *   **F-Droid**: has volunteer maintainers, if nobody notices consider opening an issue [here](https://gitlab.com/fdroid/fdroiddata/-/issues)
 *   **Snap**: open an issue (or contribute) [here](https://github.com/snapcrafters/minetest)
 *   **Flatpak**: open an issue (or contribute) [here](https://github.com/flathub/net.minetest.Minetest)
 *   **Gentoo**: has [own version tracking](https://packages.gentoo.org/packages/games-engines/minetest), no need to contact
 
-You can find out how quick various distro are to adopt new versions by visiting [Repology](https://repology.org/project/minetest/history).
+You can find out how quick various distro are to adopt new versions by visiting [Repology](https://repology.org/project/minetest/history)
+(older history under the `minetest` name, newer history is [here](https://repology.org/project/luanti/history)).
 
 ### ContentDB
 
@@ -265,4 +266,4 @@ People who have access: rubenwardy + ???
 
 Minetest Game is no longer connected to our release cycle, so we can ignore it.
 
-The [Development Test](https://content.luanti.org/packages/Minetest/devtest/) package needs to be released **manually**. Make a new release, upload a ZIP file with Development Test as it looks like the Luanti source tree in the stable branch, and set the minimum and maximum Luanti versions to the exact Luanti version it is intended for.
+The [Development Test](https://content.luanti.org/packages/Luanti/devtest/) package needs to be released **manually**. Make a new release, upload a ZIP file with Development Test as it looks like the Luanti source tree in the stable branch, and set the minimum and maximum Luanti versions to the exact Luanti version it is intended for.
