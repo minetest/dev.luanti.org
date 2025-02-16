@@ -1,12 +1,13 @@
 ---
 title: Map generator features
 aliases:
-- "/Map_generator_features"
+- /Map_generator_features
+- /mapgen/features
 ---
 
 # Map generator features
 
-This page shows the various special features which [map generators](/mapgen "Map generator") have and explains how to use them.
+This page shows the various special features which [map generators](/for-creators/mapgen) have and explains how to use them.
 
 {{< notice note >}}
 This page doesn't list all available mapgen features. For a full reference, search for `mg_flags` and `mg*_spflags` in [minetest.conf.example](https://github.com/luanti-org/luanti/blob/master/minetest.conf.example) instead.
@@ -29,7 +30,7 @@ Setting `mg_flags`, `decorations` flag (enabled by default)
 
 * Decorations are additional structures placed on top of the surface. These are registered by games and mods using the decoration API.
 * Decorations can be small plants such as grass, flowers, cacti, or they can even be entire trees or buildings.
-* This flag doesn't affect mapgen v6 trees (see [Mapgen v6](/mapgen/#v6)).
+* This flag doesn't affect mapgen v6 trees (see [Mapgen v6](/for-creators/mapgen/#v6)).
 
 ### Caves
 
@@ -88,7 +89,7 @@ Setting `mgv7_spflags`, `floatlands` flag (disabled by default)
 
 Setting `mgv6_spflags`, `trees` flag (enabled by default)
 
-* Enables v6's hardcoded decorations: regular trees, apple trees, jungle trees and jungle grass in jungles and pine trees in taiga biomes (see [Mapgen v6](/mapgen/#v6)). 
+* Enables v6's hardcoded decorations: regular trees, apple trees, jungle trees and jungle grass in jungles and pine trees in taiga biomes (see [Mapgen v6](/for-creators/mapgen/#v6)). 
 * *A forest of regular trees in Minetest Game 0.4.9*  
   ![](/images/mapgen/Mapgen_v6_0_4_9.jpg)
 

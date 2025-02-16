@@ -1,5 +1,7 @@
 ---
 title: Custom Lua Mapgen
+aliases:
+- /mapgen/custom-lua-mapgen/
 ---
 
 # Custom Lua Mapgen
@@ -10,10 +12,10 @@ As of 5.9, it is possible to write Lua map generators that run in a separate env
 
 Previously custom Lua mapgen would be implemented with the `on_generated` callback which would run on the main Lua thread, which is not recommended anymore unless you cannot implement something due to the limitations of the isolated mapgen environment.
 
-Even with the new mapgen environment you should still be wary of some pitfalls that can hinder the performance of your Lua mapgen. For a list of optimisation techniques you can use to write performant mapgens, see [Mapgen Optimisations](/mapgen-memory-optimisations/).
+Even with the new mapgen environment you should still be wary of some pitfalls that can hinder the performance of your Lua mapgen. For a list of optimization techniques you can use to write performant mapgens, see [Mapgen memory optimizations](/for-creators/memory-optimizations/).
 
 ## Examples
-A good initial example of how to write a custom Lua mapgen is [lvm_example](https://content.luanti.org/packages/ROllerozxa/lvm_example/). It incorporates most optimisations techniques to create a performant mapgen and uses Perlin noise to generate random looking terrain, but has not been updated yet to use the new async mapgen environment.
+A good initial example of how to write a custom Lua mapgen is [lvm_example](https://content.luanti.org/packages/ROllerozxa/lvm_example/). It incorporates most optimizations techniques to create a performant mapgen and uses Perlin noise to generate random looking terrain, but has not been updated yet to use the new async mapgen environment.
 
 For more examples of custom Lua mapgens, see the [Custom mapgen](https://content.luanti.org/packages/?type=mod&page=1&tag=custom_mapgen) tag on ContentDB.
 

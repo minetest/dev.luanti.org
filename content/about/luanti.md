@@ -25,7 +25,7 @@ Features
 
 *   A big cube-based world to discover (61840 nodes (cubes) in every dimension)
 *   Procedurally generated world
-*   Several [world generators](/mapgen) with many adjustable parameters
+*   Several [world generators](/for-creators/mapgen) with many adjustable parameters
 *   Extremely high configurability with an advanced settings editor and built-in descriptions, or by using a [configuration file](/for-players/minetest-conf)
 *   Customize the graphics and sounds through [texture packs](/for-players/texture-packs)
 *   Download games, mods and texture packs from the built-in [ContentDB](https://content.luanti.org/)

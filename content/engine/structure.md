@@ -37,7 +37,7 @@ In singleplayer or local server mode, the server class is started on a thread
 
 ### Client / MainMenu
 
-The ClientLauncher is used to initialise the window, contains the main menu loop, and is used to determine how the client should be launched.
+The ClientLauncher is used to initialize the window, contains the main menu loop, and is used to determine how the client should be launched.
 
 The Game class is the main class for the client. It hosts the clear-draw-display-update loop, and owns the lifecycle of all other client components.
 

@@ -14,7 +14,7 @@ Troubleshooting
 
 ### OOM errors
 
-If your game or mod crashes due to an OOM error, it means that Luanti has ran out of memory (=OOM). This happens if your Lua code somewhere uses up a large amount of memory. This can happen if you construct large tables and fill them with lots of data and never free them, or you got a nice [memory leak](https://en.wikipedia.org/wiki/Memory_leak). Badly coded mapgens are a likely cause of OOM errors, if you implement a Lua API, you should always apply all [Mapgen memory optimisations](/Mapgen_memory_optimisations "Mapgen memory optimisations").
+If your game or mod crashes due to an OOM error, it means that Luanti has ran out of memory (=OOM). This happens if your Lua code somewhere uses up a large amount of memory. This can happen if you construct large tables and fill them with lots of data and never free them, or you got a nice [memory leak](https://en.wikipedia.org/wiki/Memory_leak). Badly coded mapgens are a likely cause of OOM errors, if you implement a Lua API, you should always apply all [Mapgen memory optimizations](/for-creators/mapgen/memory-optimizations).
 
 ### “Irrlicht: PNG warning: iCCP: known incorrect sRGB profile”
 
@@ -26,7 +26,7 @@ it means that *some* PNG file is bad. But this warning is useless for you becaus
 ```
 
 
-If you want to track down _which_ PNGs are broken, set the debug level (`debug_log_level`) to “verbose”. Now the log will show the PNG file name right above the warning. Now just fix the offending PNGs with your favourite image editor to get rid of these warnings.
+If you want to track down _which_ PNGs are broken, set the debug level (`debug_log_level`) to “verbose”. Now the log will show the PNG file name right above the warning. Now just fix the offending PNGs with your favorite image editor to get rid of these warnings.
 
 ### Deprecated function calls
 
@@ -84,7 +84,7 @@ Set the setting `chat_log_level` to `warning` to enable this.
 
 ### Improving Lua mapgen memory performance
 
-If you created a Lua mapgen, it is strongly recommended to make sure you optimize the memory performance, otherwise you could quickly run into OOM (out-of-memory) errors. See [Mapgen memory optimisations](/Mapgen_memory_optimisations "Mapgen memory optimisations").
+If you created a Lua mapgen, it is strongly recommended to make sure you optimize the memory performance, otherwise you could quickly run into OOM (out-of-memory) errors. See [Mapgen memory optimizations](/for-creators/mapgen/memory-optimizations).
 
 ### More optimization tips
 
@@ -143,7 +143,7 @@ Note: Some of these can be checked quickly with [QA-Block](https://forum.luanti.
 * Is `is_ground_content` set to false for all nodes that the cavegen should not destroy?[^12]
 * Do all nodes have appropriate sounds?[^13]
 * Do all nodes have appropriate selection boxes?[^14]
-* Do all items intented for use only in Creative Inventory have set the `not_in_creative_inventory=1` group?
+* Do all items intended for use only in Creative Inventory have set the `not_in_creative_inventory=1` group?
 * Do all crafts work?[^15]
 
 ### Game/mod metadata
@@ -171,7 +171,7 @@ Note: Some of these can be checked quickly with [QA-Block](https://forum.luanti.
 ### Translations
 
 * Does the UI provide reasonably enough space for translations?
-* Was at least one translation playtested?
+* Was at least one translation play-tested?
 * Do you avoid using string concatenation to include variable text?[^21]
 * Can all user-facing texts be translated?
 * Have all in-game images with baked-in, untranslatable texts, been replaced with text?[^22]
@@ -186,12 +186,12 @@ Footnotes
 [^5]: Detached inventories are sent to everyone unless you specify a name in the registration. So other players using a modified/hacked client could theoretically alter any detached inventory without an attached name.
 [^6]: The keyword “`local`” should be your new friend. Everything that does not need to be visible outside should be made local. This will avoid a lot of weird bugs caused by mods overwriting their global variables each other. As a rule of thumb, your mod should only have up to 1 global variable which is also the same name as the mod. Make this a table in which you include all global stuff. You can use [QA-Block](https://forum.luanti.org/viewtopic.php?t=15759) to find suspicious global variables.
 [^7]: See also: [MT-replace-deprecated.sh](/MT-replace-deprecated.sh "MT-replace-deprecated.sh")
-[^8]: See also [Mapgen\_memory\_optimisations](/Mapgen_memory_optimisations "Mapgen memory optimisations")
-[^9]: See also [Mapgen\_memory\_optimisations](/Mapgen_memory_optimisations "Mapgen memory optimisations")
+[^8]: See also [Mapgen memory optimizations](/for-creators/mapgen/memory-optimizations)
+[^9]: See also [Mapgen memory optimizations](/for-creators/mapgen/memory-optimizations)
 [^10]: Entities will forget most variables when they unload, which is easy to overlook for beginners. Make sure to make use of staticdata.
 [^11]: If you don't apply any checks when overwriting player physics, this will very likely lead to very hilarious bugs if 2 mods want to change player physics directly, as they will constantly compete for “their” physics. This will likely screw up the player physics badly. To solve this, you should generally avoid setting player physics directly, unless you want to implement a physics interface yourselves. But for normal use, we highly recommend to use an [Mod\_interoperability#Player\_physics API](/Mod_interoperability#Player_physics_API "Mod interoperability").
 [^12]: Note this value is true by default, and can be forgotten easily.
-[^13]: Of course, silence is also “appropriate” if that's what you intented.
+[^13]: Of course, silence is also “appropriate” if that's what you intended.
 [^14]: As a rule of thumb, try to match the graphics pixel-perfectly, if it makes sense. Selection boxes that are completely misplaced or just tiny are generally perceived as highly annoying by players.
 [^15]: Use a craft guide to check
 [^16]: The images just to help identifying the game in the game icon list in the main menu. Without an icon, your game is harder to find. At least draw a dummy image if you're in a hurry.

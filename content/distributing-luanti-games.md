@@ -10,7 +10,7 @@ Luanti as an engine itself doesn't have any official means to export a game into
 *(This page is somewhat outdated, but still contains useful information that can be reapplied for the latest version of Luanti)*
 
 ## General tips
-Generally you're able to customise the main menu (at `builtin/mainmenu/`), which is written in Lua and formspec, however you'd like to suit your game.
+Generally you're able to customize the main menu (at `builtin/mainmenu/`), which is written in Lua and formspec, however you'd like to suit your game.
 
 ### Locking down the singleplayer tab to one game
 As of 5.8.0-dev, the engine will automatically detect what games are installed and pick the first one installed. If you ship the engine with just your game, then it will select that game on the main menu.
@@ -140,7 +140,7 @@ To change the name of the app to the game's name, edit the `label` string in `an
 
 When Gradle bundles assets into an archive, it will copy `gameToCopy` defined in `android/app/build.gradle`. By default this is `minetest_game` so you would want to change the variable to bundle your game instead.
 
-The loading screen background when Luanti extracts assets can be customised too. `android/app/src/main/res/drawable/background.png` which by default is a basic light blue background will tile if you replace it with something else.
+The loading screen background when Luanti extracts assets can be customized too. `android/app/src/main/res/drawable/background.png` which by default is a basic light blue background will tile if you replace it with something else.
 
 ## Linux
 Linux users are usually more advanced, most of the time they will compile the engine from source for their particular distro and package it for you (the Linux user is a wonderful creature). To give them better desktop integration you should edit `misc/net.minetest.minetest.desktop` which will give them a application launcher shortcut that accurately reflects the game, including the proper icon.

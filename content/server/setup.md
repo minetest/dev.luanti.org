@@ -91,7 +91,7 @@ If you are going to be running a Luanti server on a non-headless system, using t
 
 Usually your Linux distribution of choice will have `luantiserver` in its official repositories. However this package may be several releases outdated, so obtaining a server binary through other means is to be recommended.
 
-- **Pre-built third-party server binaries**: [The luantiserver repository by ROllerozxa](https://github.com/rollerozxa/luantiserver) contains up-to-date prebuilt x86_64 headless server binaries that should work on any relatively recent glibc-based Linux distro, built from an automated CI workflow that you can fork if you want to customise the build options.
+- **Pre-built third-party server binaries**: [The luantiserver repository by ROllerozxa](https://github.com/rollerozxa/luantiserver) contains up-to-date prebuilt x86_64 headless server binaries that should work on any relatively recent glibc-based Linux distro, built from an automated CI workflow that you can fork if you want to customize the build options.
 
 - **Building from source**: Build Luanti from source with `-DBUILD_CLIENT=0 -DBUILD_SERVER=1`. For more information see [Compiling a headless Linux server](/compiling-a-headless-linux-server/).
 

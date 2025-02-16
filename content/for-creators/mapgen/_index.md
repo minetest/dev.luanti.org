@@ -1,9 +1,10 @@
 ---
 title: Map generator
 aliases:
-- "/Map_generator"
-- "/Map-Database"
-- "/Mapgen"
+- /Map_generator
+- /Map-Database
+- /Mapgen
+- /mapgen
 bookCollapseSection: true
 ---
 
@@ -13,7 +14,7 @@ The **map generator** (“mapgen” for short) is the Luanti component that proc
 
 The Luanti engine provides several built-in map generators implemented in C++. It is possible to choose between them when creating a world. Most of them are based on Perlin noises: functions which allow associating to each point a random yet consistent value.
 
-Additionally, you can [write your own mapgen in Lua](/mapgen/custom-lua-mapgen), based on the `singlenode` built-in map generator that generates an empty world.
+Additionally, you can [write your own mapgen in Lua](/for-creators/mapgen/custom-lua-mapgen), based on the `singlenode` built-in map generator that generates an empty world.
 
 ## Overview
 
@@ -80,7 +81,7 @@ Here are examples of landscapes generated with the different map generators:
 
 All map generators described in full detail.
 
-To learn more about detailed configuration, see [Map generator features](/mapgen/features "Map generator features"). To learn more about the history of the map generators, see [Map Generator Evolution](/about/history/mapgen-evolution "Map Generator Evolution").
+To learn more about detailed configuration, see [Map generator features](/for-creators/mapgen/features "Map generator features"). To learn more about the history of the map generators, see [Map Generator Evolution](/about/history/mapgen-evolution "Map Generator Evolution").
 
 ### v5
 
@@ -106,7 +107,7 @@ Generated entirely using 2D Perlin noise.
 
 ### v7
 
-Generates a very large-scale environment with large biomes and plains. One of the most unique features in this map generator are the broad and deep water canals (called “ridges”) at sea level, but they can be disabled. This mapgen also has the unique feature of supporting floating islands high in the sky (see [Map generator features](/mapgen/features "Map generator features")), but they are disabled by default.
+Generates a very large-scale environment with large biomes and plains. One of the most unique features in this map generator are the broad and deep water canals (called “ridges”) at sea level, but they can be disabled. This mapgen also has the unique feature of supporting floating islands high in the sky (see [Map generator features](/for-creators/mapgen/features "Map generator features")), but they are disabled by default.
 
 The generated caves are broad, often have lots of space and are often very long and complex and like to branch off. Sudden drops are not unusual. Deep in the underground, giant caves may form (like in v5).
 
@@ -148,5 +149,5 @@ See also
 --------
 
 *   [Stability of each mapgen](https://forum.luanti.org/viewtopic.php?f=18&t=19132), a post by paramat on the forums describing which map generators are "officially stable" (last updated 2019)
-*   [Map generator features](/mapgen/features "Map generator features")
+*   [Map generator features](/for-creators/mapgen/features "Map generator features")
 *   [Map Generator Evolution](/about/history/mapgen-evolution "Map generator evolution")

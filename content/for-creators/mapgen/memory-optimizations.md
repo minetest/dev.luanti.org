@@ -1,19 +1,20 @@
 ---
-title: Mapgen memory optimisations
+title: Mapgen memory optimizations
 aliases:
 - /Mapgen_memory_optimisations
 - /mapgen-memory-optimisations
+- /mapgen/memory-optimisations
 ---
 
-# Mapgen memory optimisations
-This page intends to list all possible optimisation techniques that can be used when writing a mapgen in Lua.
+# Mapgen memory optimizations
+This page intends to list all possible optimization techniques that can be used when writing a mapgen in Lua.
 
-Lua map generators can use excessive memory if they are not using these 3 optimisations. Not using these optimizations can eventually lead to OOM (out-of-memory) errors because the Lua mapgen wasted way too much memory. Applying this advice is **strongly recommended**, and should make OOM errors much less likely. But there is no guarantee this will fix all OOM errors, your mapgen might still use excessive memory for other reasons, or the computer just has very limited memory.
+Lua map generators can use excessive memory if they are not using these 3 optimizations. Not using these optimizations can eventually lead to OOM (out-of-memory) errors because the Lua mapgen wasted way too much memory. Applying this advice is **strongly recommended**, and should make OOM errors much less likely. But there is no guarantee this will fix all OOM errors, your mapgen might still use excessive memory for other reasons, or the computer just has very limited memory.
 
 ## Only create perlin noise objects once
 The noise object is created by `core.get_perlin_map()`. It has to be created inside `register_on_generated()` to be usable, but only needs to be created once, many mapgen mods create it for every mapchunk, this consumes memory unnecessarily.
 
-Localise the noise object outside `register_on_generated()` and initialise it to `nil`. See the code below for how to create it once only. The creation of the perlin noise tables with `get_3d_map_flat()` etc. is done per mapchunk
+Localize the noise object outside `register_on_generated()` and initialize it to `nil`. See the code below for how to create it once only. The creation of the perlin noise tables with `get_3d_map_flat()` etc. is done per mapchunk
 
 ```lua
 -- Initialize noise objects to nil
@@ -46,10 +47,10 @@ For each of the functions with an optional `buffer` parameter:  If `buffer` is n
 * `get_3d_map_flat(pos, buffer)`: Same as `get_2d_map_flat`, but 3D noise
 ```
 
-Localise the noise buffer outside `register_on_generated()` Use the `buffer` parameter in `get_3d_map_flat()` etc.
+Localize the noise buffer outside `register_on_generated()` Use the `buffer` parameter in `get_3d_map_flat()` etc.
 
 ```lua
--- Localise noise buffers
+-- Localize noise buffers
 local nvals_terrain = {}
 local nvals_biome = {}
 -- ...
@@ -65,10 +66,10 @@ end)
 ## Re-use data tables
 The Lua table that stores the node content IDs for a mapchunk plus the mapblock shell is big (112^3^ = 1404928 values). Many Lua mapgens are creating a new table for every mapchunk, while the previous tables are only cleared out slowly by garbage collection, resulting in a large and unnecessary memory use.
 
-Localise the data buffer outside `register_on_generated()`. Use the buffer in `get_data()` or `get_param2_data()`.
+Localize the data buffer outside `register_on_generated()`. Use the buffer in `get_data()` or `get_param2_data()`.
 
 ```lua
--- Localise data buffer
+-- Localize data buffer
 local data = {}
 
 -- On generated function
