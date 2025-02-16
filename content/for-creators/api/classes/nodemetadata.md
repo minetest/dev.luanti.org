@@ -1,5 +1,7 @@
 ---
 title: NodeMetaData
+aliases:
+- /api/classes/nodemetadata
 ---
 
 # NodeMetaData
@@ -39,7 +41,7 @@ FormSpec to show when the node is interacted with using the "place/use" key (rig
 
 Has no effect if `on_rightclick` is defined in the node definition (see `core.register_node`).
 
-The most notable advantage of this over calling `core.show_formspec` in `on_rightclick` is clientside prediction:
+The most notable advantage of this over calling `core.show_formspec` in `on_rightclick` is client-side prediction:
 
 The client can immediately show the FormSpec; the second approach requires the client to first inform the server of the interaction, to which the server then responds with the FormSpec. This takes one round-trip time (RTT).
 
@@ -52,7 +54,7 @@ The `context` inventory location can only be used in FormSpecs using the special
 Another disadvantage is that plenty of redundant metadata - often a constant FormSpec - has to be stored with every node. This metadata also has to be sent to clients. Luanti's mapblock compression should be able to compress duplicate substrings - FormSpecs in this case - reasonably well though.
 
 In terms of network traffic it depends: With meta, the FormSpec is "only" sent when the mapblock gets updated;
-whereas the other approach resends the FormSpec every time the user interacts with the node.
+whereas the other approach re-sends the FormSpec every time the user interacts with the node.
 
 ### `infotext`
 Text to show when the node is pointed at (same as the `infotext` object property). Long texts are line-wrapped, even longer texts are truncated.
@@ -60,9 +62,9 @@ Text to show when the node is pointed at (same as the `infotext` object property
 ## Methods
 
 ### `:mark_as_private(keys)`
-NodeMetaData is by default fully sent to clients; the special `formspec` and `infotext` fields triggering clientside behavior obviously need to be sent to clients to work.
+NodeMetaData is by default fully sent to clients; the special `formspec` and `infotext` fields triggering client-side behavior obviously need to be sent to clients to work.
 
-All other fields do not need to be sent to clients unless you want to explicitly support local mapsaving.
+All other fields do not need to be sent to clients unless you want to explicitly support local map saving.
 
 {{< notice tip >}}
 Mark all other fields as private to reduce traffic.

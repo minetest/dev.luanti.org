@@ -1,5 +1,7 @@
 ---
 title: Object Properties
+aliases:
+- /api/object-properties
 ---
 
 # Object Properties
@@ -107,7 +109,7 @@ The `"wielditem"` value supports item hardware colorization
 Name of the file of the mesh, only when using "mesh" visual.
 
 ### `visual_size`
-* field type: [`vector`](/api/classes/vector)
+* field type: [`vector`](/for-creators/api/classes/vector)
 * default value: `{x = 1, y = 1, z = 1}`
 
 Visual size multipliers. Wanted value is `{x = x, y = y, z = z}`. If `z` is not provided, `x` will be used for the `z` value.
@@ -247,10 +249,10 @@ Only when using "wielditem" visual.
 * field type: `bool`
 * default value: `false`
 
-Whether buggy semitransparency is enabled for the texture.
+Whether buggy semi-transparency is enabled for the texture.
 
 {{< notice warning >}}
-Faces, entities and other semitransparent world elements might not be rendered in the right order for semitransparency to work.
+Faces, entities and other semitransparent world elements might not be rendered in the right order for semi-transparency to work.
 {{< /notice >}}
 
 ### `shaded`

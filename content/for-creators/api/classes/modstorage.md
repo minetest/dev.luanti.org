@@ -1,9 +1,11 @@
 ---
 title: ModStorage
+aliases:
+- /api/classes/modstorage
 ---
 
 # ModStorage
-ModStorage is a per-world, per-mod persistent string key-value store implementing all methods of [MetaData](/api/classes/metadata/).
+ModStorage is a per-world, per-mod persistent string key-value store implementing all methods of [MetaData](/for-creators/api/classes/metadata/).
 
 The granularity of the persisted snapshots is determined by the `map_save_interval` setting.
 

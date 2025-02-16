@@ -1,5 +1,7 @@
 ---
 title: Persistence
+aliases:
+- /api/persistence
 ---
 
 # Persistence
@@ -10,7 +12,7 @@ Your choice for persistence depends on the data you want to persist:
 * Structure & types of the data: How is the data structured? What data types occur?
 * Size of the data, frequency of changes to the data: Can it fit into memory? How expensive can updates be?
 * Granularity needed: How often must the data be persisted?
-* Required queryability of the data: Are indices for fast lookups required?
+* Required query-ability of the data: Are indices for fast lookups required?
 * Required data access, objects the data is tied to: Items? Players?
 
 ## (De-)Serialization
@@ -131,7 +133,7 @@ Granularity is controlled by the `server_map_save_interval` setting.
 
 ### Database server / the ominous cloud
 
-You can use Luanti's HTTP library to communicate with webservers, which might store data for you.
+You can use Luanti's HTTP library to communicate with web servers, which might store data for you.
 
 Other ways of Inter-Process Communication that can be leveraged to communicate with a database include *sockets*,
 provided through the `luasockets` library (requiring an insecure environment and an accessible installation).
@@ -140,7 +142,7 @@ If the database server runs on the same machine, you might decide to use file br
 ### Lightweight database library
 
 Requires an insecure environment and an installation of the database library that is accessible to Luanti.
-SQLite3, available through the `lsqlite3` luarocks package,
+SQLite3, available through the `lsqlite3` LuaRocks package,
 is a popular choice here and used for instance by the [sban](https://github.com/shivajiva101/sban) mod.
 
 ### String stores
@@ -205,5 +207,5 @@ Luanti provides metadata objects which all provide a simple string key-value sto
 3. Players: `PlayerMetaData`: SQLite-backed key-value storage, however only available while the player is online
 4. Mods: `ModStorage`: SQLite-backed key-value storage; older versions use a JSON-backed store unsuitable for large data (as serialization will block the main thread)
 
-Utilities for setting & getting non-string datatypes like integers and floats are provided; the datatype is however not stored with the entries.
+Utilities for setting & getting non-string data types like integers and floats are provided; the datatype is however not stored with the entries.
 The granularity of all these key-value stores is determined by the `server_map_save_interval` setting.

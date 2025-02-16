@@ -1,9 +1,11 @@
 ---
 title: ItemStackMetaData
+aliases:
+- /api/classes/itemstackmetadata
 ---
 
 # ItemStackMetaData
-ItemStackMetaData is a subclass of [MetaData](/api/classes/metadata/) obtained via `stack:get_meta()` allowing for persistent storage of key-value pairs tied to ItemStacks.
+ItemStackMetaData is a subclass of [MetaData](/for-creators/api/classes/metadata/) obtained via `stack:get_meta()` allowing for persistent storage of key-value pairs tied to ItemStacks.
 
 {{< notice warning >}}
 ItemStack metadata is serialized with ItemStacks, increasing the ItemString length. Inventories have to store multiple ItemStrings, all of which an attacker will try to get to maximum length. Always limit the size of your ItemStackMetaData to keep inventories sendable.
@@ -20,7 +22,7 @@ ItemStack metadata is serialized with ItemStacks, increasing the ItemString leng
 * `palette_index`: Palette index to use for hardware colorization of the stack (if the stack has a palette).
 
 ### Count
-Requires Luanti 5.6 clients for the count override (older clients will simply show the item count according to the item definition); works on all 5.x servers since it only uses ItemStackMetaData serverside.
+Requires Luanti 5.6 clients for the count override (older clients will simply show the item count according to the item definition); works on all 5.x servers since it only uses ItemStackMetaData server-side.
 
 #### `count_meta`
 String to show in inventory lists instead of the item count.

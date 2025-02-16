@@ -1,5 +1,7 @@
 ---
 title: Random
+aliases:
+- /api/classes/random
 ---
 
 # Random
@@ -115,11 +117,11 @@ Only argument is `count`, an optional integer defaulting to `1` and limited to `
 collectgarbage"stop" -- we don't want GC heuristics to interfere
 
 local n = 1e8 -- number of runs
-local function bench(name, constructor, invokation)
+local function bench(name, constructor, invocation)
 	local func = assert(loadstring(([[
 local r = %s
 for _ = 1, %d do %s end
-]]):format(constructor, n, invokation)))
+]]):format(constructor, n, invocation)))
 	local t = core.get_us_time()
 	func()
 	print(name, (core.get_us_time() - t) / n, "µs/call")

@@ -1,5 +1,7 @@
 ---
 title: Vector API
+aliases:
+- /api/classes/vector
 ---
 
 # Vector API

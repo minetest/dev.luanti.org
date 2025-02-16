@@ -1,5 +1,7 @@
 ---
 title: Raycast
+aliases:
+- /api/classes/raycast
 ---
 
 # Raycast
@@ -59,7 +61,7 @@ Have selection boxes, collision boxes (and ideally even visuals) match for all n
 {{< /notice >}}
 
 {{< notice info >}}
-[Serverside raycasts do not support attachments properly; the server is unaware of model specificities, doesn't keep track of automatic rotation etc.](https://github.com/luanti-org/luanti/issues/10304)
+[Server-side raycasts do not support attachments properly; the server is unaware of model specificities, doesn't keep track of automatic rotation etc.](https://github.com/luanti-org/luanti/issues/10304)
 {{< /notice >}}
 
 **Arguments:**

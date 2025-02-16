@@ -1,5 +1,7 @@
 ---
 title: Timing and Event loop
+aliases:
+- /api/timing-and-event-loop/
 ---
 
 # Timing and Event loop
@@ -8,7 +10,7 @@ Luanti's Lua API can be used to get time and date or to schedule "events" to run
 ## Settings
 
 * ***On servers***
-	* The `dedicated_server_step` setting controls the time between server steps. This is the maximum granularity (the most time spent between steps and the finest timing possible) of each game loop without a busywait.
+	* The `dedicated_server_step` setting controls the time between server steps. This is the maximum granularity (the most time spent between steps and the finest timing possible) of each game loop without a busy-wait.
 
 * ***In singleplayer***
 	* Framerate determines server steps.
@@ -67,12 +69,12 @@ The returned `time` is not portable and not relative to any specific point in ti
 {{< /notice >}}
 
 {{< notice tip >}}
-You can use the difference between ``core.get_us_time`` and the returned times to check whether a real-world timespan has passed, which is useful for rate limiting. For in-game timers, you might prefer adding up `dtime` or (if second precision is enough) using gametime.
+You can use the difference between ``core.get_us_time`` and the returned times to check whether a real-world time span has passed, which is useful for rate limiting. For in-game timers, you might prefer adding up `dtime` or (if second precision is enough) using gametime.
 {{< /notice >}}
 
 #### Example
 
-It is possible to use a simple while-loop to wait for a timespan smaller than the server step. This is called a "busywait".
+It is possible to use a simple while-loop to wait for a time span smaller than the server step. This is called a "busy-wait".
 
 ```lua
 local start = core.get_us_time()
@@ -80,7 +82,7 @@ repeat until core.get_us_time() - start > 1e3 -- Wait for 1000 µs to pass
 ```
 
 {{< notice warning >}}
-This blocks the server thread, possibly delaying the sending of packets that are sent each step and creating "lag". Use this only if absolutely necessary and only for very small timespans.
+This blocks the server thread, possibly delaying the sending of packets that are sent each step and creating "lag". Use this only if absolutely necessary and only for very small time spans.
 {{< /notice >}}
 
 ### `core.get_gametime`
@@ -115,7 +117,7 @@ This naive implementation might be one server step ahead or behind `core.get_gam
 {{< /notice >}}
 
 {{< notice tip >}}
-Use this implementation only for measuring in-game timespans.
+Use this implementation only for measuring in-game time spans.
 {{< /notice >}}
 
 ### `core.register_globalstep`
@@ -134,16 +136,16 @@ end)
 - `dtime` - `{type-number}`: Delta (elapsed) time since last step in seconds
 
 {{< notice tip >}}
-Use globalsteps to poll for an event for which there are no callbacks, such as player controls (`player:get_player_control()`).
+Use global steps to poll for an event for which there are no callbacks, such as player controls (`player:get_player_control()`).
 {{< /notice >}}
 
 {{< notice info >}}
-As globalsteps run every server step, they are highly performance-critical and must be well optimized. If globalsteps take longer than the server step to complete, the server thread is blocked and the server becomes "laggy".
+As global steps run every server step, they are highly performance-critical and must be well optimized. If global steps take longer than the server step to complete, the server thread is blocked and the server becomes "laggy".
 {{< /notice >}}
 
 #### Examples
 
-Globalsteps are ideal to run something periodically, which is often used to call expensive operations less frequently in order to keep server thread blockage - and thus lag - to a minimum.
+Global steps are ideal to run something periodically, which is often used to call expensive operations less frequently in order to keep server thread blockage - and thus lag - to a minimum.
 
 ```lua
 -- period is in seconds

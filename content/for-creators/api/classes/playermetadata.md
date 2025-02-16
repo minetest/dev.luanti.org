@@ -1,9 +1,11 @@
 ---
 title: PlayerMetaData
+aliases:
+- /api/classes/playermetadata
 ---
 
 # PlayerMetaData
-PlayerMetaData is a per-world, per-player persistent string key-value store implementing all methods of [MetaData](/api/classes/metadata/).
+PlayerMetaData is a per-world, per-player persistent string key-value store implementing all methods of [MetaData](/for-creators/api/classes/metadata/).
 
 The granularity of the persisted snapshots is determined by the `map_save_interval` setting.
 

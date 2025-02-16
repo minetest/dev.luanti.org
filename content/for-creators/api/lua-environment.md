@@ -1,5 +1,7 @@
 ---
 title: Lua Environment
+aliases:
+- /api/lua-environment
 ---
 
 # Lua Environment
@@ -21,7 +23,7 @@ See the [Lua 5.1 Reference Manual](https://www.lua.org/manual/5.1/manual.html) f
 ## Global Strictness
 Variables in Lua are global by default (both assignment and access). This often leads to mistaken use of global variables, with the two perhaps most common issues being:
 
-1. Missspelling a local variable and accessing a global variable instead (which will usually be `nil`)
+1. Misspelling a local variable and accessing a global variable instead (which will usually be `nil`)
 2. Forgetting `local` when assigning to a variable, (over)writing a global variable, leading to "global pollution"
 
 Luanti's built-in strictness works using a metatable on the global table and will log warnings for both cases. Luanti defines a global declaration as a *global assignment in a main chunk* - setting globals in any other function will not be considered a declaration and will trigger a warning:
@@ -145,7 +147,7 @@ Returns a list containing the delimited parts without the delimiters.
 Linear search for `val` in the `list`. Returns the first index where the value equals `val`. Returns `-1` if the value is not found.
 
 #### `table.copy(t, [seen])`
-Deepcopies the table `t` and all it's subtables - both keys and values. Non-table types are not copied, even if they are reference types (userdata, functions and threads). The reference structure will be fully preserved: A single table, even if referenced multiple times, will only be copied a single time; subsequent references in the copy will just reference the same copied table.
+Deep-copies the table `t` and all it's subtables - both keys and values. Non-table types are not copied, even if they are reference types (userdata, functions and threads). The reference structure will be fully preserved: A single table, even if referenced multiple times, will only be copied a single time; subsequent references in the copy will just reference the same copied table.
 
 The `seen` table is a lookup for already copied tables, which are used as keys. The value is the copy. By providing `[table] = table` entries for certain tables, you can prevent them from being copied.
 

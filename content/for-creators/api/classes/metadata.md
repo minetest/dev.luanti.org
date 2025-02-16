@@ -1,5 +1,7 @@
 ---
 title: MetaData
+aliases:
+- /api/classes/metadata
 ---
 
 # MetaData
@@ -8,10 +10,10 @@ MetaData is an interface implemented by various reference types implementing per
 ## Subclasses
 Subclasses tie the key-value store to various objects recognized by Luanti:
 
-* [ModStorage](/api/classes/modstorage/) - per mod
-* [NodeMetaData](/api/classes/nodemetadata/) - per node on the map
-* [ItemStackMetaData](/api/classes/itemstackmetadata/) - per item stack
-* [PlayerMetaData](/api/classes/playermetadata/) - per player
+* [ModStorage](/for-creators/api/classes/modstorage/) - per mod
+* [NodeMetaData](/for-creators/api/classes/nodemetadata/) - per node on the map
+* [ItemStackMetaData](/for-creators/api/classes/itemstackmetadata/) - per item stack
+* [PlayerMetaData](/for-creators/api/classes/playermetadata/) - per player
 
 ## Methods
 

@@ -1,5 +1,7 @@
 ---
 title: HTTP API
+aliases:
+- /api/http-api
 ---
 
 # HTTP API
@@ -15,7 +17,7 @@ settings in CSV format:
 An example would be:
 
 ```
-secure.http_mods = modname1, modnametwo, modenamethree
+secure.http_mods = modname1, modname2, modname3
 ```
 
 ## Types
@@ -49,7 +51,7 @@ A table consisting of the following parameters:
 * `multipart` (optional):
   * Boolean, default false
   * Method must be `POST`
-  * Learn more at [MIME (Wikpedia)](https://en.wikipedia.org/wiki/MIME#Multipart_messages)
+  * Learn more at [MIME (Wikipedia)](https://en.wikipedia.org/wiki/MIME#Multipart_messages)
 
 ### HttpRequestResult
 
@@ -100,7 +102,7 @@ end
 ### HttpApi.fetch(request, callback)
 
 Calls callback once completed. This method is recommended for the most
-common use cases, see the next two methods for an alterate way
+common use cases, see the next two methods for an alternate way
 
 * Request is of type HttpRequest
 * Callback receives one param of type `HttpRequestResult`

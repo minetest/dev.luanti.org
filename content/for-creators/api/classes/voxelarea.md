@@ -1,5 +1,7 @@
 ---
 title: VoxelArea
+aliases:
+- /api/classes/voxelarea
 ---
 
 # VoxelArea

@@ -1,5 +1,7 @@
 ---
 title: Filesystem
+aliases:
+- /api/filesystem
 ---
 
 # Filesystem

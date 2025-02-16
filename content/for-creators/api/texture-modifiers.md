@@ -1,5 +1,7 @@
 ---
 title: Texture Modifiers
+aliases:
+- /api/texture-modifiers
 ---
 
 # Texture Modifiers
@@ -17,7 +19,7 @@ Texture modifiers are partially redundant with hardware colorization. Hardware c
 * Cached texture modifiers are [not leveraged when generating new ones](https://github.com/luanti-org/luanti/issues/11587).
 * Non-linear (at least quadratic) time complexity of the shotgun parser is possible.
 
-Use texture modifiers mostly statically. Keep dynamically generated textures to a minimum to not fill up the client cache over time. Don't force the client to perform many expensive texture generations in a small timespan if you want a smooth client experience. Do not create large, convoluted texture modifiers if possible.
+Use texture modifiers mostly statically. Keep dynamically generated textures to a minimum to not fill up the client cache over time. Don't force the client to perform many expensive texture generations in a small time span if you want a smooth client experience. Do not create large, convoluted texture modifiers if possible.
 
 ## Bugs
 * Large texture modifiers may [freeze the client](https://github.com/luanti-org/luanti/issues/11829).
@@ -71,7 +73,7 @@ You can use metamethods in order to implement a neat, possibly OOP-ish Lua DSL t
 
 ## Syntax
 {{< notice warning >}}
-Texture modifiers are only parsed clientside, where errors lead to poor behavior (error messages in the best case, sometimes the wrong texture, crashes in the worst case). They are not validated serverside. Take additional care to ensure no syntax errors or values which cause undefined behavior.
+Texture modifiers are only parsed client-side, where errors lead to poor behavior (error messages in the best case, sometimes the wrong texture, crashes in the worst case). They are not validated server-side. Take additional care to ensure no syntax errors or values which cause undefined behavior.
 {{< /notice >}}
 
 {{< notice tip >}}
@@ -214,7 +216,7 @@ This always scales the crack to the size of the base texture (or the tiles of th
 {{< /notice >}}
 
 ##### `+<base>^[sheet:<w>x<h>:<x>,<y>+`
-* `w`, `h`: Tilesheet dimensions (positive integers, in tiles)
+* `w`, `h`: Tile sheet dimensions (positive integers, in tiles)
 * `x`, `y`: Tile position, 0-indexed (in tiles)
 
 Retrieves the tile at position `x`, `y`.
