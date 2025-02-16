@@ -9,7 +9,6 @@ Allows server side mods (SSMs) communication to client side mods (CSMs) and vice
 
 ## Server Side API
 
-
 ### Functions
 
 #### `core.mod_channel_join(channel_name)`
