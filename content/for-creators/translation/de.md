@@ -2,6 +2,7 @@
 title: German translation notes
 aliases:
   - /Translating/de
+  - /translation/de
 ---
 
 # German translation notes

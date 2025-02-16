@@ -50,14 +50,14 @@ The feature freeze and release date is set by core developers.
 
 ### Autogenerate files
 
-Also update the [translation](/translation) templates:
+Also update the [translation](/for-creators/translation) templates:
 
 *   Engine: Regenerate Gettext files with `util/updatepo.sh`. Note that before that, you most likely want to [import existing changes](#Update_translations_from_Weblate) first.
 *   Builtin: Change directory to `builtin`, then run `util/mod_translation_updater.py` from there
 
 Also ensure that the `language` setting enum values contains `en`: there is no "en" directory, but Luanti supports it.
 
-Read [Translation](/translation) for details.
+Read [Translation](/for-creators/translation) for details.
 
 ### Update source strings on Weblate
 
@@ -70,13 +70,13 @@ Before releasing
 
 ### Verify special translation strings
 
-The translation files contain a special string: [LANG\_CODE](https://hosted.weblate.org/translate/minetest/minetest/en/?q=LANG_CODE&checksum=&offset=1#translations) (see [Translation](/translation)).
+The translation files contain a special string: [LANG\_CODE](https://hosted.weblate.org/translate/minetest/minetest/en/?q=LANG_CODE&checksum=&offset=1#translations) (see [Translation](/for-creators/translation)).
 
 Verify that all \*.po files have a valid value for these strings because translators frequently misunderstand them and enter an invalid value. Fix any invalid values on Weblate by either entering the correct one or by removing the bad translation.
 
 ### Update translations from Weblate
 
-**How to do this** -> [How to merge translations from Hosted Weblate](/translation/#how-to-merge-translations-from-hosted-weblate)
+**How to do this** -> [How to merge translations from Hosted Weblate](/for-creators/translation/#how-to-merge-translations-from-hosted-weblate)
 
 If doing a backported release, you can use the following command to cherry-pick all translation commits from weblate:
 

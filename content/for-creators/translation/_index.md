@@ -3,6 +3,7 @@ title: Translation
 aliases:
 - /Translating
 - /Translation
+- /translation
 bookCollapseSection: true
 ---
 
@@ -22,7 +23,7 @@ In case you wish to translate a new language, send a message in #minetest-dev an
 
 Here is a list of wiki pages for translating specific languages:
 
-* [German](/translation/de)
+* [German](/for-creators/translation/de)
 
 ### Special strings
 
@@ -115,7 +116,7 @@ To start a new translation, copy `template.txt` to create `__builtin.<LANGUAGE_C
 Translating mods and games
 --------------------------
 
-To learn how Luanti mods and games are translated, go to [Translating Mods and Games](/translation/mods-and-games).
+To learn how Luanti mods and games are translated, go to [Translating Mods and Games](/for-creators/translation/mods-and-games).
 
 Untranslatable texts
 --------------------

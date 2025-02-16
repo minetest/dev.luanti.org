@@ -2,11 +2,12 @@
 title: Translating Mods and Games
 aliases:
 - /Translation/Mods_and_Games
-- "/translation_mods_and_games"
+- /translation_mods_and_games
+- /translation/mods-and-games
 ---
 
 # Translating Mods and Games
-This page explains how to translate mods and games for Luanti. To learn how Luanti itself (the engine) is translated, see [Translation](/translation).
+This page explains how to translate mods and games for Luanti. To learn how Luanti itself (the engine) is translated, see [Translation](/for-creators/translation).
 
 Before you begin
 ----------------
@@ -137,4 +138,4 @@ If you’re stuck with TR, the [modtools](https://github.com/luanti-org/modtools
 
 It is very useful for translators to be able to translate your thing in the browser.
 
-[Translating a game on Weblate](/translation/weblate) is an useful guide on how to set up your game on a Weblate instance for allowing translation in the browser.
+[Translating a game on Weblate](/for-creators/translation/weblate) is an useful guide on how to set up your game on a Weblate instance for allowing translation in the browser.

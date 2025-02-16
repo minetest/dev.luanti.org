@@ -1,12 +1,12 @@
 ---
 title: Translating a game on weblate
 aliases:
-- "/Translating_a_game_on_weblate"
-- "/Translating_a_game_on_Weblate"
+- /Translating_a_game_on_weblate
+- /Translating_a_game_on_Weblate
+- /translation/weblate
 ---
 
 # Translating a game on Weblate
-
 
 If you have a game, it is very useful to post it on a [Weblate](https://weblate.org/) instance. Weblate is a free software that creates a website where translators can translate software from their web browser. This makes it much easier for translators to contribute, because editing those locale files by hand can get tedious. Luanti itself is hosted on a Weblate instance.
 
@@ -114,4 +114,4 @@ You can optionally set up a push URL in Weblate to automate this but this is out
 See also
 --------
 
-* [Translating Mods and Games](/translation/mods-and-games)
+* [Translating Mods and Games](/for-creators/translation/mods-and-games)
