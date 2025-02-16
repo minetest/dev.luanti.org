@@ -5,7 +5,7 @@ aliases:
 - /models/using-blender
 ---
 
-# Blender
+# Using Blender
 3D models can be used to change the appearance of [players](/for-players/player), [nodes](/for-players/nodes), [mobs](/for-players/mobs) and other entities.
 
 If you need to create models for your [mod](/for-players/mods), it is recommended that you use [Blender](http://www.blender.org/).
