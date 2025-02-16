@@ -42,7 +42,7 @@ In addition to this list, you can also see the [Development Tools](https://conte
 - [Perlin noise tuner](https://codepen.io/treer/pen/gOPZyov?editors=0010): Visualizes 2D Perlin noise that Luanti will generate with different noiseparams.(Emulation of Luanti Perlin noise can be wrong in extremes/edge-cases due to precision of JavaScript number type)
 
 ## 3D models
-- [Blender](https://www.blender.org/): Essential for making animated models in Luanti, see [Using Blender](/models/using-blender/).
+- [Blender](https://www.blender.org/): Essential for making animated models in Luanti, see [Using Blender](/for-creators/models/using-blender/).
 - [Blockbench](https://www.blockbench.net/): Useful for making static voxel models for Luanti, see [Using Blockbench](/using-blockbench/).
 
 ## Formspecs

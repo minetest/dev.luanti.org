@@ -1,5 +1,7 @@
 ---
 title: Models
+aliases:
+- /models
 bookCollapseSection: true
 ---
 
@@ -13,7 +15,7 @@ Useful for static models, doesn't not support animation.
 
 ### `.b3d` Format
 
-Orginally from the Blitz3D Engine, this format is widespread due to its animation support. You will need [this](https://github.com/GreenXenith/io_scene_b3d) extension to export models from blender. It is recommended that you keep the source .blend file due to importing not being supported in the extension. Using gltf/glb is prefered if you don't mind not supporting older 5.x releases.
+Originally from the Blitz3D Engine, this format is widespread due to its animation support. You will need [this](https://github.com/GreenXenith/io_scene_b3d) extension to export models from blender. It is recommended that you keep the source .blend file due to importing not being supported in the extension. Using gltf/glb is preferred if you don't mind not supporting older 5.x releases.
 
 ### `.x` Format
 
@@ -33,5 +35,5 @@ See https://api.luanti.org/nodes/#node-boxes.
 
 ## Editors
 
-* [BlockBench](/models/blockbench)
-* [Blender](/models/using-blender)
+* [BlockBench](/for-creators/models/blockbench)
+* [Blender](/for-creators/models/using-blender)
