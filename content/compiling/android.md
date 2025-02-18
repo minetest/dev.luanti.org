@@ -46,6 +46,8 @@ cd luanti/android
 echo 'sdk.dir=/home/<YOUR USER>/android-sdk' >local.properties
 ```
 
+(On Windows, running `sdkmanager --sdk_root="<path to sdk>" "platform-tools"` might be enough)
+
 ### Building
 
 Optional: First figure out the ABI of the device you wish to build for
@@ -53,7 +55,13 @@ and disable all other ABIs to significantly reduce build times.
 (See [here](/improving-build-times/#android-disabling-unused-abis) for details.)
 
 Luanti uses a [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html),
-which makes building Luanti for Android very easy: You just run
+which makes building Luanti for Android very easy: You just run.
+
+On Windows, the regular `gradle` tool works as well, so long as you install the additional Unix dependency [gettext](https://www.gnu.org/software/gettext/). Both of these are verified to work when installed by [Scoop](https://scoop.sh).
+
+
+
+ 
 
 ```sh
 cd luanti/android
