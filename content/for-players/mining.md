@@ -36,7 +36,7 @@ If the drop wouldn't fit in your inventory, the items literally drop on the floo
 Mining speed
 ------------
 
-The mining speed is determined by [groups](/groups).
+The mining speed is determined by [groups](/for-creators/groups).
 
 Mining in [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/)
 --------------------------------------------------------------------------------------

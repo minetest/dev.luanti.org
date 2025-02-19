@@ -2,6 +2,7 @@
 title: Groups
 aliases:
 - /Groups
+- /groups
 ---
 
 # Groups
