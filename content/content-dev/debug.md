@@ -41,7 +41,7 @@ The basic debug information is located at the top left of the screen. It looks l
 *   **yaw**: Your current horizontal looking direction (also known as “yaw”). For convenience, also the cardinal direction (e.g. “North”) as well as the approximate axis direction are shown (e.g. “+Z”)
     - 0° translates to “North”, 270° to “East”, 180° to “South” and 90° to “West”. Note that the concept of cardinal directions does not really make sense in Luanti, as the world is a cube, not a sphere, and there are no poles. In this context, the names “North”, “South”, “West” and “East” are just synonyms for the 4 directions
 *   **pitch**: Your current vertical looking direction (i.e. “pitch”). 0° means you look horizontally, positive numbers means looking upwards and negative numbers means looking downwards
-*   **seed**: The [random seed](https://en.wikipedia.org/wiki/Random_seed) used by the [map generator](/mapgen) to generate the current world. Equal seeds (along with equal mapgen settings) will lead to equal worlds
+*   **seed**: The [random seed](https://en.wikipedia.org/wiki/Random_seed) used by the [map generator](/for-creators/mapgen) to generate the current world. Equal seeds (along with equal mapgen settings) will lead to equal worlds
 *   **pointed**: The [itemstring](/for-players/itemstrings) / “technical name” of the current [pointed](/for-players/pointing) [node](/for-players/nodes) (if any).
 *   **param2**: Value of `param2` of the current pointed node (if any). This contains some additional info for a node, such as rotation, color, etc, which is important for programmers. The meaning of `param2` is explained in the Lua API documentation.
 

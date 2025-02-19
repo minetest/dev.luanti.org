@@ -36,7 +36,7 @@ For further discussion of the problem with `set_physics_override`, see [Player p
 
 #### Internationalization
 
-Since version 5.0.0, the preferred way to make mods and games translatable is with help of the Lua API with `core.get_translator`. No additional mod is required. See [Translating Mods and Games](/translation/mods-and-games).
+Since version 5.0.0, the preferred way to make mods and games translatable is with help of the Lua API with `core.get_translator`. No additional mod is required. See [Translating Mods and Games](/for-creators/translation/mods-and-games).
 
 #### Help
 

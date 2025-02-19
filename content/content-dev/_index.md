@@ -32,7 +32,7 @@ Any functions not listed here are subject to change and not guaranteed to be com
 
 ### The minetest_docs Project
 
-minetest_docs was a project to create new, more detailed documentation. The final contents from the project can currently be found under the [/api/](/api/) directory here.
+minetest_docs was a project to create new, more detailed documentation. The final contents from the project can currently be found under the [/api/](/for-creators/api/) directory here.
 
 Useful tools
 ------------

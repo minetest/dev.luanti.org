@@ -1945,7 +1945,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 * Use server's zoom fov for distant world loading. (_lhofhansl_)
 * Fix ipv6\_server=true not accepting IPv4 connections on Windows (_sfan5_)
 * Fix narrow/utf8 difference in incoming/outgoing messages (_numberZero_)
-* Fix day\_night\_ratio\_do\_override not being initialised server-side (_rubenwardy_)
+* Fix day\_night\_ratio\_do\_override not being initialized server-side (_rubenwardy_)
 * Fix attached particle spawners far from spawn (_raymoo_)
 * Server: affect bind\_addr on constructor instead of start() (_nerzhul_)
 * Network: Fix logging into older worlds with base64 hashes (_SmallJoker_)
@@ -2022,7 +2022,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 * Item entities: Enable item collision detection for sudden movement (_DTA7_)
 * Ease selection of entities behind nodes (_SmallJoker_)
 * Object properties: Fix loss of custom selectionbox when it's not updated (_SmallJoker_)
-* GenericCAO: Fix light position for non-players, remove deprecated initialisation code (_SmallJoker_)
+* GenericCAO: Fix light position for non-players, remove deprecated initialization code (_SmallJoker_)
 * GenericCAO: Fix dark model below y = 0 (_paramat_)
 * CAO footstep sounds: Reduce gain to balance volume (_paramat_)
 
@@ -2220,7 +2220,7 @@ Backported release containing only bug fixes and small features. 0.4.17 was rele
 * Fix Settings tab formspec alignment
 * Do not scale texture unless necessary
 * httpfetch: Enable gzip support
-* Fix day\_night\_ratio\_do\_override not being initialised server-side
+* Fix day\_night\_ratio\_do\_override not being initialized server-side
 * Fix default item callbacks to work with nil users
 * Prevent from crafting non-existent, unknown items
 * Profiler: Fix var args not being passed to callback register function
@@ -2542,26 +2542,26 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Fix serialization of floating point numbers (ShadowNinja)
 * Disallow object:remove() if the object is a player (Kahrl)
 * Fix wrapDegrees family of functions (Zeno)
-* Optimise MapBlockMesh related functions (gregorycu)
+* Optimize MapBlockMesh related functions (gregorycu)
 * Fix minor memory leak (Android) (Zeno)
 * Fix occlusion (Miguel Almeida)
 * ClientInterface::getClientIDs doesn't need a std::list. Use a std::vector for better performance (nerzhul)
 * Fix some rendering glitches (BlockMen)
-* Fix mapgen using uninitialised height map values (Zeno)
+* Fix mapgen using uninitialized height map values (Zeno)
 * Fix Android text bug (no text displaying) (Zeno)
 * Improve Clouds::render mathematics (nerzhul)
 * For usages of assert() that are meant to persist in Release builds (when NDEBUG is defined), replace those usages with persistent alternatives (Zeno)
 * Fix RUN\_IN\_PLACE broken due to invalid usage of assert (sapier)
 * Respect game mapgen flags and save world noise params (ngosang)
 * Don't use luaL\_checkstring to read node names, it's only for arguments (ShadowNinja)
-* Heightmaps: Fix uninitialised values in mgv5/mgv6. findGroundLevel: Return -MAP\_GENERATION\_LIMIT if surface not found (paramat)
+* Heightmaps: Fix uninitialized values in mgv5/mgv6. findGroundLevel: Return -MAP\_GENERATION\_LIMIT if surface not found (paramat)
 * Make the dummy backend only look up blocks once (ShadowNinja)
 * Fix uninitialized data when creating TOSERVER\_INIT packet (nerzhul)
 * Fix memory leak pointed by issue #2439. Also change bzero to memset. bzero doesn't work on windows (nerzhul)
 * Stop formspecs closing with double-click in empty area (Zeno)
 * Ensure that heightmap is initialized before use (Zeno)
 * lua\_api/l\_mapgen: Fix overlapping areas of minetest.generate\_ores/decorations (paramat)
-* Mgv6: Fix uninitialised heightmap used by cavegen (paramat)
+* Mgv6: Fix uninitialized heightmap used by cavegen (paramat)
 * Disable double-click -> ESC translation for main menu (Zeno)
 * If player is dead, permit it to respawn, even if damages are not enabled (nerzhul)
 * Android: Fix auto-entry of server address and port in mainmenu (est31)
@@ -2955,10 +2955,10 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Sped up removing a node (less block mesh updates) _(RealBadAngel)_
 * Reduced number of extrusion meshes to (usually) 5 instead of one per item _(kahrl)_
 * Improved VoxelArea variable locality _(Wouters Dorian)_
-* Optimised functions from CNodeDefManager and VoxelManipulator _(Zeno)_
-* Optimised serialization, for example by using machine native byte swapping if available _(Rafael Reilova)_
-* Optimised main client loop _(Zeno)_
-* Optimised noise implementations _(kwolekr)_
+* Optimized functions from CNodeDefManager and VoxelManipulator _(Zeno)_
+* Optimized serialization, for example by using machine native byte swapping if available _(Rafael Reilova)_
+* Optimized main client loop _(Zeno)_
+* Optimized noise implementations _(kwolekr)_
 * Optimized getLight() by 2x _(Zeno)_
 * Stopped liquid queue from eating up more and more RAM; also liquid\_loop\_max now defaults to 100000 _(Zeno, celeron55)_
 * Changed TileSpec::frames to be std::vector not std::map _(unknown, Zeno)_

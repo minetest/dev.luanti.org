@@ -66,4 +66,4 @@ Maps are the creations of the Luanti community. Not only you create your own map
 3D Meshes
 ---------
 
-* [Using Blender](/models/using-blender/) to create 3D meshes (for entities)
+* [Using Blender](/for-creators/models/using-blender/) to create 3D meshes (for entities)

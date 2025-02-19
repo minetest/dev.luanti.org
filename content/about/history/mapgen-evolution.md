@@ -8,7 +8,7 @@ aliases:
 # Map Generator Evolution
 
 
-This page shows the development history of the [map generators](/mapgen "Map generator") in Luanti.
+This page shows the development history of the [map generators](/for-creators/mapgen "Map generator") in Luanti.
 
 Development of a single map generator
 -------------------------------------
