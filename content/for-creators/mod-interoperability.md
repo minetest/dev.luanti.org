@@ -3,6 +3,7 @@ title: Mod interoperability
 aliases:
 - /Mod_interoperability
 - /mod-interoperability
+- /content-dev/mod-interoperability
 ---
 
 # Mod interoperability
