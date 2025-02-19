@@ -1,12 +1,12 @@
 ---
-title: Introduction to L-system trees
+title: L-system trees
 aliases:
 - /Introduction_to_L-system-trees
 - /introduction-to-l-system-trees
 - /content-dev/introduction-to-l-system-trees
 ---
 
-# Introduction to L-system trees
+# L-system trees
 Luanti has two types of trees built in: Small simple ones like the trees in the vanilla Minetest Game, and more complex ones generated using a L-system and a tree definition. L-system trees can be spawned with `core.spawn_tree` and are defined by a `treedef` table.
 
 The following chat log might be helpful in understanding how L-system trees work: [#minetest 2013-08-08](http://irc.minetest.ru/minetest/2013-08-08#i_3250058)
@@ -63,7 +63,7 @@ Lindenmayer basics
 
 ### Replacing
 
-A L-system “program” consists of the axiom and replacement rules. In addition to above, turtle knows the symbols A, B, C and D, which can be used in L-systems. Everytime one of those symbols is found in the axiom, it will be replaced with the whole corresponding rule. This will be done, until there are no more replacements to do or the maximum recursion depth is reached.
+A L-system “program” consists of the axiom and replacement rules. In addition to above, turtle knows the symbols A, B, C and D, which can be used in L-systems. Every time one of those symbols is found in the axiom, it will be replaced with the whole corresponding rule. This will be done, until there are no more replacements to do or the maximum recursion depth is reached.
 
 
 |Symbol|Action                 |
