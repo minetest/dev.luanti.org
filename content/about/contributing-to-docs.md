@@ -123,8 +123,8 @@ If you have moved the Markdown file from another location, add an [`aliases`](ht
 
 ### Merge policies
 
-- Please announce changes (in optional minutes) in the #luanti-docs IRC/Discord/Matrix channel
-    - Anything in /content should be approved by one luanti-docs member that isn't yourself
-    - Anything core engine processes should be approved by one luanti-engine team member that isn't yourself minimum
-    - For all else: if you're a luanti-docs member, use your best judgement
-    - Trivial changes exempt from the first two points
+Please announce changes (in optional minutes) in the #luanti-docs IRC/Discord/Matrix channel
+- Anything in /content should be approved by one luanti-docs member that isn't yourself
+- Anything core engine processes should be approved by one luanti-engine team member that isn't yourself minimum
+- For all else: if you're a luanti-docs member, use your best judgement
+- Trivial changes exempt from the first two points
