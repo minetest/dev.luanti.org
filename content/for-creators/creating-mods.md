@@ -10,3 +10,4 @@ title: Creating mods
 
 *   [Minetest Modding Book](https://rubenwardy.com/minetest_modding_book/en/index.html) by [rubenwardy](https://rubenwardy.com/) with editing by [Shara](https://forum.luanti.org/memberlist.php?mode=viewprofile&u=19807).
 *   [For Creators page on this site](/for-creators)
+*   [Modding Tips on this site](/for-creators/modding-tips)
