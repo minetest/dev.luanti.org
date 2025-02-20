@@ -2,6 +2,7 @@
 title: Player physics
 aliases:
 - /Player_physics
+- /player-physics
 ---
 
 # Player physics
