@@ -1,5 +1,7 @@
 ---
 title: Textures
+aliases:
+- /textures
 ---
 
 # Textures
