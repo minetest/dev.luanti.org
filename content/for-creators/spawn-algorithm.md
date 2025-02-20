@@ -1,11 +1,12 @@
 ---
-title: Spawn Algorithm
+title: Player Spawn Algorithm
 aliases:
 - /Spawn_Algorithm
+- /spawn-algorithm
 ---
 
-# Spawn Algorithm
-The **spawn algorithm** tries to find a suitable spawn or respawn position for players. It is run whenever a player spawns or respawns.
+# Player Spawn Algorithm
+The **player spawn algorithm** (or **spawn algorithm** for short) tries to find a suitable spawn or respawn position for players. It is run whenever a player spawns or respawns.
 
 This page describes how Luanti's builtin spawn algorithm works, as of **version 5.7.0**. Note that individual mods and games can choose to override the spawning behavior. The setting `static_spawn_point` can also override it.
 
