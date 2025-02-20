@@ -5,6 +5,10 @@ aliases:
 - /about/guidelines
 - /about-this-site/local-development
 - /about/local-development
+- /about-this-site/making-changes
+- /about/making-changes
+- /about-this-site/rules
+- /about/rules
 ---
 
 # Contributing to Docs
@@ -69,6 +73,27 @@ The text is not splel-checked ;)
 Finally, this text is spell-checked again.
 ```
 
+### Proposing changes
+
+At the bottom of each page is an `edit this page` button. Clicking this will open up GitHub's web text editor where you can make text changes and commit. Alternatively you can use GitHub's VS Code interface from the repo page by clicking the `.` key.
+
+Changes are reviewed via the common "fork and pull request" approach. If you're unfamiliar, this should serve as a quick guide. Feel free to reach out to #luanti-docs in IRC, Discord, or Matrix for further assistance :)
+
+- Please fork the repo (the `edit this page` option at the bottom of each page will walk you through this)
+- Web-based
+  - Once the repo is forked, go to the repo page and click `.`: this will open VS Code in the browser
+  - Checkout a branch (bottom left, second option in)
+  - Make your edits
+  - In the left vertical menu, select the source control option
+  - Enter a message about your changes and click `commit and push`
+- Local-based (terminal commands for example, use GUI client if you wish)
+  - Clone the repo `git clone https://github.com/YOURUSERNAME/dev.luanti.org`
+  - Make a branch `git checkout your_branch_name`
+  - Make edits with the tools of your choosing
+  - Add, commit, and push the changes: `git add -A && git commit -m "your commit message here" && git push`
+- Make a PR from the branch back to the repo
+- Wait for someone on the Luanti docs team to review and merge (we usually review PRs daily)
+
 ## Guidelines
 
 ### Add [Front Matter](https://gohugo.io/content-management/front-matter/)
@@ -95,3 +120,11 @@ If you have moved the Markdown file from another location, add an [`aliases`](ht
 * Write content in Markdown
 * Use webp images instead of jpg, png, or others
 * Add a [language](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting) to code blocks
+
+### Merge policies
+
+- Please announce changes (in optional minutes) in the #luanti-docs IRC/Discord/Matrix channel
+    - Anything in /content should be approved by one luanti-docs member that isn't yourself
+    - Anything core engine processes should be approved by one luanti-engine team member that isn't yourself minimum
+    - For all else: if you're a luanti-docs member, use your best judgement
+    - Trivial changes exempt from the first two points

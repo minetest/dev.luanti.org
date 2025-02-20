@@ -9,22 +9,25 @@ aliases:
 
 Luanti is a free and open-source voxel game engine with its own [distribution platform](/about/contentdb) and [client](/about/luanti). [Players](/for-players), creators, server hosts, and engine developers can find more information here about how to get started with Luanti.
 
-This site is created using [Hugo](https://gohugo.io/), with theme [Hugo Book](https://themes.gohugo.io/themes/hugo-book/). 
-The site's source content can be found [on GitHub](https://github.com/luanti-org/dev.luanti.org/tree/master/content), and we welcome contributions from everyone.
+This site is created using [Hugo](https://gohugo.io/), with theme [Hugo Book](https://themes.gohugo.io/themes/hugo-book/). The site's source content can be found [on GitHub](https://github.com/luanti-org/dev.luanti.org/tree/master/content), and we welcome contributions from everyone. To contribute, see [Contributing to Docs](/about/contributing-to-docs).
 
-## Contributing to this site
+## Getting Started
 
-* [Making Changes](/about/making-changes/)
-* [Guidelines](/about/guidelines/)
-* [Setting up & running the site locally](/about/local-development/)
-* [Rules](/about/rules/)
+This site is organized by target audience:
+
+- [For Players](/for-players) covers installing the Luanti client, installing mods and games, and basic gameplay mechanics.
+- [For Creators](/for-creators) covers mod creation, game creation, texture pack creation, translations, and other guides for creating things with or for Luanti.
+- [For Server Hosts](/server) covers multiplayer hosting setup.
+- [For Engine Devs](/engine-dev-process) covers how to contribute C++ code to the Luanti engine itself.
 
 ## Luanti Documentation Mission Statement
 
-Luanti Documentation will be the central resource for the Luanti project as a whole where contributors and writers collaborate to author well-tested, understandable, categorized, and searchable information based on the current state of the Luanti engine. Documentation will cover:
+Luanti Documentation is the central resource for the Luanti project. Contributors and writers can collaborate to author well-tested, understandable, categorized, and searchable information based on the current state of Luanti.
+
+Documentation will cover:
 
 * Comprehensive API reference, examples, and guides
 * Engine reference and internal structures
 * Server and platform (player-facing) usage and guides
 
-Our roadmap can be found at [GitHub issue #113: Roadmap](https://github.com/luanti-org/dev.luanti.org/issues/113).
+This project began in December 2024. Our roadmap can be found at [GitHub issue #113: Roadmap](https://github.com/luanti-org/dev.luanti.org/issues/113).
