@@ -37,17 +37,10 @@ Starting with version 5.0.0, mods can be installed using the _Content_ tab in Lu
 
 To manually install content for Luanti, see [How to install content](https://content.luanti.org/help/installing/).
 
-Creating mods
--------------
-
-Mods are written in the scripting language [Lua](https://www.lua.org/). The official Lua API documentation can be found at [lua\_api.md](https://github.com/luanti-org/luanti/blob/master/doc/lua_api.md) or in HTML format at [api.luanti.org](https://api.luanti.org/).
-
-### Modding tutorials
-
-*   [Minetest Modding Book](https://rubenwardy.com/minetest_modding_book/en/index.html) by [rubenwardy](https://rubenwardy.com/) with editing by [Shara](https://forum.luanti.org/memberlist.php?mode=viewprofile&u=19807).
-*   [Intro to modding on this site](/modding-intro)
-
-Listing actual running mods
----------------------------
+## Listing actual running mods
 
 The in-game [server command](/server-commands) `/mods` will list the active mods of the actual running game.
+
+## Further reading
+
+- [Creating Mods](/for-creators/creating-mods)
