@@ -1,6 +1,5 @@
 ---
 title: Mobile (for creators)
-bookCollapseSection: true
 aliases:
 - /Luanti_on_Android
 - /mobile
