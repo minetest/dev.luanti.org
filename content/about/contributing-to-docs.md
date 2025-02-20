@@ -110,9 +110,9 @@ aliases:
 
 Front matter should be in YAML.
 
-The `Title` attribute is required on every markdown file, and in the case of directory `_index.md` file, the `bookCollapseSection` attribute should be set to true.
+The `title` attribute is required on every markdown file, and in the case of directory `_index.md` files, the `bookCollapseSection` attribute should be set to `true`.
 
-If you have moved the Markdown file from another location, add an [`aliases`](https://gohugo.io/content-management/urls/#aliases) value for redirects to keep the old URL working.
+If you move or rename a Markdown file, add an [`aliases`](https://gohugo.io/content-management/urls/#aliases) value for redirects to keep the old URL working.
 
 ### Formats
 
