@@ -1,5 +1,7 @@
 ---
 title: Right to a Name
+aliases:
+- /right-to-a-name
 ---
 
 # Right to a Name
@@ -24,7 +26,7 @@ Just because this message shows up doesn't necessarily mean you are violating th
 ## Exceptions
 The rule does not apply when a mod is included verbatim in a game. If the mod is lightly modified, then it should be fine too. Generally the mod should be roughly equivalent to its upstream counterpart API-wise, such that other mods depending on it still function.
 
-This also means that reimplementations of mods are exempt, as they could serve as a drop-in replacement for the mod's API.
+This also means that re-implementations of mods are exempt, as they could serve as a drop-in replacement for the mod's API.
 
 ## Game namespacing
 It is standard practice when making games to prefix your game's modnames such that they don't have any risk of conflicting with other modnames. For example, NodeCore uses the `nc_` namespace. A list of namespaces used by games on ContentDB can be seen at (TODO).
