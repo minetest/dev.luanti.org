@@ -2,6 +2,7 @@
 title: Engine Structure
 aliases:
 - /Engine/Structure
+- /engine/structure
 ---
 
 
