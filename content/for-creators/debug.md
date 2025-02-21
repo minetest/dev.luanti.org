@@ -71,7 +71,7 @@ The armor group “immortal=1” is a special case and means the entity does not
 
 The profiler graphs show the performance of Luanti in a more detailed fashion. This information is most useful for engine developers.
 
-See [Profiler Graph](/profiler-graph) for more information.
+See [Profiler Graph](/for-engine-devs/profiler-graph) for more information.
 
 ### Wireframe
 

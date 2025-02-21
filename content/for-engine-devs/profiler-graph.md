@@ -2,6 +2,7 @@
 title: Profiler graph
 aliases:
 - /Profiler_graph
+- /profiler-graph
 ---
 
 # Profiler graph
