@@ -650,7 +650,7 @@ Released on 4 August 2022
 * Docs: Add description of privileges (_x2048_)
 * Increase max FPS on Android to 60 (_ROllerozxa_)
 * Add many limits to settingtypes + engine (_Wuzzy_, _SmallJoker_)
-* Reorganise settingtypes.txt (_rubenwardy_)
+* Reorganize settingtypes.txt (_rubenwardy_)
 
 ### Script API / Modding
 

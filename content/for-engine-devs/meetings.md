@@ -3,6 +3,7 @@ title: Meetings
 aliases:
 - /Meetings
 - /meetings
+- /engine-dev-process/meetings
 ---
 
 # Meetings
@@ -45,7 +46,7 @@ Past Meetings
 * Feature freeze time (Zughy)
     * Feature freeze has started. Still undecided about what to do with SDL2
 * PLEASE finish the [renaming process](https://github.com/luanti-org/luanti/issues/15322) before FOSDEM (Zughy)
-    * Luanti organisation has been created on GitHub, the rest is in the works. For more details see the [IRC log](https://irc.luanti.org/minetest-dev/2025-01-19#i_6236220)
+    * Luanti organization has been created on GitHub, the rest is in the works. For more details see the [IRC log](https://irc.luanti.org/minetest-dev/2025-01-19#i_6236220)
 
 2024-12-22
 ----------
@@ -98,7 +99,7 @@ Meeting: [https://irc.luanti.org/minetest-dev/2024-10-13#i\_6208356](https://irc
 **Organization Discussion**
 
 * rename time! (Zughy)
-    * Proceeed to announce on the blog/forums, then rename iteratively
+    * Proceed to announce on the blog/forums, then rename iteratively
     * Blog post: grorp and Zughy are on it
 * feature freeze time (Zughy)
     * Freeze started. Issues discussed quickly.
@@ -138,7 +139,7 @@ Meeting: [https://irc.luanti.org/minetest-dev/2024-10-13#i\_6208356](https://irc
 
 **Organization Discussion**
 
-* Finalise 5.9 (Zughy)
+* Finalize 5.9 (Zughy)
     * SDL character lookup issue:
     * `SDL_GetScancodeFromKey(SDLK_SLASH)` idea from _y5nw_ --> [https://github.com/luanti-org/luanti/pull/14894](https://github.com/luanti-org/luanti/pull/14894) (hacky workaround, updated)
     * See also: meeting discussion
@@ -178,11 +179,11 @@ Meeting: [https://irc.luanti.org/minetest-dev/2024-10-13#i\_6208356](https://irc
     * low priority for PR author as of now
     * Idea: attach to object bones for more versatility (future PR)
 * "One Approval" PR discussion (requested by sfan5)
-    * 11391: appguru is on it
+    * 11391: appgurueu is on it
     * 14225 (bulk\_get\_node): let sfence provide reasons for not closing the PR
     * 14319 (nil puncher): answered
     * 14347 (pointing range): sfan5 is on it, Desour maybe too
-    * 14369 (preserve metatables): appguru is on it
+    * 14369 (preserve metatables): appgurueu is on it
 * [Camera API (draft)](https://github.com/luanti-org/luanti/pull/14325)
     * Questions & inputs: [https://irc.luanti.org/minetest-dev/2024-03-03#i\_6156971](https://irc.luanti.org/minetest-dev/2024-03-03#i_6156971)
 
@@ -252,7 +253,7 @@ Meeting: [https://irc.luanti.org/minetest-dev/2024-10-13#i\_6208356](https://irc
 
 **PR discussion/reviews**
 
-* Can anyone please check the log in [CJK characters looks been filtered in chat\_message while the GUI could display them collectly](https://github.com/luanti-org/luanti/issues/13813#issuecomment-1730594420) so to understand what to do with the issue? (Zughy)
+* Can anyone please check the log in [CJK characters looks been filtered in chat\_message while the GUI could display them collectively](https://github.com/luanti-org/luanti/issues/13813#issuecomment-1730594420) so to understand what to do with the issue? (Zughy)
     * Krock took care of it, ball in OP's court
 * [HUD/Formspec replacement PR](https://github.com/luanti-org/luanti/pull/12926) status update? (json (IRC) via Krock)
 
@@ -265,7 +266,7 @@ Mainly a revisit of all milestone points without specific PR reviews.
 
 * Feature freeze!
     * Revisit all milestone points (Krock)
-        * After debundling, only minor or obscure issues are left over. Good enough for a 5.8.0 release (Krock)
+        * After de-bundling, only minor or obscure issues are left over. Good enough for a 5.8.0 release (Krock)
     * Why did #13885 become a draft? (Krock)
         * grorp is not present for clarifying
 
@@ -275,7 +276,7 @@ Mainly a revisit of all milestone points without specific PR reviews.
 **Organization Discussion**
 
 * Feature freeze? (Zughy)
-    * Suggestion (see milestone): keep MTG to have enough time to debundle in 5.9.0 (Krock)
+    * Suggestion (see milestone): keep MTG to have enough time to de-bundle in 5.9.0 (Krock)
         * Voted for +2 weeks time to get this done.
         * Caveat: rubenwardy and grorp will not be available much in the next few weeks
     * Feature freeze on Oct 15, release on Oct 29
@@ -312,7 +313,7 @@ Concept approval for:
 * A follow up for [Issue 13583](https://github.com/luanti-org/luanti/issues/13583): Is there a draft already that I missed? This can be great for documenting supported OS/env. (srifqi)
     * The suggested document is currently WIP
     * Be clear how old toolchains we support, e.g. by supported Ubuntu LTS versions to use newer libraries or C++ revisions (Krock)
-* [Dual Wielding](https://github.com/luanti-org/luanti/pull/11016) has been waiting for a feedback since 6 months. Since we're busy, I'd suggest to prioritise MTG removal and postpone this feature to 5.9, so that core devs can review it without any pressure (Zughy)
+* [Dual Wielding](https://github.com/luanti-org/luanti/pull/11016) has been waiting for a feedback since 6 months. Since we're busy, I'd suggest to prioritize MTG removal and postpone this feature to 5.9, so that core devs can review it without any pressure (Zughy)
     * No progress and the issues could yet not be solved. Removed milestone, marked as draft.
 
 Concept approval for:
@@ -337,7 +338,7 @@ Concept approval for:
 
 Also discussed:
 
-* [Debundle Minetest Game](https://github.com/luanti-org/luanti/issues/13550)
+* [De-bundle Minetest Game](https://github.com/luanti-org/luanti/issues/13550)
     * Question about "featured" marks to make it more visible to newcomers
 
 2023-05-28
@@ -351,7 +352,7 @@ Also discussed:
 **PR discussion/reviews**
 
 * Discuss and concept approve or close ["Roadmap: needs approval" PRs](https://github.com/luanti-org/luanti/pulls?q=is%3Aopen+is%3Apr+label%3A%22Roadmap%3A+Needs+approval%22)
-    * [make falling node checks check for protection](https://github.com/luanti-org/luanti/pull/12966) TL;DR: Some server made ladders falling, and protection doesn't protect from fall through on\_punch by other players. Possible solutions include making the registered on\_punch/on\_dig/on\_placenode function overwritable, or only checking for protection in on\_punch. What to do? (DS)
+    * [make falling node checks check for protection](https://github.com/luanti-org/luanti/pull/12966) TL;DR: Some server made ladders falling, and protection doesn't protect from fall through on\_punch by other players. Possible solutions include making the registered on\_punch/on\_dig/on\_placenode function overwrite-able, or only checking for protection in on\_punch. What to do? (DS)
         * Removed roadmap approval needed label. (DS)
 
 2023-05-14
@@ -408,7 +409,7 @@ Notes inherited from the meeting 2023-04-16
 **Organization Discussion**
 
 * Current roadmap evaluation and draft of the next one (Zughy)
-    * Still need focus on UI/UX improvements, entities were not touched at all, dehardcoding shouldn't be a point
+    * Still need focus on UI/UX improvements, entities were not touched at all, de-hardcoding shouldn't be a point
 
 2023-03-05
 ----------
@@ -461,7 +462,7 @@ Notes inherited from the meeting 2023-04-16
     * Others that could be supported:
         * "inventory\_image" and "wield\_image": May be unnecessary as there's a separate PR for settings these using item metadata.
         * "mesh": Could be complicated to implement, I haven't looked into it.
-    * Should all properties vary based on the same bitfield ("param2\_variant") or is this bad API design? (A single bitfield is not a functional limitation. It is still possible to let properties effectively vary independently by making a variant for each possible combination.)
+    * Should all properties vary based on the same bit field ("param2\_variant") or is this bad API design? (A single bit field is not a functional limitation. It is still possible to let properties effectively vary independently by making a variant for each possible combination.)
     * \-> Feedbacks given for the concept. Might be discussed again in the next meeting.
 
 2022-12-04
@@ -571,10 +572,10 @@ Also consider:
 * [Add minetest.get\_player\_window\_information()](https://github.com/luanti-org/luanti/pull/12367)
     * How to resist fingerprinting? -> minor concern, rounding is possible
     * Move to player ObjectRef? -> player-specific function. not necessarily.
-    * Should this be prioritised for 5.6? ->
+    * Should this be prioritized for 5.6? ->
 * [Show dep errors in Select Mods modal](https://github.com/luanti-org/luanti/pull/12284) - pls someone review
     * review shall be done
-* [Settings redesign](https://github.com/luanti-org/luanti/pull/12480) - concept approval, prioritisation, requirements for submission
+* [Settings redesign](https://github.com/luanti-org/luanti/pull/12480) - concept approval, prioritization, requirements for submission
     * "yes but not in 5.6"
 * [Bouncy improvements](https://github.com/luanti-org/luanti/pull/11939) - makes trampolines fun again.
     * review shall be done
@@ -709,7 +710,7 @@ Also have a look at "One Approval" PRs and decide on whether to merge, request c
 * [SQLite media cache](https://github.com/luanti-org/luanti/pull/11567)
     * Closed for lack of benchmarks. Opinion is split on whether sqlite is a good approach
 * [proller's breaking world](https://github.com/luanti-org/luanti/pull/11843)
-    * Closed due to scale of changes vs prioritisation. Agreement made that a hard network break should not be done
+    * Closed due to scale of changes vs prioritization. Agreement made that a hard network break should not be done
 * [Add API function minetest.activate\_objects\_in\_area](https://github.com/luanti-org/luanti/pull/11630)
     * worth more consideration, posted comment in PR
 * [CSM settings](https://github.com/luanti-org/luanti/pull/12131)
@@ -743,7 +744,7 @@ Add your points here. Most important comes first.
     * WIP. Waiting for rubenwardy. Not very urgent yet.
 * Irrlicht milestone
     * Await hecks' OpenGL rewrite until beginning of October.
-    * .. otherwise remove shadowmap main menu setting and disable within C++
+    * .. otherwise remove shadow map main menu setting and disable within C++
 * ItemStack metadata network optimizations - [https://github.com/luanti-org/luanti/pull/11014](https://github.com/luanti-org/luanti/pull/11014)
     * Closed.
 * Automatic selection of mods - Adopt or Won't add - [https://github.com/luanti-org/luanti/pull/11274](https://github.com/luanti-org/luanti/pull/11274)
@@ -755,7 +756,7 @@ Add your points here. Most important comes first.
 * Perhaps provide an alternative fix for [https://github.com/luanti-org/luanti/issues/9725](https://github.com/luanti-org/luanti/issues/9725)
 * TODO reviews
     * Dynamic Media V2 [https://github.com/luanti-org/luanti/issues/11550](https://github.com/luanti-org/luanti/issues/11550)
-    * Animated particle spanwers [https://github.com/luanti-org/luanti/issues/11545](https://github.com/luanti-org/luanti/issues/11545)
+    * Animated particle spawners [https://github.com/luanti-org/luanti/issues/11545](https://github.com/luanti-org/luanti/issues/11545)
 
 Also have a look at "One Approval" PRs and decide on whether to merge, request changes or close.
 
@@ -836,7 +837,7 @@ Logs: [http://irc.luanti.org/minetest-dev/2020-10-03#i\_5738345](http://irc.luan
     * \-> [https://github.com/luanti-org/luanti/issues/10461](https://github.com/luanti-org/luanti/issues/10461)
 * Add trusted contributors as issue triagers. [https://github.com/orgs/minetest/teams/engine/discussions/25](https://github.com/orgs/minetest/teams/engine/discussions/25)
     * Suggested users: Wuzzy, Calinou. Wuzzy was already offered core dev, but refused.
-    * They would help ensure issue quality (asking for information, editing, closing duplicated) and oragnise issues (labelling, prioritising)
+    * They would help ensure issue quality (asking for information, editing, closing duplicated) and organize issues (labelling, prioritizing)
     * This doesn't prevent core developers from doing the above.
     * celeron55 is willing to trial this, paramat is against this.
     * \-> Krock, rubenwardy: Demo run with a few chosen people. Rules will be written down during this phase to ensure everything's going well. Needs discussion with paramat.
@@ -855,7 +856,7 @@ Logs: [http://irc.luanti.org/minetest-dev/2020-10-03#i\_5738345](http://irc.luan
 2020-08-01
 ----------
 
-**Organisation Discussion**
+**Organization Discussion**
 
 * Theme of 5.4.0 (ie: what to focus on)
 * New core developers
@@ -883,7 +884,7 @@ Logs: [http://irc.luanti.org/minetest-dev/2020-10-03#i\_5738345](http://irc.luan
 2020-06-06
 ----------
 
-**Organisation Discussion**
+**Organization Discussion**
 
 * Allow or deny UTF-8 characters in the source code? [relevant PR](https://github.com/luanti-org/luanti/pull/9828)
     * Many different encodings. Non-ASCII characters should be avoided [http://irc.luanti.org/minetest-dev/2020-06-06#i\_5698515](http://irc.luanti.org/minetest-dev/2020-06-06#i_5698515)
@@ -910,7 +911,7 @@ Logs: [http://irc.luanti.org/minetest-dev/2020-10-03#i\_5738345](http://irc.luan
 
 Most important first.
 
-**Organisation Discussion**
+**Organization Discussion**
 
 * Release date for 5.2.0: March 14, if possible
 * Open issues: [https://github.com/luanti-org/luanti/issues?q=is%3Aissue+is%3Aopen+label%3ABlocker](https://github.com/luanti-org/luanti/issues?q=is%3Aissue+is%3Aopen+label%3ABlocker)
@@ -936,7 +937,7 @@ Arranged by: Krock
 
 Most important first.
 
-**Organisation Discussion**
+**Organization Discussion**
 
 * Looking for new Core Developer members
 * What's missing for 5.1.1?
@@ -974,7 +975,7 @@ Arranged by: rubenwardy
 
 Logs: [http://irc.luanti.org/minetest-dev/2019-06-29#i\_5561978](http://irc.luanti.org/minetest-dev/2019-06-29#i_5561978)
 
-**Organisation discussion**
+**Organization discussion**
 
 * Is 5.0.2 needed for the newlines in setting name bug? ([https://github.com/luanti-org/luanti/pull/8590](https://github.com/luanti-org/luanti/pull/8590))
     * Yet no clear decision
@@ -1001,7 +1002,7 @@ The idea is to merge the most important PR first (top of list) to not drown in c
 
 Arranged by: Krock
 
-**Organisation discussion**
+**Organization discussion**
 
 * Will there be a 0.4.18 release?
     * [http://irc.luanti.org/minetest-dev/2018-07-14#i\_5358759](http://irc.luanti.org/minetest-dev/2018-07-14#i_5358759) - sounds like a definitive "no"?
@@ -1022,10 +1023,10 @@ Arranged by: Krock
 
 Arranged by: Krock
 
-**Organisation discussion**
+**Organization discussion**
 
 * Will there be a 0.4.18 release?
-* Bugfixing the bugfix release
+* Bug-fixing the bugfix release
     * [https://github.com/luanti-org/luanti/commit/014a1a08](https://github.com/luanti-org/luanti/commit/014a1a08) fix for [https://github.com/luanti-org/luanti/issues/6092](https://github.com/luanti-org/luanti/issues/6092)
     * [https://github.com/luanti-org/luanti/commit/a1598e1b](https://github.com/luanti-org/luanti/commit/a1598e1b) (c\_internal.cpp only) fix for [https://github.com/luanti-org/luanti/issues/7419](https://github.com/luanti-org/luanti/issues/7419)
 * Proposal: change master version scheme to: 5.0.0
@@ -1048,7 +1049,7 @@ Arranged by: Krock
 
 Proposed time: 18:00 UTC
 
-**Organisation discussion**
+**Organization discussion**
 
 * 0.4.17 - backport missing fixes and set date for freeze
     * ~Android-specific fix for [https://pastebin.com/j4mjniaq](https://pastebin.com/j4mjniaq) must be added too (during freeze?)~
@@ -1070,7 +1071,7 @@ Arranged by: Krock
 
 It's now almost a month since the last meeting - it time for the next one. Proposed time: 18:00 UTC
 
-**Organisation discussion**
+**Organization discussion**
 
 * When do we have time to release 0.4.17?
     * Still unclear freeze and release dates. 1 MTE needs backporting first
@@ -1091,7 +1092,7 @@ It's now almost a month since the last meeting - it time for the next one. Propo
 
 Arranged by: Krock
 
-**Organisation discussion**
+**Organization discussion**
 
 * Questions related to 0.4.17, 0.4.18 or future development?
 * 0.4.17 release should be moved to 21/22 April for backports ([http://irc.luanti.org/minetest-dev/2018-04-07#i\_5272834](http://irc.luanti.org/minetest-dev/2018-04-07#i_5272834))
@@ -1137,7 +1138,7 @@ Arranged by: Krock
 
 Arranged by: Krock
 
-**Organisation discussion**
+**Organization discussion**
 
 * New Doxygen rule
     * Log: [http://irc.luanti.org/minetest-dev/2018-03-10#i\_5249578](http://irc.luanti.org/minetest-dev/2018-03-10#i_5249578)
@@ -1219,7 +1220,7 @@ New business:
    * > nerzhul will merge
  * https://github.com/luanti-org/luanti/pull/5589 (start world after creation)
  * LMDB backend (https://github.com/luanti-org/luanti/pull/4206)
-   * nerzhul: Close? We already have 5 backends to maintain and we already cover all the usecases (client usage, performance usage, reliability usage)
+   * nerzhul: Close? We already have 5 backends to maintain and we already cover all the use cases (client usage, performance usage, reliability usage)
 
 
 
@@ -1301,7 +1302,7 @@ New business:
     Add support for multiple listen addresses (#2604)
         Big patch, but can't really be split up much more since everything's interdependent.
     Make the player collisionbox settable (#2738)
-    Clean up numeric.h and split FaceFositionCache from it (#3256)
+    Clean up numeric.h and split FacePositionCache from it (#3256)
         Up-to-date and looks more-or-less ready to merge, just needs formal approval.
     <nerzhul>:
         https://github.com/luanti-org/luanti/pull/5361 Background color on textarea/field/pwdfield)
@@ -1343,7 +1344,7 @@ ShadowNinja is unavailable today, paramat will be hosting in his stead.
 
 **New business:** (mainly oldest or least recently updated PRs that haven't been handled yet)
 
-* Added formspec element 'KeyEventBox' for charbased input by ninnghazad (#1737)
+* Added formspec element 'KeyEventBox' for char-based input by ninnghazad (#1737)
     * Closed: better done with client-side mods.
 * Use object property "stepheight" for player stepheight too. (#2056)
     * Agreed to merge, but nobody assigned.
@@ -1370,20 +1371,17 @@ New business:  (PRs obtained by sorting by age on GitHub)
     Coverity: https://scan.coverity.com/projects/12441
         Need to triage issues, many legitimate issues to fix.
     Timed move (#1489)
-    Added formspec element 'KeyEventBox' for charbased input (#1737)
+    Added formspec element 'KeyEventBox' for char-based input (#1737)
     Add ability to escape commands with a back-slash (#1768)
         <ShadowNinja> I may want to tweak this so that it doesn't strip the slash when you type "\foo" (or maybe not?
      It should at least work for the client-side dot-commands too)
     Split block position in SQLite3 database (and use R*Tree) (#1845)
     Use a settings object for the main settings (#1949)
-        <ShadowNinja> I also unified Initialize and InitiallizeAsync, which was necessary to implement this.
+        <ShadowNinja> I also unified Initialize and InitializeAsync, which was necessary to implement this.
         I think the unification is worth merging even without the settings object change.  This conflicts with just about
         the entire ScriptAPI, so I don't want to rebase it too often :-)
     Add listpredict to the formspec (#1988)
     Add non-global mod namespaces (#2039)
-
-
-
 ```
 
 

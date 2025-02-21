@@ -3,6 +3,7 @@ title: Engine development process
 aliases:
 - /All_rules_regarding_to_development
 - /all-rules-regarding-development
+- /engine-dev-process
 bookCollapseSection: true
 ---
 
@@ -17,7 +18,7 @@ Rules
 
 #### Core developers
 
-[Organisation](/Organisation)
+[Organization](/Organization)
 
 #### Git and github usage
 

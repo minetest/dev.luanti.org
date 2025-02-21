@@ -18,7 +18,7 @@ This site is organized by target audience:
 - [For Players](/for-players) covers installing the Luanti client, installing mods and games, and basic gameplay mechanics.
 - [For Creators](/for-creators) covers mod creation, game creation, texture pack creation, translations, and other guides for creating things with or for Luanti.
 - [For Server Hosts](/for-server-hosts) covers multiplayer hosting setup.
-- [For Engine Devs](/engine-dev-process) covers how to contribute C++ code to the Luanti engine itself.
+- [For Engine Devs](/for-engine-devs) covers how to contribute C++ code to the Luanti engine itself.
 
 ## Luanti Documentation Mission Statement
 

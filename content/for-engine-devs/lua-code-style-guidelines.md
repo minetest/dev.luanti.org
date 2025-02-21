@@ -3,6 +3,7 @@ title: Lua code style guidelines
 aliases:
 - /Lua_code_style_guidelines
 - /lua-code-style-guidelines
+- /engine-dev-process/lua-code-style-guidelines
 ---
 
 # Lua code style guidelines
@@ -33,11 +34,13 @@ Note that these are only _guidelines_ for more readable code. In some (rare) cas
 
 * Comments should follow English grammar rules, this means **starting with a capital letter**, using commas and apostrophes where appropriate, and **ending with a period**. The period may be omitted in single-sentence comments. If the first word of a comment is an identifier, its casing should not be changed. **Check the spelling.**
 
+    {{% comment %}} cspell:disable {{% /comment %}}
 	```lua
 	-- This is a properly formatted comment.
 	-- This isnt.              (missing apostrophe)
 	-- neither is this.        (lowercase first letter)
 	```
+    {{% comment %}} cspell:enable {{% /comment %}}
 
 * Comments should have a space between the comment characters and the first word.
 
@@ -94,6 +97,7 @@ Note that these are only _guidelines_ for more readable code. In some (rare) cas
 
 * If the function arguments contain a table, it's indented by one tab and if the arguments get own lines, it's indented like a table.
 
+    {{% comment %}} cspell:disable {{% /comment %}}
 	```lua
 	register_node("name", {
 		"This is a long string...",
@@ -108,9 +112,11 @@ Note that these are only _guidelines_ for more readable code. In some (rare) cas
 		end
 	)
 	```
+	{{% comment %}} cspell:enable {{% /comment %}}
 
 * When strings don't fit into the line, you should add the string (changes) to the next line(s) indented by one tab.
 
+	{{% comment %}} cspell:disable {{% /comment %}}
 	```lua
 	longvarname = longvarname ..
 		"Thanks for reading this example!"
@@ -120,6 +126,7 @@ Note that these are only _guidelines_ for more readable code. In some (rare) cas
 		"label[0.5,0;" .. fgettext("World:") .. "]" ..
 		"label[1.75,0;" .. data.worldspec.name .. "]"
 	```
+	{{% comment %}} cspell:enable {{% /comment %}}
 
 
 * When breaking around a binary operator you should break after the operator.
@@ -357,9 +364,11 @@ See [this LuaJIT issue](https://github.com/LuaJIT/LuaJIT/issues/684) for details
 
 ## Naming
 
+{{% comment %}} cspell:disable {{% /comment %}}
 * **Functions and variables should be named in `lowercase_underscore_style`**, with the exception of constructor-like functions such as `PseudoRandom()`, which should use UpperCamelCase.
 * Don't invent compound words. Common words like `filename` are okay, but mashes like `getbox` and `collisiondetection` aren't.
 * Avoid leading and/or trailing underscores. They're ugly and can be hard to see.
+{{% comment %}} cspell:enable {{% /comment %}}
 
 ## Miscellaneous
 

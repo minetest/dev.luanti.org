@@ -3,12 +3,13 @@ title: Git Guidelines
 aliases:
 - /Git_Guidelines
 - /git-guidelines
+- /engine-dev-process/git-guidelines
 ---
 
 # Git Guidelines
 This page is mostly directed to core team members with commit or triage access to upstream repositories.
 
-For determining who is allowed to do what, see [Organisation](/Organisation "Organisation").
+For determining who is allowed to do what, see [Organization](/organization).
 
 For guidelines about overall pull request quality, see [Merging core pull requests to upstream](/Merging_core_pull_requests_to_upstream "Merging core pull requests to upstream").
 
@@ -28,7 +29,7 @@ The `minetest` and `minetest_game` repositories contain the stable-0.4 branch, w
 
 ### Upstream commit rules
 
-* You can push something to upstream \[1\] only if two members of the core team \[2\] agree on it. (See also [Organisation](/Organisation "Organisation"))
+* You can push something to upstream \[1\] only if two members of the core team \[2\] agree on it. (See also [Organization](/organization))
     * Two for-votes are required for code to be mergeable upstream. Any against vote has to be resolved in a meeting before merge.
     * For PRs: The second reviewer should invalidate the first review when major changes happened to the PR in the meantime.
 * Commit messages must start with a capital letter and must be in the present tense. (look at the commit log)
@@ -58,14 +59,14 @@ Rule 1 is **only** applied to the `minetest/minetest` and `minetest/minetest_gam
 Issue and Pull-Request Management
 ---------------------------------
 
-* If an issue is a duplicate, post "duplicate of #ISSUENUM", label as [Duplicate](https://github.com/luanti-org/luanti/labels/Duplicate), and close the issue. Newer issues should be considered duplicates of older issues, unless the newer issue has more useful conversation. Information from the duplicate issue can also be edited into the open issue.
+* If an issue is a duplicate, post "duplicate of #ISSUE_NUM", label as [Duplicate](https://github.com/luanti-org/luanti/labels/Duplicate), and close the issue. Newer issues should be considered duplicates of older issues, unless the newer issue has more useful conversation. Information from the duplicate issue can also be edited into the open issue.
 * If a pull request or an issue does not get a response from its author within one month when requiring more details, it is closed.
     * Use ["Action / change needed"](https://github.com/luanti-org/luanti/labels/Action%20%2F%20change%20needed) and ["User feedback needed"](https://github.com/luanti-org/luanti/labels/User%20feedback%20needed)
 * Core devs who reviewed a PR once should stay with the PR for additional review rounds. Loss of interest (thus unsubscribing) should be signalled properly.
     * This is best communicated by assigning yourself to the PR using the GitHub feature.
     * PR assignments show who's taking care of the PR; leaving the option to @ them to progress.
 * [WIP](https://github.com/luanti-org/luanti/labels/WIP) / draft pull-requests that are not updated within 6 months should be closed.
-* Use [Project Boards](https://github.com/luanti-org/luanti/projects) to prioritise and order issues and pull requests.
+* Use [Project Boards](https://github.com/luanti-org/luanti/projects) to prioritize and order issues and pull requests.
 * The [Possible Close](https://github.com/luanti-org/luanti/labels/Possible%20Close) label can be used to warn authors of impending closure.
 
 ### Triagers

@@ -3,6 +3,7 @@ title: Releasing Luanti
 aliases:
 - /Releasing_Luanti
 - /releasing-luanti
+- /engine-dev-process/releasing-luanti
 ---
 
 # Releasing Luanti
@@ -35,9 +36,7 @@ Checklist
   - [ ] Create forum topic
   - [ ] Notify rubenwardy to announce on Twitter, etc.
   - [ ] Notify downstream maintainers
-
 ```
-
 
 Feature Freeze
 --------------

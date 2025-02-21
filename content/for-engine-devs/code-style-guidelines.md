@@ -3,6 +3,7 @@ title: Code style guidelines
 aliases:
 - /Code_style_guidelines
 - /code-style-guidelines
+- /engine-dev-process/code-style-guidelines
 ---
 
 # Code style guidelines
