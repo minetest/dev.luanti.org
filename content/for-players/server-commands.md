@@ -3,6 +3,7 @@ title: Server Commands
 aliases:
 - /Server_commands
 - /server-commands
+- /server/commands
 ---
 
 # Server commands
@@ -214,3 +215,7 @@ If you use Minetest Game, a few additional commands are available. These command
 * `/sethome`—Sets your current position as your “home point”. Requires the “home” privilege
 * `/home`—Teleports yourself to your “home point”. This command does not work if you haven’t set your “home point” yet, set it with `/sethome` first. Requires the “home” privilege
 * `/killme`—Kills yourself
+
+## See also
+
+* [For Server Hosts](/for-server-hosts)

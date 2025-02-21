@@ -68,7 +68,7 @@ We are working to expand this page with the following sections:
     *   Installation of a tutorial game to learn how to use Luanti
     *   Navigating a Luanti world
     *   How to use [texture packs](/for-players/texture-packs)
-*   Luanti [servers](/server)
+*   Luanti [servers](/for-players/servers)
     *   Short tutorial for students to visit a server
     *   What is allowed and what is not ([privileges](/for-players/privileges))
 *   How to improve the Luanti performance
@@ -80,7 +80,7 @@ Luanti offers the possibility to simply create a local server that can be used w
 Installation of Extensions (Mods)
 ---------------------------------
 
-Anything that Luanti doesn't seem to offer in comparison to Minecraft can be inserted into Luanti via an extension or modification, called a mod. It may seem difficult at first, but many mods are available. You just have to find the right mod. You can install a [mod](/for-players/mods) for a singleplayer world, or for all players on your [server](/server).
+Anything that Luanti doesn't seem to offer in comparison to Minecraft can be inserted into Luanti via an extension or modification, called a mod. It may seem difficult at first, but many mods are available. You just have to find the right mod. You can install a [mod](/for-players/mods) for a singleplayer world, or for all players on your [server](/for-players/servers).
 
 ### Types of Mods
 
@@ -113,7 +113,7 @@ So far there are not yet any good providers where you can quickly order and set 
 If you have successfully installed the Luanti server and can also reach it with the local Luanti client, you should make some settings which are mainly about protecting the server from unauthorized access. This can be done not only by mods but also by settings in a special file.
 
 *   [`minetest.conf`](/for-players/minetest-conf)
-*   [Make the server visible in the public server list](/server)
+*   [Make the server visible in the public server list](/for-server-hosts)
 *   [Define the texture pack used on your server](/for-players/texture-packs)
 
 If the server is set up correctly, it can start. If you share the server address or point to the server in the public server list, other users will come to the server and so it may happen that you have to intervene as an administrator. So here are some important commands and options you have as admin:

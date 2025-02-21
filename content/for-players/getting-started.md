@@ -16,7 +16,7 @@ Welcome to Luanti! This page explains what Luanti is all about, how to get it, a
 * Most games (but not all!) have a sandbox gameplay focused on construction, mining and creativity.
 * You can browse the list of games available on [ContentDB](https://content.luanti.org/packages/?type=game).
 * You can install **[mods](/for-players/mods/) to modify** certain **aspects of gameplay**. Mods are an **inherent** part of Luanti, it is even what games consist of.
-* **Mods work out of the box when playing on [servers](/server/)**, no additional installations required. Mods are server-side, everything is handled automatically.
+* **Mods work out of the box when playing on [servers](/for-players/servers/)**, no additional installations required. Mods are server-side, everything is handled automatically.
 
 ## Getting Luanti
 

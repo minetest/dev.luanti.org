@@ -251,7 +251,7 @@ See also: [Controls](/for-players/controls).
 
 You can keep track of your coordinates using debug info (F5), if the game lets you see this information. If you want, you can teleport to coordinates using `/teleport x y z`
 
-_See [Server commands#Teleportation](/server/commands/#teleportation). Requires "teleport" [privilege](/for-players/privileges)_.
+_See [Server commands#Teleportation](/for-players/server-commands/#teleportation). Requires "teleport" [privilege](/for-players/privileges)_.
 
 In Minetest Game, you can avoid getting lost again if use `/sethome` at home to save your home position and `/home` to teleport back to it.
 

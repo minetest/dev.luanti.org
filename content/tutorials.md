@@ -6,7 +6,7 @@ aliases:
 
 # Tutorials
 
-New to Luanti? Need help setting up a [server](/server "Server") or making a [texture pack](/for-players/texture-packs "Texture Packs")? Then you've come to the right place. On this page is a comprehensive list of all the tutorials/guides on the Minetest Wiki.
+New to Luanti? Need help setting up a [server](/for-server-hosts) or making a [texture pack](/for-players/texture-packs)? Then you've come to the right place. On this page is a comprehensive list of all the tutorials/guides on the Minetest Wiki.
 
 Beginner tutorials for Players
 ------------------------------
@@ -19,26 +19,26 @@ If you're new and do not know what to do, see below.
 General information
 -------------------
 
-* [Controls](/for-players/controls "Controls")
-* [Server commands](/server/commands "Server commands")
-* [Privileges](/for-players/privileges "Privileges")
-* [minetest.conf](/for-players/minetest-conf "Minetest.conf")
+* [Controls](/for-players/controls)
+* [Server commands](/for-players/server-commands)
+* [Privileges](/for-players/privileges)
+* [minetest.conf](/for-players/minetest-conf)
 
 Servers
 -------
 
 Luanti offers a fun online multiplayer mode. With this guide you can set up your server and host it on the web.
 
-* [General information about servers](/server "Server")
-* [Setting up a server](/server/setup "Setting up a server")
+* [General information about servers](/for-players/servers)
+* [Setting up a server](/for-server-hosts/setup)
 
 Mods
 ----
 
-[Mods](/for-players/mods "Mods") are packages that may add or change something in a game. Each game for Luanti has its own ecosystem of mods that extend that particular game, or there are game-agnostic mods that support all games.
+[Mods](/for-players/mods) are packages that may add or change something in a game. Each game for Luanti has its own ecosystem of mods that extend that particular game, or there are game-agnostic mods that support all games.
 
 * [Installing Mods](/for-players/installing-mods)
-* [Installing Client-Side Mods](/for-players/installing-client-side-mods "Installing Client-Side Mods")
+* [Installing Client-Side Mods](/for-players/installing-client-side-mods)
 
 Texture Packs
 -------------

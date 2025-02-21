@@ -34,7 +34,7 @@ There are itemstrings which don’t follow the syntax rules, see [#Special items
 Usages
 ------
 
-Itemstrings can be used as arguments used for the `/give` and `/giveme` [commands](/server/commands).
+Itemstrings can be used as arguments used for the `/give` and `/giveme` [commands](/for-players/server-commands).
 
 Example: `/giveme default:torch`—give yourself a torch
 

@@ -16,7 +16,7 @@ The basic idea of each game is always the same: The [player](/for-players/player
 
 A core concept of Luanti is a built-in [modding](/for-players/mods) capability, based on the Lua programming language. Mods allow one or more certain aspects of an existing game to be modified. Luanti mods can be as simple as adding a few decoration blocks or very complex by (for example) introducing complex new gameplay concepts or generating a completely different kind of world, and many other things. For the player, using a new mod requires to copy or extract some files into a certain location and pressing some buttons in Luanti's interface.
 
-Luanti can be played alone or [online](/server) together with multiple players.
+Luanti can be played alone or [online](/for-players/servers) together with multiple players.
 
 Games for Luanti can be found on [ContentDB](https://content.luanti.org/packages/?type=game).
 
@@ -29,7 +29,7 @@ Features
 *   Extremely high configurability with an advanced settings editor and built-in descriptions, or by using a [configuration file](/for-players/minetest-conf)
 *   Customize the graphics and sounds through [texture packs](/for-players/texture-packs)
 *   Download games, mods and texture packs from the built-in [ContentDB](https://content.luanti.org/)
-*   Singleplayer mode and [online multiplayer mode](/server "Server")
+*   Singleplayer mode and [online multiplayer mode](/for-players/servers "Server")
 *   Server list
 *   Sophisticated modding system using Lua
 *   Mods are entirely server-sided. You can join any Luanti server with any mods and start playing, no additional software required

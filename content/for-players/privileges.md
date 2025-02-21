@@ -7,7 +7,7 @@ aliases:
 
 # Privileges
 
-Every player has a set of privileges, which differ from server to server. Roughly spoken, one’s privileges determine what one is able to do and what not. Each privilege has a name (the meaning is described below). Privileges can be granted and revoked from other players by any player who has the privilege called “privs”. On a multiplayer server with a default configuration, new players start with the privileges called “interact” and “shout”. To view one’s own privileges, one can issue the [server command](/server-commands "Server commands") “/privs”.
+Every player has a set of privileges, which differ from server to server. Roughly spoken, one’s privileges determine what one is able to do and what not. Each privilege has a name (the meaning is described below). Privileges can be granted and revoked from other players by any player who has the privilege called “privs”. On a multiplayer server with a default configuration, new players start with the privileges called “interact” and “shout”. To view one’s own privileges, one can issue the [server command](/for-players/server-commands "Server commands") “/privs”.
 
 Built-in privileges
 -------------------
@@ -42,7 +42,7 @@ Irrevocable privileges
 
 A player’s privileges may be irrevocable in certain situations. It is not possible to revoke these privileges with `/revoke` then.
 
-In multiplayer [servers](/server "Server"), the player whose name equals the [minetest.conf](/for-players/minetest-conf "Minetest.conf") setting “name” automatically has all privileges and all of these are irrevocable. This is also the case for players who started a server (not a dedicated server). In singleplayer, you start with **interact**, **shout**, **privs** and **basic\_privs**. These privileges are irrevocable.
+In multiplayer [servers](/for-players/servers "Server"), the player whose name equals the [minetest.conf](/for-players/minetest-conf "Minetest.conf") setting “name” automatically has all privileges and all of these are irrevocable. This is also the case for players who started a server (not a dedicated server). In singleplayer, you start with **interact**, **shout**, **privs** and **basic\_privs**. These privileges are irrevocable.
 
 Privileges from mods and games
 -----------------------------------------------------------------------
@@ -67,5 +67,6 @@ There is an option in the configuration file for setting the default privileges 
 See also
 --------
 
-* [Server](/server "Server")
-* [Server commands](/server/commands "Server commands")
+* [Servers](/for-players/servers "Server")
+* [Server commands](/for-players/server-commands "Server commands")
+* [For Server Hosts](/for-server-hosts)

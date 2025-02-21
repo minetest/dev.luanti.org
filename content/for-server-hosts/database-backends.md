@@ -3,6 +3,7 @@ title: Database backends
 aliases:
 - /Database_backends
 - /database-backends
+- /server/database-backends
 ---
 
 # Database backends

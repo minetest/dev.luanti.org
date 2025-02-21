@@ -353,6 +353,7 @@
         "libcrypto",
         "Libera",
         "libjpeg",
+        "libnghttp",
         "libogg",
         "Libresprite",
         "libvorbis",

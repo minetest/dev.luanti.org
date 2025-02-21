@@ -65,7 +65,7 @@ Most types of world interactions are not possible. Dropping an unknown item is n
 
 If you try to place, use or drop an unknown item, an error message will be shown to the server. This message is not visible if you are connected to a server as a normal player. The error message reveals the item's [itemstring](/for-players/itemstrings).
 
-Internally, an unknown item still knows the “real” item it represents and the associated data. To fix problems with unknown items, check the troubleshooting section below. You can destroy unknown items with the `pulverize` [server command](/server-commands).
+Internally, an unknown item still knows the “real” item it represents and the associated data. To fix problems with unknown items, check the troubleshooting section below. You can destroy unknown items with the `pulverize` [server command](/for-players/server-commands).
 
 ### Troubleshooting
 

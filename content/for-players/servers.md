@@ -1,22 +1,24 @@
 ---
-title: Server
-bookCollapseSection: true
+title: Servers
 aliases:
 - /Server
+- /server
 ---
 
-# Server
+# Servers
 
 Luanti **servers** allow players to play online with other people. They can be run from a dedicated server, a Virtual Private Server or a home computer.
 
 This is not a list of servers, please see the [Luanti Server List](https://luanti.org/servers) or [Luanti Forum servers section](https://forum.luanti.org/viewforum.php?f=10) instead.
+
+To setup your own server, see [For Server Hosts](/for-server-hosts)
 
 Getting access to a server
 --------------------------
 
 ### Finding a server
 
-![](/images/server/Minetest_serverlist.png)
+![Luanti client's server list](/images/server/Minetest_serverlist.png)
 
 In order to play on a server at all, you need to know the address and a port number of a server first. There are many ways to find those addresses:
 
@@ -61,7 +63,7 @@ In multiplayer servers, these things become more important:
 
 *   [Chat](/for-players/chat): learn how to communicate with other players
 *   [Privileges](/for-players/privileges): learn what you can and can’t do on a server
-*   [Server commands](/server-commands): learn how to use server commands. They are also sometimes useful for players; for example, you can pulverize an item, teleport (if you are allowed to), and more
+*   [Server commands](/for-players/server-commands): learn how to use server commands. They are also sometimes useful for players; for example, you can pulverize an item, teleport (if you are allowed to), and more
     *   Find out more about the server with commands like “/mods”, “/privs”, “/status”.
 *   The [mods](/for-players/mods) installed on the server
     *   Take note of [mobs](/for-players/mobs), PvP (fighting “player-vs-player”), and server rules
@@ -78,12 +80,6 @@ Griefing refers to the act of destroying, damaging, or vandalizing a building bu
 
 Protection mods are very common on servers. A protection mod is a mod which grants players ownership to certain parts of the world. Only the owner can add or remove blocks in an owned area. Protection basically eliminates griefing.
 
-Managing a server
------------------
+## See also
 
-See [Setting up a server](/setting-up-a-server "Setting up a server") for information running your own server.
-
-See also
---------
-
-*   [Server tool mods](https://content.luanti.org/packages/?tag=server_tools)
+* [For Server Hosts](/for-server-hosts)

@@ -3,6 +3,7 @@ title: Server Metrics using Prometheus
 aliases:
 - /Server_Metrics_using_Prometheus
 - /server-metrics-using-prometheus
+- /server/prometheus-metrics
 ---
 
 # Server Metrics using Prometheus

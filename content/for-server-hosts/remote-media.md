@@ -2,10 +2,11 @@
 title: Remote media
 aliases:
 - /Remote_media
+- /server/remote-media
 ---
 
 # Remote media
-When connecting to a server, Luanti allows for media to be received over a remote HTTP server, as opposed to "traditionally" over the UDP server connection (assuming Luanti is compiled with cURL support and `enable_remote_media_server` is enabled.
+When connecting to a server, Luanti allows for media to be received over a remote HTTP server, as opposed to "traditionally" over the UDP server connection (assuming Luanti is compiled with cURL support and `enable_remote_media_server` is enabled).
 
 Usually this is a more efficient means of transferring for servers with large amounts of media, even if you host the HTTP server on the same computer as the Luanti server it should still be able to download faster. It is also useful for Luanti servers hosted on a low speed residential internet connection, where the media downloading can be offloaded to make it significantly faster and dedicate more of the connection to communication with the Luanti server.
 
@@ -24,6 +25,7 @@ This section goes over hosting a remote media server statically, using nginx as 
 
 First of all you need to populate the list of media and create an `index.mth` file, which contains a list of hashes that exist on the media server. This is a shell script you could run e.g. inside of a game's folder or a folder of mods:
 
+{{% comment %}} cspell:disable {{% /comment %}}
 ```bash
 #!/bin/bash
 
@@ -52,6 +54,7 @@ find media/ -type f -not -name index.mth | while read f; do
 	openssl dgst -binary -sha1 <$f >> media/index.mth
 done
 ```
+{{% comment %}} cspell:enable {{% /comment %}}
 
 You should now have a folder called `media` with a bunch of hashed filenames and an `index.mth` file. This can then be moved into a folder for nginx to host.
 

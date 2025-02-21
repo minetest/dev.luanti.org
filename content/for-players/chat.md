@@ -9,7 +9,7 @@ aliases:
 # Chat
 _This page is all about the in-game chat of Luanti. If you are interested in general Luanti chatter, refer to [IRC](/about/irc/)._
 
-The **in-game chat functionality** allows players to communicate with each other with short text messages inside a [server](/server/). This article also covers the chat log which is used for purposes other than showing chat messages as well.
+The **in-game chat functionality** allows players to communicate with each other with short text messages inside a [server](/for-players/servers/). This article also covers the chat log which is used for purposes other than showing chat messages as well.
 
 ## Sending messages
 First of all, before you can chat anything at all, you require the “shout” privilege. Most servers give you this privilege by default, or they may require you to do something before you are granted access to chat.
@@ -55,7 +55,7 @@ Example: Assume you want to say that you think that Luanti is awesome, in the th
 
 A direct message is a chat message which appears only on the chat logs of the sender and a chosen receiver of the message.
 
-You can send a direct message (DM) to someone by using the `/msg` [server command](/server-commands/). Say something in the form of:
+You can send a direct message (DM) to someone by using the `/msg` [server command](/for-players/server-commands/). Say something in the form of:
 
 ```txt
 /msg <player> <message>
