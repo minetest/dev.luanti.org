@@ -2,6 +2,7 @@
 title: Network Protocol
 aliases:
 - /Engine/Network_Protocol
+- /engine/network-protocol
 ---
 
 # Engine/Network Protocol
@@ -43,7 +44,7 @@ Starting with protocol 25, Luanti got more generic authentication handling.
 
 #### Authentication before protocol 25 (<=0.4.12)
 
-The client sent the desired username and a hash of the password salted with the username to the server inside TOSERVER\_INIT\_LEGACY (see the translatePassword function inside util/string.h for details on the hash). The server then compared the passed hash with an entry from the auth backend, and sent TOCLIENT\_INIT\_LEGACY on success, TOCLIENT\_ACCESS\_DENIED\_LEGAGY when authentication failed. On first login, the server already had the value to store inside its database. Similarly, the "change password" functionality was done using the TOSERVER\_PASSWORD\_LEGACY packet, where the client sent hash of old and desired new packet, and the server updated the value.
+The client sent the desired username and a hash of the password salted with the username to the server inside TOSERVER\_INIT\_LEGACY (see the translatePassword function inside util/string.h for details on the hash). The server then compared the passed hash with an entry from the auth backend, and sent TOCLIENT\_INIT\_LEGACY on success, TOCLIENT\_ACCESS\_DENIED\_LEGACY when authentication failed. On first login, the server already had the value to store inside its database. Similarly, the "change password" functionality was done using the TOSERVER\_PASSWORD\_LEGACY packet, where the client sent hash of old and desired new packet, and the server updated the value.
 
 #### Authentication since protocol 25
 
@@ -60,7 +61,7 @@ The actual SRP exchange is done in accordance with [RFC 2945](https://tools.ietf
 ##### FAQ design choices
 
 * **Why two srp auth methods? Why not just one, that's also working with the legacy hash?**: Its correct, that both LEGACY and modern login methods allow to prevent replay attacks, and give men in the middle no way to offline brute-force the password, serving the two main srp advantages. However, if you look at the differences between the modern and the legacy auth mechanisms, you will notice that the new method has case insensitivity baked in.
-* **Why these needless 'auth mechanism' abstractions? You are using three different types of auth mechanism support (login, sudo mode login, setting password from sudo mode)**: The abstractions are necessary for future extensibility. Also they make sense, as even for setting up passwords you will want to make authentication failable. Think of additional e-mail verification steps at account setup, but we are using this already inside current protocol, when the server checks the is\_empty value sent by the client to match with non empty password policies. And third, the abstractions come at very low cost, check how lightweight it is by having a look at the "setting password from sudo mode".
+* **Why these needless 'auth mechanism' abstractions? You are using three different types of auth mechanism support (login, sudo mode login, setting password from sudo mode)**: The abstractions are necessary for future extensibility. Also they make sense, as even for setting up passwords you will want to make authentication fail-able. Think of additional e-mail verification steps at account setup, but we are using this already inside current protocol, when the server checks the is\_empty value sent by the client to match with non empty password policies. And third, the abstractions come at very low cost, check how lightweight it is by having a look at the "setting password from sudo mode".
 
 Low-level protocol
 ------------------
@@ -191,7 +192,7 @@ The SPLIT packet means data is split into multiple packets (because the internet
 
 #### Timeout
 
-A connection may timeout after 30 seconds of nonresponsiveness to PINGs or RELIABLEs. A peer should send PING/CONTROL packets every 5 seconds or so if it has not sent any other packets.
+A connection may timeout after 30 seconds of non-responsiveness to PINGs or RELIABLEs. A peer should send PING/CONTROL packets every 5 seconds or so if it has not sent any other packets.
 
 #### Connect
 
