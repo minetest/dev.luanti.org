@@ -93,5 +93,5 @@ See also
 
 *   [Download Luanti](http://www.luanti.org/downloads/)
 *   [Getting Started](/for-players/getting-started)
-*   [Version Number](/version-number)
+*   [Version Number](/for-engine-devs/version-number)
 *   [Main Page](/)

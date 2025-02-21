@@ -2,6 +2,7 @@
 title: Version Number
 aliases:
 - /Version_number
+- /version-number
 ---
 
 # Version Number
