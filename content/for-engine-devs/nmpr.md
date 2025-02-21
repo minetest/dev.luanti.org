@@ -2,6 +2,7 @@
 title: Luanti NMPR
 aliases:
 - /Engine/NMPR
+- /engine/nmpr
 ---
 
 # Luanti NMPR
@@ -49,7 +50,7 @@ The high-level network protocol of NMPR is delightfully simple. There are four c
 | TOSERVER_GETBLOCK   | `v3s16 p`                      | Ask the server to send the data of a block           |
 | TOSERVER_ADDNODE    | `v3s16 p, MapNode node`        | Inform the server of a placed node                   |
 | TOSERVER_REMOVENODE | `v3s16 p, MapNode node`        | Inform the server of a removed node                  |
-| TOSERVER_PLAYERPOS  | `v3s32 p*100, v3s32 speed*100` | Inform the server of the positon of the local player |
+| TOSERVER_PLAYERPOS  | `v3s32 p*100, v3s32 speed*100` | Inform the server of the position of the local player |
 
 ### Server to Client
 
@@ -82,7 +83,7 @@ The packet handler handles the TOSERVER\_\* commands coming from clients.
 | TOSERVER_GETBLOCK   | Serialize the content of a MapBlock and send it (TOCLIENT_BLOCKDATA) |
 | TOSERVER_REMOVENODE | Set a node to be air and echo to other clients                       |
 | TOSERVER_ADDNODE    | Set a node to the type provided and echo to other clients            |
-| TOSERVER_PLAYERPOS  | Update the position and speed of a player in the server environemnt  |
+| TOSERVER_PLAYERPOS  | Update the position and speed of a player in the server environment  |
 
 ## Client
 Most of what the client does is very obvious, but there is one thing to note:
