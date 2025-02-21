@@ -20,7 +20,7 @@ Luanti Documentation is written in Markdown and transformed into HTML by [Hugo](
 When cloning the repository you need to clone it recursively so that the theme submodule gets included:
 
 ```bash
-git clone --recursive https://github.com/luanti-org/dev.luanti.org
+git clone --recursive https://github.com/luanti-org/docs.luanti.org
 ```
 
 If you have already cloned, you can fetch the submodules as such:
@@ -32,7 +32,7 @@ git submodule update --remote
 
 This project uses [Hugo](https://gohugo.io/) to build the site and various Node packages to test it.
 
-You can install Hugo locally as a [Node.js](https://nodejs.org) package for convenience. Node is also used for further testing scripts, like spell-checking and a11y. These scripts are described in [`package.json`](https://github.com/luanti-org/dev.luanti.org/blob/master/package.json) and [`readme.md`](https://github.com/luanti-org/dev.luanti.org/blob/master/README.md).
+You can install Hugo locally as a [Node.js](https://nodejs.org) package for convenience. Node is also used for further testing scripts, like spell-checking and a11y. These scripts are described in [`package.json`](https://github.com/luanti-org/docs.luanti.org/blob/master/package.json) and [`readme.md`](https://github.com/luanti-org/docs.luanti.org/blob/master/README.md).
 
 To install and run via Node:
 
@@ -87,7 +87,7 @@ Changes are reviewed via the common "fork and pull request" approach. If you're 
   - In the left vertical menu, select the source control option
   - Enter a message about your changes and click `commit and push`
 - Local-based (terminal commands for example, use GUI client if you wish)
-  - Clone the repo `git clone https://github.com/YOURUSERNAME/dev.luanti.org`
+  - Clone the repo `git clone https://github.com/YOURUSERNAME/docs.luanti.org`
   - Make a branch `git checkout your_branch_name`
   - Make edits with the tools of your choosing
   - Add, commit, and push the changes: `git add -A && git commit -m "your commit message here" && git push`

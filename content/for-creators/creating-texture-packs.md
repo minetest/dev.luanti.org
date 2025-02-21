@@ -167,7 +167,7 @@ Your file structure should now appear as:
 
 Linux:
 
-Hopefully if you're using Linux you'll know how to do something similar. Otherwise please [open an issue with the docs team](https://github.com/luanti-org/dev.luanti.org/issues/new) and we'll update this section :)
+Hopefully if you're using Linux you'll know how to do something similar. Otherwise please [open an issue with the docs team](https://github.com/luanti-org/docs.luanti.org/issues/new) and we'll update this section :)
 
 ### Special Textures
 

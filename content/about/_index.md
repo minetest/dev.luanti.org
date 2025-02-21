@@ -9,7 +9,7 @@ aliases:
 
 Luanti is a free and open-source voxel game engine with its own [distribution platform](/about/contentdb) and [client](/about/luanti). Players, creators, server hosts, and engine developers can find more information here about how to get started with Luanti.
 
-This site is created using [Hugo](https://gohugo.io/), with theme [Hugo Book](https://themes.gohugo.io/themes/hugo-book/). The site's source content can be found [on GitHub](https://github.com/luanti-org/dev.luanti.org/tree/master/content), and we welcome contributions from everyone. To contribute, see [Contributing to Docs](/about/contributing-to-docs).
+This site is created using [Hugo](https://gohugo.io/), with theme [Hugo Book](https://themes.gohugo.io/themes/hugo-book/). The site's source content can be found [on GitHub](https://github.com/luanti-org/docs.luanti.org/tree/master/content), and we welcome contributions from everyone. To contribute, see [Contributing to Docs](/about/contributing-to-docs).
 
 ## Getting Started
 
@@ -30,4 +30,4 @@ Documentation will cover:
 * Engine reference and internal structures
 * Server and platform (player-facing) usage and guides
 
-This project began in December 2024. Our roadmap can be found at [GitHub issue #113: Roadmap](https://github.com/luanti-org/dev.luanti.org/issues/113).
+This project began in December 2024. Our roadmap can be found at [GitHub issue #113: Roadmap](https://github.com/luanti-org/docs.luanti.org/issues/113).
