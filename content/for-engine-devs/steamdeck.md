@@ -2,6 +2,7 @@
 title: Steam Deck
 aliases:
 - /SteamDeck
+- /steamdeck
 ---
 
 # Steam Deck
