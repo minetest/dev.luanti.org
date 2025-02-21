@@ -2,6 +2,7 @@
 title: Basic data structures
 aliases:
 - /Engine/Basic_data_structures
+- /engine/basic-data-structures
 ---
 
 # Basic data structures
