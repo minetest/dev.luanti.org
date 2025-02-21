@@ -1,10 +1,12 @@
 ---
 title: LuaJIT
+aliases:
+- /luajit
 ---
 
 # LuaJIT
 
-LuaJIT is a just-in-time compiler for Lua, which implements the language as it was in the reference Lua 5.1 implementation (referred to as PUC Lua to distinguish it) albeit with some additions and differences (see [LuaJIT differences](/LuaJIT_differences/)).
+LuaJIT is a just-in-time compiler for Lua, which implements the language as it was in the reference Lua 5.1 implementation (referred to as PUC Lua to distinguish it) albeit with some additions and differences (see [LuaJIT differences](/for-creators/luajit-differences/)).
 
 LuaJIT typically executes code much faster than PUC Lua, which is why its usage is strongly recommended.
 
