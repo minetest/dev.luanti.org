@@ -3,6 +3,7 @@ title: Organization
 aliases:
 - /Organisation
 - /organisation
+- /organization
 ---
 
 # Organization

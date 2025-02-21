@@ -13,14 +13,14 @@ This section contains all rules and guidelines that developers, contributors, an
 
 ## Core developers
 
-[Organization](/Organization)
+[Organization](/for-engine-devs/organization)
 
 ## Git and GitHub usage
 
-[Git Guidelines](/Git_Guidelines)
+[Git Guidelines](/for-engine-devs/git-guidelines)
 
 ## Coding style
 
-[Code style guidelines](/Code_style_guidelines)
+[Code style guidelines](/for-engine-devs/code-style-guidelines)
 
-[Lua code style guidelines](/Lua_code_style_guidelines)
+[Lua code style guidelines](/for-engine-devs/lua-code-style-guidelines)
