@@ -173,7 +173,7 @@ Implements IGameDef.
 
 server.{h,cpp}
 
-### [Script Engine](/Script_Engine "Script Engine")
+### [Script Engine](/for-engine-devs/script-engine)
 
 script/\*
 
