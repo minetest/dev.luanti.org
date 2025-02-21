@@ -29,7 +29,7 @@ Core developers are assigned and unassigned by celeron55, based on these rules:
 
 * Only people who have already contributed to the project can be assigned to be core developers.
 * The person themselves or anyone else can propose someone to become or stop being a core developer. Do this by "/msg celeron55 blah blah", or by email.
-* Celeron55 accepts complaints about core developers and ultimately decides on un-assignments.
+* celeron55 accepts complaints about core developers and ultimately decides on un-assignments.
 * Core developers, like other contributors, should document and publish their work in a way that allows another contributor to pick up on it if the core developer stops working on the project due to any reason.
 * If a person doesn't use their core developer privileges for 6 months, the privileges will be revoked for security reasons.
 

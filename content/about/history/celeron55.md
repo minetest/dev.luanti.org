@@ -1,11 +1,11 @@
 ---
-title: Celeron55
+title: celeron55
 aliases:
 - /Celeron55
 - /celeron55
 ---
 
-# Celeron55
+# celeron55
 
 
 [![](/images/celeron55/C55.jpg)](/images/celeron55/C55.jpg)
