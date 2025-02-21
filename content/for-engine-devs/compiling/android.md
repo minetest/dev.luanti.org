@@ -2,6 +2,7 @@
 title: Android
 aliases:
 - /developing-luanti-for-android/
+- /compiling/android
 ---
 
 # Compiling Luanti for Android

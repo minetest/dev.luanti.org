@@ -1,5 +1,5 @@
 ---
-title: Engine development process
+title: For Engine Devs
 aliases:
 - /All_rules_regarding_to_development
 - /all-rules-regarding-development
@@ -7,24 +7,19 @@ aliases:
 bookCollapseSection: true
 ---
 
-# All rules regarding development
+# For Engine Devs
 
-This page contains all rules and guidelines that developers, contributors and others working on the project should follow.
+This section contains all rules and guidelines that developers, contributors, and others working on the project should follow.
 
-This is the official hub page for this information.
-
-Rules
------
-
-#### Core developers
+## Core developers
 
 [Organization](/Organization)
 
-#### Git and github usage
+## Git and GitHub usage
 
 [Git Guidelines](/Git_Guidelines)
 
-#### Coding style
+## Coding style
 
 [Code style guidelines](/Code_style_guidelines)
 

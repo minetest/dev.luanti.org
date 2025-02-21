@@ -94,7 +94,7 @@ Usually your Linux distribution of choice will have `luantiserver` in its offici
 
 - **Pre-built third-party server binaries**: [The luantiserver repository by ROllerozxa](https://github.com/rollerozxa/luantiserver) contains up-to-date prebuilt x86_64 headless server binaries that should work on any relatively recent glibc-based Linux distro, built from an automated CI workflow that you can fork if you want to customize the build options.
 
-- **Building from source**: Build Luanti from source with `-DBUILD_CLIENT=0 -DBUILD_SERVER=1`. For more information see [Compiling a headless Linux server](/compiling-a-headless-linux-server/).
+- **Building from source**: Build Luanti from source with `-DBUILD_CLIENT=0 -DBUILD_SERVER=1`. For more information see [Compiling a headless Linux server](/for-engine-devs/compiling/linux-server/).
 
 - **Docker**: There also exist ready made Docker images for `luantiserver`, such as [the Dockerfile in the Luanti source tree](https://github.com/luanti-org/luanti/blob/master/Dockerfile) or [Warr1024's Docker image](https://hub.docker.com/r/warr1024/minetestserver).
 

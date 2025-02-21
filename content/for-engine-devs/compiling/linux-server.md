@@ -2,6 +2,7 @@
 title: Linux - headless server
 aliases:
 - /compiling-a-headless-linux-server/
+- /compiling/linux-server
 ---
 
 # Compiling a headless Linux server
@@ -25,9 +26,11 @@ Do note this only works well if your host machine and server has the same archit
 ## Dependencies
 The base dependencies for a server build are as follows:
 
+{{% comment %}} cspell:disable {{% /comment %}}
 ```bash
 sudo apt install g++ ninja-build cmake libsqlite3-dev libcurl4-openssl-dev zlib1g-dev libgmp-dev libjsoncpp-dev libzstd-dev libncurses-dev
 ```
+{{% comment %}} cspell:enable {{% /comment %}}
 
 This dependency list includes cURL for announcing to the serverlist and ncurses for the interactive server terminal (`--terminal`).
 

@@ -3,6 +3,7 @@ title: Compiling on Windows
 aliases:
 - /compiling-on-windows-using-msys2/
 - /compiling/windows-msys2/
+- /compiling/windows
 ---
 
 # Compiling on Windows

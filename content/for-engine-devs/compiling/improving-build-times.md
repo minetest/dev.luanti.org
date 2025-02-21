@@ -1,5 +1,7 @@
 ---
 title: Improving Build Times
+aliases:
+- /compiling/improving-build-times
 ---
 
 # Improving build times
@@ -10,19 +12,19 @@ The instructions assume you are on Linux, as that's where you can usually expect
 ## Use Clang
 Luanti supports building with the Clang compiler, which generally compiles somewhat faster compared to GCC. You should be able to install Clang from your Linux distribution's package manager and then make CMake build with Clang instead of GCC with the following build options:
 
-```
+```bash
 -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++
 ```
 
 ## Use mold
 `mold` is a linker that runs much faster than the standard `ld` or even the `lld` linker.
 
-```
+```bash
 -DCMAKE_EXE_LINKER_FLAGS="-fuse-ld=mold" -DCMAKE_SHARED_LINKER_FLAGS="-fuse-ld=mold"
 ```
 
 ## Use ninja
-Ninja is a build system that aims to have less overhead than regular Makefiles, which should make it slightly faster. CMake supports generating Ninja build files by using `-G Ninja` when first generating a build directory. You cannot change the generator in an already created build folder.
+Ninja is a build system that aims to have less overhead than regular makefiles, which should make it slightly faster. CMake supports generating Ninja build files by using `-G Ninja` when first generating a build directory. You cannot change the generator in an already created build folder.
 
 Do note that Ninja will automatically detect your processor count and set the amount of jobs if you don't manually set anything. This might be an issue if you want to do something while compiling in the background. You can check what is the default with `ninja --help` and manually pass the job count like one would do with make: `ninja -j4`.
 
@@ -48,7 +50,7 @@ These may reduce build times further, but at cost of some functionality being mi
 ## When in a hurry
 Once you have cloned the Luanti repository:
 
-```
+```bash
 mkdir build; cd build
 cmake .. -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_EXE_LINKER_FLAGS="-fuse-ld=mold" -DCMAKE_SHARED_LINKER_FLAGS="-fuse-ld=mold" -G Ninja
 ninja
