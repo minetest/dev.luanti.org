@@ -2,7 +2,7 @@
     "scripts": {
         "prepare": "git submodule init && git submodule update",
         "build": "hugo",
-        "build:ci": "hugo --panicOnWarning",
+        "build:ci": "hugo --panicOnWarning && npm run test:spelling",
         "clean": "rm -rf public && echo Clear browser cache as well!",
         "format:fix": "sort-package-json",
         "start": "hugo server",

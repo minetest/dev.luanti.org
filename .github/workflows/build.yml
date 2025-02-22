@@ -10,7 +10,7 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-      - name: Install depdencies
+      - name: Install dependencies
         run: npm ci
       - name: Build site to check for errors
         run: npm run build:ci
