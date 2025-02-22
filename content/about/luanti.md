@@ -1,9 +1,9 @@
 ---
 title: Luanti
 aliases:
-- /Luanti
-- /Minetest
-- /luanti
+  - /Luanti
+  - /Minetest
+  - /luanti
 ---
 
 # Luanti
@@ -20,23 +20,21 @@ Luanti can be played alone or [online](/for-players/servers) together with multi
 
 Games for Luanti can be found on [ContentDB](https://content.luanti.org/packages/?type=game).
 
-Features
---------
+## Features
 
-*   A big cube-based world to discover (61840 nodes (cubes) in every dimension)
-*   Procedurally generated world
-*   Several [world generators](/for-creators/mapgen) with many adjustable parameters
-*   Extremely high configurability with an advanced settings editor and built-in descriptions, or by using a [configuration file](/for-players/minetest-conf)
-*   Customize the graphics and sounds through [texture packs](/for-players/texture-packs)
-*   Download games, mods and texture packs from the built-in [ContentDB](https://content.luanti.org/)
-*   Singleplayer mode and [online multiplayer mode](/for-players/servers)
-*   Server list
-*   Sophisticated modding system using Lua
-*   Mods are entirely server-sided. You can join any Luanti server with any mods and start playing, no additional software required
-*   Relatively low system requirements
+- A big cube-based world to discover (61840 nodes (cubes) in every dimension)
+- Procedurally generated world
+- Several [world generators](/for-creators/mapgen) with many adjustable parameters
+- Extremely high configurability with an advanced settings editor and built-in descriptions, or by using a [configuration file](/for-players/minetest-conf)
+- Customize the graphics and sounds through [texture packs](/for-players/texture-packs)
+- Download games, mods and texture packs from the built-in [ContentDB](https://content.luanti.org/)
+- Singleplayer mode and [online multiplayer mode](/for-players/servers)
+- Server list
+- Sophisticated modding system using Lua
+- Mods are entirely server-sided. You can join any Luanti server with any mods and start playing, no additional software required
+- Relatively low system requirements
 
-Screenshots
------------
+## Screenshots
 
 ### Games
 
@@ -50,13 +48,12 @@ There exists several hundred of mods, most for Minetest Game and some for other 
 
 In the Luanti forums, many screenshots are posted by players in several threads:
 
-*   [High-quality screenshots](https://forum.luanti.org/viewtopic.php?f=3&t=10366)
-*   [Castles, strongholds, towers and similar structures](https://forum.luanti.org/viewtopic.php?f=3&t=15105)
-*   [Various buildings](https://forum.luanti.org/viewtopic.php?f=3&t=10128)
-*   [Any screenshots](https://forum.luanti.org/viewtopic.php?f=3&t=156)
+- [High-quality screenshots](https://forum.luanti.org/viewtopic.php?f=3&t=10366)
+- [Castles, strongholds, towers and similar structures](https://forum.luanti.org/viewtopic.php?f=3&t=15105)
+- [Various buildings](https://forum.luanti.org/viewtopic.php?f=3&t=10128)
+- [Any screenshots](https://forum.luanti.org/viewtopic.php?f=3&t=156)
 
-System requirements
--------------------
+## System requirements
 
 ### Hardware requirements
 
@@ -68,13 +65,11 @@ Depending on the game you choose, and the mods it uses, the minimum configuratio
 
 Luanti is cross-platform. For officially supported operating systems, see the [downloads page](http://www.luanti.org/downloads/).
 
-Legal
------
+## Legal
 
 Luanti is free software, without advertisements and free of charge. It is licensed under the [GNU Lesser General Public License, version 2.1](http://www.gnu.org/licenses/old-licenses/lgpl-2.1), with artwork generally covered by [Creative Commons Attribution ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0).
 
-Name
-----
+## Name
 
 In the beginning, Luanti was called “**Minetest-c55**”. The “c55” stands for “celeron55”, the original creator. The “Minetest” was chosen simply because he wanted to test how far he could come with a Minecraft clone. (But today, Luanti is a game engine for all sorts of voxel games, not just Minecraft clones.)
 
@@ -88,10 +83,9 @@ After years of brainstorming and discussion, a decision has finally been made: O
 
 {{% comment %}} cspell:enable {{% /comment %}}
 
-See also
---------
+## See also
 
-*   [Download Luanti](http://www.luanti.org/downloads/)
-*   [Getting Started](/for-players/getting-started)
-*   [Version Number](/for-engine-devs/version-number)
-*   [Main Page](/)
+- [Download Luanti](http://www.luanti.org/downloads/)
+- [Getting Started](/for-players/getting-started)
+- [Version Number](/for-engine-devs/version-number)
+- [Main Page](/)

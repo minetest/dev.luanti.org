@@ -1,9 +1,9 @@
 ---
 title: For Engine Devs
 aliases:
-- /All_rules_regarding_to_development
-- /all-rules-regarding-development
-- /engine-dev-process
+  - /All_rules_regarding_to_development
+  - /all-rules-regarding-development
+  - /engine-dev-process
 bookCollapseSection: true
 ---
 

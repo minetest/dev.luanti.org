@@ -1,8 +1,8 @@
 ---
 title: Android
 aliases:
-- /developing-luanti-for-android/
-- /compiling/android
+  - /developing-luanti-for-android/
+  - /compiling/android
 ---
 
 # Compiling Luanti for Android
@@ -12,10 +12,10 @@ but the tools used here should also work on other platforms.
 
 ## Prerequisites
 
-* Basic familiarity with the command line.
-* You have a working network connection.
-* You have already downloaded / cloned a copy of Luanti to a folder called `luanti`.
-* You have an Android device you want to install Luanti on for testing purposes
+- Basic familiarity with the command line.
+- You have a working network connection.
+- You have already downloaded / cloned a copy of Luanti to a folder called `luanti`.
+- You have an Android device you want to install Luanti on for testing purposes
   or you want to produce a Luanti release build for distribution.
 
 ## CLI tools
@@ -65,7 +65,6 @@ cd luanti/android
 
 _(If you're compiling on Windows, you can use the `gradle` command, so long as you install the additional Unix dependency [gettext](https://www.gnu.org/software/gettext/). Both of these are verified to work when installed by [Scoop](https://scoop.sh).)_
 
-
 This will produce a number of debug builds in the form of `.apk` files (depending on the enabled ABIs)
 in `android/app/build/outputs`:
 
@@ -93,7 +92,7 @@ or `./gradlew app:installRelease` if you want to install a release build
 First, install [Android Studio](https://developer.android.com/studio),
 for example by downloading an official release, unpacking it and then running `./android-studio/bin/studio.sh`.
 
-Then, open `luanti/android` (*not* the `luanti` folder):
+Then, open `luanti/android` (_not_ the `luanti` folder):
 
 ![The Android Studio file picker, used to select `luanti/android`](/images/developing_for_android/open_folder.png)
 
@@ -142,9 +141,11 @@ which should be in `build/outputs/apk/release`
 
 If the build fails, you may try "Build" > "Clean Build" > "Clean Project" followed by "Build" > "Rebuild Project".
 
-[^1]: This assumes your phone is connected and has USB debugging enabled (or you have set up an Android emulator).
-For details see the [ADB](https://developer.android.com/tools/adb) and Android Studio documentation.
+[^1]:
+    This assumes your phone is connected and has USB debugging enabled (or you have set up an Android emulator).
+    For details see the [ADB](https://developer.android.com/tools/adb) and Android Studio documentation.
 
-[^2]: If you can't find the "Build" option in the top bar,
-you have to first click the hamburger in the top left corner.
-Such is the downfall of modern UI design.
+[^2]:
+    If you can't find the "Build" option in the top bar,
+    you have to first click the hamburger in the top left corner.
+    Such is the downfall of modern UI design.

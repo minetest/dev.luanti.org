@@ -18,20 +18,17 @@
   "Notice": {
     "scope": "markdown",
     "prefix": "%",
-    "body": [
-		"{{< notice $1 >}}$2{{< /notice >}}",
-		"$0"
-	],
-    "description": "Notice shortcode"
+    "body": ["{{< notice $1 >}}$2{{< /notice >}}", "$0"],
+    "description": "Notice shortcode",
   },
   "CSpell toggle": {
-	"scope": "markdown",
-	"prefix": "%",
-	"body": [
-	  "{{% comment %}} cspell:disable {{% /comment %}}",
-	  "{{% comment %}} cspell:enable {{% /comment %}}",
-	  "$0"
-	],
-	"description": "Toggle CSpell for a block of code"
-  }
+    "scope": "markdown",
+    "prefix": "%",
+    "body": [
+      "{{% comment %}} cspell:disable {{% /comment %}}",
+      "{{% comment %}} cspell:enable {{% /comment %}}",
+      "$0",
+    ],
+    "description": "Toggle CSpell for a block of code",
+  },
 }

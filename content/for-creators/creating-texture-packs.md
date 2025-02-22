@@ -1,17 +1,16 @@
 ---
 title: Creating Texture Packs
 aliases:
-- /Creating_texture_packs
-- /creating-texture-packs
-- /content-dev/creating-texture-packs
+  - /Creating_texture_packs
+  - /creating-texture-packs
+  - /content-dev/creating-texture-packs
 ---
 
 # Creating texture packs
 
 [Texture packs](/for-players/texture-packs) are a simple folder containing image files named after the default ones. Luanti has very few requirements for using a texture pack and texture packs are normally used by games.
 
-Image Structure
----------------
+## Image Structure
 
 Below is a brief overview of the texture structure as of version 5.1
 
@@ -28,8 +27,7 @@ For example `your/path/to/luanti/games/minetest_game/mods/default/textures` has 
 
 In order to create a fully custom texture pack for a game, say Minetest Game, you would need to first copy all the textures that are under `~/base/pack` to a new folder. Then, copy all the textures from each individual `~/minetest_game/mods/modname/textures` to the same folder. This would give you a full list of the image files to create a custom texture pack for that game.
 
-Setting up Custom Texture Pack Folder
--------------------------------------
+## Setting up Custom Texture Pack Folder
 
 The Luanti engine supports sub-folders under the custom texture pack folder. Although these sub-folders can be named anything, it is sometimes easiest to keep the subfolders the same name as the mod the textures are for. This can also help with identifying what textures might be missing if you wish to support multiple different games with your custom texture pack for example Minetest Game.
 
@@ -43,27 +41,26 @@ There is a small text file named `texture_packs_here.txt` in the correct locatio
 
 Windows:
 
-*   Browse to your Luanti folder
-*   Enter the `games/minetest_game` folder
-*   Then hit Ctrl+F to invoke the search function,
-*   In the search box, enter `*.png` to find all the image files (or directly use the “Images” option in the search page),
-*   Next Select All Ctrl+A,
-*   Copy Ctrl+C and
-*   Paste to your texture pack folder Ctrl+V
+- Browse to your Luanti folder
+- Enter the `games/minetest_game` folder
+- Then hit Ctrl+F to invoke the search function,
+- In the search box, enter `*.png` to find all the image files (or directly use the “Images” option in the search page),
+- Next Select All Ctrl+A,
+- Copy Ctrl+C and
+- Paste to your texture pack folder Ctrl+V
 
-  
 If you would also like to replace some of the base engine textures:
 
-*   Browse to your Luanti folder,
-*   Enter the `textures/base/pack` folder,
-*   Select the files you wish to copy Ctrl + mouse click you might like to change:
-    *   `logo.png` - changes the ICON on the lower part of the main screen for your game
-    *   `minimap_*.png` - changes the appearance of the minimap in game
-    *   `unknown_*.png` - changes the appearance of unknown game objects
-    *   `server_*.png` - change all the server icons
-    *   `progress_*.png` - changes the load bar when a game loads
-*   Copy Ctrl+C and
-*   Paste to your texture pack folder Ctrl+V
+- Browse to your Luanti folder,
+- Enter the `textures/base/pack` folder,
+- Select the files you wish to copy Ctrl + mouse click you might like to change:
+  - `logo.png` - changes the ICON on the lower part of the main screen for your game
+  - `minimap_*.png` - changes the appearance of the minimap in game
+  - `unknown_*.png` - changes the appearance of unknown game objects
+  - `server_*.png` - change all the server icons
+  - `progress_*.png` - changes the load bar when a game loads
+- Copy Ctrl+C and
+- Paste to your texture pack folder Ctrl+V
 
 Linux:
 
@@ -78,15 +75,15 @@ find games/minetest_game/ -name '*.png' -exec cp '{}' "textures/$TP_NAME" ';'
 
 If you would also like to replace some of the base engine textures:
 
-*   Browse to your Luanti folder,
-*   Enter the `textures/base/pack` folder,
-*   Select the files you wish to copy - you might like to change:
-    *   `logo.png` - changes the ICON on the lower part of the main screen for your game
-    *   `minimap_*.png` - changes the appearance of the minimap in game
-    *   `unknown_*.png` - changes the appearance of unknown game objects
-    *   `server_*.png` - change all the server icons
-    *   `progress_*.png` - changes the progress bar when a game loads
-*   Copy and Paste to your texture pack folder
+- Browse to your Luanti folder,
+- Enter the `textures/base/pack` folder,
+- Select the files you wish to copy - you might like to change:
+  - `logo.png` - changes the ICON on the lower part of the main screen for your game
+  - `minimap_*.png` - changes the appearance of the minimap in game
+  - `unknown_*.png` - changes the appearance of unknown game objects
+  - `server_*.png` - change all the server icons
+  - `progress_*.png` - changes the progress bar when a game loads
+- Copy and Paste to your texture pack folder
 
 Both methods will result in all textures appearing in single big list of textures/image files under the base custom texture pack folder.
 
@@ -98,12 +95,11 @@ Windows:
 
 To copy over using Windows it's easiest to make use of `robocopy` at the windows CMD prompt as this can easily copy over just `*.png` files while retaining the mod folder structure.
 
-*   Make a note of the source location for the files and the destination location eg
-    *   Source: `your/path/to/luanti/games/minetest_game/mods`
-    *   Destination: `your/path/to/luanti/textures/Your_Texture_Pack_Name`
-*   Open the [Windows command prompt](https://www.howtogeek.com/235101/10-ways-to-open-the-command-prompt-in-windows-10/)
-    
-*   Type in:
+- Make a note of the source location for the files and the destination location eg
+  - Source: `your/path/to/luanti/games/minetest_game/mods`
+  - Destination: `your/path/to/luanti/textures/Your_Texture_Pack_Name`
+- Open the [Windows command prompt](https://www.howtogeek.com/235101/10-ways-to-open-the-command-prompt-in-windows-10/)
+- Type in:
 
 ```bat
 robocopy "C:\your\path\to\luanti\games\minetest_game\mods" "C:\your\path\to\luanti\textures\Your_Texture_Pack_Name" *.png /s
@@ -115,21 +111,19 @@ If you would also like to copy over the default engine graphics using robocopy, 
 robocopy "C:\your\path\to\luanti\textures\base" "C:\your\path\to\luanti\textures\Your_Texture_Pack_Name" *.png /s
 ```
 
-Under your texture pack folder, you should end up with a structure resembling:  
+Under your texture pack folder, you should end up with a structure resembling:
 
-
-|C:\your\path\to\luanti\textures\Your_Texture_Pack_Name\|        |         |           |
-|-------------------------------------------------------|--------|---------|-----------|
-|                                                       |default\|textures\|*.png files|
-|                                                       |doors\  |textures\|*.png files|
-|                                                       |....    |....     |....       |
-
+| C:\your\path\to\luanti\textures\Your_Texture_Pack_Name\| |                                 |                        |
+| -------------------------------------------------------- | ------------------------------- | ---------------------- | ---- |
+|                                                          | default\|textures\|\*.png files |
+|                                                          | doors\                          | textures\|\*.png files |
+|                                                          | ....                            | ....                   | .... |
 
 The texture folder is buried one extra level deep, but you can manually go through and simply use Windows file explorer to move the files up one level. Alternatively, you can move the files using the following Batch script:
 
 This method requires the creation of a `.bat` file and that this file is placed and run from your new texture pack folder.
 
-*   Copy the below into a new text document:
+- Copy the below into a new text document:
 
 {{% comment %}} cspell:disable {{% /comment %}}
 
@@ -153,17 +147,16 @@ cd /d "%thisdir%
 
 {{% comment %}} cspell:enable {{% /comment %}}
 
-*   Save this file as `something.bat` at the location `your/path/to/luanti/textures/Your_texture_Pack_Name`
-*   Double click the `.bat` file to run it. A command prompt window will flick up and disappear
+- Save this file as `something.bat` at the location `your/path/to/luanti/textures/Your_texture_Pack_Name`
+- Double click the `.bat` file to run it. A command prompt window will flick up and disappear
 
 Your file structure should now appear as:
 
-|C:\your\path\to\luanti\textures\Your_Texture_Pack_Name\|        |           |
-|-------------------------------------------------------|--------|-----------|
-|                                                       |default\|*.png files|
-|                                                       |doors\  |*.png files|
-|                                                       |....    |....       |
-
+| C:\your\path\to\luanti\textures\Your_Texture_Pack_Name\| |                       |
+| -------------------------------------------------------- | --------------------- | ------------ |
+|                                                          | default\|\*.png files |
+|                                                          | doors\                | \*.png files |
+|                                                          | ....                  | ....         |
 
 Linux:
 
@@ -173,8 +166,7 @@ Hopefully if you're using Linux you'll know how to do something similar. Otherwi
 
 Luanti has some "special" textures which can be provided by texture packs to re-texture engine-provided or special textures. See [texture_packs.md](https://github.com/luanti-org/luanti/blob/master/doc/texture_packs.md) in the Luanti source tree contains a list of all these special textures
 
-Editing or Creating Textures
-----------------------------
+## Editing or Creating Textures
 
 ### Copyright
 
@@ -186,10 +178,10 @@ Most importantly for some, taking copyrighted textures from other voxel games is
 
 In order to edit textures, you'll need some kind of image editing software. Any image editor that supports transparency should be more than enough, but if you want software recommendations these are the image editors most commonly used by the Luanti community.
 
-*   [GIMP](https://www.gimp.org/) - Fully featured FOSS image editor tool. Might be overwhelming for a new user, however is very powerful if learned.
-*   [Libresprite](https://libresprite.github.io/) - FOSS fork of Aseprite, specially designed for pixel art.
-*   [Paint.NET](https://www.getpaint.net/download.html) - Windows-only image editor, like MS Paint but slightly more featured (supports e.g. transparency).
-*   [Lospec's pixel software list with more options](http://lospec.com/pixel-art-software-list)
+- [GIMP](https://www.gimp.org/) - Fully featured FOSS image editor tool. Might be overwhelming for a new user, however is very powerful if learned.
+- [Libresprite](https://libresprite.github.io/) - FOSS fork of Aseprite, specially designed for pixel art.
+- [Paint.NET](https://www.getpaint.net/download.html) - Windows-only image editor, like MS Paint but slightly more featured (supports e.g. transparency).
+- [Lospec's pixel software list with more options](http://lospec.com/pixel-art-software-list)
 
 ### Creating Textures
 
@@ -215,9 +207,9 @@ The mod "default" is the most common mod used across most games as it includes a
 
 Now you are all done and ready to share your texture pack. There's a few things to check before you do:
 
-*   Make sure to include a `license.txt` file and any relevant copyright and attribution notices in there.
-*   Make a good screenshot of your textures in use in game, as players will usually want to see the texture pack in action before installing.
-*   Make a `texture_pack.conf` file, which contains metadata about the texture pack. An example texture\_pack.conf looks something like this:
+- Make sure to include a `license.txt` file and any relevant copyright and attribution notices in there.
+- Make a good screenshot of your textures in use in game, as players will usually want to see the texture pack in action before installing.
+- Make a `texture_pack.conf` file, which contains metadata about the texture pack. An example texture_pack.conf looks something like this:
 
 ```conf
 name = very_cool_texture_pack
@@ -229,10 +221,10 @@ description = This is a description for the Very Cool Texture pack.
 
 There are numerous places that run and use [Git](https://git-scm.com/) as a place for hosting your files online. The beauty of Git is it gives you version control and allows other users of Luanti to download and potentially add to your work in the future. Git is probably the best option for sharing texture packs however it can be a bit challenging to set up initially. Popular providers include:
 
-*   [GitHub](http://github.com/)
-*   [Codeberg](https://codeberg.org/)
-*   [Gitlab](http://about.gitlab.com/)
-*   [and many more...](http://en.wikipedia.org/wiki/Comparison_of_source-code-hosting_facilities)
+- [GitHub](http://github.com/)
+- [Codeberg](https://codeberg.org/)
+- [Gitlab](http://about.gitlab.com/)
+- [and many more...](http://en.wikipedia.org/wiki/Comparison_of_source-code-hosting_facilities)
 
 ### ContentDB
 

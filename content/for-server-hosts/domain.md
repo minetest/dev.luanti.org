@@ -1,16 +1,14 @@
 ---
 title: How to get a domain name for your server
 aliases:
-- /How_to_get_a_domain_name_for_your_server
-- /how-to-get-a-domain-name-for-your-server
-- /server/domain
+  - /How_to_get_a_domain_name_for_your_server
+  - /how-to-get-a-domain-name-for-your-server
+  - /server/domain
 ---
 
 # How to get a domain name for your server
 
-
-What is DNS
------------
+## What is DNS
 
 _Skip to Step 1 if you already know about dynamic DNS._
 
@@ -24,8 +22,7 @@ If your server is for public use you can configure its minetest.conf file so it 
 
 A domain that points to an address which may change is called "Dynamic DNS", and is what the rest of this page covers.
 
-Step 1: choose a domain
------------------------
+## Step 1: choose a domain
 
 Just like "docs.luanti.org", your domain will have 3 parts separated with dots. You'll get to name the left-most part, and the rest you select from an available list. We'll use [FreeDNS](https://freedns.afraid.org/) because they have thousands of free domains to choose from.
 
@@ -35,22 +32,19 @@ If we type "minetest" into the search box for that list, we get:
 
 ![](/images/how-to-get-a-domain-name-for-your-server/FreeDNS_SearchResults.png)
 
-  
 In the status column, it shows that one of these domains is "public" and the other is "private". You can use either, the difference is that private domains allow the owner of the domain to [delete your subdomain if they find it offensive or slanderous](https://freedns.afraid.org/queue/explanation.php).
 
 You don't have to use a domain containing "minetest", there are plenty of other domains available in that list, e.g. openblocks.com, various "Minecraft" ones etc., but our example Minetest server will be called "Secret Valley" and we will register _secretvalley.minetest.land_
 
 Clicking on the minetest.land link takes us [here](https://freedns.afraid.org/subdomain/edit.php?edit_domain_id=1245383)
 
-Step 2: Create an account
--------------------------
+## Step 2: Create an account
 
 If you aren't already logged in to FreeDNS, it'll ask you to log in.
 
 Click "Setup an account here" and choose the free option.
 
-Step 3: Registering your subdomain
-----------------------------------
+## Step 3: Registering your subdomain
 
 Once logged in, clicking a domain link brings up this dialog:
 
@@ -68,8 +62,7 @@ Now _secretvalley.minetest.land_ is pointing to my home internet connection, and
 
 Much simpler than the scary and technical-looking user interface makes it appear!
 
-Step 4: Keeping your domain updated when your IP address changes.
------------------------------------------------------------------
+## Step 4: Keeping your domain updated when your IP address changes.
 
 You want your domain to be automatically updated if your ISP changes your IP address.
 
@@ -91,8 +84,7 @@ My IP address only changes if the modem disconnects, which is pretty rare, so I 
 
 (Note: the description for FreeDNS Update warns that if you use this app, you must enter your username in lowercase, and the password is case sensitive with a maximum length of 16 characters)
 
-Step 5: Let your minetest server know its domain name
------------------------------------------------------
+## Step 5: Let your minetest server know its domain name
 
 Edit your server's minetest.conf file, and set address to be your domain:
 
@@ -100,8 +92,6 @@ Edit your server's minetest.conf file, and set address to be your domain:
 address = secretvalley.minetest.land
 ```
 
-
-Finished
---------
+## Finished
 
 You're done. FreeDNS provides additional features for domains that are outside the scope of this article, such as Web Forward, so you may wish to explore the site further.

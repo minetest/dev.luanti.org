@@ -1,8 +1,8 @@
 ---
 title: FAQ
 aliases:
-- /FAQ
-- /faq
+  - /FAQ
+  - /faq
 ---
 
 # FAQ
@@ -10,6 +10,7 @@ aliases:
 This is a collection of some **frequently asked questions** about Luanti. For technical problems, refer to [Troubleshooting](/for-players/troubleshooting).
 
 ## What is Luanti?
+
 Luanti is a free software game engine designed to create [voxel](https://en.wikipedia.org/wiki/Voxel)\-based games. A detailed description can be found at [Luanti](/about/luanti).
 
 ## About the Engine
@@ -83,6 +84,7 @@ It's rare for games to be heavily concurrent as it's not needed for smaller game
 The name "Luanti" is a play on words from the Finnish word "Luonti" meaning creation, and the Lua programming language. The name change was first announced on the 13th of October 2024 and came into effect with the 5.10 update. [The blog post announcing the name change](https://blog.luanti.org/2024/10/13/Introducing-Our-New-Name/) goes over the motivation behind it in more detail.
 
 ### What is "Minetest"?
+
 It is the old name for Luanti, which is slowly being replaced with the new name but will realistically never fully disappear.
 
 The origin of the old name was due to it starting as an experiment (a **test**, if you will) to replicate **Mine**craft Alpha all the way back in 2010. The name stuck, and [no one could agree](https://forum.luanti.org/viewtopic.php?f=5&t=17133) [on a new one](https://github.com/luanti-org/luanti/issues/13510). [Until we actually did](https://blog.luanti.org/2024/10/13/Introducing-Our-New-Name/).
@@ -233,7 +235,7 @@ As of 5.6.0, Luanti comes with toggle-able dynamic shadows. Game support is requ
 
 ### How do I increase the brightness?
 
-_See [Troubleshooting#The\_screen\_is\_too\_dark](/for-players/troubleshooting/#the-screen-is-too-dark)._
+_See [Troubleshooting#The_screen_is_too_dark](/for-players/troubleshooting/#the-screen-is-too-dark)._
 
 ### How do I fly?
 
@@ -281,11 +283,11 @@ A mod (modification, alternatively can be interchanged with module in the case o
 
 Luanti uses the [Lua language](https://www.lua.org/) for games and mods. It is simple, light, and fast. You can find plenty of tutorials online.
 
-* [Programming in Lua Book](http://www.lua.org/pil/contents.html), learn the Lua language (for Lua 5.0)
-* [Lua 5.1 reference](http://www.lua.org/manual/5.1/) (note that Luanti uses Lua 5.1)
-* [Lua guide by tutorialspoint](https://www.tutorialspoint.com/lua/lua_overview.htm)
-* [Lua in 100 Seconds (Video)](https://www.youtube.com/watch?v=jUuqBZwwkQw)
-* [Lua in 15 Minutes for Programmers (Video)](https://www.youtube.com/watch?v=kgiEF1frHQ8)
+- [Programming in Lua Book](http://www.lua.org/pil/contents.html), learn the Lua language (for Lua 5.0)
+- [Lua 5.1 reference](http://www.lua.org/manual/5.1/) (note that Luanti uses Lua 5.1)
+- [Lua guide by tutorialspoint](https://www.tutorialspoint.com/lua/lua_overview.htm)
+- [Lua in 100 Seconds (Video)](https://www.youtube.com/watch?v=jUuqBZwwkQw)
+- [Lua in 15 Minutes for Programmers (Video)](https://www.youtube.com/watch?v=kgiEF1frHQ8)
 
 ### How can I learn to make games and mods?
 

@@ -1,9 +1,9 @@
 ---
 title: Server Metrics using Prometheus
 aliases:
-- /Server_Metrics_using_Prometheus
-- /server-metrics-using-prometheus
-- /server/prometheus-metrics
+  - /Server_Metrics_using_Prometheus
+  - /server-metrics-using-prometheus
+  - /server/prometheus-metrics
 ---
 
 # Server Metrics using Prometheus
@@ -35,7 +35,6 @@ make -j$(nproc)
 sudo make install
 ```
 
-
 ### Build Luanti
 
 Now, you need build Luanti with Prometheus enabled
@@ -45,20 +44,17 @@ cmake . -DENABLE_PROMETHEUS=1
 make -j$(nproc)
 ```
 
-
 ### Configure prometheus
 
 Prometheus will make HTTP requests to Luanti's prometheus-cpp library to get the metrics.
 
 You can set the prometheus listen address by assigning an IP:PORT in the minetest.conf:
 
-````
+```
 prometheus_listener_address = 127.0.0.1:30000
 ```
 
-
-Grafana
--------
+## Grafana
 
 You can link up Prometheus to Grafana to make nice web graphs. For example: [monitor.rubenwardy.com](https://monitor.rubenwardy.com/d/r6cCl68mk/minetest-servers)
 

@@ -1,14 +1,14 @@
 ---
 title: Contributing to Docs
 aliases:
-- /about-this-site/guidelines
-- /about/guidelines
-- /about-this-site/local-development
-- /about/local-development
-- /about-this-site/making-changes
-- /about/making-changes
-- /about-this-site/rules
-- /about/rules
+  - /about-this-site/guidelines
+  - /about/guidelines
+  - /about-this-site/local-development
+  - /about/local-development
+  - /about-this-site/making-changes
+  - /about/making-changes
+  - /about-this-site/rules
+  - /about/rules
 ---
 
 # Contributing to Docs
@@ -104,7 +104,7 @@ Front matter is metadata at the top of every file, inside a block that starts an
 ---
 title: Your Page Title
 aliases:
-- /old/page/path
+  - /old/page/path
 ---
 ```
 
@@ -116,14 +116,15 @@ If you move or rename a Markdown file, add an [`aliases`](https://gohugo.io/cont
 
 ### Formats
 
-* Use American English spelling
-* Write content in Markdown
-* Use webp images instead of jpg, png, or others
-* Add a [language](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting) to code blocks
+- Use American English spelling
+- Write content in Markdown
+- Use webp images instead of jpg, png, or others
+- Add a [language](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting) to code blocks
 
 ### Merge policies
 
 Please announce changes (in optional minutes) in the #luanti-docs IRC/Discord/Matrix channel
+
 - Anything in /content should be approved by one luanti-docs member that isn't yourself
 - Anything core engine processes should be approved by one luanti-engine team member that isn't yourself minimum
 - For all else: if you're a luanti-docs member, use your best judgement

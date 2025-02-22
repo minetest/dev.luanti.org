@@ -1,22 +1,20 @@
 ---
 title: Overview of Luanti forks
 aliases:
-- /Overview_of_Luanti_forks
-- /Overview_of_Minetest_forks
-- /overview-of-luanti-forks
+  - /Overview_of_Luanti_forks
+  - /Overview_of_Minetest_forks
+  - /overview-of-luanti-forks
 ---
 
 # Luanti forks
 
 A software is said to be a **fork** if it is a derivation of a copy of another software; that is, if it is based on its source code and other related data. Luanti has seen some forks in its history. This article gives an overview of some of the known forks of Luanti.
 
-What is a Luanti fork?
-----------------------
+## What is a Luanti fork?
 
 As said, above, a fork is another copy of software that is edited. For Luanti, it is the same. Except a few mods put together is not called a fork, that would be a modpack. A fork is a Core engine change(s) that are not official and will not be released as a version of Luanti unless submitted and accepted in a pull request.
 
-List of projects
-----------------
+## List of projects
 
 The following projects are known Luanti forks, which may or may not be active at the moment.
 
@@ -54,25 +52,26 @@ There are a lot of Android forks. Sadly, there are a lot of low-quality propriet
 
 The _official_ Android versions can be found here:
 
-* [Luanti on F-Droid](https://f-droid.org/packages/net.minetest.minetest/)
-* [Luanti on Google Play](https://play.google.com/store/apps/details?id=net.minetest.minetest)
+- [Luanti on F-Droid](https://f-droid.org/packages/net.minetest.minetest/)
+- [Luanti on Google Play](https://play.google.com/store/apps/details?id=net.minetest.minetest)
 
 **Important: Ads, in-app purchases or other anti-features are not, and will never be part of Luanti!** If you see ads, double-check if you have _really_ installed Luanti, and not something else. Luanti is a community-driven free software project and we are way too proud of ourselves to ever need something like ads or in-app-purchases. :D
 
 Many of these Luanti forks come and go rather quickly. Here are some known names in Google Play (because it changes so quickly, this list ls likely outdated and incomplete):
 
 {{% comment %}} cspell:disable {{% /comment %}}
-* Worldcraft: Exploration Lite
-* WorldCraft 2 : Pocket Edition
-* PixelCraft — 3D Survival!
-* ► MultiCraft ― Free Miner!
-* Crazy Craft on Castle World PE
-* MultiCraft - Minetest France
-* Cartoon Craft: Castle World PE
-* Voxel Craft : Castle Build PE
-* World Craft 3D
-* Squeake Craft PLUS
-{{% comment %}} cspell:enable {{% /comment %}}
+
+- Worldcraft: Exploration Lite
+- WorldCraft 2 : Pocket Edition
+- PixelCraft — 3D Survival!
+- ► MultiCraft ― Free Miner!
+- Crazy Craft on Castle World PE
+- MultiCraft - Minetest France
+- Cartoon Craft: Castle World PE
+- Voxel Craft : Castle Build PE
+- World Craft 3D
+- Squeake Craft PLUS
+  {{% comment %}} cspell:enable {{% /comment %}}
 
 [Discussion thread](https://forum.luanti.org/viewtopic.php?f=3&t=16707).
 
@@ -89,11 +88,12 @@ Just like with Android, we also had people forking Luanti for iOS. The similar p
 Here's a list (we can't recommend any of these):
 
 {{% comment %}} cspell:disable {{% /comment %}}
-* [Buildcraft](https://itunes.apple.com/us/app/buildcraft-multiplayer-block-game/id740372768?mt=8)
-* [Worldcraft 2](https://itunes.apple.com/us/app/worldcraft-survival-2/id900353132?mt=8)
-* [Worldcraft Pocket Edition](https://itunes.apple.com/us/app/worldcraft-pocket-edition/id796349324?mt=8)
-* [Exploration](https://itunes.apple.com/us/app/exploration-mind-world-of-craft-survival-game/id880642020?mt=8)
-* FreeCraft (No iTunes Store link at the moment)
+
+- [Buildcraft](https://itunes.apple.com/us/app/buildcraft-multiplayer-block-game/id740372768?mt=8)
+- [Worldcraft 2](https://itunes.apple.com/us/app/worldcraft-survival-2/id900353132?mt=8)
+- [Worldcraft Pocket Edition](https://itunes.apple.com/us/app/worldcraft-pocket-edition/id796349324?mt=8)
+- [Exploration](https://itunes.apple.com/us/app/exploration-mind-world-of-craft-survival-game/id880642020?mt=8)
+- FreeCraft (No iTunes Store link at the moment)
 
 None of these are free software either. Buildcraft even forces you to perform an in-app purchases to make its ads go away.
 {{% comment %}} cspell:enable {{% /comment %}}

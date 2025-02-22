@@ -1,27 +1,30 @@
 ---
 title: Timing and Event loop
 aliases:
-- /api/timing-and-event-loop/
+  - /api/timing-and-event-loop/
 ---
 
 # Timing and Event loop
+
 Luanti's Lua API can be used to get time and date or to schedule "events" to run once or every server step.
 
 ## Settings
 
-* ***On servers***
-	* The `dedicated_server_step` setting controls the time between server steps. This is the maximum granularity (the most time spent between steps and the finest timing possible) of each game loop without a busy-wait.
+- **_On servers_**
 
-* ***In singleplayer***
-	* Framerate determines server steps.
+  - The `dedicated_server_step` setting controls the time between server steps. This is the maximum granularity (the most time spent between steps and the finest timing possible) of each game loop without a busy-wait.
+
+- **_In singleplayer_**
+  - Framerate determines server steps.
 
 ## Lua builtins
+
 Not restricted by mod security, these functions are available to both SSMs and CSMs and allow getting times / dates.
 
-* [`os.clock`](https://www.lua.org/manual/5.1/manual.html#pdf-os.clock) - Approximate seconds CPU time used.
-* [`os.time`](https://www.lua.org/manual/5.1/manual.html#pdf-os.time) - The current time. Will usually be a UNIX timestamp in seconds.
-* [`os.difftime`](https://www.lua.org/manual/5.1/manual.html#pdf-os.difftime) - Difference between two `os.time` timestamps (usually simply `b - a`).
-* [`os.date`](https://www.lua.org/manual/5.1/manual.html#pdf-os.date) - Getting & formatting dates.
+- [`os.clock`](https://www.lua.org/manual/5.1/manual.html#pdf-os.clock) - Approximate seconds CPU time used.
+- [`os.time`](https://www.lua.org/manual/5.1/manual.html#pdf-os.time) - The current time. Will usually be a UNIX timestamp in seconds.
+- [`os.difftime`](https://www.lua.org/manual/5.1/manual.html#pdf-os.difftime) - Difference between two `os.time` timestamps (usually simply `b - a`).
+- [`os.date`](https://www.lua.org/manual/5.1/manual.html#pdf-os.date) - Getting & formatting dates.
 
 ### Example
 
@@ -58,6 +61,7 @@ time = core.get_us_time()
 ```
 
 #### Returns
+
 - `time` - `{type-number}`: System-dependent timestamp in microseconds since an arbitrary starting point (µs)
 
 {{< notice tip >}}
@@ -69,7 +73,7 @@ The returned `time` is not portable and not relative to any specific point in ti
 {{< /notice >}}
 
 {{< notice tip >}}
-You can use the difference between ``core.get_us_time`` and the returned times to check whether a real-world time span has passed, which is useful for rate limiting. For in-game timers, you might prefer adding up `dtime` or (if second precision is enough) using gametime.
+You can use the difference between `core.get_us_time` and the returned times to check whether a real-world time span has passed, which is useful for rate limiting. For in-game timers, you might prefer adding up `dtime` or (if second precision is enough) using gametime.
 {{< /notice >}}
 
 #### Example
@@ -94,6 +98,7 @@ time = core.get_gametime()
 ```
 
 #### Returns
+
 - `time` - `{type-number}`: Time passed "in-game" since world creation in seconds ("gametime"). Does not increase while the game is paused or not running. Gametime is stored with the world and continuously increases.
 
 #### Example
@@ -112,6 +117,7 @@ core.after(0, function()
 	end
 end)
 ```
+
 {{< notice info >}}
 This naive implementation might be one server step ahead or behind `core.get_gametime`. Note that the initial gametime is rounded. Do not persist the values for this reason.
 {{< /notice >}}
@@ -133,6 +139,7 @@ end)
 ```
 
 #### Params
+
 - `dtime` - `{type-number}`: Delta (elapsed) time since last step in seconds
 
 {{< notice tip >}}
@@ -189,6 +196,7 @@ core.after(0, after_step)
 ```
 
 #### Usage
+
 ```lua
 job = core.after(time, func, ...)
 if ... then
@@ -197,11 +205,13 @@ end
 ```
 
 #### Params
+
 - `time` - `{type-number}`: Time in seconds that must have passed for the callback to be executed.
 - `func` - `{type-function}`: Function to be called. Objects with the `__call` metamethod are supported as well.
 - `...` - vararg: Arguments to be passed to `func` when it is called.
 
 #### Returns
+
 - `job` - job object: Simple object providing a `job:cancel()` method to cancel a scheduled "job".
 
 {{< notice info >}}
@@ -209,17 +219,18 @@ end
 {{< /notice >}}
 
 {{< notice tip >}}
-If you have to call a function with ``nil``s in it's argument list, use a closure for reliable behavior:
+If you have to call a function with `nil`s in its argument list, use a closure for reliable behavior:
 
 ```lua
 core.after(time, function()
 	func(nil, arg, arg2, nil, nil)
 end)
 ```
+
 {{< /notice >}}
 
 {{< notice note >}}
-All scheduled callbacks are stored in a list until they are called. This list is traversed in linear time if *any* of the callbacks are executed. Excessive use of `core.after` may result in slow execution time.
+All scheduled callbacks are stored in a list until they are called. This list is traversed in linear time if _any_ of the callbacks are executed. Excessive use of `core.after` may result in slow execution time.
 {{< /notice >}}
 
 ## Entities
@@ -229,6 +240,7 @@ All scheduled callbacks are stored in a list until they are called. This list is
 Callback. Called per-entity every globalstep with the current `dtime`, allowing for comfortable per-entity timing.
 
 #### Usage
+
 ```lua
 function entity:on_step(dtime, ...)
 	-- use dtime
@@ -236,6 +248,7 @@ end
 ```
 
 #### Params
+
 - `self` - entity: The entity itself (implicit parameter)
 - `dtime` - `{type-number}`: Delta (passed) time since last step in seconds (same as globalstep)
 - `...` - vararg: Other parameters irrelevant to timing (such as `moveresult`)

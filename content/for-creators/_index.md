@@ -1,9 +1,9 @@
 ---
 title: For Creators
 aliases:
-- /Modding_Intro
-- /modding-intro
-- /content-dev
+  - /Modding_Intro
+  - /modding-intro
+  - /content-dev
 bookCollapseSection: true
 ---
 
@@ -13,8 +13,7 @@ Luanti is a platform for creating and sharing games, mods, texture packs, and mo
 
 Luanti has a scripting API, which is used to program games and mods, creating whole new experiences or extending existing ones. The API is accessed using Lua, an easy-to-use programming language. Version 5.1 of Lua is used, but many people run LuaJIT for greater performance. The only thing you will need is _basic_ programming knowledge.
 
-Documentation
--------------
+## Documentation
 
 ### Tutorials
 
@@ -34,21 +33,19 @@ Any functions not listed here are subject to change and not guaranteed to be com
 
 minetest_docs was a project to create new, more detailed documentation. The final contents from the project can currently be found under the [/api/](/for-creators/api/) directory here.
 
-Useful tools
-------------
+## Useful tools
 
 Here are some useful tools that most modders use when making Luanti mods:
 
-* [Visual Studio Code](https://code.visualstudio.com/)/[VSCodium](https://vscodium.com/), powerful code editor with a [Minetest extension](https://marketplace.visualstudio.com/items?itemName=GreenXenith.minetest-tools) available for code completion.
-* [luacheck](https://github.com/lunarmodules/luacheck), static analysis tool for Lua. See [this modding book chapter](https://rubenwardy.com/minetest_modding_book/en/quality/luacheck.html) for more information on how to use it with Luanti.
+- [Visual Studio Code](https://code.visualstudio.com/)/[VSCodium](https://vscodium.com/), powerful code editor with a [Minetest extension](https://marketplace.visualstudio.com/items?itemName=GreenXenith.minetest-tools) available for code completion.
+- [luacheck](https://github.com/lunarmodules/luacheck), static analysis tool for Lua. See [this modding book chapter](https://rubenwardy.com/minetest_modding_book/en/quality/luacheck.html) for more information on how to use it with Luanti.
 
-Other useful links
-------------------
+## Other useful links
 
-* Check out [ContentDB](https://content.luanti.org/) to see mods that have been published by the community.
-* Get mod help from the community:
-    * [Forums](https://forum.luanti.org/viewforum.php?f=47)
-    * [Discord](https://discord.gg/minetest)
-    * [Matrix](https://matrix.to/#/#minetest:tchncs.de)
-    * ...[more](https://www.luanti.org/get-involved/)
-* Suggest a mod idea in the [mod request thread](https://forum.luanti.org/viewtopic.php?f=9&t=2434).
+- Check out [ContentDB](https://content.luanti.org/) to see mods that have been published by the community.
+- Get mod help from the community:
+  - [Forums](https://forum.luanti.org/viewforum.php?f=47)
+  - [Discord](https://discord.gg/minetest)
+  - [Matrix](https://matrix.to/#/#minetest:tchncs.de)
+  - ...[more](https://www.luanti.org/get-involved/)
+- Suggest a mod idea in the [mod request thread](https://forum.luanti.org/viewtopic.php?f=9&t=2434).

@@ -1,21 +1,19 @@
 ---
 title: Basic data structures
 aliases:
-- /Engine/Basic_data_structures
-- /engine/basic-data-structures
+  - /Engine/Basic_data_structures
+  - /engine/basic-data-structures
 ---
 
 # Basic data structures
 
-IRC logs on this subject
-------------------------
+## IRC logs on this subject
 
 [minetest-delta/2011-11-07](http://web.archive.org/web/20160309052711/http://logs.2pktfkt.de/minetest-delta/2011-11-07.html) [minetest-delta/2011-11-08](http://web.archive.org/web/20160308105531/http://logs.2pktfkt.de/minetest-delta/2011-11-08.html)
 
 For the log dating 2011-11-07, the subject discussion starts at the end.
 
-Node
-----
+## Node
 
 Simply put, [nodes](/for-players/nodes) are the "cubes" that make the world.
 
@@ -31,12 +29,11 @@ Nodes don't have any interactive functionality, this is done by the client and t
 
 Special nodes are ignore, air, and unknown node. These are the only nodes added by Luanti directly (rather than a mod or game).
 
-* Ignore: Where map is not generated, there's ignore. `core.get_node` gives ignore also if the map is not loaded, so to get the node in unloaded chunks you can use LuaVoxelManipulator.
-* Air: Air is set when a node is removed. For the player it's empty space.
-* Unknown Node: This node is a special case when the map contains a node with an unknown/undefined type.
+- Ignore: Where map is not generated, there's ignore. `core.get_node` gives ignore also if the map is not loaded, so to get the node in unloaded chunks you can use LuaVoxelManipulator.
+- Air: Air is set when a node is removed. For the player it's empty space.
+- Unknown Node: This node is a special case when the map contains a node with an unknown/undefined type.
 
-Block / MapBlock
-----------------
+## Block / MapBlock
 
 A block (or MapBlock) in Luanti, is a collection of 16x16x16 nodes (described above), and they are the pieces that together make the world/map.
 
@@ -76,14 +73,11 @@ u8 param2[nodecount]; // only if content_width=2
 
 ```
 
-
-mapchunk
---------
+## mapchunk
 
 A mapchunk in Luanti is a collection of 5x5x5 MapBlocks (described above), and each time map generates, another mapchunk appears.
 
-Map
----
+## Map
 
 The Map (class Map) stores MapBlocks and works as an abstraction layer for the MapBlocks, allowing the users of Map to see the world as a consistent bunch of MapNodes.
 
@@ -91,12 +85,10 @@ Map also knows how to load and save MapBlocks.
 
 It also contains functionality for lighting and liquid updates.
 
-VoxelManipulator
-----------------
+## VoxelManipulator
 
 The VoxelManipulator is an object that stores arbitrary areas from the Map, for transferring into other threads and allowing faster node access than the Map does.
 
-See also
---------
+## See also
 
 - [Glossary](/glossary)

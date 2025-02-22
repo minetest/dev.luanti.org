@@ -1,27 +1,29 @@
 {
-    "scripts": {
-        "prepare": "git submodule init && git submodule update",
-        "build": "hugo",
-        "build:ci": "hugo --panicOnWarning && npm run test:spelling",
-        "clean": "rm -rf public && echo Clear browser cache as well!",
-        "format:fix": "sort-package-json",
-        "start": "hugo server",
-        "test:a11y": "start-test start 1313 test:a11y:tests",
-        "test:a11y:tests": "playwright test",
-        "test:links": "linkinator ./public -r",
-        "test:spelling": "cspell content README.md"
-    },
-    "dependencies": {
-        "hugo-extended": "^0.141.0"
-    },
-    "devDependencies": {
-        "@axe-core/playwright": "^4.10.1",
-        "@playwright/test": "^1.49.1",
-        "cspell": "^8.17.1",
-        "linkinator": "^6.1.2",
-        "prettier": "3.5.2",
-        "sort-package-json": "^2.14.0",
-        "start-server-and-test": "^2.0.10"
-    },
-    "//": "See readme.md for explanations of each dependency and script"
+  "scripts": {
+    "prepare": "git submodule init && git submodule update",
+    "build": "hugo",
+    "build:ci": "hugo --panicOnWarning && npm run test:spelling && npm run test:format",
+    "clean": "rm -rf public && echo Clear browser cache as well!",
+    "format:fix": "sort-package-json",
+    "start": "hugo server",
+    "fix:format": "prettier --write .",
+    "test:a11y": "start-test start 1313 test:a11y:tests",
+    "test:a11y:tests": "playwright test",
+    "test:format": "prettier --check .",
+    "test:links": "linkinator ./public -r",
+    "test:spelling": "cspell content README.md"
+  },
+  "dependencies": {
+    "hugo-extended": "^0.141.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "@playwright/test": "^1.49.1",
+    "cspell": "^8.17.1",
+    "linkinator": "^6.1.2",
+    "prettier": "3.5.2",
+    "sort-package-json": "^2.14.0",
+    "start-server-and-test": "^2.0.10"
+  },
+  "//": "See readme.md for explanations of each dependency and script"
 }

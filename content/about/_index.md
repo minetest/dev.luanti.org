@@ -2,7 +2,7 @@
 title: About
 bookCollapseSection: true
 aliases:
-- /about-this-site
+  - /about-this-site
 ---
 
 # About
@@ -26,8 +26,8 @@ Luanti Documentation is the central resource for the Luanti project. Contributor
 
 Documentation will cover:
 
-* Comprehensive API reference, examples, and guides
-* Engine reference and internal structures
-* Server and platform (player-facing) usage and guides
+- Comprehensive API reference, examples, and guides
+- Engine reference and internal structures
+- Server and platform (player-facing) usage and guides
 
 This project began in December 2024. Our roadmap can be found at [GitHub issue #113: Roadmap](https://github.com/luanti-org/docs.luanti.org/issues/113).

@@ -1,11 +1,8 @@
 {
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "cSpell.enabledFileTypes": {
     "*": false,
     "markdown": true
   },
-  "cSpell.files": [
-    "/content/**",
-    "README.md",
-  ]
+  "cSpell.files": ["/content/**", "README.md"]
 }

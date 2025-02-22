@@ -1,10 +1,11 @@
 ---
 title: ItemStackMetaData
 aliases:
-- /api/classes/itemstackmetadata
+  - /api/classes/itemstackmetadata
 ---
 
 # ItemStackMetaData
+
 ItemStackMetaData is a subclass of [MetaData](/for-creators/api/classes/metadata/) obtained via `stack:get_meta()` allowing for persistent storage of key-value pairs tied to ItemStacks.
 
 {{< notice warning >}}
@@ -14,20 +15,25 @@ ItemStack metadata is serialized with ItemStacks, increasing the ItemString leng
 ## Special Fields
 
 ### Description
-* `description`: The description to be shown when hovering over the item (see `ItemStack:get_description`).
-* `short_description`: A short description of the item (see `ItemStack:get_short_description`).
+
+- `description`: The description to be shown when hovering over the item (see `ItemStack:get_description`).
+- `short_description`: A short description of the item (see `ItemStack:get_short_description`).
 
 ### Hardware Colorization
-* `color`: ColorString to use for hardware colorization of the stack.
-* `palette_index`: Palette index to use for hardware colorization of the stack (if the stack has a palette).
+
+- `color`: ColorString to use for hardware colorization of the stack.
+- `palette_index`: Palette index to use for hardware colorization of the stack (if the stack has a palette).
 
 ### Count
+
 Requires Luanti 5.6 clients for the count override (older clients will simply show the item count according to the item definition); works on all 5.x servers since it only uses ItemStackMetaData server-side.
 
 #### `count_meta`
+
 String to show in inventory lists instead of the item count.
 
 #### `count_alignment`
+
 Integer (use with `:get_int` and `:set_int`).
 
 Alignment of the displayed item count value is encoded as `x_align + 4 * y_align` where `x_align` and `y_align` are one of:
@@ -59,6 +65,7 @@ meta:set_int("count_alignment", align_top_right)
 or perhaps wrap this all up in a useful helper:
 
 {{% comment %}} cspell:disable {{% /comment %}}
+
 ```lua
 local vert_align = {
 	default = 0,
@@ -80,14 +87,17 @@ end
 
 set_stack_cnt_align(stack, "top", "right")
 ```
+
 {{% comment %}} cspell:enable {{% /comment %}}
 
 ## Methods
 
 ### `:set_tool_capabilities`
+
 Allows overriding the tool capabilities specified in the item definition.
 
 **Arguments**
+
 - `tool_capabilities` - `nil` or a tool capabilities table: Either:
   - `nil`: Clears the tool capability override, or
   - Tool capabilities table: Overrides the defined tool capabilities (see ItemDefinition for the table format)

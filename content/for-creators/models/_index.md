@@ -1,7 +1,7 @@
 ---
 title: Models
 aliases:
-- /models
+  - /models
 bookCollapseSection: true
 ---
 
@@ -35,5 +35,5 @@ See https://api.luanti.org/nodes/#node-boxes.
 
 ## Editors
 
-* [BlockBench](/for-creators/models/blockbench)
-* [Blender](/for-creators/models/using-blender)
+- [BlockBench](/for-creators/models/blockbench)
+- [Blender](/for-creators/models/using-blender)

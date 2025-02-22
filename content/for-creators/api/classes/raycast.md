@@ -1,33 +1,38 @@
 ---
 title: Raycast
 aliases:
-- /api/classes/raycast
+  - /api/classes/raycast
 ---
 
 # Raycast
+
 Raycasts are used to simulate rays and determine which selection boxes they intersect with.
 
 With some limitations, they work almost exactly like the player pointing at things.
 
 ## Pointed Thing
+
 Pointed things in-game as passed to various callbacks are either
 
-* Nothing (`{type = "nothing"}`), or
-* Objects (entities or players), or
-* Nodes (solids or liquids)
+- Nothing (`{type = "nothing"}`), or
+- Objects (entities or players), or
+- Nodes (solids or liquids)
 
 Pointed thing tables are thus a "tagged union" type, taking the following forms for objects & nodes:
 
 ### Objects
+
 - `type` - `{type-string}`: `"object"`
 - `ref` - ObjectRef: The pointed ObjectRef
 
 ### Nodes
+
 - `type` - `{type-string}`: `"node"`
 - `under` - `{type-vector}`: The position of the pointed node (the node which would be dug if using an appropriate tool)
 - `above` - `{type-vector}`: The position of the pointed node plus the pointed face normal (the position of the node which would be placed if you were building)
 
 ### Additional Raycast Fields
+
 These fields are only available in pointed things returned by raycasts.
 
 - `box_id` - `{type-number}`: Only relevant for nodes: 1-indexed ID of the pointed selection box of the node
@@ -37,19 +42,23 @@ These fields are only available in pointed things returned by raycasts.
 Raycasts do not emit "nothing" pointed things.
 
 ## `core.line_of_sight(pos1, pos2)`
+
 Checks whether any non-air node is blocking the line of sight between two positions.
 
 You may use this to determine e.g. whether a target would be visible to a mob. Raycasts will often be preferable since they provide more fine-grained control (objects, liquids, looping over possibly blocking things in the line of sight).
 
 **Arguments:**
+
 - `pos1` - `{type-vector}`: Starting position of the line ("segment") of sight
 - `pos2` - `{type-vector}`: Ending position of the line ("segment") of sight
 
 **Returns:**
+
 - `free_sight` - `{type-bool}`: Whether any node is blocking the sight
 - `pos` - `{type-vector}`: Position of the "first" node (the node closest to `pos1`) blocking the sight (only returned if `free_sight` is `false`)
 
 ## `Raycast(from_pos, to_pos, include_objects, include_liquid_nodes)`
+
 Creates a raycast object; OOP-constructor-style alias for `core.raycast`.
 
 {{< notice info >}}
@@ -65,12 +74,14 @@ Have selection boxes, collision boxes (and ideally even visuals) match for all n
 {{< /notice >}}
 
 **Arguments:**
+
 - `from_pos` - `{type-vector}`: Starting position of the raycast (usually eye position)
 - `to_pos` - `{type-vector}`: Ending position of the raycast (usually eye position + look direction times range)
 - `include_objects` - `{type-bool}`: Whether objects are included (considered pointable). Optional, defaults to `true`.
 - `include_liquids` - `{type-bool}`: Whether liquids are included (considered pointable). Optional, defaults to `true`.
 
 **Returns:**
+
 - `ray` - Raycast iterator object: Non-restartable, stateful iterator of pointed things
 
 The Raycast iterator object is callable. Calling `ray()` is syntactic sugar for `ray:next()`.
@@ -126,7 +137,7 @@ end
 
 will work just expected, printing the contents of `t` three times.
 
-*Raycasts are not restartable.* Iterating them _"consumes"_ the pointed things; they can't be iterated again. The following will not work as expected:
+_Raycasts are not restartable._ Iterating them _"consumes"_ the pointed things; they can't be iterated again. The following will not work as expected:
 
 ```lua
 local ray = Raycast(...)
@@ -150,6 +161,7 @@ for pt in ray do
 	-- will resume looping with the next pointed thing
 end
 ```
+
 {{< /notice >}}
 
 ## Examples

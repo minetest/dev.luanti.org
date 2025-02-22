@@ -1,10 +1,10 @@
 ---
 title: Map generator
 aliases:
-- /Map_generator
-- /Map-Database
-- /Mapgen
-- /mapgen
+  - /Map_generator
+  - /Map-Database
+  - /Mapgen
+  - /mapgen
 bookCollapseSection: true
 ---
 
@@ -20,14 +20,14 @@ Additionally, you can [write your own mapgen in Lua](/for-creators/mapgen/custom
 
 These are the available mapgens described in brief:
 
-*   `v5`: Unrealistic yet interesting landscape with frequent floating blobs, extreme terrain overhangs, and deep oceans. The weirdness has an appeal to some
-*   `v6`: Simple hills, cliffs and plateaus, rather flat and small-scale mapgen, no terrain overhangs, predefined biomes
-*   `v7`: Very widespread landscape, tall mountains with overhanging terrain and far plains. Frequent large water canals at sea level
-*   `carpathian`: Complex and realistic mountains with multiple variants, sometimes reaching extreme heights, separated by oceans and far-reaching low and mostly flat plains
-*   `valleys`: Many hills, mountains and valleys containing river water flowing downhill
-*   `flat`: A perfectly flat world, but with caves, biomes and decorations
-*   `fractal`: Map is based on a fractal of your choice; highly configurable
-*   `singlenode`: Empty world, used to implement custom map generators in Lua
+- `v5`: Unrealistic yet interesting landscape with frequent floating blobs, extreme terrain overhangs, and deep oceans. The weirdness has an appeal to some
+- `v6`: Simple hills, cliffs and plateaus, rather flat and small-scale mapgen, no terrain overhangs, predefined biomes
+- `v7`: Very widespread landscape, tall mountains with overhanging terrain and far plains. Frequent large water canals at sea level
+- `carpathian`: Complex and realistic mountains with multiple variants, sometimes reaching extreme heights, separated by oceans and far-reaching low and mostly flat plains
+- `valleys`: Many hills, mountains and valleys containing river water flowing downhill
+- `flat`: A perfectly flat world, but with caves, biomes and decorations
+- `fractal`: Map is based on a fractal of your choice; highly configurable
+- `singlenode`: Empty world, used to implement custom map generators in Lua
 
 All map generators use so-called "mapgen aliases". These are node aliases defined by games to choose some basic nodes used by the mapgen. This includes stone (`mapgen_stone`), water source (`mapgen_water_source`) and river water source (`mapgen_river_water_source`). Most other nodes used by the mapgen are specified via the Biome API instead. The exception is `v6`, where all nodes are defined using mapgen aliases.
 
@@ -39,43 +39,37 @@ All map generators allow configuration in the advanced settings. A list of all m
 
 Here are examples of landscapes generated with the different map generators:
 
-*   `v5` in Minetest Game
+- `v5` in Minetest Game
 
-    [![](/images/mapgen/Mapgen_v5.jpg)](/images/mapgen/Mapgen_v5.jpg)
+  [![](/images/mapgen/Mapgen_v5.jpg)](/images/mapgen/Mapgen_v5.jpg)
 
+- `v6` in Minetest Game
 
-*   `v6` in Minetest Game
+  [![](/images/mapgen/Mapgen_v6.jpg)](/images/mapgen/Mapgen_v6.jpg)
 
-    [![](/images/mapgen/Mapgen_v6.jpg)](/images/mapgen/Mapgen_v6.jpg)
+- `v7` in Minetest Game
 
+  [![](/images/mapgen/Mapgen_v7.jpg)](/images/mapgen/Mapgen_v7.jpg)
 
-*   `v7` in Minetest Game
+- `carpathian` in Minetest Game
 
-    [![](/images/mapgen/Mapgen_v7.jpg)](/images/mapgen/Mapgen_v7.jpg)
+  [![](/images/mapgen/Mapgen_carpathian.jpg)](/images/mapgen/Mapgen_carpathian.jpg)
 
+- `valleys` in Minetest Game
 
-*   `carpathian` in Minetest Game
+  [![](/images/mapgen/Mapgen_valleys.jpg)](/images/mapgen/Mapgen_valleys.jpg)
 
-    [![](/images/mapgen/Mapgen_carpathian.jpg)](/images/mapgen/Mapgen_carpathian.jpg)
+- `flat` in Minetest Game
 
+  [![](/images/mapgen/Mapgen_flat.jpg)](/images/mapgen/Mapgen_flat.jpg)
 
-*   `valleys` in Minetest Game
+- `fractal` in Minetest Game
 
-    [![](/images/mapgen/Mapgen_valleys.jpg)](/images/mapgen/Mapgen_valleys.jpg)
+  [![](/images/mapgen/Mapgen_fractals_fractal_1.jpg)](/images/mapgen/Mapgen_fractals_fractal_1.jpg)
 
-*   `flat` in Minetest Game
+- `singlenode` in Minetest Game
 
-    [![](/images/mapgen/Mapgen_flat.jpg)](/images/mapgen/Mapgen_flat.jpg)
-
-
-*   `fractal` in Minetest Game
-
-    [![](/images/mapgen/Mapgen_fractals_fractal_1.jpg)](/images/mapgen/Mapgen_fractals_fractal_1.jpg)
-
-
-*   `singlenode` in Minetest Game
-
-    [![](/images/mapgen/Mapgen_singlenode.jpg)](/images/mapgen/Mapgen_singlenode.jpg)
+  [![](/images/mapgen/Mapgen_singlenode.jpg)](/images/mapgen/Mapgen_singlenode.jpg)
 
 ## Description
 
@@ -145,9 +139,8 @@ To be precise: By default, this produces a world with only [Air](/for-players/no
 
 It is intended to be used for mapgen mods which define their own map generation from scratch. This mapgen is not really useful if left unmodified.
 
-See also
---------
+## See also
 
-*   [Stability of each mapgen](https://forum.luanti.org/viewtopic.php?f=18&t=19132), a post by paramat on the forums describing which map generators are "officially stable" (last updated 2019)
-*   [Map generator features](/for-creators/mapgen/features)
-*   [Map Generator Evolution](/about/history/mapgen-evolution)
+- [Stability of each mapgen](https://forum.luanti.org/viewtopic.php?f=18&t=19132), a post by paramat on the forums describing which map generators are "officially stable" (last updated 2019)
+- [Map generator features](/for-creators/mapgen/features)
+- [Map Generator Evolution](/about/history/mapgen-evolution)

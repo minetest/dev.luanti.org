@@ -1,8 +1,8 @@
 ---
 title: Sneaking
 aliases:
-- /Sneaking
-- /sneaking
+  - /Sneaking
+  - /sneaking
 ---
 
 # Sneaking
@@ -11,20 +11,18 @@ Sneaking is part of the basic [controls](/for-players/controls) in Luanti with m
 
 Sneaking is a surprisingly diverse move; this article will explain all the details.
 
-Controls
---------
+## Controls
 
 The default key for sneaking is Shift. You will sneak as long as you hold down the sneak key. You can not sneak while you are at any climbable block (like a ladder), inside a [liquid](/for-players/liquid) or have activated [Fly Mode](/for-players/controls#movement-modes).
 
-Capabilities
-------------
+## Capabilities
 
 Sneaking has many capabilities, some of which are not available in all games:
 
-*   **Slowdown**
-*   **Fall-off protection**
-*   **Sneak Glitch**
-*   **Sneak Jump**
+- **Slowdown**
+- **Fall-off protection**
+- **Sneak Glitch**
+- **Sneak Jump**
 
 Each game or mod can vary in what sneaking capabilities are actually available. By default (i.e. if the game code did not make any changes), the Slowdown and Fall-off Protection capabilities are enabled, but the others are not. Also, games can change the sneaking capabilities on a per-player basis.
 
@@ -82,13 +80,11 @@ The increased jump height of a sneak jump might help you climb some obstacles yo
 
 For game/mod programmers: Internally, this capability is functional if `new_move` equals `false` (don't ask why).
 
-Sneaking in Minetest Game
--------------------------
+## Sneaking in Minetest Game
 
 In [Minetest Game](https://content.luanti.org/packages/Minetest/minetest_game/) 5.4.0, sneaking has the Slowdown and Fall-off Protection capabilities. But there's no Sneak Glitch or Sneak Jumping.
 
-History
--------
+## History
 
 Sneaking used to be very buggy, but it has improved over time.
 

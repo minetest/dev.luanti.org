@@ -1,25 +1,29 @@
 ---
 title: Chat
 aliases:
-- /Chat
-- /Chat_window
-- /chat
+  - /Chat
+  - /Chat_window
+  - /chat
 ---
 
 # Chat
+
 _This page is all about the in-game chat of Luanti. If you are interested in general Luanti chatter, refer to [IRC](/about/irc/)._
 
 The **in-game chat functionality** allows players to communicate with each other with short text messages inside a [server](/for-players/servers/). This article also covers the chat log which is used for purposes other than showing chat messages as well.
 
 ## Sending messages
+
 First of all, before you can chat anything at all, you require the “shout” privilege. Most servers give you this privilege by default, or they may require you to do something before you are granted access to chat.
 
 You can chat either by opening the chat window or the [console](/for-players/console/) which can be opened with the keys T or F10, respectively (assuming you use the default key bindings). Use the chat window or the console to enter a chat message. There are two types of chat messages: Public and direct.
 
 ### Public messages
+
 A public message is a message which is visible to all connected players.
 
 #### Ordinary public messages
+
 Your chat message is a normal public message if it doesn’t begin with a “/”. It appears like this in the chat log:
 
 ```txt
@@ -33,6 +37,7 @@ Example: If you enter “Hello, how are you?” as Alberto, then this will appea
 ```
 
 #### `/me` messages
+
 This is a chat command that is built into the engine and is more like a gimmick than anything else. A `/me` message is a special case of a public message. The only real difference from the ordinary one is its appearance in the chat log. A `/me` message can be entered with:
 
 ```txt
@@ -77,11 +82,12 @@ You see the chat log on the [HUD](/for-players/hud/) at the upper left part of t
 
 These are the following types of messages which can appear in the chat log:
 
-* Chat messages
-* Server messages
-* System messages
+- Chat messages
+- Server messages
+- System messages
 
 ### Chat messages
+
 A public chat message appears in the format of:
 
 ```txt
@@ -101,11 +107,13 @@ DM from player: message
 ```
 
 ### Server messages
+
 Server messages are messages that are sent from the server, not from a player. The format can vary as mods can send any messages into the chat, but generally does not follow the format of regular chat messages from players.
 
 Server messages may be sent to one, some or to all connected players. It depends on the event. You receive server messages on various events. For example as a response to a server command (message to you) or when the server is about to shut down (message to all) etc.
 
 ### System messages
+
 System messages are messages which directly come from the Luanti program which runs on your machine. An example for a system message is:
 
 ```txt

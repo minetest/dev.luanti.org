@@ -1,18 +1,17 @@
 ---
 title: Items
 aliases:
-- /Item_stack
-- /Items
-- /Unknown_Item
-- /engine/items
+  - /Item_stack
+  - /Items
+  - /Unknown_Item
+  - /engine/items
 ---
 
 # Items
 
 **Items** are things that can be stored in an [inventory](/for-players/inventory). This includes tools, weapons, [nodes](/for-players/nodes) and pure crafting elements that may or may not have additional behaviors ("craftitems").
 
-Item stack
-----------
+## Item stack
 
 An **item stack** is a collection of multiple items of the same type. Any item type has a stack limit, it is not possible to stack more items of such an item than the stack limit.
 
@@ -35,10 +34,10 @@ An item stack that is stuck in a solid block will be pushed outside of it until 
 
 Dropped items can appear for many reasons:
 
-*   a player drops them
-*   a player mines a block, but there's no more space in the inventory
-*   a [mob](/for-players/mobs) or a player dies
-*   other events are possible
+- a player drops them
+- a player mines a block, but there's no more space in the inventory
+- a [mob](/for-players/mobs) or a player dies
+- other events are possible
 
 ### Modding item stacks
 
@@ -46,12 +45,11 @@ Mods can change the stack limit, or the behavior of the dropped items.
 
 For example:
 
-*   Item magnet: When a player stands close to a dropped item, it gets attracted like a magnet and will be automatically collected. Punching it is not required
-*   Water flow: Dropped items move with the flow of water
-*   Destruction: Dropped items get destroyed if they touch lava or fire
+- Item magnet: When a player stands close to a dropped item, it gets attracted like a magnet and will be automatically collected. Punching it is not required
+- Water flow: Dropped items move with the flow of water
+- Destruction: Dropped items get destroyed if they touch lava or fire
 
-Unknown Item
-------------
+## Unknown Item
 
 ![](/images/items/Unknown_Item.png)
 
@@ -77,8 +75,7 @@ Another source of this item is a bug in mods or games or just general developer 
 
 Technically, an unknown item still kinda acts like a normal item, and most item query and manipulation functions will still work. If you query the itemstring of an unknown item with e.g. `itemstack:get_name()`, you get the itemstring which the unknown item represents. To find out in Lua whether an item stack is unknown, call `itemstack:is_known()`.
 
-See also
---------
+## See also
 
-*   [Nodes](/for-players/nodes)
-*   [Objects](/for-engine-devs/objects)
+- [Nodes](/for-players/nodes)
+- [Objects](/for-engine-devs/objects)

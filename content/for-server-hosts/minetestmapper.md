@@ -1,10 +1,10 @@
 ---
 title: minetestmapper
 aliases:
-- /Minetestmapper
-- /Luantimapper
-- /Luanti-mapper
-- /minetestmapper
+  - /Minetestmapper
+  - /Luantimapper
+  - /Luanti-mapper
+  - /minetestmapper
 ---
 
 # Minetestmapper
@@ -28,13 +28,13 @@ On GNU/Linux, open a terminal in the folder the mapper is. Create a map using th
 ```
 
 Having Luanti running in place, you might have to modify the world path.
-  
+
 On Windows, **Shift + Right click** in the folder the mapper is in, then select **Open a command window here**. To create a map, type this command:
 
 ```sh
 minetest_mapper.exe -i "C:\your_path_to_luanti\worlds\example\" -o map.png
 ```
-  
+
 The geometry option allows you to define an area to map. Use it between “./minetestmapper” and the input “-i”.
 
 ```sh

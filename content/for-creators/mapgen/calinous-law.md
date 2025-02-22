@@ -1,11 +1,12 @@
 ---
 title: Calinou's Law
 aliases:
-- /Calinou%27s_Law
-- /calinous-law
+  - /Calinou%27s_Law
+  - /calinous-law
 ---
 
 # Calinou's Law
+
 **Calinou's Law** is a supposition about the density of ores in Luanti. It states, approximately:
 
 The more ores that are registered, the more likely you will be to find nothing BUT ores by the time you dig down to -31 km.

@@ -1,8 +1,8 @@
 ---
 title: Protection
 aliases:
-- /Protection
-- /protection
+  - /Protection
+  - /protection
 ---
 
 # Protection

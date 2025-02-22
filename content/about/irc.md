@@ -1,8 +1,8 @@
 ---
 title: IRC
 aliases:
-- /IRC
-- /irc
+  - /IRC
+  - /irc
 ---
 
 # IRC
@@ -21,7 +21,7 @@ The primary IRC channels for the project. They are also bridged to the [Luanti D
 
 | Channel                                                                                              | Topic                                                                     | Logs                               |
 | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------------- |
-| [#luanti](irc://irc.libera.chat/#luanti) ([webchat](https://web.libera.chat/#luanti))              | Casual discussion about everything Luanti.                                | https://irc.luanti.org/luanti      |
+| [#luanti](irc://irc.libera.chat/#luanti) ([webchat](https://web.libera.chat/#luanti))                | Casual discussion about everything Luanti.                                | https://irc.luanti.org/luanti      |
 | [#luanti-dev](irc://irc.libera.chat/#luanti-dev) ([webchat](https://web.libera.chat/#luanti-dev))    | Core Luanti engine development discussion. **Please stay on topic here!** | https://irc.luanti.org/luanti-dev  |
 | [#luanti-docs](irc://irc.libera.chat/#luanti-docs) ([webchat](https://web.libera.chat/#luanti-docs)) | IRC channel for the Luanti Documentation project.                         | https://irc.luanti.org/luanti-docs |
 
@@ -29,11 +29,11 @@ The primary IRC channels for the project. They are also bridged to the [Luanti D
 
 Channels for discussion about Luanti in other languages. The activity in these channels are unknown, and no bridges or logging is available for these.
 
-| Channel                                                                                               | Topic                          |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------ |
-| [#minetest-fr](irc://irc.libera.chat/#minetest-fr) ([webchat](https://web.libera.chat/#minetest-fr))  | General discussion in French   |
-| [#minetest-de](irc://irc.libera.chat/#minetest-de) ([webchat](https://web.libera.chat/#minetest-de))  | General discussion in German   |
-| [#minetest-es](irc://irc.libera.chat/#minetest-es) ([webchat](https://web.libera.chat/#minetest-es))  | General discussion in Spanish  |
+| Channel                                                                                              | Topic                         |
+| ---------------------------------------------------------------------------------------------------- | ----------------------------- |
+| [#minetest-fr](irc://irc.libera.chat/#minetest-fr) ([webchat](https://web.libera.chat/#minetest-fr)) | General discussion in French  |
+| [#minetest-de](irc://irc.libera.chat/#minetest-de) ([webchat](https://web.libera.chat/#minetest-de)) | General discussion in German  |
+| [#minetest-es](irc://irc.libera.chat/#minetest-es) ([webchat](https://web.libera.chat/#minetest-es)) | General discussion in Spanish |
 
 ## IRC Software
 

@@ -1,12 +1,13 @@
 ---
 title: Database backends
 aliases:
-- /Database_backends
-- /database-backends
-- /server/database-backends
+  - /Database_backends
+  - /database-backends
+  - /server/database-backends
 ---
 
 # Database backends
+
 Luanti uses a database system for certain world data where the backend that stores the data can be switched out depending on the use cases needed. This page lists all databases and the backends that can be used with them.
 
 ## Databases
@@ -71,7 +72,7 @@ This table is a rough estimate of what you may expect from each database backend
 
 \* [The PostgreSQL mod storage backend is very slow](https://niklp.net/posts/minetest-postgresql-benchmark/), and its implementation is only intended for those who want to store everything in PostgreSQL nonetheless.
 
-\*\* The *Compatibility with builds* column is only relevant if you want to distribute the worlds.
+\*\* The _Compatibility with builds_ column is only relevant if you want to distribute the worlds.
 
 ## More information about specific backends
 

@@ -1,8 +1,8 @@
 ---
 title: Mods
 aliases:
-- /Mods
-- /mods
+  - /Mods
+  - /mods
 ---
 
 # Mods
@@ -13,25 +13,21 @@ While Luanti mods are generally safe to install as they run by default in a sand
 
 To browse the selection of mods available for Luanti games, see [ContentDB](https://content.luanti.org/packages/?type=mod).
 
-Modpacks
---------
+## Modpacks
 
 A modpack (short: “MP”) is a collection of mods to group them together. Basically, a modpack is just special directory containing the actual mod directories. It's purely a logical grouping and is done mostly for convenience and to group closely-related mods together. The main difference is that they will be displayed as a openable blue text item in the Luanti mod selector containing the component mods to allow granular control. Apart from that, there is nothing special about modpacks or mods inside a modpack. Individual mods in a modpack can still be enabled and disabled as if they were standalone mods.
 
-Client-Side Mods
-----------------
+## Client-Side Mods
 
 A Client-Side Mod (short: “CSM”) is a mod used to customize your Luanti client. Client-Side Mods can be used when connected to a Luanti server because they are loaded locally. Client-Side mods require at least Minetest 0.4.15-dev from sources (note: Luanti was called “Minetest” back then), compiled after April 1st, 2017. Please note that the API is currently not stable and can change.
 
-Finding mods
-------------
+## Finding mods
 
 Generally, all mods you would want are available on [ContentDB](https://content.luanti.org/). They can be installed from the main menu by going to the _Content_ tab and clicking on the _Browse online content_ button.
 
 For old or experimental mods, check the [Mods](https://forum.luanti.org/viewforum.php?f=46) subforum.
 
-Installation
-------------
+## Installation
 
 Starting with version 5.0.0, mods can be installed using the _Content_ tab in Luanti.
 

@@ -1,12 +1,13 @@
 ---
 title: Merging core pull requests to upstream
 aliases:
-- /Merging_core_pull_requests_to_upstream
-- /merging-core-pull-requests-to-upstream
-- /engine-dev-process/merging-core-pull-requests-to-upstream
+  - /Merging_core_pull_requests_to_upstream
+  - /merging-core-pull-requests-to-upstream
+  - /engine-dev-process/merging-core-pull-requests-to-upstream
 ---
 
 # Merging core pull requests to upstream
+
 This page contains **technical guidelines** for core developers when deciding whether to merge a pull request.
 
 For determining who is allowed to do what, see [Organization](/for-engine-devs/organization).
@@ -15,11 +16,10 @@ For guidelines and rules on Git and Github, see [Git Guidelines](/for-engine-dev
 
 Also see:
 
-* [https://github.com/luanti-org/luanti/blob/master/.github/CONTRIBUTING.md](https://github.com/luanti-org/luanti/blob/master/.github/CONTRIBUTING.md)
-* [https://github.com/luanti-org/luanti/blob/master/doc/direction.md](https://github.com/luanti-org/luanti/blob/master/doc/direction.md)
+- [https://github.com/luanti-org/luanti/blob/master/.github/CONTRIBUTING.md](https://github.com/luanti-org/luanti/blob/master/.github/CONTRIBUTING.md)
+- [https://github.com/luanti-org/luanti/blob/master/doc/direction.md](https://github.com/luanti-org/luanti/blob/master/doc/direction.md)
 
-Requirements
-------------
+## Requirements
 
 There are five major requirements that each pull request must fulfill in order to be mergeable to upstream Minetest.
 
@@ -37,7 +37,6 @@ There are five major requirements that each pull request must fulfill in order t
 4.  Those with a lot of general C++ and Lua knowledge.
 5.  Those who have studied the file formats, the protocol and the Lua API, and know how version compatibility can be reliably done.
 
-How can this help?
-------------------
+## How can this help?
 
 I (celeron55) am interested in seeing whether we could end up in a situation where pull requests would get comments like "req 1, 2 and 3 checked.", after which someone could do the rest and ultimately anyone could merge it based on these simple comments, after each of the five requirements have been checked.

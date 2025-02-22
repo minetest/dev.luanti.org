@@ -8,14 +8,12 @@ bookCollapseSection: true
 
 Server hosts setup and manage multiplayer Luanti servers.
 
-Managing a server
------------------
+## Managing a server
 
 See [Setting up a server](/setting-up-a-server) for information running your own server.
 
-See also
---------
+## See also
 
-*   [Server tool mods (ContentDB)](https://content.luanti.org/packages/?tag=server_tools)
-*   [Servers (for players)](/for-players/servers)
-*   [Server commands](/for-players/server-commands)
+- [Server tool mods (ContentDB)](https://content.luanti.org/packages/?tag=server_tools)
+- [Servers (for players)](/for-players/servers)
+- [Server commands](/for-players/server-commands)

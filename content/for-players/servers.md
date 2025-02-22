@@ -1,8 +1,8 @@
 ---
 title: Servers
 aliases:
-- /Server
-- /server
+  - /Server
+  - /server
 ---
 
 # Servers
@@ -13,8 +13,7 @@ This is not a list of servers, please see the [Luanti Server List](https://luant
 
 To setup your own server, see [For Server Hosts](/for-server-hosts)
 
-Getting access to a server
---------------------------
+## Getting access to a server
 
 ### Finding a server
 
@@ -22,10 +21,10 @@ Getting access to a server
 
 In order to play on a server at all, you need to know the address and a port number of a server first. There are many ways to find those addresses:
 
-*   **Server list in Luanti**: The easiest way to obtain a list of servers found within Luanti itself. You find it in the main menu under the tab “Join Game”.
-*   **Server list website**: **[https://www.luanti.org/servers/](https://www.luanti.org/servers/)** has the same server list as above, but you can view in your browser.
-*   **Luanti Forums**: There is a subforum called “[Servers](https://forum.luanti.org/viewforum.php?f=10)” entirely devoted to servers.
-*   **Friends**: If you know a friend who hosts a Luanti server, ask for the address and port number.
+- **Server list in Luanti**: The easiest way to obtain a list of servers found within Luanti itself. You find it in the main menu under the tab “Join Game”.
+- **Server list website**: **[https://www.luanti.org/servers/](https://www.luanti.org/servers/)** has the same server list as above, but you can view in your browser.
+- **Luanti Forums**: There is a subforum called “[Servers](https://forum.luanti.org/viewforum.php?f=10)” entirely devoted to servers.
+- **Friends**: If you know a friend who hosts a Luanti server, ask for the address and port number.
 
 ### Connecting to a server
 
@@ -37,9 +36,9 @@ If you are new to a server, you need to register on that server. Luanti does not
 
 Player names have the following limitations:
 
-*   Allowed characters are a-z, A-Z, 0-9, the hyphen (“-”) and the underscore (“\_”)
-*   The name must not be “singleplayer”
-*   The name must have a length of 1-20 characters
+- Allowed characters are a-z, A-Z, 0-9, the hyphen (“-”) and the underscore (“\_”)
+- The name must not be “singleplayer”
+- The name must have a length of 1-20 characters
 
 The next time you log into the server, you will input the username and password you registered with and press the _Login_ button.
 
@@ -61,14 +60,14 @@ Also, different servers are usually managed by different people, they also may o
 
 In multiplayer servers, these things become more important:
 
-*   [Chat](/for-players/chat): learn how to communicate with other players
-*   [Privileges](/for-players/privileges): learn what you can and can’t do on a server
-*   [Server commands](/for-players/server-commands): learn how to use server commands. They are also sometimes useful for players; for example, you can pulverize an item, teleport (if you are allowed to), and more
-    *   Find out more about the server with commands like “/mods”, “/privs”, “/status”.
-*   The [mods](/for-players/mods) installed on the server
-    *   Take note of [mobs](/for-players/mobs), PvP (fighting “player-vs-player”), and server rules
-*   Custom settings which may affect gameplay
-*   When you press Esc, the game will not be paused like in single player mode
+- [Chat](/for-players/chat): learn how to communicate with other players
+- [Privileges](/for-players/privileges): learn what you can and can’t do on a server
+- [Server commands](/for-players/server-commands): learn how to use server commands. They are also sometimes useful for players; for example, you can pulverize an item, teleport (if you are allowed to), and more
+  - Find out more about the server with commands like “/mods”, “/privs”, “/status”.
+- The [mods](/for-players/mods) installed on the server
+  - Take note of [mobs](/for-players/mobs), PvP (fighting “player-vs-player”), and server rules
+- Custom settings which may affect gameplay
+- When you press Esc, the game will not be paused like in single player mode
 
 Also, you can generally connect to all servers, no matter how many mods they use or what game they host. All data (textures, sound, item/node definitions...) you need is downloaded automatically for you, you do not need to have the mods locally installed to be able to join a server running those mods.
 
@@ -82,4 +81,4 @@ Protection mods are very common on servers. A protection mod is a mod which gran
 
 ## See also
 
-* [For Server Hosts](/for-server-hosts)
+- [For Server Hosts](/for-server-hosts)

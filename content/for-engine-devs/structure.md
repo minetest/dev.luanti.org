@@ -1,24 +1,23 @@
 ---
 title: Engine Structure
 aliases:
-- /Engine/Structure
-- /engine/structure
+  - /Engine/Structure
+  - /engine/structure
 ---
 
-
 # Engine/Structure
+
 [![](/images/minetest-0.3-dfd-visio.webp)](/images/minetest-0.3-dfd-visio.webp)
 
 0.3 data flow diagram - still mostly accurate.
 
-General architecture
---------------------
+## General architecture
 
 Luanti consists of 3 main "components":
 
-* Server - runs server-side logic, updating things for connected players.
-* Client - graphics, controls, and logic for a single player.
-* Mainmenu - The main menu, before joining a game.
+- Server - runs server-side logic, updating things for connected players.
+- Client - graphics, controls, and logic for a single player.
+- Mainmenu - The main menu, before joining a game.
 
 Each of these "components" consists of some C++ code and a Lua API for scripting.
 
@@ -42,44 +41,48 @@ The ClientLauncher is used to initialize the window, contains the main menu loop
 
 The Game class is the main class for the client. It hosts the clear-draw-display-update loop, and owns the lifecycle of all other client components.
 
-Threads
--------
+## Threads
 
 ### Stand-alone server
 
-* main
-  * Doesn't do much
+- main
 
-* ServerThread (Server)
-  * Runs the server
+  - Doesn't do much
 
-* EmergeThread (Server)
-  * Fetches and generates world
+- ServerThread (Server)
+
+  - Runs the server
+
+- EmergeThread (Server)
+  - Fetches and generates world
 
 ### Client-only
 
-* main
-  * Runs almost everything in main game loop
+- main
 
-* MeshUpdateThread (Client)
-  * Does mesh updates in the background
+  - Runs almost everything in main game loop
+
+- MeshUpdateThread (Client)
+  - Does mesh updates in the background
 
 ### Singleplayer
 
-* main
-  * Runs almost everything except server in main game loop
+- main
 
-* MeshUpdateThread (Client)
-  * Does mesh updates in the background
+  - Runs almost everything except server in main game loop
 
-* ServerThread (Server)
-  * Runs the server
+- MeshUpdateThread (Client)
 
-* EmergeThread (Server)
-  * Fetches and generates world
+  - Does mesh updates in the background
 
-Classes
--------
+- ServerThread (Server)
+
+  - Runs the server
+
+- EmergeThread (Server)
+  - Fetches and generates world
+
+## Classes
 
 ### IGameDef
 
@@ -89,11 +92,11 @@ It is implemented by Client and Server. Neither implements all interfaces.
 
 Generally these can be accessed by referring to IGameDef:
 
-* TextureSource
-* ItemDefManager
-* NodeDefManager
-* SoundManager
-* MtEventManager
+- TextureSource
+- ItemDefManager
+- NodeDefManager
+- SoundManager
+- MtEventManager
 
 This is the main difference between 0.3 and 0.4. In 0.3 this does not exist, because all content is defined in static tables in source code.
 
@@ -121,7 +124,7 @@ nodedef.{h,cpp}
 
 Stores and plays sounds on the client.
 
-sound.{h,cpp}; sound\_openal.{h,cpp}
+sound.{h,cpp}; sound_openal.{h,cpp}
 
 ### MtEventManager
 
@@ -133,19 +136,19 @@ event.{h,cpp}
 
 Contains a lot of stuff. Most considerable members are listed here.
 
-* TextureSource
-* ItemDefManager
-* NodeDefManager
-* SoundManager
-* MtEventManager
-* MeshUpdateThread
-* ClientEnvironment
+- TextureSource
+- ItemDefManager
+- NodeDefManager
+- SoundManager
+- MtEventManager
+- MeshUpdateThread
+- ClientEnvironment
 
-* ClientMap
-* Players
-* ClientActiveObjects (CAOs)
+- ClientMap
+- Players
+- ClientActiveObjects (CAOs)
 
-* Connection
+- Connection
 
 Implements IGameDef.
 
@@ -155,20 +158,20 @@ client.{h,cpp}
 
 Contains a lot of stuff. Most considerable members are listed here.
 
-* ServerEnvironment
+- ServerEnvironment
 
-* ServerMap
-* Players
-* ServerActiveObjects (SAOs)
+- ServerMap
+- Players
+- ServerActiveObjects (SAOs)
 
-* Connection
-* BanManager
-* Lua State
-* ItemDefManager
-* NodeDefManager
-* CraftDefManager
-* ServerThread
-* EmergeThread
+- Connection
+- BanManager
+- Lua State
+- ItemDefManager
+- NodeDefManager
+- CraftDefManager
+- ServerThread
+- EmergeThread
 
 Implements IGameDef.
 
@@ -188,9 +191,9 @@ Connection (client->server or server->clients)
 
 Contains most of the actual game environment (players, objects, map...)
 
-* ClientMap
-* Players
-* ClientActiveObjects (CAOs)
+- ClientMap
+- Players
+- ClientActiveObjects (CAOs)
 
 environment.{h,cpp}
 
@@ -198,9 +201,9 @@ environment.{h,cpp}
 
 Contains the actual game environment (players, objects, map, time of day, ...)
 
-* ServerMap
-* Players
-* ServerActiveObjects (SAOs)
+- ServerMap
+- Players
+- ServerActiveObjects (SAOs)
 
 environment.{h,cpp}
 

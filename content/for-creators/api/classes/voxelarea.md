@@ -1,24 +1,26 @@
 ---
 title: VoxelArea
 aliases:
-- /api/classes/voxelarea
+  - /api/classes/voxelarea
 ---
 
 # VoxelArea
+
 The `VoxelArea` metatable provides an OOP-like utility for dealing with LuaVoxelManip (specifically, for doing the index math).
 
 ## `VoxelArea.new(self, o)`
 
 Sets `self.__index` to `self` and `self` as the metatable of `o`, which can have the following fields:
 
-* `MinEdge`: Minimum position of the area, inclusive. Defaults to `vector.new(1, 1, 1)` if `nil`.
-* `MaxEdge`: Maximum position of the area, inclusive. Defaults to `vector.new(0, 0, 0)` if `nil`.
+- `MinEdge`: Minimum position of the area, inclusive. Defaults to `vector.new(1, 1, 1)` if `nil`.
+- `MaxEdge`: Maximum position of the area, inclusive. Defaults to `vector.new(0, 0, 0)` if `nil`.
 
 Both positions should be `vector`s of integer numbers; each component of `MinEdge` should be smaller than the respective component of `MaxEdge` if the `VoxelArea` is to be non-empty. You can use `minp, maxp = vector.sort(minp, maxp)` to achieve this.
 
 Calculates `ystride` and `zstride` and stores both in `o`.
 
 Common usage:
+
 ```lua
 local voxelmanip = core.get_voxel_manip(pos_min, pos_max)
 local emin, emax = voxelmanip:read_from_map(pos_min, pos_max)
@@ -80,7 +82,7 @@ Shorthand for `area:contains(p.x, p.y, p.z)`
 Returns `true` if `i` is between `1` and the `area` volume, both inclusive.
 
 {{< notice warning >}}
-`area:containsi(area:indexp(p))` *is not equivalent to* `area:containsp(p)`, as `area:indexp` will happily produce valid indices for some out-of-area positions.
+`area:containsi(area:indexp(p))` _is not equivalent to_ `area:containsp(p)`, as `area:indexp` will happily produce valid indices for some out-of-area positions.
 {{< /notice >}}
 
 ## `area:iter(minx, miny, minz, maxx, maxy, maxz)`

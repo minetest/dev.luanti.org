@@ -1,36 +1,33 @@
 ---
 title: Coordinates
 aliases:
-- /Coordinates
-- /coordinates
+  - /Coordinates
+  - /coordinates
 ---
 
 # Coordinates
 
 A [Luanti](/about/luanti) world is a large cube. And because of this, a position in the world can be easily expressed with Cartesian **coordinates**. That is, for each position in the world, there are 3 values X, Y and Z.
 
-Notation
---------
+## Notation
 
 Coordinates are expressed like this: (5, 45, -12)
 
 This refers to the position where X=5, Y=45 and Z=-12. The 3 letters are called “axes”: Y is for the height. X and Z are for the horizontal position.
 
-Orientation
------------
+## Orientation
 
 The values for X, Y and Z work like this:
 
-* If you go up, Y increases
-* If you go down, Y decreases
-* If you follow the sun, X increases
-* If you go to the reverse direction, X decreases
-* Look to the sun's direction, then turn 90° to the right and go forwards: Z increases
-* Look to the sun's direction, then turn 90° to the left and go forwards: Z decreases
-* The side length of a full cube is 1
+- If you go up, Y increases
+- If you go down, Y decreases
+- If you follow the sun, X increases
+- If you go to the reverse direction, X decreases
+- Look to the sun's direction, then turn 90° to the right and go forwards: Z increases
+- Look to the sun's direction, then turn 90° to the left and go forwards: Z decreases
+- The side length of a full cube is 1
 
-Finding your coordinates
-------------------------
+## Finding your coordinates
 
 ### Debug screen
 
@@ -46,5 +43,5 @@ Some games might choose to hide the coordinates from the debug screen to regular
 
 There are also mods which add tools which, when you carry then, show you the coordinates:
 
-* [Orienteering](https://content.luanti.org/packages/Wuzzy/orienteering/)
-* [Compass GPS](https://forum.luanti.org/viewtopic.php?t=9373)
+- [Orienteering](https://content.luanti.org/packages/Wuzzy/orienteering/)
+- [Compass GPS](https://forum.luanti.org/viewtopic.php?t=9373)

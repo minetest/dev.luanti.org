@@ -1,6 +1,6 @@
 ---
 title: Lua API documentation
 aliases:
-- /api/
+  - /api/
 bookCollapseSection: true
 ---

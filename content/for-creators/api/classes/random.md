@@ -1,10 +1,11 @@
 ---
 title: Random
 aliases:
-- /api/classes/random
+  - /api/classes/random
 ---
 
 # Random
+
 Luanti provides four different random sources, each with its own merits. Modders must choose wisely unless they can let the engine do the random for them (e.g. randomly picking a sound or a texture for particles).
 
 ## Lua builtins
@@ -12,6 +13,7 @@ Luanti provides four different random sources, each with its own merits. Modders
 Not restricted by mod security, these functions are available to both SSMs and CSMs:
 
 ### [`math.randomseed`](https://www.lua.org/manual/5.1/manual.html#pdf-math.randomseed)
+
 Seed the random. Luanti already does this for you using the system time.
 
 {{< notice info >}}
@@ -22,7 +24,7 @@ Conversely, do not rely on the random to have any particular seed either; other 
 
 The problem with `math.randomseed` is that there is only one global, hidden seed. There is no way to get the current seed out; mods can't restore their random sequence. Mods seeding the random thus necessarily conflict - unless they all expect it to be "non-deterministic" and only seed it accordingly (ideally not at all, since the engine-side seeding should suffice).
 
-If you need `math.random` for its performance but want it to be deterministic, you may *reseed* the random after you're done with it to ensure that it is "non-deterministic" again.
+If you need `math.random` for its performance but want it to be deterministic, you may _reseed_ the random after you're done with it to ensure that it is "non-deterministic" again.
 
 ```lua
 -- Use the random to generate a seed for the random; preferable over using system time,
@@ -35,6 +37,7 @@ math.randomseed(reseed)
 ```
 
 ### [`math.random`](https://www.lua.org/manual/5.1/manual.html#pdf-math.random)
+
 Get a random number. Very versatile; allows getting floats between `0` and `1` or integers in a range.
 
 {{< notice note >}}
@@ -56,15 +59,19 @@ Use `math.random` as your go-to versatile "non-deterministic" random source.
 ## Random Number Generators
 
 ### `PcgRandom`
+
 A seedable 32-bit signed integer pseudo-random number generator.
 
 #### `PcgRandom(seed)`
+
 Constructs a `PcgRandom` instance with the given seed, which should be an integer within 32-bit bounds.
 
 #### `:next([min, max])`
+
 If `min` and `max` are both omitted, they default to `-2^31` (`-2147483648`) and `2^31 - 1` (`2147483647`) respectively.
 
 #### `:rand_normal_dist(min, max, [num_trials])`
+
 {{< notice warning >}}
 No successful use of this function is documented. Consider implementing your own normal distribution instead.
 {{< /notice >}}
@@ -78,6 +85,7 @@ Rough approximation of a normal distribution with a mean of `(max - min) / 2` an
 The return value is a float.
 
 ### `PseudoRandom`
+
 A seedable 16-bit unsigned integer pseudo-random number generator.
 
 "Uses a well-known LCG algorithm introduced by K&R."
@@ -85,9 +93,11 @@ A seedable 16-bit unsigned integer pseudo-random number generator.
 Perhaps the lowest-quality random generator of all.
 
 #### `PseudoRandom(seed)`
+
 Constructor: Takes a `seed` and returns a `PseudoRandom` object.
 
 #### `:next([min, max])`
+
 If `min` and `max` are both omitted, they default to `0` and `2^16-1` (`32767`) respectively.
 
 {{< notice warning >}}
@@ -95,6 +105,7 @@ Requires `((max - min) == 32767) or ((max-min) <= 6553))` for a proper distribut
 {{< /notice >}}
 
 ### `SecureRandom`
+
 System-provided cryptographically secure random: An attacker should not be able to predict the generated sequence of random numbers. Use this when generating cryptographic keys or tokens.
 
 {{< notice note >}}
@@ -102,6 +113,7 @@ On Windows, the Win32 Crypto API is used to retrieve cryptographically secure ra
 {{< /notice >}}
 
 #### `SecureRandom()`
+
 Constructor: Returns a SecureRandom object.
 
 {{< notice info >}}
@@ -109,6 +121,7 @@ Previously this could return `nil` if it can't retrieve a source of randomness, 
 {{< /notice >}}
 
 #### `:next_bytes([count])`
+
 Only argument is `count`, an optional integer defaulting to `1` and limited to `2048` specifying how many bytes are to be returned. Returned as a Lua bytestring of length `count`
 
 ## Benchmarking
@@ -144,12 +157,12 @@ Secure	0.11211887	µs/call
 
 ## Comparison
 
-| Random Source  | Performance      | Bytes of entropy | Seedability                    | Versatility    | Distribution                             | Security                     | Portability                        |
-| -------------- | ---------------- | ---------------- | ------------------------------ | -------------- | ---------------------------------------- | ---------------------------- | ---------------------------------- |
-| `math.random`  | very good (1x)   | up to 4          | global seed; seeded by default | very good      | no guarantees, but usually decent enough | not cryptographically secure | varies by platform                 |
-| `PcgRandom`    | okay (~14x)      | up to 4          | per-instance seed              | very good      | good, decent guarantees                  | not cryptographically secure | always the same                    |
-| `PseudoRandom` | okay (~15x)      | 1 to 2           | per-instance seed              | outright sucks | okay-ish                                 | not cryptographically secure | always the same                    |
-| `SecureRandom` | still okay (30x) | 1 to 2048        | not seedable                   |                |                                          | cryptographically secure     | varies by platform                 |
+| Random Source  | Performance      | Bytes of entropy | Seedability                    | Versatility    | Distribution                             | Security                     | Portability        |
+| -------------- | ---------------- | ---------------- | ------------------------------ | -------------- | ---------------------------------------- | ---------------------------- | ------------------ |
+| `math.random`  | very good (1x)   | up to 4          | global seed; seeded by default | very good      | no guarantees, but usually decent enough | not cryptographically secure | varies by platform |
+| `PcgRandom`    | okay (~14x)      | up to 4          | per-instance seed              | very good      | good, decent guarantees                  | not cryptographically secure | always the same    |
+| `PseudoRandom` | okay (~15x)      | 1 to 2           | per-instance seed              | outright sucks | okay-ish                                 | not cryptographically secure | always the same    |
+| `SecureRandom` | still okay (30x) | 1 to 2048        | not seedable                   |                |                                          | cryptographically secure     | varies by platform |
 
 Note: The performance comparison is a bit of an apples-to-oranges comparison for multiple reasons:
 
@@ -159,7 +172,8 @@ Note: The performance comparison is a bit of an apples-to-oranges comparison for
 The benchmark still suffices to draw basic conclusions though, especially for the common case where a random source is simply used once (e.g. `math.random() < 0.5`).
 
 ### Conclusion
-1. *Never use `PseudoRandom`. It is strictly inferior to `PcgRandom`.*
+
+1. _Never use `PseudoRandom`. It is strictly inferior to `PcgRandom`._
 1. Use `math.random` if you want a fast "non-deterministic" random.
 1. Use `PcgRandom` if you need per-instance seedability and can take the performance hit.
 1. Use `SecureRandom` if and only if you need a cryptographically secure random.

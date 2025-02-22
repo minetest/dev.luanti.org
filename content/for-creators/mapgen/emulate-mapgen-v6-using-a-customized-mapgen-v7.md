@@ -1,17 +1,17 @@
 ---
 title: How to emulate mapgen v6 using a customized mapgen v7
 aliases:
-- /How_to_emulate_mapgen_v6_using_a_customised_mapgen_v7
-- /mapgen/emulate-mapgen-v6-using-a-customised-mapgen-v7
+  - /How_to_emulate_mapgen_v6_using_a_customised_mapgen_v7
+  - /mapgen/emulate-mapgen-v6-using-a-customised-mapgen-v7
 ---
 
 # How to emulate mapgen v6 using a customized mapgen v7
+
 Some players like aspects of [Mapgen](/for-creators/mapgen) v6, but the biomes are hardcoded, so it's not possible for games to register their own biomes. It is also very different from the other mapgens in how it works and is more difficult to support in games.
 
 It is actually possible to approximately emulate Mapgen v6 in Mapgen v7 using customized settings. This is only possible in version 5.2.0 or later due to the “randomwalk” caves now being more configurable, allowing Mapgen v7 to have caves like in Mapgen v6.
 
-How to emulate mapgen v6
-------------------------
+## How to emulate mapgen v6
 
 First, copy and paste the lines below into your [`minetest.conf`](/for-players/minetest-conf) file before starting a new Mapgen v7 world:
 
@@ -76,24 +76,22 @@ mgv7_np_filler_depth = {
 
 ```
 
-
 Or you can set these parameters manually in the advanced settings, but that will take much longer to do.
 
 Then just create a new v7 world. Old v7 worlds will not be affected.
 
 If you want to return to normal, just delete these lines from `minetest.conf` again.
 
-Limitations
------------
+## Limitations
 
 The emulation is only approximate, it differs in the following ways:
 
-*   There is no “mudflow” erosion
-*   The cliff/slope transitions between the lowland and highland do not have a wide range of "steepness"es, they are now all steep cliffs
-*   The number of small and large caves per mapchunk is fixed and not varied by noise or biome
-*   Using the same world seed as a Mapgen v6 world will probably not result in hills, lakes, cliffs, caves, dungeons etc. being in the same locations, even though the character and elements of the mapgen will be similar
-*   When using Minetest Game, lava is found below Y = -256 and ores are deeper, just like all non-v6 mapgens
+- There is no “mudflow” erosion
+- The cliff/slope transitions between the lowland and highland do not have a wide range of "steepness"es, they are now all steep cliffs
+- The number of small and large caves per mapchunk is fixed and not varied by noise or biome
+- Using the same world seed as a Mapgen v6 world will probably not result in hills, lakes, cliffs, caves, dungeons etc. being in the same locations, even though the character and elements of the mapgen will be similar
+- When using Minetest Game, lava is found below Y = -256 and ores are deeper, just like all non-v6 mapgens
 
-* * *
+---
 
 This page is based on a [forum post by paramat](https://forum.luanti.org/viewtopic.php?f=3&t=24831).

@@ -1,17 +1,17 @@
 ---
 title: Translation
 aliases:
-- /Translating
-- /Translation
-- /translation
+  - /Translating
+  - /Translation
+  - /translation
 bookCollapseSection: true
 ---
 
 # Translation
+
 This page explains how to translate Luanti.
 
-Translating the engine
-----------------------
+## Translating the engine
 
 Translations of the Luanti engine are [automated using Weblate](https://hosted.weblate.org/projects/minetest/minetest/). Register an account, select the “Minetest” project (or “Luanti” if it has been renamed) and start translating. Translation is a continuous effort and the texts will change almost at every version.
 
@@ -23,13 +23,13 @@ In case you wish to translate a new language, send a message in #minetest-dev an
 
 Here is a list of wiki pages for translating specific languages:
 
-* [German](/for-creators/translation/de)
+- [German](/for-creators/translation/de)
 
 ### Special strings
 
 In the translations you will find one string with a special meaning. It must **not** be translated literally. They are used internally by Luanti to trigger certain settings. You must enter a special value into the translation field.
 
-* `LANG_CODE`: The language code of the language you're translating (e.g. "de" for German).
+- `LANG_CODE`: The language code of the language you're translating (e.g. "de" for German).
 
 ### Builtin
 
@@ -53,8 +53,7 @@ The available translations are found in source form in the `po/` directory. The 
 
 The main translation file must be updated now and then using the [this script](https://github.com/luanti-org/luanti/blob/master/builtin/mainmenu/settings/generate_from_settingtypes.lua) (configuration) and [this one](https://github.com/luanti-org/luanti/blob/master/util/updatepo.sh) (C++ and Lua translations). Submit a PR after running the generator or poke a core dev to update the translations when it's needed. Note that builtin translations are handled separately, see the maintenance notes below.
 
-Maintaining engine translations
--------------------------------
+## Maintaining engine translations
 
 There are two types of translations that need maintenance: Client-side (using Gettext) and server-side translations for builtin (using `minetest.get_translator`).
 
@@ -73,14 +72,15 @@ _Note to coredevs_: Creating a new language directly from weblate is sufficient,
 Translations should be merged in bulk, and not too often, to not create too large "noise" in the commit log. A good schedule is once every few months and at the start of the **feature freeze**. This section explains the necessary steps for core devs. You will need owner access to the hosted repo in order to be able to push the "Rebase" button.
 
 As of January 2025, the list contains the following people:
-* celeron55
-* grorp
-* Krock
-* nerzhul
-* rubenwardy
-* sfan5
-* shadowninja
-* Warr1024
+
+- celeron55
+- grorp
+- Krock
+- nerzhul
+- rubenwardy
+- sfan5
+- shadowninja
+- Warr1024
 
 For an up to date list consult someone with access to look at the people page in Weblate.
 
@@ -97,7 +97,7 @@ Add weblate as remote: `git remote add weblate https://hosted.weblate.org/git/mi
     1.  Update `minetest.conf.example` and the dummy `*.cpp` translation file and commit. Do this by uncommenting the lines at the end of `builtin/common/settings/init.lua`.
     2.  Run `util/updatepo.sh`, and commit. Note that it creates lots of unnecessary changes, and enlarges repository size disproportionately, therefore run it even less often.
 9.  Push to the [GitHub repo](https://github.com/luanti-org/luanti) with `git push origin HEAD:master`. If you want to check if CI passes first you can also use a temporary branch first.
-10.  Reset the Weblate remote ("Reset" button), rebase it to match now current master, and unlock it. If pushed commits do not yet show up in Weblate you may have to press the "Pull" button.
+10. Reset the Weblate remote ("Reset" button), rebase it to match now current master, and unlock it. If pushed commits do not yet show up in Weblate you may have to press the "Pull" button.
 
 Note: For the rebasing script to work you need to set git-rebase up to show the author, see [this Stack Overflow answer](http://stackoverflow.com/a/35851846).
 
@@ -113,16 +113,14 @@ To update the builtin locale files, run `../util/mod_translation_updater.py` fro
 
 To start a new translation, copy `template.txt` to create `__builtin.<LANGUAGE_CODE>.tr`.
 
-Translating mods and games
---------------------------
+## Translating mods and games
 
 To learn how Luanti mods and games are translated, go to [Translating Mods and Games](/for-creators/translation/mods-and-games).
 
-Untranslatable texts
---------------------
+## Untranslatable texts
 
 Please note: A couple of things in Luanti can **not** be translated yet:
 
-* Setting help texts for settings of games and mods (`settingtypes.txt`) ([#9070](https://github.com/luanti-org/luanti/issues/9070))
-* Drop-down list entries in Luanti settings
-* Description of mods, modpacks, games and texture packs ([#9071](https://github.com/luanti-org/luanti/issues/9071))
+- Setting help texts for settings of games and mods (`settingtypes.txt`) ([#9070](https://github.com/luanti-org/luanti/issues/9070))
+- Drop-down list entries in Luanti settings
+- Description of mods, modpacks, games and texture packs ([#9071](https://github.com/luanti-org/luanti/issues/9071))

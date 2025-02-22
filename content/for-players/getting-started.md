@@ -1,8 +1,8 @@
 ---
 title: Getting Started
 aliases:
-- /Getting_Started
-- /getting-started
+  - /Getting_Started
+  - /getting-started
 ---
 
 # Getting Started
@@ -11,27 +11,27 @@ Welcome to Luanti! This page explains what Luanti is all about, how to get it, a
 
 ## “What is this strange ‘Luanti’ thing I keep hearing about?”
 
-* **Luanti** is a platform on which you can play many **games** which are set in a **world entirely made out of blocks**, voxels.
-* You can play **offline or online**, in singleplayer or multiplayer.
-* Most games (but not all!) have a sandbox gameplay focused on construction, mining and creativity.
-* You can browse the list of games available on [ContentDB](https://content.luanti.org/packages/?type=game).
-* You can install **[mods](/for-players/mods/) to modify** certain **aspects of gameplay**. Mods are an **inherent** part of Luanti, it is even what games consist of.
-* **Mods work out of the box when playing on [servers](/for-players/servers/)**, no additional installations required. Mods are server-side, everything is handled automatically.
+- **Luanti** is a platform on which you can play many **games** which are set in a **world entirely made out of blocks**, voxels.
+- You can play **offline or online**, in singleplayer or multiplayer.
+- Most games (but not all!) have a sandbox gameplay focused on construction, mining and creativity.
+- You can browse the list of games available on [ContentDB](https://content.luanti.org/packages/?type=game).
+- You can install **[mods](/for-players/mods/) to modify** certain **aspects of gameplay**. Mods are an **inherent** part of Luanti, it is even what games consist of.
+- **Mods work out of the box when playing on [servers](/for-players/servers/)**, no additional installations required. Mods are server-side, everything is handled automatically.
 
 ## Getting Luanti
 
 ### Windows
 
-* [Download Luanti](https://www.luanti.org/downloads/).
-  * The 64-bit build is extremely recommended. Always use this unless you are absolutely sure you're on an old machine that doesn't have a 64-bit processor.
-* Luanti on Windows is distributed in a portable archive. Extract it as a whole where you want, whether it be on your desktop or in your documents folder.
-  * Keep in mind you need write permissions to the folder. **Do NOT save to `C:\Program Files\` or similar, as it will cause problems (no write access).**
-* To run Luanti, open the extracted directory and look for the `bin` (binary) directory. Inside the `bin` directory is the Luanti executable, `minetest.exe`.
-  * If you want a desktop shortcut or the like, just make create a shortcut to this executable.
+- [Download Luanti](https://www.luanti.org/downloads/).
+  - The 64-bit build is extremely recommended. Always use this unless you are absolutely sure you're on an old machine that doesn't have a 64-bit processor.
+- Luanti on Windows is distributed in a portable archive. Extract it as a whole where you want, whether it be on your desktop or in your documents folder.
+  - Keep in mind you need write permissions to the folder. **Do NOT save to `C:\Program Files\` or similar, as it will cause problems (no write access).**
+- To run Luanti, open the extracted directory and look for the `bin` (binary) directory. Inside the `bin` directory is the Luanti executable, `minetest.exe`.
+  - If you want a desktop shortcut or the like, just make create a shortcut to this executable.
 
 ### macOS
 
-* [Download Luanti for macOS](http://www.luanti.org/downloads/). You can pick the official .app, Homebrew or the MacPorts version.
+- [Download Luanti for macOS](http://www.luanti.org/downloads/). You can pick the official .app, Homebrew or the MacPorts version.
 
 ### Linux
 
@@ -67,15 +67,15 @@ _Most of these can be changed in the “Change Keys” menu. For a more complete
 
 The default and most important controls are:
 
-* **W/A/S/D**: move
-* **Space**: jump
-* **Left mouse button**: Punch, mine nodes, move an item stack in an inventory
-* **Right mouse button**: Use (e.g. open chests or furnaces), place nodes, move one item or split items in an inventory
-* **Shift**+**Right mouse button**: place blocks
-* **Middle mouse button**: move 10 items in an inventory
-* **Mouse wheel**: select item in the hotbar
-* **0**-**9**: select item in the hotbar
-* **Q**: drop block, item or tool in hand
-* **I**: open or close the inventory menu
-* **T**: open the chat window
-* **Shift**: descend on ladders or sneak (walk slower, prevents falling off ledges)
+- **W/A/S/D**: move
+- **Space**: jump
+- **Left mouse button**: Punch, mine nodes, move an item stack in an inventory
+- **Right mouse button**: Use (e.g. open chests or furnaces), place nodes, move one item or split items in an inventory
+- **Shift**+**Right mouse button**: place blocks
+- **Middle mouse button**: move 10 items in an inventory
+- **Mouse wheel**: select item in the hotbar
+- **0**-**9**: select item in the hotbar
+- **Q**: drop block, item or tool in hand
+- **I**: open or close the inventory menu
+- **T**: open the chat window
+- **Shift**: descend on ladders or sneak (walk slower, prevents falling off ledges)

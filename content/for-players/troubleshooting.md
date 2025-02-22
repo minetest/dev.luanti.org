@@ -1,8 +1,8 @@
 ---
 title: Troubleshooting
 aliases:
-- /Troubleshooting
-- /troubleshooting
+  - /Troubleshooting
+  - /troubleshooting
 ---
 
 # Troubleshooting
@@ -11,8 +11,7 @@ This page lists common technical problems like crashes and error messages (enclo
 
 For information on how to report bugs, read [Reporting bugs](/for-players/reporting-bugs).
 
-Graphics and sound
-------------------
+## Graphics and sound
 
 ### The screen is too dark
 
@@ -24,13 +23,11 @@ To change the display gamma, open your [minetest.conf](/for-players/minetest-con
 display_gamma = 3.0
 ```
 
-
 ### The textures look blurry, but I want the pixels to show!
 
 Turn off bilinear/trilinear filtering.
 
-Error messages without crashes
-------------------------------
+## Error messages without crashes
 
 ### "unable to open database file"
 
@@ -54,8 +51,7 @@ This means that a faulty mod or texture pack does not supply an image for an obj
 
 You need to select a game, pick one you have installed from the game bar at the bottom of the singleplayer tab.
 
-Crashes
--------
+## Crashes
 
 _All sub-section titles in double quotes here mean that Luanti crashed with an error message like that._
 
@@ -90,7 +86,6 @@ tools.lua:61: attempt to call global 'nodeupdate' (a nil value)
 
 ```
 
-
 The first two errors are caused by an outdated Luanti version, latter by an old mod which tries to call API functions which were removed. In the first case, you can [update Luanti](http://luanti.org/download) or try an in-development build to see whether it works. For the second case, check for mod updates or tell the author about your problem.
 
 #### “Assertion '0' failed”
@@ -102,10 +97,9 @@ This is usually a mod error. Report it to the mod programmer or mod programmers.
 
 ```
 
-
 #### “ServerEnvironment::loadMeta(): EnvArgsEnd not found”
 
-This means that _env\_meta.txt_ in your world folder got corrupted. Since it doesn't contain any important information you can simply delete the file and let Luanti re-create it.
+This means that _env_meta.txt_ in your world folder got corrupted. Since it doesn't contain any important information you can simply delete the file and let Luanti re-create it.
 
 ### Windows
 
@@ -113,8 +107,7 @@ This means that _env\_meta.txt_ in your world folder got corrupted. Since it doe
 
 If it stops working before the main window even opens, and there are no error messages in debug.txt, then try restarting your computer. (sometimes it crashes with a `0x00005` error, which is caused by Windows updates.) You can try looking in debug.txt for an error message or searching for a similar article in the forums.
 
-Controls
---------
+## Controls
 
 #### I have a trackpad and I can't walk and move my head at the same time
 

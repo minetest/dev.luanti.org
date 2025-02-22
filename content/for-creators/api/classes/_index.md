@@ -1,6 +1,6 @@
 ---
 title: Classes
 aliases:
-- /api/classes
+  - /api/classes
 bookCollapseSection: true
 ---

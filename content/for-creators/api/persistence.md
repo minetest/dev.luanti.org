@@ -1,19 +1,20 @@
 ---
 title: Persistence
 aliases:
-- /api/persistence
+  - /api/persistence
 ---
 
 # Persistence
+
 This page aims to give an overview of the serialization options Luanti provides.
 
 Your choice for persistence depends on the data you want to persist:
 
-* Structure & types of the data: How is the data structured? What data types occur?
-* Size of the data, frequency of changes to the data: Can it fit into memory? How expensive can updates be?
-* Granularity needed: How often must the data be persisted?
-* Required query-ability of the data: Are indices for fast lookups required?
-* Required data access, objects the data is tied to: Items? Players?
+- Structure & types of the data: How is the data structured? What data types occur?
+- Size of the data, frequency of changes to the data: Can it fit into memory? How expensive can updates be?
+- Granularity needed: How often must the data be persisted?
+- Required query-ability of the data: Are indices for fast lookups required?
+- Required data access, objects the data is tied to: Items? Players?
 
 ## (De-)Serialization
 
@@ -23,10 +24,10 @@ Luanti provides a JSON serializer based on `jsoncpp`.
 
 The following types are supported by JSON:
 
-* booleans
-* numbers
-* strings
-* tables (objects/arrays)
+- booleans
+- numbers
+- strings
+- tables (objects/arrays)
 
 {{< notice note >}}
 Negative and positive infinity are represented by numbers which exceed the double number range by a lot (plus/minus `1e9999`).
@@ -37,23 +38,25 @@ The empty table `{}` (ambiguous: might be either `{}` or `[]`) and `nan` aren't 
 {{< /notice >}}
 
 Tables may either:
+
 1. Contain only positive integer keys (represented as array) or
 2. Contain only string keys (represented as object/dictionary)
-obviously, plenty of Lua tables aren't representable this way (boolean keys, mixed hash/list keys, fractional keys, inf keys)
+   obviously, plenty of Lua tables aren't representable this way (boolean keys, mixed hash/list keys, fractional keys, inf keys)
 
 #### `core.write_json(data, [styled])`
 
 If the data is serializable as outlined above:: Returns a JSON string representing `data`. Formats the JSON nicely to improve readability if `styled` is truthy.
 Else:: Returns `nil` and one of the following errors if it fails:
-* `Can't use indexes with fractional part in JSON`
-* `Lua key to convert to JSON is not a string or number`
-* `Can't mix array and object values in JSON`
+
+- `Can't use indexes with fractional part in JSON`
+- `Lua key to convert to JSON is not a string or number`
+- `Can't mix array and object values in JSON`
 
 {{< notice warning >}}
 Hash tables containing only positive integer keys - a table of `core.hash_node_position` hashes for instance -
-will be turned into *an array with holes*, that is, all `nil` values from `1` to the maximum index will be filled with `null`,
+will be turned into _an array with holes_, that is, all `nil` values from `1` to the maximum index will be filled with `null`,
 which means terrible performance and possibly very large output generated from very small input.
-*Do not allow direct access to `core.write_json`* as it can be trivially used to DoS your server.
+_Do not allow direct access to `core.write_json`_ as it can be trivially used to DoS your server.
 {{< /notice >}}
 
 {{< notice tip >}}
@@ -61,7 +64,7 @@ Sparse hash maps, should always be converted to objects, using only string keys,
 {{< /notice >}}
 
 {{< notice warning >}}
-The JSON serializer is furthermore limited by its recursion depth: Only a recursion depth up to *16* is allowed. Very nested data structures can't be (de)serialized. Circular references will cause the JSON serializer to recurse until the maximum recursion depth is exceeded.
+The JSON serializer is furthermore limited by its recursion depth: Only a recursion depth up to _16_ is allowed. Very nested data structures can't be (de)serialized. Circular references will cause the JSON serializer to recurse until the maximum recursion depth is exceeded.
 {{< /notice >}}
 
 {{< notice tip >}}
@@ -81,16 +84,16 @@ If you must use JSON (to interact with a web interface, for instance), consider 
 
 Luanti alternatively offers a serializer implemented in Lua, which serializes to Lua source code, available as `core.serialize` and `core.deserialize`. The following values are supported:
 
-* `nil`
-* booleans
-* numbers
-* strings
-* tables, including circular references
-* functions: *not recommended*; uses `string.dump` internally
-  * Deserialization of functions will error unless mod security is disabled
-  * Lua-implementation and platform-specific bytecode: Functions serialized by PUC Lua won't work on LuaJIT and vice versa; no cross-platform portability
-  * Upvalues or the context of the function (function environment) aren't preserved
-  * C functions which lack Lua bytecode (such as `math.sqrt` or most Luanti API functions) can't be (de)serialized at all
+- `nil`
+- booleans
+- numbers
+- strings
+- tables, including circular references
+- functions: _not recommended_; uses `string.dump` internally
+  - Deserialization of functions will error unless mod security is disabled
+  - Lua-implementation and platform-specific bytecode: Functions serialized by PUC Lua won't work on LuaJIT and vice versa; no cross-platform portability
+  - Upvalues or the context of the function (function environment) aren't preserved
+  - C functions which lack Lua bytecode (such as `math.sqrt` or most Luanti API functions) can't be (de)serialized at all
 
 Userdata objects (like `ItemStack` for example) aren't supported. Threads (coroutines) aren't supported either.
 
@@ -135,7 +138,7 @@ Granularity is controlled by the `server_map_save_interval` setting.
 
 You can use Luanti's HTTP library to communicate with web servers, which might store data for you.
 
-Other ways of Inter-Process Communication that can be leveraged to communicate with a database include *sockets*,
+Other ways of Inter-Process Communication that can be leveraged to communicate with a database include _sockets_,
 provided through the `luasockets` library (requiring an insecure environment and an accessible installation).
 If the database server runs on the same machine, you might decide to use file bridges for IPC.
 
@@ -180,15 +183,16 @@ lots of small files might lead to fragmentation.
 
 A nested hierarchical key-value store is possible through directory structures, which can be managed and traversed using:
 
-* `core.mkdir`
-* `core.rmdir`
-* `core.cpdir`
-* `core.mvdir`
-* `core.get_dir_list`
+- `core.mkdir`
+- `core.rmdir`
+- `core.cpdir`
+- `core.mvdir`
+- `core.get_dir_list`
 
 If you want to mitigate the risk of data loss, you can use `core.safe_file_write` when (re)writing files.
 
 #### Configuration files
+
 The `Settings` object allows you to operate on configuration files, getting & setting key-value entries and saving the file.
 The main `Settings` object `core.settings` can be used to persist a few settings "globally" - bleeding everywhere.
 This is horribly abused by the mainmenu to store stuff like the last selected game. Don't be like the mainmenu;
@@ -200,6 +204,7 @@ but this is usually not a requirement for game data which is "edited" by in-game
 indeed, you might not want to tempt players to cheat in singleplayer by editing their "saves".
 
 #### MetaData
+
 Luanti provides metadata objects which all provide a simple string key-value store, tied to four different game "objects":
 
 1. ItemStacks: `ItemStackMetaData`: Fully sent to clients; serialized within inventories, which may be serialized within mapblocks

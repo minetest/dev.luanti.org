@@ -1,9 +1,9 @@
 ---
 title: Licensing
 aliases:
-- /Licensing
-- /licensing
-- /content-dev/licensing
+  - /Licensing
+  - /licensing
+  - /content-dev/licensing
 ---
 
 # Licensing
@@ -12,19 +12,18 @@ A considerable number of Luanti-based games have appeared in the Android play st
 
 _Please look at: [FlightGear](http://www.flightgear.org/flightprosim.html) as they have the same issue as Luanti has._
 
-Complying with the License
---------------------------
+## Complying with the License
 
 The code of both the Luanti engine and Minetest Game are licensed under [LGPL 2.1+ free software license](https://www.gnu.org/licenses/lgpl-2.1.html). Other components may be similarly licensed, however this document does not cover them. **Note that this document is only intended for informational purposes**, for the real legally binding terms you should read the [LGPL 2.1+ license](https://www.gnu.org/licenses/lgpl-2.1.html).
 
-* You must link to the source code behind your software
-  * Which must also be licensed under LGPL 2.1 or later, or a compatible license. Also see _"what if I use proprietary source code/libraries?"_.
-  * If any modifications were made to the Luanti engine or Minetest Game, you must state this inside of your application, and provide a means to download the \*\*modified\*\* source code.
-  * If you did not modify any source code, you must still link to the source code behind the software - however this can be the official Luanti repo if unmodified
-* You must not remove any copyright notices.
-* You must state significant changes to the software.
-* You must not mix proprietary and LGPLv2.1+ code, see _"what if I use proprietary source code/libraries?"_.
-* You should place the following attribution on any pages where the software can be downloaded, including but not limited to Google Play or a website:
+- You must link to the source code behind your software
+  - Which must also be licensed under LGPL 2.1 or later, or a compatible license. Also see _"what if I use proprietary source code/libraries?"_.
+  - If any modifications were made to the Luanti engine or Minetest Game, you must state this inside of your application, and provide a means to download the \*\*modified\*\* source code.
+  - If you did not modify any source code, you must still link to the source code behind the software - however this can be the official Luanti repo if unmodified
+- You must not remove any copyright notices.
+- You must state significant changes to the software.
+- You must not mix proprietary and LGPLv2.1+ code, see _"what if I use proprietary source code/libraries?"_.
+- You should place the following attribution on any pages where the software can be downloaded, including but not limited to Google Play or a website:
 
 > This \[app/game/...\] uses the Luanti engine \[and Minetest Game\], Copyright 2010-2018 Perttu Ahola and contributors, licensed under LGPLv2.1+
 
@@ -32,15 +31,15 @@ The code of both the Luanti engine and Minetest Game are licensed under [LGPL 2.
 
 ### Where should I put any links?
 
-* Any locations where the software is downloaded, including but not limited to Google Play or a website.
-* You should place a link in the main menu (for example, in the credits tab).
+- Any locations where the software is downloaded, including but not limited to Google Play or a website.
+- You should place a link in the main menu (for example, in the credits tab).
 
 ### What if I use proprietary source code/libraries?
 
-* **Don't mix proprietary code with LGPL code.** For example, if you use a proprietary ad library, then you can only call it from proprietary code.
-* **Any LGPL code must be replaceable.** The user must be able to use their own version of any LGPL code with your software. You must also provide documentation on how to do this.
-* Any proprietary code you wrote must not forbid reverse-compilation for the purpose of debugging modifications to the LGPL code.
-* You must **fully and prominently attribute** the Luanti project if your software contains any proprietary code.
+- **Don't mix proprietary code with LGPL code.** For example, if you use a proprietary ad library, then you can only call it from proprietary code.
+- **Any LGPL code must be replaceable.** The user must be able to use their own version of any LGPL code with your software. You must also provide documentation on how to do this.
+- Any proprietary code you wrote must not forbid reverse-compilation for the purpose of debugging modifications to the LGPL code.
+- You must **fully and prominently attribute** the Luanti project if your software contains any proprietary code.
 
 This, in affect, means that you will need to completely rewrite the Java section of the app and just use Luanti as an NDK library. Make sure you include instructions on how to replace any LGPLv2.1+ code.
 
@@ -48,12 +47,11 @@ The legal text behind this is in [section 4](https://www.gnu.org/licenses/lgpl.h
 
 ### See also
 
-* [https://tldrlegal.com/license/gnu-lesser-general-public-license-v3-(lgpl-3)](https://tldrlegal.com/license/gnu-lesser-general-public-license-v3-\(lgpl-3\))
-* [https://www.gnu.org/licenses/lgpl-2.1.html](https://www.gnu.org/licenses/lgpl-2.1.html)
-* [https://softwareengineering.stackexchange.com/questions/86142/what-exactly-do-i-need-to-do-if-i-use-a-lgpl-licenced-library](https://softwareengineering.stackexchange.com/questions/86142/what-exactly-do-i-need-to-do-if-i-use-a-lgpl-licenced-library)
+- [https://tldrlegal.com/license/gnu-lesser-general-public-license-v3-(lgpl-3)](<https://tldrlegal.com/license/gnu-lesser-general-public-license-v3-(lgpl-3)>)
+- [https://www.gnu.org/licenses/lgpl-2.1.html](https://www.gnu.org/licenses/lgpl-2.1.html)
+- [https://softwareengineering.stackexchange.com/questions/86142/what-exactly-do-i-need-to-do-if-i-use-a-lgpl-licenced-library](https://softwareengineering.stackexchange.com/questions/86142/what-exactly-do-i-need-to-do-if-i-use-a-lgpl-licenced-library)
 
-What to do if I spot a program that is possibly infringing Luanti's license?
-----------------------------------------------------------------------------
+## What to do if I spot a program that is possibly infringing Luanti's license?
 
 If you think that a certain program is infringing on Luanti's LGPL 2.1 license, please check with the program's website to see if it is licensed under similar terms, and if the source code is being distributed.If the license seems to be proprietary, and if the developer alleges that the program is their own work, then contact [celeron55](mailto:celeron55@gmail.com). Alternatively, join the [Luanti IRC channel](http://webchat.freenode.net/?channels=#minetest) and report it there. It doesn't matter if anyone replies or not, it will be logged and the community will check on it themselves. There is also an attempt to list forks of Luanti at the "[Making a list of Luanti forks for Android](https://forum.luanti.org/viewtopic.php?p=242219#p242219)" thread in the forums. If the program you discovered is missing there you could add it.
 

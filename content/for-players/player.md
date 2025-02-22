@@ -1,8 +1,8 @@
 ---
 title: Player
 aliases:
-- /Player
-- /player
+  - /Player
+  - /player
 ---
 
 # Player

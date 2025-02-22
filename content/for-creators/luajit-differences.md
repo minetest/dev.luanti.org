@@ -1,17 +1,19 @@
 ---
 title: LuaJIT differences
 aliases:
-- /LuaJIT_differences
-- /luajit-differences
-- /content-dev/luajit-differences
+  - /LuaJIT_differences
+  - /luajit-differences
+  - /content-dev/luajit-differences
 ---
 
 # LuaJIT differences
+
 Most of the time Luanti is built with LuaJIT which aims to be faster than the reference Lua 5.1 implementation (referred to as "PUC Lua") due to its JIT compiler. However it is also possible that Luanti is built with PUC Lua 5.1, if Luanti cannot find LuaJIT when building or when explicitly built with `-DENABLE_LUAJIT=OFF`.
 
 There are some reasons one would want to use PUC Lua over LuaJIT such as for stability reasons or if someone is on an obscure architecture that doesn't have a LuaJIT compiler available yet. As such, you should always support both implementations in your mods and be aware of some of the pitfalls that can cause crashes with a mod developed on LuaJIT being run with PUC Lua.
 
 ## Iteration order of tables
+
 The Lua reference manual **does not guarantee an iteration order of tables**:
 `pairs` (and `next`) are allowed to visit the table entries in **any order**.
 You should **never** rely on a table being iterated in a certain order,
@@ -23,6 +25,7 @@ In particular, LuaJIT for security reasons uses a random seed in its hashing,
 causing iteration orders to differ across different runs.
 
 ## Goto
+
 LuaJIT implements the `goto` statement along with labels that can be jumped to as an extension to the language. This is not available in PUC Lua, so you shouldn't use `goto` in your mods.
 
 ## Hexadecimal escape codes
@@ -63,9 +66,11 @@ LuaJIT is less strict about the order of arguments passed to `math.random`. If y
 In PUC Lua doing this will throw an error "bad argument #2 to 'random' (interval is empty)", so make sure you clamp or otherwise make sure that the min value is lower or equal to the max value, swapping them yourself if necessary.
 
 ## More...
+
 An exhaustive list of the extensions to the Lua language that LuaJIT provides can be found on [LuaJIT.org's extensions page](https://luajit.org/extensions.html).
 
 ## For older versions of Luanti
+
 Since 5.5.0 the [bitop](https://bitop.luajit.org/index.html) library is included when building Luanti with PUC Lua so if your mod targets Luanti 5.5+ it is safe to use the bitop library. This has always been available on LuaJIT, but you cannot rely on it being available on Luanti 5.4 and earlier.
 
 [^1]: Leading zeros can be omitted, but as this example demonstrates it may be necessary to keep them in case the escape sequence is followed by literal digits.

@@ -1,31 +1,36 @@
 ---
 title: Setting up a server
 aliases:
-- /Setting_up_a_server
-- /Setting_up_a_server/Debian
-- /setting-up-a-server
-- /server/setup
+  - /Setting_up_a_server
+  - /Setting_up_a_server/Debian
+  - /setting-up-a-server
+  - /server/setup
 ---
 
 # Setting up a server
+
 This page is a guide, separated into sections, for setting up a Luanti server. It assumes you want to run a server that is publicly facing the Internet, as compared to a LAN server if you want to play with players on the same network.
 
 ## Choosing Hardware
+
 It's recommended that you use a VPS or dedicated server to host a game server which you want to make publicly available. Residential Internet connections tend to be unreliable and also have less upload speed. You may also not be able to keep a server online 24/7 when hosting from home.
 
 That being said, hosting from home will work fine if you have some hardware you can keep online, and you have a good enough Internet connection. Keep in mind that if you are behind [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT), you are unable to host a public server from home at all as it won't be accessible to the wider internet.
 
-Luanti does have a *Host Server* option in the main menu, which is fine for temporary servers for a couple of friends, but if you want to run a public server you would want to run it dedicated as it can be kept online independent of the client being active.
+Luanti does have a _Host Server_ option in the main menu, which is fine for temporary servers for a couple of friends, but if you want to run a public server you would want to run it dedicated as it can be kept online independent of the client being active.
 
 ## External and Internal IPs
+
 When hosting from home it is necessary to know both your external and internal IP and understanding the difference between the two. The guide will reference these addresses multiple times later so it is good to know what they are for you.
 
 ### External IP
+
 Your external IP address is the Internet facing address you have. It is what websites see and what people will need to connect to when joining your server. In order to find your external IP address you can simply search "what is my ip address" on DuckDuckGo and it should show it:
 
 ![](/images/External_IP.webp)
 
 ### Internal IP
+
 Your internal IP address is the address that your computer has on the local network. It is the address the computer uses when communicating to other computers on the local network as well as the router. See the following instructions for each platform:
 
 **Windows:**
@@ -51,9 +56,10 @@ Your internal IP will be the address listed as "IPv4 Address", and should (but m
 3. Figure it out
 
 ## Checking for CGNAT
+
 Carrier-grade NAT (CGNAT) is a technique used by some ISPs where many customers will share one single IP address, in order to conserve the amount of IPv4 addresses the ISP owns. As mentioned above this also means that you will be unable to host a server from home without additional steps, as it won't be directly accessible from the wider Internet. So if you are going to be hosting from home you should first check whether you are behind CGNAT.
 
-*(Instructions on how to check for CGNAT are taken from [this blog post](https://voxelmanip.se/2024/09/07/check-if-you-are-behind-cgnat/))*
+_(Instructions on how to check for CGNAT are taken from [this blog post](https://voxelmanip.se/2024/09/07/check-if-you-are-behind-cgnat/))_
 
 Follow the steps for your operating system to run a traceroute:
 
@@ -68,6 +74,7 @@ Follow the steps for your operating system to run a traceroute:
 2. Type `traceroute <external IP>` (requires traceroute to be installed)
 
 ### Analysing the traceroute
+
 Whether you are behind CGNAT or not can be determined based on the amount of hops the traceroute will return. If the traceroute returns a single hop and then finishes then you are not behind CGNAT:
 
 ```
@@ -78,6 +85,7 @@ traceroute to 78.71.XX.XX (78.71.XX.XX), 30 hops max, 60 byte packets
 However if there are multiple hops to the external IP, especially ones within the 100.64.0.0 to 100.127.255.255 range that are reserved for CGNAT, or if the traceroute doesn’t complete at all then you are behind CGNAT and will not be able to host a publicly available server without extra steps.
 
 ### If you are behind CGNAT
+
 First of all, try contacting your ISP or check their website. Some ISPs are willing to move you onto a bare IP (may also be referred to as a "public" IP) if requested, by contacting them directly or through a page on their website. If asked for the motivation, say that you want to host a game server.
 
 If they are unwilling to do this, or require you to upgrade to a business plan to provide this service, you will need to rent a VPS/dedicated in the cloud to host your server or to create a tunnel to your home network.
@@ -99,6 +107,7 @@ Usually your Linux distribution of choice will have `luantiserver` in its offici
 - **Docker**: There also exist ready made Docker images for `luantiserver`, such as [the Dockerfile in the Luanti source tree](https://github.com/luanti-org/luanti/blob/master/Dockerfile) or [Warr1024's Docker image](https://hub.docker.com/r/warr1024/minetestserver).
 
 ### Windows
+
 The regular Windows builds provided on the download page work fine, running it as `luanti.exe --server` to access the server portion of it.
 
 ## Running the Server
@@ -108,10 +117,11 @@ As of 5.8.0, Luanti no longer ships with a default game, meaning you will have t
 {{< /notice >}}
 
 ### Linux
+
 1. Open a terminal.
 2. Navigate to wherever you've put your Luanti server files (referred to as /Luanti/ from now on), and run the server with `/bin/luantiserver`.
-	-   If you want to specify a specific game ID, the game ID choices are located in `/Luanti/games/`. Add in `--gameid yourGameId`** to the end of the command.
-	-   If you get the error "Multiple worlds are available.", the world choices are located in `/Luanti/worlds/`. Add in `--worldname yourWorldName`** to the end of the command.
+   - If you want to specify a specific game ID, the game ID choices are located in `/Luanti/games/`. Add in `--gameid yourGameId`\*\* to the end of the command.
+   - If you get the error "Multiple worlds are available.", the world choices are located in `/Luanti/worlds/`. Add in `--worldname yourWorldName`\*\* to the end of the command.
 3. If your server crashes, then look in the `debug.txt` log file in `/Luanti/`
 4. Make sure you make your server [safe from damage](#Protecting_your_server).
 
@@ -144,9 +154,10 @@ done
 It will store the server's world, config and log contained within its own folder such that it won't conflict with another server.
 
 ### Windows
+
 1.  Open command prompt by going in the Luanti installation folder. Then in the "bin" folder, click the blue "File" icon in the top left of the screen. In the drop down menu click "Open Windows Powershell here".
 2.  Type this: `.\luanti.exe --server`.
-	-   If you get the error "Multiple worlds are available.", use `.\luanti.exe --server --worldname `**`world_name`** instead, where **`world_name`** is the name of the world.
+    - If you get the error "Multiple worlds are available.", use `.\luanti.exe --server --worldname `**`world_name`** instead, where **`world_name`** is the name of the world.
 3.  If your server crashes, then look at the `debug.txt` in `/Luanti/bin/`
 4.  Make sure you make your server [safe from damage](#Protecting_your_server).
 
@@ -162,6 +173,7 @@ goto crash
 ## Allowing external players to connect
 
 ### Firewall
+
 On Linux, you most likely know if you have a firewall installed and configured (e.g. iptables or ufw). Be sure to allow the Luanti server to communicate over UDP on the specified port.
 
 On Windows, the Windows Defender firewall will prompt you whether Luanti should be allowed access. This may even pop up the first time you play singleplayer in the client, and if you did not grant it permission you will need to open the Windows Defender Firewall with Advanced Security and accept it from there.
@@ -169,6 +181,7 @@ On Windows, the Windows Defender firewall will prompt you whether Luanti should 
 ![](/images/Windows_defender_minetestserver.webp)
 
 ### Port forwarding
+
 If you are self-hosting a server you will usually need to port forward the server in your router for it to be accessible to the outside internet. This isn't necessary for LAN play, as you'll simply provide the internal IP of the server accessible within the local network.
 
 1.  Choose a port to run the server on. The default of 30000 is recommended, and if you host several it is recommended to increment upwards. (e.g. 30001, 30002...)
@@ -176,23 +189,25 @@ If you are self-hosting a server you will usually need to port forward the serve
 3.  Alter any computer firewalls you may have to allow traffic to the port you choose.
 
 ### Server list
+
 Make your server listed in the server list and by setting the following settings in minetest.conf:
 
 - `server_announce = true` - makes Luanti announce the server to the server list.
 - `server_name` - set the value of this to your server's name.
 - `server_description` - set the value of this to a longer description describing your server.
 - `server_address` - if you have a domain name for your server, then set this to the domain name.
-	- Should *only* be the domain name (e.g. `coolserver.luanti.org`, not `https://coolserver.luanti.org/woah/`). If you do not have a domain name pointed to your server then do not add this setting or write anything for it, or the server list will reject your server.
+  - Should _only_ be the domain name (e.g. `coolserver.luanti.org`, not `https://coolserver.luanti.org/woah/`). If you do not have a domain name pointed to your server then do not add this setting or write anything for it, or the server list will reject your server.
 - `server_url` - if you have a website for your server, then set this to the website URL, it must begin with `http://` or `https://`.
 - `motd` - a message that is sent to the player when they join. Use this to welcome them.
-- `serverlist_url` - do *not* set this unless you are announcing to a custom list.
-- `bind_address` - do *not* set this unless you have a setup with multiple IP addresses on the same server.
+- `serverlist_url` - do _not_ set this unless you are announcing to a custom list.
+- `bind_address` - do _not_ set this unless you have a setup with multiple IP addresses on the same server.
 - `ipv6_server` - set this if you have domain name and an IPv6 address.
-- *Note:* You need to restart to make changes in minetest.conf take effect.
+- _Note:_ You need to restart to make changes in minetest.conf take effect.
 
 ## Protecting your server
 
 ### Protecting the Luanti world/server
+
 When setting up a new server, you should consider which protections are needed. **This is extremely important for public servers**, because you cannot predict who will connect or what they will do on your server.
 
 Common problems include:
@@ -222,6 +237,7 @@ The engine rollback functionality is very limited and can't roll back griefing c
 For more mods useful to server administration, see the [Server Moderation and Tools](https://content.luanti.org/packages/?tag=server_tools) tag on ContentDB. See also the [SzUtilPack](https://content.luanti.org/packages/Warr1024/szutilpack/) package which is a modpack by Warr1024 that contains a lot of useful mods for server management such as automatic restarts, pruning players or additional useful chat commands.
 
 ### Protecting the host machine
+
 - Standard advice on Linux/Windows server security applies.
 - On Linux you can add a dedicated user for running the Luanti server.
 - Never, ever, disable mod security.
@@ -230,17 +246,21 @@ For more mods useful to server administration, see the [Server Moderation and To
 ## Managing your server
 
 ### Server Configuration
+
 For a detailed explanation of the server configuration file, see [minetest.conf](https://github.com/luanti-org/luanti/blob/master/minetest.conf.example).
 
 You may also want to consider to use a different [database backend](/for-server-hosts/database-backends) for your world.
 
 ### Server Commands
+
 Running /help in-game will show you a list of the built-in engine commands as well as any server commands installed by mods.
 
 ### Privilege System
+
 See the [privileges](/for-players/privileges) page for detailed information on the privilege system.
 
 ## See also
+
 - If your server has lots of media it may be useful to set up a [remote media server](Remote_Media) for it.
 - The "[Illustrated Server Creation Guide](https://forum.luanti.org/viewtopic.php?f=10&t=2870)" forum thread contains interesting discussion.
 - See this forum thread for [Server performance settings](https://forum.luanti.org/viewtopic.php?f=10&t=1825)

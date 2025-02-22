@@ -1,16 +1,16 @@
 ---
 title: Luanti Schematic File Format
 aliases:
-- /Minetest_Schematic_File_Format
-- /luanti-schematic-file-format
-- /content-dev/luanti-schematic-file-format
+  - /Minetest_Schematic_File_Format
+  - /luanti-schematic-file-format
+  - /content-dev/luanti-schematic-file-format
 ---
 
 # Luanti Schematic File Format
+
 The **Luanti Schematic File Format** if the file format used by Luanti when schematics are serialized by e.g. `core.create_schematic`. Schematic files are supposed to have “`.mts`” as a file name suffix. This document describes the MTS format native to Luanti.
 
-Informal definition
--------------------
+## Informal definition
 
 Warning: This definition has not been proofread yet! Don't rely on it 100% yet.
 
@@ -18,9 +18,9 @@ Warning: This definition has not been proofread yet! Don't rely on it 100% yet.
 
 An MTS file has 3 sections, in this order:
 
-* Header
-* Name ID Table
-* Node Definitions Section
+- Header
+- Name ID Table
+- Node Definitions Section
 
 All values are stored in _big endian_ format.
 
@@ -36,7 +36,6 @@ All values are stored in _big endian_ format.
 |    12+Y |      2 | number of strings in Name ID Table       |
 
 ```
-
 
 Layer probability values: This is a sequence of unsigned 8-bit numbers (0-255) for each Y layer. Each Y layer has a chance of appearing with the given probability. The probability ranges from 0 to 127, with 0 meaning 0% probability and 127 meaning 100% probability. Bit 7 is reserved and must be 0, meaning that values greater than 127 should be avoided.
 
@@ -54,7 +53,6 @@ For each string, the following record format repeats:
 
 ```
 
-
 The node IDs in the next section reference these.
 
 ### Node Definitions Section
@@ -70,7 +68,6 @@ This part of the file is zlib compressed, with the deflate algorithm using gz he
 
 ```
 
-
 To get the node ID from `param0` for a given coordinate (x,y,z), you should calculate the index `param0[(Z-z)*Z*Y + y*X + x]`. That's right, the Z axis is mirrored.
 
 Each node ID is stored on a big endian 2 bytes. Orientation is **not** defined in any way, there's absolutely no convention.
@@ -79,10 +76,9 @@ Probability values in `param1` are encoded in unsigned 8 bits. They are indexed 
 
 `param2` is an 8-bit value (0-255), the meaning depends on the node definition. See `lua_api.md` to learn more about `param2` (keywords: “param2”, “paramtype2”).
 
-Official definition
--------------------
+## Official definition
 
-The official definition of version 4 of this file format follows and has been copied from [/src/mapgen/mg\_schematic.h](https://github.com/luanti-org/luanti/blob/5.1.0/src/mapgen/mg_schematic.h) in the source code of version 5.1.0.
+The official definition of version 4 of this file format follows and has been copied from [/src/mapgen/mg_schematic.h](https://github.com/luanti-org/luanti/blob/5.1.0/src/mapgen/mg_schematic.h) in the source code of version 5.1.0.
 
 ```
 All values are stored in big-endian byte order.
@@ -111,16 +107,14 @@ For each node in schematic:
 
 ```
 
+- Source code 5.1.0: [/src/mapgen/mg_schematic.h](https://github.com/luanti-org/luanti/blob/5.1.0/src/mapgen/mg_schematic.h)
+- Source code bleeding edge: [/src/mapgen/mg_schematic.h](https://github.com/luanti-org/luanti/blob/master/src/mapgen/mg_schematic.h)
 
-* Source code 5.1.0: [/src/mapgen/mg\_schematic.h](https://github.com/luanti-org/luanti/blob/5.1.0/src/mapgen/mg_schematic.h)
-* Source code bleeding edge: [/src/mapgen/mg\_schematic.h](https://github.com/luanti-org/luanti/blob/master/src/mapgen/mg_schematic.h)
-
-Version changes
----------------
+## Version changes
 
 As of version 5.1.0, the current version of the MTS file format is 4.
 
-* 1—Initial version
-* 2—Fixed messy never/always place; the probability of `0` is now never, and `0xFF` is always
-* 3—Added y-slice probabilities; this allows for variable height structures
-* 4—Compressed range of node occurrence probability, added per-node force placement bit (used since 0.4.16 or earlier)
+- 1—Initial version
+- 2—Fixed messy never/always place; the probability of `0` is now never, and `0xFF` is always
+- 3—Added y-slice probabilities; this allows for variable height structures
+- 4—Compressed range of node occurrence probability, added per-node force placement bit (used since 0.4.16 or earlier)

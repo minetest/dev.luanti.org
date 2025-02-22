@@ -1,20 +1,20 @@
 ---
 title: Git Guidelines
 aliases:
-- /Git_Guidelines
-- /git-guidelines
-- /engine-dev-process/git-guidelines
+  - /Git_Guidelines
+  - /git-guidelines
+  - /engine-dev-process/git-guidelines
 ---
 
 # Git Guidelines
+
 This page is mostly directed to core team members with commit or triage access to upstream repositories.
 
 For determining who is allowed to do what, see [Organization](/for-engine-devs/organization).
 
 For guidelines about overall pull request quality, see [Merging core pull requests to upstream](/Merging_core_pull_requests_to_upstream).
 
-Rules
------
+## Rules
 
 ### Upstream branch rules
 
@@ -24,21 +24,20 @@ The `minetest` and `minetest_game` repositories contain the stable-0.4 branch, w
 
 ### Upstream pull requests
 
-* Don't mix multiple things in one commit. The same applies to codestyle cleanup.
-* People considering merging pull requests are not required to look anything up anywhere else than the pull request and its comments. If there is something blocking the merging of a pull request, the reason must be added as a comment to the pull request. This goes both ways: If you check a pull request to be mergeable, write a simple "+1" comment to it.
+- Don't mix multiple things in one commit. The same applies to codestyle cleanup.
+- People considering merging pull requests are not required to look anything up anywhere else than the pull request and its comments. If there is something blocking the merging of a pull request, the reason must be added as a comment to the pull request. This goes both ways: If you check a pull request to be mergeable, write a simple "+1" comment to it.
 
 ### Upstream commit rules
 
-* You can push something to upstream \[1\] only if two members of the core team \[2\] agree on it. (See also [Organization](/for-engine-devs/organization))
-    * Two for-votes are required for code to be mergeable upstream. Any against vote has to be resolved in a meeting before merge.
-    * For PRs: The second reviewer should invalidate the first review when major changes happened to the PR in the meantime.
-* Commit messages must start with a capital letter and must be in the present tense. (look at the commit log)
-* Do not modify history (i.e. force push) older than 10 minutes.
-* Use rebase, not merge, to get linear history. \[3\]
-* Do not rush with anything, unless our users' data is about to be corrupted otherwise.
+- You can push something to upstream \[1\] only if two members of the core team \[2\] agree on it. (See also [Organization](/for-engine-devs/organization))
+  - Two for-votes are required for code to be mergeable upstream. Any against vote has to be resolved in a meeting before merge.
+  - For PRs: The second reviewer should invalidate the first review when major changes happened to the PR in the meantime.
+- Commit messages must start with a capital letter and must be in the present tense. (look at the commit log)
+- Do not modify history (i.e. force push) older than 10 minutes.
+- Use rebase, not merge, to get linear history. \[3\]
+- Do not rush with anything, unless our users' data is about to be corrupted otherwise.
 
-Rule 1 in practice
-------------------
+## Rule 1 in practice
 
 Tell people openly what you do, and if someone finds a problem in what you do, allow resolving to take its time.
 
@@ -56,23 +55,22 @@ Rule 1 is **only** applied to the `minetest/minetest` and `minetest/minetest_gam
 
 \[4\] Patches can be linked using a pastebin or by using GitHub (pull request or not).
 
-Issue and Pull-Request Management
----------------------------------
+## Issue and Pull-Request Management
 
-* If an issue is a duplicate, post "duplicate of #ISSUE_NUM", label as [Duplicate](https://github.com/luanti-org/luanti/labels/Duplicate), and close the issue. Newer issues should be considered duplicates of older issues, unless the newer issue has more useful conversation. Information from the duplicate issue can also be edited into the open issue.
-* If a pull request or an issue does not get a response from its author within one month when requiring more details, it is closed.
-    * Use ["Action / change needed"](https://github.com/luanti-org/luanti/labels/Action%20%2F%20change%20needed) and ["User feedback needed"](https://github.com/luanti-org/luanti/labels/User%20feedback%20needed)
-* Core devs who reviewed a PR once should stay with the PR for additional review rounds. Loss of interest (thus unsubscribing) should be signalled properly.
-    * This is best communicated by assigning yourself to the PR using the GitHub feature.
-    * PR assignments show who's taking care of the PR; leaving the option to @ them to progress.
-* [WIP](https://github.com/luanti-org/luanti/labels/WIP) / draft pull-requests that are not updated within 6 months should be closed.
-* Use [Project Boards](https://github.com/luanti-org/luanti/projects) to prioritize and order issues and pull requests.
-* The [Possible Close](https://github.com/luanti-org/luanti/labels/Possible%20Close) label can be used to warn authors of impending closure.
+- If an issue is a duplicate, post "duplicate of #ISSUE_NUM", label as [Duplicate](https://github.com/luanti-org/luanti/labels/Duplicate), and close the issue. Newer issues should be considered duplicates of older issues, unless the newer issue has more useful conversation. Information from the duplicate issue can also be edited into the open issue.
+- If a pull request or an issue does not get a response from its author within one month when requiring more details, it is closed.
+  - Use ["Action / change needed"](https://github.com/luanti-org/luanti/labels/Action%20%2F%20change%20needed) and ["User feedback needed"](https://github.com/luanti-org/luanti/labels/User%20feedback%20needed)
+- Core devs who reviewed a PR once should stay with the PR for additional review rounds. Loss of interest (thus unsubscribing) should be signalled properly.
+  - This is best communicated by assigning yourself to the PR using the GitHub feature.
+  - PR assignments show who's taking care of the PR; leaving the option to @ them to progress.
+- [WIP](https://github.com/luanti-org/luanti/labels/WIP) / draft pull-requests that are not updated within 6 months should be closed.
+- Use [Project Boards](https://github.com/luanti-org/luanti/projects) to prioritize and order issues and pull requests.
+- The [Possible Close](https://github.com/luanti-org/luanti/labels/Possible%20Close) label can be used to warn authors of impending closure.
 
 ### Triagers
 
-* Triagers are members of the project that are not core developers, but have the ability to manage issues - see above.
-    * Examples include labelling issues, asking for necessary information, and managing boards to help with long-term planning.
-* They may close issues or PRs, but cannot approve them (the act of approving an issue implies there is a dev willing to review a contribution).
-* They should err on the side of caution - if they don't understand the issue, they should wait for feedback.
-* They should consider ways to improve project management further.
+- Triagers are members of the project that are not core developers, but have the ability to manage issues - see above.
+  - Examples include labelling issues, asking for necessary information, and managing boards to help with long-term planning.
+- They may close issues or PRs, but cannot approve them (the act of approving an issue implies there is a dev willing to review a contribution).
+- They should err on the side of caution - if they don't understand the issue, they should wait for feedback.
+- They should consider ways to improve project management further.

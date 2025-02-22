@@ -1,7 +1,7 @@
 ---
 title: LuaJIT
 aliases:
-- /luajit
+  - /luajit
 ---
 
 # LuaJIT

@@ -1,8 +1,8 @@
 ---
 title: Main Page
-type: 'docs'
+type: "docs"
 aliases:
-- "/Main_Page"
+  - "/Main_Page"
 ---
 
 # Luanti Documentation

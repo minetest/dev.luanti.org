@@ -2,7 +2,7 @@
 title: Compiling Luanti
 bookCollapseSection: true
 aliases:
-- /compiling
+  - /compiling
 ---
 
 # Compiling Luanti
