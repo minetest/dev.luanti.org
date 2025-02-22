@@ -55,4 +55,4 @@ A **schem file (`.mts`)** is used to import building(s) into a world with the [W
 See also
 --------
 
-* [Minetestmapper](/minetestmapper), a program to draw a 2D map of a Luanti world.
+* [Minetestmapper](/for-server-hosts/minetestmapper), a program to draw a 2D map of a Luanti world.

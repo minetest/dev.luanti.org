@@ -4,6 +4,7 @@ aliases:
 - /Minetestmapper
 - /Luantimapper
 - /Luanti-mapper
+- /minetestmapper
 ---
 
 # Minetestmapper
