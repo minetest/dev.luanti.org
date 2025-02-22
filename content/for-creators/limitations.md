@@ -1,5 +1,7 @@
 ---
 title: Limitations
+aliases:
+- /limitations
 ---
 
 # Limitations
@@ -14,4 +16,4 @@ Mods always run on the server, and not on the client. While there is a client mo
 There is no way to check arbitrary keys in the scripting API. You are limited to the existing keybinds that are available in `get_player_control`. Aux1 is a generic keybind that you could give a custom use for.
 
 ## Changing node textures on the fly
-While there are ways to e.g. colourise nodes using param2, you cannot change the texture of a node itself. You will need to register a separate node with different textures, and swap between these nodes.
+While there are ways to e.g. colorize nodes using param2, you cannot change the texture of a node itself. You will need to register a separate node with different textures, and swap between these nodes.
