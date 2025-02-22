@@ -18,17 +18,7 @@ jobs:
       - name: Show formatter diff if it exists
         # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
         if: ${{ failure() }}
-        run: |
-          npm run format:fix
-          git diff > diff.txt
-          npm install -g diff2html-cli
-          diff2html -i file -s side -F diff.html -- diff.txt
-      - name: Comment the diff as HTML if it exists
-        # https://docs.github.com/en/actions/learn-github-actions/expressions#failure-with-conditions
-        if: ${{ failure() && steps.runPrettier.conclusion == 'failure' }}
-        uses: thollander/actions-comment-pull-request@v2
-        with:
-          filePath: diff.html
+        run: git diff
       - name: Build site to check for errors
         run: npm run build:ci
       - name: check that links are all valid
