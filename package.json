@@ -9,7 +9,7 @@
         "test:a11y": "start-test start 1313 test:a11y:tests",
         "test:a11y:tests": "playwright test",
         "test:links": "linkinator ./public -r",
-        "test:spelling": "cspell content"
+        "test:spelling": "cspell content README.md"
     },
     "dependencies": {
         "hugo-extended": "^0.141.0"
