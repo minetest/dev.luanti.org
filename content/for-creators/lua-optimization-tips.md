@@ -32,7 +32,7 @@ print(string.format("elapsed time: %g ms", (core.get_us_time() - t1) / 1000))
 Always use z, y, x ordering unless there's a good reason not to.
 
 * Keeps cache coherency
-* Opens opportunity to use simple arithmetic to calculate indicies
+* Opens opportunity to use simple arithmetic to calculate indices
 
 ### Prefer local variables
 
@@ -82,11 +82,11 @@ end
 
 
 
-See also: [vmanip#Tips\_for\_handling\_indices](/vmanip#Tips_for_handling_indices "vmanip")
+See also: [vmanip#Tips\_for\_handling\_indices](/vmanip#Tips_for_handling_indices)
 
 ### Benchmarking
 
-To test how often some function is executed in a second you can use something with a syntax similar to the one of [core.after](/index.php?title=minetest.after&action=edit&redlink=1 "core.after (page does not exist)"):
+To test how often some function is executed in a second you can use something with a syntax similar to the one of `core.after`:
 
 ```lua
 local TIME = 3

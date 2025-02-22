@@ -7,7 +7,7 @@ aliases:
 ---
 
 # Code style guidelines
-This is the coding style used for C/C++ code. Also see the [Lua code style guidelines](/Lua_code_style_guidelines "Lua code style guidelines").
+This is the coding style used for C/C++ code. Also see the [Lua code style guidelines](/Lua_code_style_guidelines).
 
 The coding style is based on the [Linux kernel code style](https://www.kernel.org/doc/html/latest/process/coding-style.html). Much of the existing code doesn't follow the current code style guidelines, do not try to replicate that. Use your best judgment for C++-specific syntax.
 
@@ -134,6 +134,7 @@ Note that `else` is on the same line as the closing brace of the previous `if`.
 
 Special exception to the standard bracing/indent rules for nested loops: If a nested loop iterates over a set of coordinates, it is permitted to omit the braces for all but the innermost loop and keep the outer loops at the same indentation level, like so:
 
+{{% comment %}} cspell:disable {{% /comment %}}
 ```cpp
 for (s16 z = pmin.Z; z <= pmax.Z, z++)
 for (s16 y = pmin.Y; y <= pmax.Y; y++)
@@ -141,6 +142,7 @@ for (s16 x = pmin.X; x <= pmax.X; x++) {
 	// ... do stuff here ...
 }
 ```
+{{% comment %}} cspell:enable {{% /comment %}}
 
 
 ### C++ features

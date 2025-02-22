@@ -89,7 +89,7 @@ If you created a Lua mapgen, it is strongly recommended to make sure you optimiz
 
 ### More optimization tips
 
-For more optimization tips, go to [Lua Optimization Tips](/Lua_Optimization_Tips "Lua Optimization Tips").
+For more optimization tips, go to [Lua Optimization Tips](/Lua_Optimization_Tips).
 
 ### Checking if a mod exists
 
@@ -103,14 +103,14 @@ This works because `minetest.get_modpath` returns nil if the mod is not loaded.
 
 ### Ensuring mod interoperability
 
-A good mod is one that still works when a lot of other mods are used. Read [Mod\_interoperability](/Mod_interoperability "Mod interoperability") for a lot of useful hints.
+A good mod is one that still works when a lot of other mods are used. Read [Mod\_interoperability](/Mod_interoperability) for a lot of useful hints.
 
 Quality checklist
 -----------------
 
 Here's a list of things to check in your game or mod to improve general quality and to avoid common pitfalls. Not all things might apply for your game, always use good judgement.
 
-Note: Some of these can be checked quickly with [QA-Block](https://forum.luanti.org/viewtopic.php?t=15759). See also: [Development Tools](/Development_Tools "Development Tools").
+Note: Some of these can be checked quickly with [QA-Block](https://forum.luanti.org/viewtopic.php?t=15759). See also: [Development Tools](/Development_Tools).
 
 ### Preventing crashes, exploits and bugs
 
@@ -186,11 +186,11 @@ Footnotes
 [^4]: Use `minetest.is_singleplayer` to check. Use Lua's `error` function to error out, or just kick all players.
 [^5]: Detached inventories are sent to everyone unless you specify a name in the registration. So other players using a modified/hacked client could theoretically alter any detached inventory without an attached name.
 [^6]: The keyword “`local`” should be your new friend. Everything that does not need to be visible outside should be made local. This will avoid a lot of weird bugs caused by mods overwriting their global variables each other. As a rule of thumb, your mod should only have up to 1 global variable which is also the same name as the mod. Make this a table in which you include all global stuff. You can use [QA-Block](https://forum.luanti.org/viewtopic.php?t=15759) to find suspicious global variables.
-[^7]: See also: [MT-replace-deprecated.sh](/MT-replace-deprecated.sh "MT-replace-deprecated.sh")
+[^7]: See also: [MT-replace-deprecated.sh](/MT-replace-deprecated.sh)
 [^8]: See also [Mapgen memory optimizations](/for-creators/mapgen/memory-optimizations)
 [^9]: See also [Mapgen memory optimizations](/for-creators/mapgen/memory-optimizations)
 [^10]: Entities will forget most variables when they unload, which is easy to overlook for beginners. Make sure to make use of staticdata.
-[^11]: If you don't apply any checks when overwriting player physics, this will very likely lead to very hilarious bugs if 2 mods want to change player physics directly, as they will constantly compete for “their” physics. This will likely screw up the player physics badly. To solve this, you should generally avoid setting player physics directly, unless you want to implement a physics interface yourselves. But for normal use, we highly recommend to use an [Mod\_interoperability#Player\_physics API](/Mod_interoperability#Player_physics_API "Mod interoperability").
+[^11]: If you don't apply any checks when overwriting player physics, this will very likely lead to very hilarious bugs if 2 mods want to change player physics directly, as they will constantly compete for “their” physics. This will likely screw up the player physics badly. To solve this, you should generally avoid setting player physics directly, unless you want to implement a physics interface yourselves. But for normal use, we highly recommend to use an [Mod\_interoperability#Player\_physics API](/Mod_interoperability#Player_physics_API).
 [^12]: Note this value is true by default, and can be forgotten easily.
 [^13]: Of course, silence is also “appropriate” if that's what you intended.
 [^14]: As a rule of thumb, try to match the graphics pixel-perfectly, if it makes sense. Selection boxes that are completely misplaced or just tiny are generally perceived as highly annoying by players.

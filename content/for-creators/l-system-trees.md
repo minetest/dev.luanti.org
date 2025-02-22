@@ -94,7 +94,7 @@ Let's look at it step by step: First we do the axiom, just a vertical trunk. The
 
 And after the 3rd recursion this is the result:
 
-[![recursive y](/images/mtwikitreegen.webp)](/images/mtwikitreegen.webp "recursive y")
+[![recursive y](/images/mtwikitreegen.webp)](/images/mtwikitreegen.webp)
 
 ### Replacing by chance
 
@@ -116,7 +116,6 @@ aliases:
 ---
 
 ## L-system tree examples
-This wiki page is a collection of example [L-system trees](/Introduction_to_L-system_trees "Introduction to L-system trees"). The intention is to help newbies better understand L-system trees, but also to provide usable tree definitions which could be used in mods.
 
 ### Giant dry shrub
 

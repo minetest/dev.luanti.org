@@ -81,7 +81,7 @@ Here are examples of landscapes generated with the different map generators:
 
 All map generators described in full detail.
 
-To learn more about detailed configuration, see [Map generator features](/for-creators/mapgen/features "Map generator features"). To learn more about the history of the map generators, see [Map Generator Evolution](/about/history/mapgen-evolution "Map Generator Evolution").
+To learn more about detailed configuration, see [Map generator features](/for-creators/mapgen/features).
 
 ### v5
 
@@ -107,7 +107,7 @@ Generated entirely using 2D Perlin noise.
 
 ### v7
 
-Generates a very large-scale environment with large biomes and plains. One of the most unique features in this map generator are the broad and deep water canals (called “ridges”) at sea level, but they can be disabled. This mapgen also has the unique feature of supporting floating islands high in the sky (see [Map generator features](/for-creators/mapgen/features "Map generator features")), but they are disabled by default.
+Generates a very large-scale environment with large biomes and plains. One of the most unique features in this map generator are the broad and deep water canals (called “ridges”) at sea level, but they can be disabled. This mapgen also has the unique feature of supporting floating islands high in the sky (see [Map generator features](/for-creators/mapgen/features)), but they are disabled by default.
 
 The generated caves are broad, often have lots of space and are often very long and complex and like to branch off. Sudden drops are not unusual. Deep in the underground, giant caves may form (like in v5).
 
@@ -141,7 +141,7 @@ The generated caves are practically identical to those of v7.
 
 Generates an empty world.
 
-To be precise: By default, this produces a world with only [Air](/for-players/nodes/#air "Air") everywhere. For games, it's possible to choose a different node by defining the `mapgen_singlenode` mapgen alias.
+To be precise: By default, this produces a world with only [Air](/for-players/nodes/#air) everywhere. For games, it's possible to choose a different node by defining the `mapgen_singlenode` mapgen alias.
 
 It is intended to be used for mapgen mods which define their own map generation from scratch. This mapgen is not really useful if left unmodified.
 
@@ -149,5 +149,5 @@ See also
 --------
 
 *   [Stability of each mapgen](https://forum.luanti.org/viewtopic.php?f=18&t=19132), a post by paramat on the forums describing which map generators are "officially stable" (last updated 2019)
-*   [Map generator features](/for-creators/mapgen/features "Map generator features")
-*   [Map Generator Evolution](/about/history/mapgen-evolution "Map generator evolution")
+*   [Map generator features](/for-creators/mapgen/features)
+*   [Map Generator Evolution](/about/history/mapgen-evolution)

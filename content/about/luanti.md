@@ -29,7 +29,7 @@ Features
 *   Extremely high configurability with an advanced settings editor and built-in descriptions, or by using a [configuration file](/for-players/minetest-conf)
 *   Customize the graphics and sounds through [texture packs](/for-players/texture-packs)
 *   Download games, mods and texture packs from the built-in [ContentDB](https://content.luanti.org/)
-*   Singleplayer mode and [online multiplayer mode](/for-players/servers "Server")
+*   Singleplayer mode and [online multiplayer mode](/for-players/servers)
 *   Server list
 *   Sophisticated modding system using Lua
 *   Mods are entirely server-sided. You can join any Luanti server with any mods and start playing, no additional software required

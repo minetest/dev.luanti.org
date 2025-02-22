@@ -19,7 +19,7 @@ There are basically two initialization phases, on creation of application protot
 
 Note about the image: Its partially outdated. Since commit 4e1f50035e860a00636ca5d804c267119df99601, the registerModApiModule function has been removed.
 
-[![Script Engine initialization](/images/scriptapi_init.webp)](/images/scriptapi_init.webp "Script Engine initialization")
+![Script Engine initialization](/images/scriptapi_init.webp)
 
 Common
 ------

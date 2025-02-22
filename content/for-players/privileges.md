@@ -7,7 +7,7 @@ aliases:
 
 # Privileges
 
-Every player has a set of privileges, which differ from server to server. Roughly spoken, one’s privileges determine what one is able to do and what not. Each privilege has a name (the meaning is described below). Privileges can be granted and revoked from other players by any player who has the privilege called “privs”. On a multiplayer server with a default configuration, new players start with the privileges called “interact” and “shout”. To view one’s own privileges, one can issue the [server command](/for-players/server-commands "Server commands") “/privs”.
+Every player has a set of privileges, which differ from server to server. Roughly spoken, one’s privileges determine what one is able to do and what not. Each privilege has a name (the meaning is described below). Privileges can be granted and revoked from other players by any player who has the privilege called “privs”. On a multiplayer server with a default configuration, new players start with the privileges called “interact” and “shout”. To view one’s own privileges, one can issue the [server command](/for-players/server-commands) “/privs”.
 
 Built-in privileges
 -------------------
@@ -23,7 +23,7 @@ As of version 5.0.0, Luanti comes with the following privileges:
   * **fly**—allows the player to activate fly mode
   * **noclip**—allows the player to activate "noclip" mode, which allows them to fly through walls
 * chat-related:
-  * **shout**—can [chat](/for-players/chat "Chat") with other people
+  * **shout**—can [chat](/for-players/chat) with other people
 * world–manipulation-related:
   * **settime**—can set time of day using `/time`
 * moderation-related:
@@ -35,14 +35,14 @@ As of version 5.0.0, Luanti comes with the following privileges:
   * **protection\_bypass**—can bypass protection of blocks (e.g. can open locked chests or steel doors of everyone)
 * administration-related:
   * **server**—can do server maintenance stuff such as `/shutdown`, `/clearobjects`, `/set`, …
-  * **debug**—can access advanced [debug](/for-creators/debug "Debug") features and information, such as the wirewrame in the debug screens (F5). It also prevents the game from restricting information in the debug screen and from restricting the “toggle block bounds” key.
+  * **debug**—can access advanced [debug](/for-creators/debug) features and information, such as the wireframe in the debug screens (F5). It also prevents the game from restricting information in the debug screen and from restricting the “toggle block bounds” key.
 
 Irrevocable privileges
 ----------------------
 
 A player’s privileges may be irrevocable in certain situations. It is not possible to revoke these privileges with `/revoke` then.
 
-In multiplayer [servers](/for-players/servers "Server"), the player whose name equals the [minetest.conf](/for-players/minetest-conf "Minetest.conf") setting “name” automatically has all privileges and all of these are irrevocable. This is also the case for players who started a server (not a dedicated server). In singleplayer, you start with **interact**, **shout**, **privs** and **basic\_privs**. These privileges are irrevocable.
+In multiplayer [servers](/for-players/servers) setting “name” automatically has all privileges and all of these are irrevocable. This is also the case for players who started a server (not a dedicated server). In singleplayer, you start with **interact**, **shout**, **privs** and **basic\_privs**. These privileges are irrevocable.
 
 Privileges from mods and games
 -----------------------------------------------------------------------
@@ -53,7 +53,7 @@ Privileges from mods and games
 
 ### Mods
 
-[Mods](/for-players/mods "Mods") may make additional privileges available on the server. Issue the server command `/help privs` to receive a full list (and short descriptions) of all possible privileges on the server.
+[Mods](/for-players/mods) may make additional privileges available on the server. Issue the server command `/help privs` to receive a full list (and short descriptions) of all possible privileges on the server.
 
 Server configuration
 --------------------
@@ -67,6 +67,6 @@ There is an option in the configuration file for setting the default privileges 
 See also
 --------
 
-* [Servers](/for-players/servers "Server")
-* [Server commands](/for-players/server-commands "Server commands")
+* [Servers](/for-players/servers)
+* [Server commands](/for-players/server-commands)
 * [For Server Hosts](/for-server-hosts)

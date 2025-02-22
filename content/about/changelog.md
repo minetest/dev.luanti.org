@@ -921,11 +921,11 @@ Released on 30 Jan 2022.
 * PostgreSQL fixes and improved error messages (_sfan5_)
 * Improved liquid documentation (_Wuzzy_)
 * Improved mipmapping-related code (_sfan5_)
-* Rendering engine was changed from Irrlicht to [IrrlichtMt](/index.php?title=IrrlichtMt&action=edit&redlink=1 "IrrlichtMt (page does not exist)") (Minetest's fork of Irrlicht) (_sfan5_)
+* Rendering engine was changed from Irrlicht to IrrlichtMt (Minetest's fork of Irrlicht) (_sfan5_)
 * Performance: Draw items as 2D images (instead of meshes) when possible (_sfan5_)
 * Sanity check: Block & report player self-interaction (_appgurueu_)
 * Multiple font code cleanups and improvements (_sfan5_)
-* IrrlichtMt switch related fixups (_kilbith_. _sfan5_, _nerzhul_))
+* IrrlichtMt switch related fixups (_kilbith_. _sfan5_, _nerzhul_)
 * Performance improvements during media/mesh loading (_sfan5_)
 * Json is now taken from the system by default (_sfan5_)
 * Various build bot and setup changes (_sfan5_)
@@ -3612,7 +3612,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Added `minetest.get_player_ip()` _(ShadowNinja)_
 * Added `use_texture_alpha` in node definition to use alpha channel of node texture _(kwolekr)_
 * Added `glasslike_framed` node drawtype _(RealBadAngel)_
-* Added optional dependencies and different [mod name conflict handling](/index.php?title=Mod_name_conflicts&action=edit&redlink=1 "Mod name conflicts (page does not exist)") _(kahrl)_
+* Added optional dependencies and different mod name conflict handling _(kahrl)_
 * Use group `soil` for nodes where saplings can grow on _(ShadowNinja)_
 * Nodes with drawtype `raillike` connect to all other nodes with the same drawtype if they are in the `connect_to_raillike` group _(Jeija)_
 * Env functions are now in the global minetest table; that means they are called via `minetest.<function>` instead of `minetest.env:<function>` _(sapier, celeron55 & kahrl)_
@@ -3693,7 +3693,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Added function and wrapper to predict and assign 6d rotation via `minetest.rotate_and_place()` _(VanessaE and EvergreenTree)_
 * Added `minetest.add_particle()`, `minetest.add_particlespawner()` and `minetest.delete_particlespawner()` _(Jeija)_
 * Added `minetest.register_ore()` to let the engine generate the ores; `default.generate_ore()` is now deprecated _(kwolekr)_
-* New damage system added as described here: [Damage\_system](/index.php?title=Damage_system&action=edit&redlink=1 "Damage system (page does not exist)") _(PilzAdam & celeron55)_
+* New damage system _(PilzAdam & celeron55)_
 * Added `place` field to sound table of tools _(PilzAdam)_
 
 0.4.4 → 0.4.5

@@ -42,7 +42,7 @@ Following information can be found in the system settings / system information o
 
 **Most important:** Luanti generates a `debug.txt` file which is located near to the `bin` folder, or `~/.minetest/` for system-wide installations. Copy the last 50 lines or so of the debug file.
 
-If you are tech-savvy, you might also want to look for similar issues in [Troubleshooting](/for-players/troubleshooting "Troubleshooting") and try to find out the cause of the issue by clearing all settings, tweaking settings or disabling mods.
+If you are tech-savvy, you might also want to look for similar issues in [Troubleshooting](/for-players/troubleshooting) and try to find out the cause of the issue by clearing all settings, tweaking settings or disabling mods.
 
 ### Bug report template
 

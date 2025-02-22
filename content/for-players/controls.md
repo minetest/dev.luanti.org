@@ -172,7 +172,7 @@ With `minetest.conf`, you can change the controls which are unavailable in the s
 Inventory controls
 ------------------
 
-See [Inventory#Controls](/for-players/inventory/#controls "Inventory").
+See [Inventory#Controls](/for-players/inventory/#controls).
 
 Console controls
 ----------------

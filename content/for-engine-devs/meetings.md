@@ -619,7 +619,7 @@ Roadmapped
 
 **PR discussion/reviews**
 
-* [#11545](https://github.com/luanti-org/luanti/pull/11545) <- someone should review this --[Sfan5](/User:Sfan5 "User:Sfan5") ([talk](/index.php?title=User_talk:Sfan5&action=edit&redlink=1 "User talk:Sfan5 (page does not exist)"))
+* [#11545](https://github.com/luanti-org/luanti/pull/11545) <- someone should review this --sfan5
     * x2048
 * [#12367](https://github.com/luanti-org/luanti/pull/12367) some questions here
     * mostly answered before meeting

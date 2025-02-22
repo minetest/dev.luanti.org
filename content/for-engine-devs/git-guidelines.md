@@ -11,7 +11,7 @@ This page is mostly directed to core team members with commit or triage access t
 
 For determining who is allowed to do what, see [Organization](/for-engine-devs/organization).
 
-For guidelines about overall pull request quality, see [Merging core pull requests to upstream](/Merging_core_pull_requests_to_upstream "Merging core pull requests to upstream").
+For guidelines about overall pull request quality, see [Merging core pull requests to upstream](/Merging_core_pull_requests_to_upstream).
 
 Rules
 -----

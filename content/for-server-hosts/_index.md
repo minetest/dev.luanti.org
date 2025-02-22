@@ -11,7 +11,7 @@ Server hosts setup and manage multiplayer Luanti servers.
 Managing a server
 -----------------
 
-See [Setting up a server](/setting-up-a-server "Setting up a server") for information running your own server.
+See [Setting up a server](/setting-up-a-server) for information running your own server.
 
 See also
 --------
