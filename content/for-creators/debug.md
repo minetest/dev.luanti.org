@@ -51,7 +51,7 @@ Note: The entire second row is hidden when the debug view is restricted (see bel
 
 When you point an entity or object (such as a dropped item or player), the following information is shown to the left:
 
-*   Entity type: See [ActiveObject](/objects/#activeobjects) on the Minetest Developer Wiki
+*   Entity type: See [ActiveObject](/for-engine-devs/objects/#activeobjects) on the Minetest Developer Wiki
 *   **hp**: [Health](/for-players/player/#health) in hit points
 *   **armor**: Armor groups, determine how the entity receives damage (see below)
 

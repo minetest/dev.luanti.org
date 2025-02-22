@@ -4,6 +4,7 @@ aliases:
 - /Engine/Objects
 - /Unknown_Object
 - /engine/objects
+- /objects
 ---
 
 # Engine/Objects

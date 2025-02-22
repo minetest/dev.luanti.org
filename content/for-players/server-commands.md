@@ -162,7 +162,7 @@ Request some information from the server; the answer from the server will also b
 * `/time <hours>:<minutes>`—Sets the time of day in the 24-hour format (0:00-23:59). Requires the “settime” privilege. Precede the time with a tilde for a relative time change.
 * `/time <time_of_day>`—Sets the time of day as a number between 0 and 24000. Requires the “settime” privilege. Supports relative number syntax with `~` (see above).
 * `/set -n time_speed <speed>`—Sets the speed of day/night cycle where `<speed>` is the time speed (read as “`<speed>` times faster than in real life”). 72 is the default, which means a day-night cycle lasts 20 minutes by default. Requires the “server” privilege
-* `/spawnentity <entity> [<X>,<Y>,<Z>]`—Spawns an [entity](/objects) of type `<entity>` near your position or at the X,Y,Z coordinates, if specified. Requires “give” and “interact” privileges. The coordinates support relative values with `~` (see above)
+* `/spawnentity <entity> [<X>,<Y>,<Z>]`—Spawns an [entity](/for-engine-devs/objects) of type `<entity>` near your position or at the X,Y,Z coordinates, if specified. Requires “give” and “interact” privileges. The coordinates support relative values with `~` (see above)
 
 #### Server maintenance
 

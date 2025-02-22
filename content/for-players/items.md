@@ -30,7 +30,7 @@ In the inventory, item stacks are represented by an icon and optionally a number
 
 Some dropped item stacks
 
-Item stacks appear in the world as [objects](/objects). They are represented by some sort of symbol. For blocks, the icon is a rotating mini-version of it. Other things represented by the inventory icon. In the world, any item stack appears just as a single object, even with a stack size of 99. But item stacks with a larger stack size will appear larger than item stacks with a low stack size. An item stack can be collected by [punching](/for-players/punching) it. Item stacks are subject to gravity. If multiple item stacks of the same item occupy the same block position, they will merge into one object, as long the stack limit is not exceeded. Dropped items also have a life time. If they stay untouched in the world for too long, they disappear. The life time can be changed via [minetest.conf](/for-players/minetest-conf) (`item_entity_ttl`).
+Item stacks appear in the world as [objects](/for-engine-devs/objects). They are represented by some sort of symbol. For blocks, the icon is a rotating mini-version of it. Other things represented by the inventory icon. In the world, any item stack appears just as a single object, even with a stack size of 99. But item stacks with a larger stack size will appear larger than item stacks with a low stack size. An item stack can be collected by [punching](/for-players/punching) it. Item stacks are subject to gravity. If multiple item stacks of the same item occupy the same block position, they will merge into one object, as long the stack limit is not exceeded. Dropped items also have a life time. If they stay untouched in the world for too long, they disappear. The life time can be changed via [minetest.conf](/for-players/minetest-conf) (`item_entity_ttl`).
 An item stack that is stuck in a solid block will be pushed outside of it until it reaches a non-solid block.
 
 Dropped items can appear for many reasons:
@@ -81,4 +81,4 @@ See also
 --------
 
 *   [Nodes](/for-players/nodes)
-*   [Objects](/objects)
+*   [Objects](/for-engine-devs/objects)
