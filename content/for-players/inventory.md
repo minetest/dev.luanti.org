@@ -71,7 +71,7 @@ When you're **holding no item stack on your cursor**:
 *   Shift+click: **Move item stack** to other inventory (if available)
 *   Hold down Shift+click while moving mouse over item slots: Continuously **move item stacks** to other inventory (if available)
 *   Double click: **Pick up all item stacks of the same type** in the inventory
-*   Pick up an item stack with leftclick, keep the mouse button pressed and drag cursor over slots: **Pick up items** of the same type
+*   Pick up an item stack with left-click, keep the mouse button pressed and drag cursor over slots: **Pick up items** of the same type
 *   Shift+click on crafting output slot: **Craft and move** result to inventory
     *   Left mouse button: **Craft as many as possible**
     *   Mouse wheel: **Craft 10 times**

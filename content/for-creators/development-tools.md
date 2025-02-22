@@ -16,14 +16,14 @@ In addition to this list, you can also see the [Development Tools](https://conte
 - [/minetest/util](https://github.com/luanti-org/luanti/tree/master/util): Various maintenance utilities
 
 ## General Lua Tools
-- [luacheck](https://github.com/lunarmodules/luacheck): Lua linter and static code analyser (see also [the chapter in rubenwardy's modding book](https://rubenwardy.com/minetest_modding_book/en/quality/luacheck.html))
+- [luacheck](https://github.com/lunarmodules/luacheck): Lua linter and static code analyzer (see also [the chapter in rubenwardy's modding book](https://rubenwardy.com/minetest_modding_book/en/quality/luacheck.html))
 - [busted](https://olivinelabs.com/busted/): Lua unit testing framework (see also [the chapter in rubenwardy's modding book](https://rubenwardy.com/minetest_modding_book/en/quality/unit_testing.html))
-- [Lua pattern viewer](https://gitspartv.github.io/lua-patterns/): A site like [Regexr](https://regexr.com/) but for visualising and working with Lua patterns.
+- [Lua pattern viewer](https://gitspartv.github.io/lua-patterns/): A site like [Regexr](https://regexr.com/) but for visualizing and working with Lua patterns.
 - [Warr1024's Lua Code Tools](https://gitlab.com/Warr1024/luatools): Lua formatter & locals generator
 
 ## Debugging/profiling
 - [debug](https://content.luanti.org/packages/LMD/dbg/): Luanti mod library that offers more debugging capabilities.
-- [LuaJIT Profiler](https://content.luanti.org/packages/jwmhjwmh/jitprofiler/): Luanti mod that allows you to profile mods using LuaJIT's built-in profiler and Flamegraph.
+- [LuaJIT Profiler](https://content.luanti.org/packages/jwmhjwmh/jitprofiler/): Luanti mod that allows you to profile mods using LuaJIT's built-in profiler and flame graph.
 - [Warr1024's Minetest Server Docker Image](https://gitlab.com/sztest/minetestserver): Comes with useful debugging and performance profiling tools
 
 ## Syntax highlighting/autocompletion
@@ -39,8 +39,8 @@ In addition to this list, you can also see the [Development Tools](https://conte
 * [Luanti Biome Point Visualizer](https://wuzzy.codeberg.page/LiBPoV/): Edit and visualize biome heat/humidity points in a Voronoi diagram ([source code](https://codeberg.org/Wuzzy/LiBPoV))
 
 ## Perlin Noise
-- [Perlin Explorer](https://content.luanti.org/packages/Wuzzy/perlin_explorer/): Luanti mod that allows you to experiment with all sorts of perlin noise.
-- [Perlin noise tuner](https://codepen.io/treer/pen/gOPZyov?editors=0010): Visualizes 2D Perlin noise that Luanti will generate with different noiseparams.(Emulation of Luanti Perlin noise can be wrong in extremes/edge-cases due to precision of JavaScript number type)
+- [Perlin Explorer](https://content.luanti.org/packages/Wuzzy/perlin_explorer/): Luanti mod that allows you to experiment with all sorts of Perlin noise.
+- [Perlin noise tuner](https://codepen.io/treer/pen/gOPZyov?editors=0010): Visualizes 2D Perlin noise that Luanti will generate with different noise params.(Emulation of Luanti Perlin noise can be wrong in extremes/edge-cases due to precision of JavaScript number type)
 
 ## 3D models
 - [Blender](https://www.blender.org/): Essential for making animated models in Luanti, see [Using Blender](/for-creators/models/using-blender/).

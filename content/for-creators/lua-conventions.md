@@ -100,6 +100,7 @@ you want your mods to expose (and keep everything else `local`).
 
 For example:
 
+{{% comment %}} cspell:disable {{% /comment %}}
 ```lua
 mymath = {}
 
@@ -112,6 +113,7 @@ It is important to be precise about the structure of tables.
 One possible mistake for example is to supply a list of textures as
 `{name = "mymod_mytexture.png", backface_culling = false}`
 rather than `{ { name = "mymod_mytexture.png", backface_culling = false } }`.
+{{% comment %}} cspell:enable {{% /comment %}}
 
 The former will probably be treated like an empty list,
 while the latter will correctly be treated as a list

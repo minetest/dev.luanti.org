@@ -69,7 +69,7 @@ Internally, an unknown item still knows the “real” item it represents and th
 
 ### Troubleshooting
 
-A common reason for this item to appear is when you have previously activated a [mod](/for-players/mods) which added some new item, stored some of these items in an inventory, then later deactivated said mod. Now all items from this mod will appear as an unknown items. In this case, you can solve this simply by enabling the missing mod again. If you forgot to which mod this item belonged, rightclick with the item in hand to see its itemstring. The part before the column is the mod name.
+A common reason for this item to appear is when you have previously activated a [mod](/for-players/mods) which added some new item, stored some of these items in an inventory, then later deactivated said mod. Now all items from this mod will appear as an unknown items. In this case, you can solve this simply by enabling the missing mod again. If you forgot to which mod this item belonged, right-click with the item in hand to see its itemstring. The part before the column is the mod name.
 
 Another source of this item is a bug in mods or games or just general developer clumsiness. Developers of a game may have made a mistake or removed items intentionally without any replacement. Complain to the game authors if this happens, as this is generally considered poor development practice. If unknown items occur without you using any mods, this is almost certainly a bug.
 

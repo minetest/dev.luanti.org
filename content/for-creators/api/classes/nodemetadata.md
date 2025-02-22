@@ -37,7 +37,7 @@ Cuboid corners are rounded properly if they are not integers.
 ## Special Fields
 
 ### `formspec`
-FormSpec to show when the node is interacted with using the "place/use" key (rightclick by default).
+FormSpec to show when the node is interacted with using the "place/use" key (right-click by default).
 
 Has no effect if `on_rightclick` is defined in the node definition (see `core.register_node`).
 

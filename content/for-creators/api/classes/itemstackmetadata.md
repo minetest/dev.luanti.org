@@ -58,6 +58,7 @@ meta:set_int("count_alignment", align_top_right)
 
 or perhaps wrap this all up in a useful helper:
 
+{{% comment %}} cspell:disable {{% /comment %}}
 ```lua
 local vert_align = {
 	default = 0,
@@ -79,6 +80,7 @@ end
 
 set_stack_cnt_align(stack, "top", "right")
 ```
+{{% comment %}} cspell:enable {{% /comment %}}
 
 ## Methods
 

@@ -2009,7 +2009,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 * Fix Android node selection distance (_juhdanad_)
 * Safe digging and placing (_bendeutsch_)
 * Fix for empty key/value when reading item string with wear but no metadata (_Jesse McDonald_)
-* Inventory: Fix wrong stack size behaviorand item loss (_SmallJoker_)
+* Inventory: Fix wrong stack size behavior and item loss (_SmallJoker_)
 
 #### Objects/entities
 
@@ -2055,7 +2055,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 * CAO footstep sounds: Reduce gain to balance volume (_paramat_)
 * Fix default item callbacks to work with nil users (_raymoo_)
 * on\_death: Fix callback number of pushed arguments (_SmallJoker_)
-* Fix core.wrap\_text and make its behaviorconsistent with the docs (_sfan5_)
+* Fix core.wrap\_text and make its behavior consistent with the docs (_sfan5_)
 * Trigger on\_rightclick regardless on the formspec meta field (_SmallJoker_)
 * LBM: use range based for and fixed a loop variable overloading in applyLBMs (_nerzhul_)
 * Fix deserialization of ItemDefinition (_Rui-Minetest_)
@@ -2414,7 +2414,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Add get\_biome\_id(biome\_name) callback (Duane Robertson)
 * Added minetest.wallmounted\_to\_dir (Fernando Carmona Varo)
 * Allow setting chunk size in core.set\_mapgen\_params (kwolekr)
-* ABMs: Make catch-up behavioroptional (paramat)
+* ABMs: Make catch-up behavior optional (paramat)
 * Decoration API: Add flag for placement on liquid surface (paramat)
 * Add more ways to pass data to check\_player\_privs (Robert Zenz)
 * Add option to disable back-face culling for models (BlockMen)
@@ -3439,7 +3439,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Moved new core devs to the "Core Developers" section of mainmenu _(Novatux)_
 * Added ShadowNinja's email address to the main menu credits _(ShadowNinja)_
 * Used a doT.js template for the serverlist _(ShadowNinja)_
-* Added default\_privs to master server and JS autoload _(proller)_
+* Added default\_privs to master server and JS auto-load _(proller)_
 * Added BlockMen to core dev list _(PilzAdam)_
 * Added missing RequestQueue doc _(sapier)_
 * Prevent enabling Shaders if Direct3D is used _(PilzAdam)_

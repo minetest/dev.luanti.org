@@ -51,7 +51,7 @@ hugo server # This is the command internal to `npm start`
 
 ### Spell-checker
 
-You can run the spell-checker using `npm run test:spelling`. You can also install the recommended "Code Spell Checker" VS Code extension to get inline annotations of apparent spelling mistakes.
+You can run the spell-checker using `npm run test:spelling`. You can also install the recommended "Code Spell Checker" VS Code extension to get inline annotations of apparent spelling mistakes. The extension might fail to call out all spelling mistakes: consider `npm run test:spelling` the correct response.
 
 If you find a word that's spelled correctly but not recognized by the spell-checker, use the context menu's "Spelling > Add Words to CSpell Configuration" command or manually update `cspell.json` to include the word.
 

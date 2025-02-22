@@ -11,11 +11,12 @@ This page intends to list all possible optimization techniques that can be used 
 
 Lua map generators can use excessive memory if they are not using these 3 optimizations. Not using these optimizations can eventually lead to OOM (out-of-memory) errors because the Lua mapgen wasted way too much memory. Applying this advice is **strongly recommended**, and should make OOM errors much less likely. But there is no guarantee this will fix all OOM errors, your mapgen might still use excessive memory for other reasons, or the computer just has very limited memory.
 
-## Only create perlin noise objects once
+## Only create Perlin noise objects once
 The noise object is created by `core.get_perlin_map()`. It has to be created inside `register_on_generated()` to be usable, but only needs to be created once, many mapgen mods create it for every mapchunk, this consumes memory unnecessarily.
 
-Localize the noise object outside `register_on_generated()` and initialize it to `nil`. See the code below for how to create it once only. The creation of the perlin noise tables with `get_3d_map_flat()` etc. is done per mapchunk
+Localize the noise object outside `register_on_generated()` and initialize it to `nil`. See the code below for how to create it once only. The creation of the Perlin noise tables with `get_3d_map_flat()` etc. is done per mapchunk
 
+{{% comment %}} cspell:disable {{% /comment %}}
 ```lua
 -- Initialize noise objects to nil
 local nobj_terrain = nil
@@ -33,8 +34,9 @@ core.register_on_generated(function(minp, maxp, seed)
 	-- ...
 end)
 ```
+{{% comment %}} cspell:enable {{% /comment %}}
 
-## Re-use a single perlin noise table
+## Re-use a single Perlin noise table
 The Lua table that stores the noise values for a mapchunk is big, especially for 3D noise (80^3^ = 512000 values). Many Lua mapgens are creating a new table for every mapchunk, while the previous tables are only cleared out slowly by garbage collection, resulting in a large and unnecessary memory use.
 
 A `buffer` parameter was added in 0.4.13 to avoid this, a single table is re-used by overwriting the former values.
@@ -49,6 +51,7 @@ For each of the functions with an optional `buffer` parameter:  If `buffer` is n
 
 Localize the noise buffer outside `register_on_generated()` Use the `buffer` parameter in `get_3d_map_flat()` etc.
 
+{{% comment %}} cspell:disable {{% /comment %}}
 ```lua
 -- Localize noise buffers
 local nvals_terrain = {}
@@ -62,6 +65,7 @@ core.register_on_generated(function(minp, maxp, seed)
 	-- ...
 end)
 ```
+{{% comment %}} cspell:enable {{% /comment %}}
 
 ## Re-use data tables
 The Lua table that stores the node content IDs for a mapchunk plus the mapblock shell is big (112^3^ = 1404928 values). Many Lua mapgens are creating a new table for every mapchunk, while the previous tables are only cleared out slowly by garbage collection, resulting in a large and unnecessary memory use.

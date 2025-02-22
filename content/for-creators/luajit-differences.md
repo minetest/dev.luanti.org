@@ -7,7 +7,7 @@ aliases:
 ---
 
 # LuaJIT differences
-Most of the time Luanti is built with LuaJIT which aims to be faster than the reference Lua 5.1 implemention (referred to as "PUC Lua") due to its JIT compiler. However it is also possible that Luanti is built with PUC Lua 5.1, if Luanti cannot find LuaJIT when building or when explicitly built with `-DENABLE_LUAJIT=OFF`.
+Most of the time Luanti is built with LuaJIT which aims to be faster than the reference Lua 5.1 implementation (referred to as "PUC Lua") due to its JIT compiler. However it is also possible that Luanti is built with PUC Lua 5.1, if Luanti cannot find LuaJIT when building or when explicitly built with `-DENABLE_LUAJIT=OFF`.
 
 There are some reasons one would want to use PUC Lua over LuaJIT such as for stability reasons or if someone is on an obscure architecture that doesn't have a LuaJIT compiler available yet. As such, you should always support both implementations in your mods and be aware of some of the pitfalls that can cause crashes with a mod developed on LuaJIT being run with PUC Lua.
 
