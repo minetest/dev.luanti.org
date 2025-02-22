@@ -1,12 +1,11 @@
 {
   "scripts": {
-    "prepare": "git submodule init && git submodule update",
     "build": "hugo",
     "build:ci": "hugo --panicOnWarning && npm run test:spelling && npm run test:format",
     "clean": "rm -rf public && echo Clear browser cache as well!",
-    "format:fix": "sort-package-json",
+    "format": "sort-package-json && prettier --write .",
+    "prepare": "git submodule init && git submodule update",
     "start": "hugo server",
-    "fix:format": "prettier --write .",
     "test:a11y": "start-test start 1313 test:a11y:tests",
     "test:a11y:tests": "playwright test",
     "test:format": "prettier --check .",

@@ -15,7 +15,7 @@ See [About](content/about/_index.md) for more information
 - scripts
   - `build`: Builds the site to ensure changes are valid
   - `build:ci`: Builds the site but fails if any warnings are detected. Used in our CI pipeline.
-  - `format:fix`: Fixes formatting of the `package.json` file
+  - `format`: Fixes formatting of the codebase
   - `start`: Builds and serves the site at http://localhost:1313 with Hugo.
   - `test:a11y`: Builds and serves the site, then uses Playwright and axe to test accessibility
   - `test:a11y:tests`: Not meant for independent use, only as part of `test:a11y`
