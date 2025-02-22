@@ -2,10 +2,11 @@
 title: Backup Solutions
 aliases:
 - /Backup_Solutions
+- /backup-solutions
 ---
 
 # Backup Solutions
-It is always important to backup data you and others might care about. This page goes over making backups of data that Luanti creates.
+It is always important to backup data you and others might care about. For players, backing up a world is as simple as copying the world folder from `luanti/worlds` to a different folder. The backup can then be loaded by copying that folder back into `luanti/worlds`. The rest of this document covers advanced backup solutions for server hosts.
 
 ## World Backups
 Worlds will usually be contained in the Luanti user data directory under the `worlds` directory, unless you run a dedicated server and explicitly specify a path to the world. The world is a folder containing various files associated with the world.
