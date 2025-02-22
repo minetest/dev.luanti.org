@@ -48,7 +48,7 @@ Texture of an unknown object.
 
 An **unknown object** is pseudo-object in Luanti to represent an object (such as a [mob](/for-players/mobs)) of which the object definition is unknown. These objects should never appear in the game, and it's always an error when you encounter one.
 
-Behaviour
+Behavior
 ---------
 
 An unknown object appears as a flat texture with “unknown object” written on it. The velocity of the original object is usually preserved so unknown objects often tend to fly through the world.

@@ -199,7 +199,7 @@ Common problems include:
 
 - Accidental or intentional damage to other players' work (griefing).
 - Chat spam (may include swearing or advertisements).
-- Aggression, harassment or other unwanted behaviours between players.
+- Aggression, harassment or other unwanted behaviors between players.
 - Trouble makers who evade bans.
 - Impersonation of well known people within the Luanti community.
 - Bugs, for example caused by mods, which allow a malicious player to execute arbitrary system commands.

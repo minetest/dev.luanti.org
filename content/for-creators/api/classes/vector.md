@@ -22,7 +22,7 @@ The respective source code is located [here](https://github.com/luanti-org/luant
 
 If `a`, `b`, and `c` are `number`: Returns a new `vector` where `{x = a, y = b, z = c}`
 
-Deprecated behaviours:
+Deprecated behaviors:
 - If `a` is a `vector`: Returns `vector.copy(a)`
 - If all parameters are `nil`: Returns `vector.zero()`
 

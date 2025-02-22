@@ -42,7 +42,7 @@ Dropped items can appear for many reasons:
 
 ### Modding item stacks
 
-Mods can change the stack limit, or the behaviour of the dropped items.
+Mods can change the stack limit, or the behavior of the dropped items.
 
 For example:
 
@@ -59,7 +59,7 @@ Inventory image of an unknown item.
 
 An **unknown item** is a pseudo-item in Luanti to represent an item of which the item definition is unknown. These items should never appear in the game, and it's always an error when you encounter it.
 
-### Behaviour
+### Behavior
 
 Most types of world interactions are not possible. Dropping an unknown item is not possible. You can still store and move this item in inventories.
 

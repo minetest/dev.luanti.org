@@ -37,7 +37,7 @@ All liquids share the following properties:
 *   Viscosity: How slow [players](/for-players/player) move through it and how fast new flowing liquids are created (i.e. how fast the liquid spreads)
 *   Drowning damage: If set, it will a) reduce your [breath](/for-players/player#breath) (“bubbles”) while you are inside and b) will cause this amount of damage to you every 2 seconds if you ran out of breath while inside
 
-Behaviour
+Behavior
 ---------
 
 ### Creation of liquid sources

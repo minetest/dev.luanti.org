@@ -27,7 +27,7 @@ The built-in breath system can be completely disabled by the game or mods as par
 
 When players lose their health, they die. After death, the player can immediately respawn, with health and breath restored. The new spawn position is usually somewhere near the initial spawning position (see [Spawn Algorithm](/for-creators/player-spawn-algorithm/)). Other consequences of death (usually negative) can be implemented by mods.
 
-Default engine behaviour is that the player keeps the items that are in their inventory after death, but this behaviour can be changed by games and mods.
+Default engine behavior is that the player keeps the items that are in their inventory after death, but this behavior can be changed by games and mods.
 
 ## Name
 

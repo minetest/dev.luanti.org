@@ -535,7 +535,7 @@ Released on 8 April 2023
 * Fix potential error in craft recipes (_savilli_)
 * Add paramtype2s `4dir` and `color4dir` for 4 horizontal rotations and 64 colors (_Wuzzy_)
 * Bugfix: Allow looped animation to be used safely with old clients (_sfan5_)
-* Reassure previous nil behaviour for `tiles` and `special_tiles` (_Zughy_)
+* Reassure previous nil behavior for `tiles` and `special_tiles` (_Zughy_)
 * Add buffer argument to `VoxelManip:get_light_data` (_TurkeyMcMac_)
 * Fix crash when crafting callbacks return strings (_Zughy_)
 
@@ -965,7 +965,7 @@ Released on 23 Feb 2021.
     * This was already deprecated and undocumented.
     * Fix: Replace by `use_texture_alpha`
 * Fixed deprecation warning when certain ores types ("sheet", "puff", "blob" and "vein") are missing noise\_params (_rubenwardy_)
-    * These ore types require noise\_params. To keep the same behaviour, you can use the following values:
+    * These ore types require noise\_params. To keep the same behavior, you can use the following values:
 
 ```
 noise_params = {
@@ -1291,7 +1291,7 @@ Released on 5 April 2020.
 * Make clipping of formspec elements more consistent (_Df458_)
 * Remove outdated field\_close\_on\_enter\[\] warnings in element parameters (_SmallJoker_)
 * Fix mouse events sent to wrong GUI elements when dragging (_sfan5_)
-* Restore intuitive click-through behaviour (_DS_)
+* Restore intuitive click-through behavior (_DS_)
 
 ### Enhancements
 
@@ -1858,7 +1858,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 #### Rendering
 
 * Fix liquid bottoms not being rendered (_numberZero_)
-* Fix liquid post effect colour behaviour in third person view (_red-001_)
+* Fix liquid post effect colour behavior in third person view (_red-001_)
 * Fix dark liquids (_numberZero_)
 * Use crack animation on all tile layers (_juhdanad_)
 * Smoothed yaw rotation for objects (_SmallJoker_)
@@ -1882,7 +1882,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 * Fix incorrect buffer size calculation on creation of HUD status messages (_rubenwardy_)
 * Particles: Do not add digging particles for airlike nodes (_SmallJoker_)
 * Fix animation frame\_speed and blend loosing precision (_sapier_)
-* Fix undefined behaviour in arm movement when dividing by zero (_nerzhul_)
+* Fix undefined behavior in arm movement when dividing by zero (_nerzhul_)
 * Fix render order of overlays (_juhdanad_)
 * Particles: Make collision with objects optional (_paramat_)
 * Fix stretched stars bug, change render order (_Aspen_)
@@ -1921,7 +1921,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 * Formspec verification: Fix show\_formspec inside callbacks (_SmallJoker_
 * Fix wrong scrolling of formspec input fields (_numberZero_)
 * Inventory: Restrict access from too far away (_SmallJoker_)
-* Fix mousewheel behaviour in textarea (_shivajiva101_)
+* Fix mousewheel behavior in textarea (_shivajiva101_)
 * Fallback to 'label' in readonly textarea\[\] (backwards compatible) (_SmallJoker_)
 * Fix invalid background warning (_SmallJoker_)
 * Fix text clipped by scrollbars (_random-geek_)
@@ -1980,7 +1980,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 * Mgv7: Avoid rivergen removing mod-placed nodes when overgenerating (_paramat_)
 * Mgv7: Avoid divide-by-zero errors (_paramat_)
 * Mgv7: Fix undefined 'float\_mount\_height' (_paramat_)
-* Mgfractal: Improve spawning behaviour (_paramat_)
+* Mgfractal: Improve spawning behavior(_paramat_)
 * Mgv5/v7/fractal: Add 'large\_cave\_depth' parameter to replace fixed value (_paramat_)
 * Fix Mapgen Valleys getSpawnLevelAtPoint() (_Treer_)
 * Vein ore: Fix bug caused by changing perlinmap Y size (_paramat_)
@@ -2009,7 +2009,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 * Fix Android node selection distance (_juhdanad_)
 * Safe digging and placing (_bendeutsch_)
 * Fix for empty key/value when reading item string with wear but no metadata (_Jesse McDonald_)
-* Inventory: Fix wrong stack size behaviour and item loss (_SmallJoker_)
+* Inventory: Fix wrong stack size behaviorand item loss (_SmallJoker_)
 
 #### Objects/entities
 
@@ -2055,7 +2055,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 * CAO footstep sounds: Reduce gain to balance volume (_paramat_)
 * Fix default item callbacks to work with nil users (_raymoo_)
 * on\_death: Fix callback number of pushed arguments (_SmallJoker_)
-* Fix core.wrap\_text and make its behaviour consistent with the docs (_sfan5_)
+* Fix core.wrap\_text and make its behaviorconsistent with the docs (_sfan5_)
 * Trigger on\_rightclick regardless on the formspec meta field (_SmallJoker_)
 * LBM: use range based for and fixed a loop variable overloading in applyLBMs (_nerzhul_)
 * Fix deserialization of ItemDefinition (_Rui-Minetest_)
@@ -2090,7 +2090,7 @@ Also a big thanks to paramat, ClobberXD, pauloue, gituser2194, lhofhansl, ashtra
 * Generate Notifier: Clear events once after all 'on generated' functions (_paramat_)
 * Fix Wstringop-overflow warning from util/srp.cpp (_HybridDog_)
 * Tool getDigParams: Fix selecting the best fitting time (_HybridDog_)
-* Fix undefined behaviour on getting pointer to data in empty vector (_nOOb3167_)
+* Fix undefined behavior on getting pointer to data in empty vector (_nOOb3167_)
 * Use Irrlicht's mesh cache for animated meshes. (_lhofhansl_)
 * Shut down mapgen threads before other shutdown tasks (_raymoo_)
 * Allow zoom to actually show more data. (_lhofhansl_)
@@ -2195,7 +2195,7 @@ Backported release containing only bug fixes and small features. 0.4.17 was rele
 * core.rotate\_node: Do not trigger after\_place\_node for mod compatibility
 * macOS: don't require X11 libraries during compilation
 * Generate Notifier: Clear events once after all 'on generated' functions
-* Fix liquid post effect colour behaviour in third person view
+* Fix liquid post effect colour behavior in third person view
 * Delete world dialog: Move buttons to avoid double click deletion
 * Fix /shutdown countdown parameter
 * Check argument types inside MetaDataRef Lua API
@@ -2206,7 +2206,7 @@ Backported release containing only bug fixes and small features. 0.4.17 was rele
 * Fix buffer parameter not working in getMapSlice()
 * Fix rounding error in g/set\_node caused by truncation to float
 * Fix dancing text in text input fields
-* Fix undefined behaviour on getting pointer to data in empty vector
+* Fix undefined behavior on getting pointer to data in empty vector
 * Fix wrong scrolling in text areas
 * Builtin: Fix handle\_node\_drops crash with nil digger
 * Damage: Remove damage ignore timer due to abuse potential
@@ -2267,7 +2267,7 @@ Backported release containing only bug fixes and small features. 0.4.17 was rele
 * Add a mapblock cache in MeshUpdateQueue to improve client rendering performance _(celeron55)_
 * Player data can now be into database. This is an important change, players to files are always supported for this release but deprecated. Files backend for players will be removed in a future release. See [Database backends](/database-backends) for compat matrix and migration steps. _(nerzhul)_
 * Sounds: add fading sounds _(Bremaweb, krock)_
-* Save automatically window size when modified. This behaviour can be disabled in client settings _(nerzhul)_
+* Save automatically window size when modified. This behavior can be disabled in client settings _(nerzhul)_
 * Add cancel button to password change formspec _(red-001)_
 * Improve pause menu with more user friendly information and update keys dynamically depending on your configuration _(red-001)_
 * Merge singleplayer & server tab on desktop clients _(octacian)_
@@ -2414,7 +2414,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Add get\_biome\_id(biome\_name) callback (Duane Robertson)
 * Added minetest.wallmounted\_to\_dir (Fernando Carmona Varo)
 * Allow setting chunk size in core.set\_mapgen\_params (kwolekr)
-* ABMs: Make catch-up behaviour optional (paramat)
+* ABMs: Make catch-up behavioroptional (paramat)
 * Decoration API: Add flag for placement on liquid surface (paramat)
 * Add more ways to pass data to check\_player\_privs (Robert Zenz)
 * Add option to disable back-face culling for models (BlockMen)
@@ -2748,7 +2748,7 @@ No official changelog exists yet, however you can find an unofficial one here: [
 * Add reason to kicked log message and use present tense (est31)
 * RotateAlongYAxis: For facedir case, return if param2 >= 4 (paramat)
 * Change lower limit of display\_gamma to 1.0 (linear light) (Zeno)
-* More reliable serverlist behaviour (HybridDog)
+* More reliable serverlist behavior (HybridDog)
 * Close keybind settings menu with esc (est31)
 * Disable mesh cache by default (est31)
 * Set server\_announce to world.mt and respect modes when changing game (Sokomine)

@@ -31,7 +31,7 @@ If you want to track down _which_ PNGs are broken, set the debug level (`debug_l
 
 ### Deprecated function calls
 
-As Luanti develops, some API functions fall out of use and become deprecated in favour of newer functions with different names. Looking at console log or debug log output should give you the deprecation warnings that your mod throws. See the warning, which might give the name of the new function, and the Lua API for any eventual change in behaviour it has.
+As Luanti develops, some API functions fall out of use and become deprecated in favour of newer functions with different names. Looking at console log or debug log output should give you the deprecation warnings that your mod throws. See the warning, which might give the name of the new function, and the Lua API for any eventual change in behavior it has.
 
 When upgrading your mod from version 0.4.x to 5.x, you may use the [MT-replace-deprecated.sh](https://gist.github.com/SmallJoker/cb89c3f9e4be27a0e8bc10ced1c5fc31) script ([forum thread](https://forum.luanti.org/viewtopic.php?f=18&t=20403)) which can automatically rename some deprecated functions.
 

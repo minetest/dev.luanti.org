@@ -23,7 +23,7 @@ Drops
 
 After a block has been mined, it may leave none, one or some [items](/for-players/items) which go straight into your player [inventory](/for-players/inventory). The items left behind are also called the “drop” of the node and it is said that a node _drops_ something after being mined.
 
-Most blocks drop themselves. This is also the default behaviour if not specified otherwise by a [mod](/for-players/mods). There are other drops possible. This is the list of possible drop types:
+Most blocks drop themselves. This is also the default behavior if not specified otherwise by a [mod](/for-players/mods). There are other drops possible. This is the list of possible drop types:
 
 *   itself,
 *   a different item,

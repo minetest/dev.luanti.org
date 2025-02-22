@@ -84,10 +84,10 @@ SQLite3 is the default backend for all Luanti backends, it is always supported b
 ### LevelDB
 
 {{< notice warning >}}
-LevelDB as a database suffers from **serious reliability issues** that are well known both inside and outside of Luanti (See [References](#references) for LevelDB horror stories). Random corruption may occur including to but not limited to during powerloss or any other unexpected shutdown where the database is not safely closed. **It should be used with caution.**
+LevelDB as a database suffers from **serious reliability issues** that are well known both inside and outside of Luanti (See [References](#references) for LevelDB horror stories). Random corruption may occur including to but not limited to during power loss or any other unexpected shutdown where the database is not safely closed. **It should be used with caution.**
 {{< /notice >}}
 
-LevelDB is an embedded key-value data store that can offer better speeds compared to SQLite. The persistent database is also compressed with Snappy compression leading to smaller filesizes.
+LevelDB is an embedded key-value data store that can offer better speeds compared to SQLite. The persistent database is also compressed with Snappy compression leading to smaller file sizes.
 
 LevelDB support is enabled in the official Windows builds and most Linux builds.
 
@@ -136,7 +136,7 @@ To use the MariaDB database backend, the MariaDB C++ connector is required which
 
 ### Dummy
 
-A dummy database backend, which stores all data in RAM without saving it to disk. This means that as soon the server shuts down, all data will be lost. And when you re-join, things such as the map will be re-generated from scratch. However all data will stay persistent in memory while the server is running, compared to a blackhole database.
+A dummy database backend, which stores all data in RAM without saving it to disk. This means that as soon the server shuts down, all data will be lost. And when you re-join, things such as the map will be re-generated from scratch. However all data will stay persistent in memory while the server is running, compared to a black hole database.
 
 This backend is useful for games and servers which don't need a persistent map, such as Capture the Flag. It can also be useful for development when testing map generation capabilities. Games can configure whether new worlds should be created with the dummy backend for the map database using the `map_persistent` value in `game.conf`.
 
