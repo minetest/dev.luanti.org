@@ -14,7 +14,7 @@ jobs:
         run: npm ci
       - name: Run Prettier
         id: runPrettier
-        run: npm run format:check
+        run: npm run format
       - name: Show formatter diff if it exists
         # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
         if: ${{ failure() }}
