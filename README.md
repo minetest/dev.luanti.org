@@ -26,7 +26,7 @@ See [About](content/about/_index.md) for more information
 - devDependencies
   - [`@axe-core/playwright`](https://npmjs.com/package/@axe-core/playwright): A11y tester bindings for Playwright
   - [`@playwright/test`](https://npmjs.com/package/@playwright/test): Browser automation and test library
-  - [`cspell`](https://npmjs.com/package/cspell): Spellchecker
+  - [`cspell`](https://npmjs.com/package/cspell): Spell-checker
   - linkinator: Link-checker (WIP)
   - prettier: Formatter (exact version pinned per [official recommendation](https://prettier.io/docs/next/install#summary))
   - [`sort-package-json`](https://npmjs.com/package/sort-package-json): Sorts package.json files for consistency
