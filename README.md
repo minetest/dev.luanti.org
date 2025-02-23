@@ -27,15 +27,7 @@ See [About](content/about/_index.md) for more information
   - [`@axe-core/playwright`](https://npmjs.com/package/@axe-core/playwright): A11y tester bindings for Playwright
   - [`@playwright/test`](https://npmjs.com/package/@playwright/test): Browser automation and test library
   - [`cspell`](https://npmjs.com/package/cspell): Spellchecker
-  - [`sort-package-json`](https://npmjs.com/package/sort-package-json): Sorts package.json files for consistency
-  - [`start-server-and-test`](https://npmjs.com/package/start-server-and-test): Allows easy setup and teardown of complex tests, like our a11y tests
-- dependencies
-  - `hugo-extended` is our static site generator
-- devDependencies
-  - @axe-core/playwright: Accessibility tests (WIP)
-  - @playwright/test: Accessibility tests (WIP)
-  - cspell: Spell-checker
   - linkinator: Link-checker (WIP)
   - prettier: Formatter (exact version pinned per [official recommendation](https://prettier.io/docs/next/install#summary))
-  - sort-package-json: `npx sort-package-json` organizes the package.json file into a standard format
-  - start-server-and-test: Accessibility tests (WIP)
+  - [`sort-package-json`](https://npmjs.com/package/sort-package-json): Sorts package.json files for consistency
+  - [`start-server-and-test`](https://npmjs.com/package/start-server-and-test): Allows easy setup and teardown of complex tests, like our a11y tests
