@@ -16,7 +16,7 @@ This Wiki page contains the meeting plans for upcoming meetings, and meeting not
 
 ## Upcoming Meetings
 
-## 2025-02-02
+## 2025-03-02
 
 **Remember to post meetings in the [GitHub discussions](https://github.com/orgs/minetest/discussions) in advance**
 
