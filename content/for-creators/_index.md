@@ -16,6 +16,7 @@ Here are some getting started guides:
 - [Creating mods](/for-creators/creating-mods)
 - [Creating texture packs](/for-creators/creating-texture-packs)
 - [Distributing games outside ContentDB](/for-creators/distributing-games-outside-contentdb)
+- [Translation](/for-creators/translation)
 
 ## Other useful links
 
