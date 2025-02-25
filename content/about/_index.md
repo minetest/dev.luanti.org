@@ -7,7 +7,7 @@ aliases:
 
 # About
 
-Luanti is a free and open-source voxel game engine with its own [distribution platform](/about/contentdb) and [client](/about/luanti). Players, creators, server hosts, and engine developers can find more information here about how to get started with Luanti.
+Luanti is a free and open-source voxel game engine with its own [distribution platform](/about/contentdb) and [app](/about/luanti). Players, creators, server hosts, and engine developers can find more information here about how to get started with Luanti.
 
 This site is created using [Hugo](https://gohugo.io/), with theme [Hugo Book](https://themes.gohugo.io/themes/hugo-book/). The site's source content can be found [on GitHub](https://github.com/luanti-org/docs.luanti.org/tree/master/content), and we welcome contributions from everyone. To contribute, see [Contributing to Docs](/about/contributing-to-docs).
 
@@ -15,7 +15,7 @@ This site is created using [Hugo](https://gohugo.io/), with theme [Hugo Book](ht
 
 This site is organized by target audience:
 
-- [For Players](/for-players) covers installing the Luanti client, installing mods and games, and basic gameplay mechanics.
+- [For Players](/for-players) covers installing the Luanti app, installing mods and games, and basic gameplay mechanics.
 - [For Creators](/for-creators) covers mod creation, game creation, texture pack creation, translations, and other guides for creating things with or for Luanti.
 - [For Server Hosts](/for-server-hosts) covers multiplayer hosting setup.
 - [For Engine Devs](/for-engine-devs) covers how to contribute C++ code to the Luanti engine itself.
@@ -31,3 +31,9 @@ Documentation will cover:
 - Server and platform (player-facing) usage and guides
 
 This project began in December 2024. Our roadmap can be found at [GitHub issue #113: Roadmap](https://github.com/luanti-org/docs.luanti.org/issues/113).
+
+## Other Luanti sites
+
+- [luanti.org](https://luanti.org)
+- [ContentDB](https://content.luanti.org/)
+- [Luanti Forums](https://forum.luanti.org/)
