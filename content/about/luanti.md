@@ -42,7 +42,7 @@ As Luanti is an engine, the actual in-game appearance heavily depends on the act
 
 ### Mods
 
-There exists several hundred of mods, most for Minetest Game and some for other games. The largest list of mods can be found on [ContentDB](https://content.luanti.org/packages/?type=mod)
+Thousands of mods are available for free on [ContentDB](https://content.luanti.org/packages/?type=mod)
 
 ### More screenshots
 
@@ -71,7 +71,7 @@ Luanti is free software, without advertisements and free of charge. It is licens
 
 ## Name
 
-In the beginning, Luanti was called “**Minetest-c55**”. The “c55” stands for “celeron55”, the original creator. The “Minetest” was chosen simply because he wanted to test how far he could come with a Minecraft clone. (But today, Luanti is a game engine for all sorts of voxel games, not just Minecraft clones.)
+In the beginning, Luanti was called “**Minetest-c55**”. The “c55” stands for “celeron55”, the original creator. The “Minetest” was chosen simply because he wanted to test how far he could come with a Minecraft clone.
 
 As the project attracted a larger following, the ”-c55” was dropped and so the new name was “**Minetest**” and that name stuck for many years. But many people didn’t like the name because of the “test” in the name.
 
@@ -83,9 +83,9 @@ After years of brainstorming and discussion, a decision has finally been made: O
 
 {{% comment %}} cspell:enable {{% /comment %}}
 
+Today, Luanti is a game engine for all sorts of voxel games, not just Minecraft clones.
+
 ## See also
 
 - [Download Luanti](http://www.luanti.org/downloads/)
 - [Getting Started](/for-players/getting-started)
-- [Version Number](/for-engine-devs/version-number)
-- [Main Page](/)
