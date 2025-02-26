@@ -7,7 +7,7 @@ aliases:
 
 # For Players
 
-The Luanti app connects to ContentDB, where many games and mods are hosted. You can start playing by:
+The Luanti client connects to ContentDB, where many games and mods are hosted. You can start playing by:
 
 1. Downloading Luanti
 2. Installing a game
@@ -28,7 +28,7 @@ For more information, see [Getting Started](/for-players/getting-started/).
 [Mods](/for-players/mods) are packages that may add or change something in a game. Each game for Luanti has its own ecosystem of mods that extend that particular game, or there are game-agnostic mods that support all games.
 
 - [Installing Mods](/for-players/installing-mods)
-- [Installing Client-Side Mods](/for-players/installing-client-side-mods) (The Luanti app is often referred to as "the client")
+- [Installing Client-Side Mods](/for-players/installing-client-side-mods)
 
 ## Servers
 
